@@ -30,9 +30,9 @@ https://gitcode.com/open-source-toolkit/f2956/?utm\_source=tools\_gitcode\&index
 
 * 在使用过程中，如遇到任何问题，请参考工具自带的帮助文档或联系技术支持。
 
-![ADB连接](images/image-2.png)
+![ADB连接](assets/ARDC安卓投屏助手/image-2.png)
 
-![远程同屏](images/image.png)
+![远程同屏](assets/ARDC安卓投屏助手/image.png)
 
-![下载文件](images/image-1.png)
+![下载文件](assets/ARDC安卓投屏助手/image-1.png)
 

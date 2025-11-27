@@ -1,0 +1,10 @@
+{
+  "obshare:publish-current-document": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
+    }
+  ]
+}

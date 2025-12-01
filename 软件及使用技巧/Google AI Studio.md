@@ -5,3 +5,5 @@
 ![](assets/Google%20AI%20Studio/file-20251201102528384.png)
 ![](assets/Google%20AI%20Studio/file-20251201102907920.png)
 ![](assets/Google%20AI%20Studio/file-20251201102932070.png)
+![](assets/Google%20AI%20Studio/file-20251201103252894.png)
+![](assets/Google%20AI%20Studio/file-20251201103320110.png)

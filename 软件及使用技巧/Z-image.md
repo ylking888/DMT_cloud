@@ -23,5 +23,6 @@ Z-image示例部分[Z Image | ComfyUI_examples](https://comfyanonymous.github.io
 - https://huggingface.co/Comfy-Org/z_image_turbo/blob/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
 - 【不能下载用下面这个试试】
 - [造相-Z-Image-Turbo · 模型库](https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo/)
+- hugging face镜像站： [Tongyi-MAI/Z-Image-Turbo at main](https://hf-mirror.com/Tongyi-MAI/Z-Image-Turbo/tree/main/transformer) 
 - 对于分割的文件下载后存放到
 ![](assets/Z-image/file-20251201180152162.png)

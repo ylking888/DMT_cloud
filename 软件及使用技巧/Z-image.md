@@ -19,5 +19,8 @@ Z-image示例部分[Z Image | ComfyUI_examples](https://comfyanonymous.github.io
 ![](assets/Z-image/file-20251201180016751.png)
 ![](assets/Z-image/file-20251201180035476.png)
 提示缺少这些文件。
-首先是主模型https://huggingface.co/Comfy-Org/z_image_turbo/blob/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
+首先是下载主模型
+- https://huggingface.co/Comfy-Org/z_image_turbo/blob/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors
+- 【不能下载用下面这个试试】
+- [造相-Z-Image-Turbo · 模型库](https://www.modelscope.cn/models/Tongyi-MAI/Z-Image-Turbo/)
 ![](assets/Z-image/file-20251201180152162.png)

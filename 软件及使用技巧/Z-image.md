@@ -3,4 +3,5 @@
 ![](assets/Z-image/file-20251201172715716.png)
 它这个模型是一组不是一个
 ![](assets/Z-image/file-20251201172842799.png)
-目前已经可以在comfyUI中使用这个模型了
+目前已经可以在comfyUI中使用这个模型了[comfyanonymous/ComfyUI: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.](https://github.com/comfyanonymous/ComfyUI)
+

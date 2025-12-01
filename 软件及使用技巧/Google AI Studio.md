@@ -11,3 +11,4 @@
 ![](assets/Google%20AI%20Studio/file-20251201103320110.png)
 ## 加权采样
 
+![](assets/Google%20AI%20Studio/file-20251201112828410.png)

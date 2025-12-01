@@ -14,3 +14,4 @@
 ![](assets/Google%20AI%20Studio/file-20251201112828410.png)
 ## Temperature
 ![](assets/Google%20AI%20Studio/file-20251201113027918.png)
+![](assets/Google%20AI%20Studio/file-20251201113455661.png)

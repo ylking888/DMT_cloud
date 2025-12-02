@@ -2,7 +2,12 @@
 ![](assets/Google%20AI%20Studio/file-20251202095028610.png)
 # 简介及界面
 ![](assets/Google%20AI%20Studio/file-20251202095503756.png)
-# Temperature和Top-p
+# 参数设置
+
+![](assets/Google%20AI%20Studio/file-20251202100401553.png)
+
+
+## Temperature和Top-p
 这两个参数都是用来控制大模型回答的答案的随机性和创造力的。
 ![](assets/Google%20AI%20Studio/file-20251201102528384.png)
 ## 生成分数

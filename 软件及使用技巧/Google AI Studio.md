@@ -55,4 +55,4 @@ Gemini 3训练数据截止：2025年1月
 ### URL context
 发送网址给AI，建议保持开启。当你发送的内容中有网址的时候，Gemini就会读取网址上的内容。
 比如Github、论文、文献的链接上的内容。
-
+![](assets/Google%20AI%20Studio/file-20251202103401078.png)

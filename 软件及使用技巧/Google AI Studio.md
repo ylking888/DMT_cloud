@@ -3,6 +3,13 @@
 # 简介及界面
 ![](assets/Google%20AI%20Studio/file-20251202095503756.png)
 # 参数设置
+## 基础参数配置
+
+### 模型选择
+![500](assets/Google%20AI%20Studio/file-20251202101300576.png)
+
+### 系统指令
+全局系统提示词，可以把个人的喜好和信息全部写进去
 
 ![](assets/Google%20AI%20Studio/file-20251202100401553.png)
 

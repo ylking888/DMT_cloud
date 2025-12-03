@@ -15,3 +15,8 @@ DeepSeek V3 不需要 thinking，如果是 R1 版本才需要。普通任务建�
 
 是否启用response_format参数 
 硅基流动的 DeepSeek 模型支持 JSON 模式，可以设为 true ENABLE_RESPONSE_FORMAT=true
+
+# 重要步骤
+运行
+playwright install
+

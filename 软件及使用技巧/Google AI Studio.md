@@ -193,3 +193,53 @@ Gemini 3训练数据截止：2025年1月
 }
 ​```
 ````
+
+# 打开Notebooklm的技巧
+
+1. **切换节点**：请务必切换到 **美国 (USA)** 的节点。不要用香港、日本或新加坡（虽然名义上支持，但经常被判定失败）。
+
+2. **开启全局模式**：确保您的辅助工具使用的是 **“全局模式” (Global Mode)**，而不是 PAC/规则模式。
+
+3. **更换线路**：如果您当前的美国节点不行，尝试换一条（例如从“美国01”换到“美国05”）。
+
+4. 打开浏览器的 **无痕模式/隐私窗口** (Ctrl+Shift+N)，在无痕窗口中访问
+
+   ```
+    notebooklm.google.com 
+   ```
+
+   并重新登录。
+
+5. 如果无痕模式能进，说明是缓存问题，清理一下浏览器的 Cookie 即可。
+
+![1764721102772](C:\Users\ylking\AppData\Roaming\Typora\typora-user-images\1764721102772.png)
+
+# 使用Notebooklm解析pdf
+
+打开Notebooklm并登录。
+
+上传来源
+
+![1764721592834](C:\Users\ylking\AppData\Roaming\Typora\typora-user-images\1764721592834.png)
+
+你可以生成播客、生成解说视频、思维导图、报告、闪卡、测试题、信息图、PPT
+
+![1764721686421](C:\Users\ylking\AppData\Roaming\Typora\typora-user-images\1764721686421.png)
+
+注意先修改语言为简体中文。
+
+最近比较火的是生成PPT，因为接入了Nano Banana之后，设计的PPT非常具有审美。
+
+![1764721893243](C:\Users\ylking\AppData\Roaming\Typora\typora-user-images\1764721893243.png)
+
+生成的PPT是一张一张静态的图片，以PDF的形式打包下载。
+
+范例的提示词：
+
+- Create a fashion product collage on a brown corkboard based on this outfit.
+  基于这套穿搭，在棕色软木板上制作一张时尚单品拼贴画。
+- Create an orthographic blueprint that describes this building in plan.
+  绘制一份正投影蓝图，以平面图形式描述该建筑。
+- Create an illustrated explainer, detailing the physics of the fluid dynamics.
+  制作一份带插图的讲解材料，详细阐述流体动力学的物理原理。
+

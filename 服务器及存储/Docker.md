@@ -13,19 +13,14 @@
 如果你主要使用 Docker、WSL2 或基于 Hyper-V 的其他虚拟机（如 Windows Sandbox）：
 
 1. **保持 Hyper-V 启用**。
-    
 2. 将 **VMware Workstation 升级到 15.5.5 或更高版本**，或者使用最新的 VMware Player。
-    
 3. 在 VMware 中创建或配置虚拟机时，**必须勾选“虚拟机设置 -> 处理器 -> 虚拟化引擎 -> 启用 ‘Hyper-V 兼容性’ 选项**。
-    
     - _这个选项会让 VMware 虚拟机运行在 Hyper-V 的顶层，性能会有小幅下降，但可以正常工作。_
-        
 
 ### 方案三：使用 Windows 的 Hypervisor Platform 接口（折中方案）
 
 这是一个较新的 Windows 功能，旨在让不同的管理程序共享底层。
 
 1. 在“Windows 功能”中，**你可以不开启完整的“Hyper-V”，而是仅开启“Windows 虚拟机监控程序平台”**。
-![](assets/Docker/file-20251204151216464.png)
 2. Docker Desktop（使用 WSL2 后端） 和 **较新版本的 VMware（16.0+）** 都可以基于这个平台运行。
 3. 这是一个折中方案，兼容性较好，但并非所有旧版 VMware 功能都支持。

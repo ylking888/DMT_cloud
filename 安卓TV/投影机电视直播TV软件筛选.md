@@ -13,3 +13,10 @@
 - 链接：[https://pan.xunlei.com/s/VOfci7jcACgFatuCa5RgWtorA1?pwd=63tc#](https://pan.xunlei.com/s/VOfci7jcACgFatuCa5RgWtorA1?pwd=63tc#)
 - 链接: https://pan.baidu.com/s/1rPWYjqtzkhIPcJXFwGU6ag 
 ![](assets/投影机电视直播TV软件筛选/file-20251204173541685.png)
+
+
+# 我的电视my-tv-0_1.3.9.8
+有时不能用
+链接：https://pan.xunlei.com/s/VOfcjG9BTde3nwlpyDGmPAkbA1?pwd=9f5q#
+
+![](assets/投影机电视直播TV软件筛选/file-20251204174056065.png)

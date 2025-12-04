@@ -21,12 +21,12 @@
     - _这个选项会让 VMware 虚拟机运行在 Hyper-V 的顶层，性能会有小幅下降，但可以正常工作。_
         
 
-#### 方案三：使用 Windows 的 Hypervisor Platform 接口（折中方案）
+### 方案三：使用 Windows 的 Hypervisor Platform 接口（折中方案）
 
 这是一个较新的 Windows 功能，旨在让不同的管理程序共享底层。
 
 1. 在“Windows 功能”中，**你可以不开启完整的“Hyper-V”，而是仅开启“Windows 虚拟机监控程序平台”**。
-    
+![](assets/Docker/file-20251204151216464.png)
 2. Docker Desktop（使用 WSL2 后端） 和 **较新版本的 VMware（16.0+）** 都可以基于这个平台运行。
     
 3. 这是一个折中方案，兼容性较好，但并非所有旧版 VMware 功能都支持。

@@ -17,6 +17,8 @@
 
 # 我的电视my-tv-0_1.3.9.8
 有时不能用
-链接：https://pan.xunlei.com/s/VOfcjG9BTde3nwlpyDGmPAkbA1?pwd=9f5q#
-
+- 链接：[https://pan.xunlei.com/s/VOfcjG9BTde3nwlpyDGmPAkbA1?pwd=9f5q#](https://pan.xunlei.com/s/VOfcjG9BTde3nwlpyDGmPAkbA1?pwd=9f5q#)
+- 链接: https://pan.baidu.com/s/1ik7j0fD0tv8Qb0tkPZv5BQ 
 ![](assets/投影机电视直播TV软件筛选/file-20251204174056065.png)
+
+**下面是需要自行配置播放源的壳软件**

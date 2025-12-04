@@ -23,3 +23,22 @@
 
 **下面是需要自行配置播放源的壳软件**
 # IPTV Pro
+- 链接：[https://pan.xunlei.com/s/VOfckHu4N70M0nJab9fVddSjA1?pwd=d475#](https://pan.xunlei.com/s/VOfckHu4N70M0nJab9fVddSjA1?pwd=d475#)
+- 链接: https://pan.baidu.com/s/1MEdIeuQsl8TkQNrlngOvDg 
+![](assets/投影机电视直播TV软件筛选/file-20251204174521293.png)
+![](assets/投影机电视直播TV软件筛选/file-20251204174700662.png)
+
+
+
+IPTv源
+```
+https://gh.idayer.com/https://raw.githubusercontent.com/dqtx760/1TV/refs/heads/main/index.html
+```
+
+```
+http://47.120.41.246:8899/zb.txt
+```
+
+```
+http://ax570383885.serv00.net/zy.txt
+```

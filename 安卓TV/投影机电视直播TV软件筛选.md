@@ -25,17 +25,23 @@
 # IPTV Pro
 - 链接：[https://pan.xunlei.com/s/VOfckHu4N70M0nJab9fVddSjA1?pwd=d475#](https://pan.xunlei.com/s/VOfckHu4N70M0nJab9fVddSjA1?pwd=d475#)
 - 链接: https://pan.baidu.com/s/1MEdIeuQsl8TkQNrlngOvDg 
+```
+IPTv源   https://gh.idayer.com/https://raw.githubusercontent.com/dqtx760/1TV/refs/heads/main/index.html
+```
 ![](assets/投影机电视直播TV软件筛选/file-20251204174521293.png)
 ![](assets/投影机电视直播TV软件筛选/file-20251204174700662.png)
 
 # TiviMate  2.1.5 - Premium付费破解版
 - 链接：[https://pan.xunlei.com/s/VOfcmUjkn-a8wkxd2ZUBV6hKA1?pwd=cgfp#](https://pan.xunlei.com/s/VOfcmUjkn-a8wkxd2ZUBV6hKA1?pwd=cgfp#)
 - 链接: https://pan.baidu.com/s/15gplQTTSDyHImSmy17Pjvg 
+```
+IPTv源   https://gh.idayer.com/https://raw.githubusercontent.com/dqtx760/1TV/refs/heads/main/index.html
+```
 ![](assets/投影机电视直播TV软件筛选/file-20251204175619785.png)
 ![](assets/投影机电视直播TV软件筛选/file-20251204175658522.png)
 
 # 酷9原版64位py_1.7.6.3_20251110_1813
-
+![](assets/投影机电视直播TV软件筛选/file-20251204175947099.png)
 
 IPTv源
 ```

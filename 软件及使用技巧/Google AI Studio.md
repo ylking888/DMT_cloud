@@ -214,7 +214,7 @@ Gemini 3训练数据截止：2025年1月
 
 ![1764721102772](C:\Users\ylking\AppData\Roaming\Typora\typora-user-images\1764721102772.png)
 
-# 使用Notebooklm解析pdf
+# 使用Notebooklm解析pdf【已经不能用了】
 
 打开Notebooklm并登录。
 
@@ -243,3 +243,7 @@ Gemini 3训练数据截止：2025年1月
 - Create an illustrated explainer, detailing the physics of the fluid dynamics.
   制作一份带插图的讲解材料，详细阐述流体动力学的物理原理。
 
+# Ai提示词网站
+[Nanobanana | AI Image Prompts & Generator Library](https://www.aiwind.org/)
+![](assets/Google%20AI%20Studio/file-20251204153034415.png)
+![](assets/Google%20AI%20Studio/file-20251204153100996.png)

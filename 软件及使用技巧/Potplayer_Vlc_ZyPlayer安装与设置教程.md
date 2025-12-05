@@ -51,13 +51,17 @@ python vlt_zh.py FusionX2_B_VLC.vlt "C:\Users\Administrator\AppData\Local\Micros
 
 ## 下载地址
 [https://github.com/Hiram-Wong/ZyPlayer/tags](https://github.com/Hiram-Wong/ZyPlayer/tags)
+通过网盘分享的文件：zyplayer-win-3.3.7-x64.exe
+链接: https://pan.baidu.com/s/1QDmmoqV4KDkMatKa7gFcRQ 提取码: 8965 
+--来自百度网盘超级会员v9的分享
 ## **zyplayer 基础配置，添加 json 视频源**
 [https://zhuanlan.zhihu.com/p/4858371822](https://zhuanlan.zhihu.com/p/4858371822)
 # 四 .Potplayer/Vlc 直播源
-
 ## M3U 直播源文件：
 下载地址：[点此下载](https://pan.xunlei.com/x/VOc0uy5mHvKh72Gm-JSTYdDfA1?pwd=g3ry#)
-
 下载后拖到 Potplayer/Vlc 就可以播放了，也可以用 Potplayer/Vlc 打开方式观看
 
 ## ZyPlayer **json** 源
+通过网盘分享的文件：config（251008更）.json
+链接: https://pan.baidu.com/s/1u8sSMUV09XABf2GPTAD0IA 提取码: 8965 
+--来自百度网盘超级会员v9的分享

@@ -13,7 +13,11 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=YWRiYTllOTExYmNjZjllOWY0YzlhZjE0NzQ4MDViNzhfaUNqSXlXMThhYTE5a3Y2emJnbW9CRWFpVnRqZXdtclRfVG9rZW46SXdiM2JIdThTb3BPS2h4OFVTT2NrbGxjbjJjXzE3NjQ4OTY3NDY6MTc2NDkwMDM0Nl9WNA)
 ![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091512846.png)
 皮肤位置：D:\software\PotPlayer\Skins
-
+![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091545488.png)
+![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091605964.png)
+## 2.播放设置
+![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091642003.png)
+## 3.视频设置
 
 ## 4. 声音设置
 

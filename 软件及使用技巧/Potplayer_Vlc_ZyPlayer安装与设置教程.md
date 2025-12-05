@@ -18,50 +18,16 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 ## 2.播放设置
 ![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091642003.png)
 ## 3.视频设置
-
+![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091710620.png)
 ## 4. 声音设置
-
-  
-
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTNlYzk5MGM5NGFhMjJjMTcwNzdiMDYwZjVkMzU1NjRfTUw1TlJjSnk1bWM0TGRSV1pBQ0RKNndYYVVwOHQxZDhfVG9rZW46TmR6WGJBRTNlb1hndHh4TmhyVmN6ZlhGbkJoXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-
-  
-
-50%
-
-  
-
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=ODY5MGYzOTY5MjQ0ZmU4ZDZhMGY4YTk0N2YxNTA0OTBfcGJkdzhUSlhSdnNmMlVNSTEzMHB4NG5rY21xazhWbUhfVG9rZW46VkJjT2J3eE11b1BPTUZ4Tm1yTGM3NlJablZiXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-
-  
-
-50%
-
-  
-
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=YjlmM2ZkY2RjMDNlYjkzMGJlMDlkOTI2MjdkMGJkZjRfNkp2RlI3eUxsb2ZpdkZkMVpyQXc3R2xIdHAxdDE1UkxfVG9rZW46RDV6MWJiUGg0b3pBTzR4UHhIcGNtUHBkbm5iXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-
-  
-
 ## 5.potplayer 常见问题
-
 不显示视频缩略图，解决办法 : 安装 k-lite codec pack， [点击下载](https://www.codecguide.com/download_k-lite_codec_pack_standard.htm)
-
-  
-
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=MDVhYjI2Y2IwNGI4M2VhMmYwMTdmNjNkZjhmOTU0ODlfRHNxdXlZYXR0cFRXM05yMzdkWER4MXUxZFlhWVpkb3JfVG9rZW46UnNxa2JtOVVHb3d0TDl4N0Y0R2NOcW9HbndoXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-
-  
-
-  
-
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=MGYxZGJkMDgyOTk1NTBjMzg4NDQ3YmIxNDk5NTE3ZGFfM3VHR2hyVHdWbER4OUxkb1A5SEFvNnkwTUliYzR5N0dfVG9rZW46V29iT2J6d0pxb3lWdER4ejY3eGNyMkl5bnlnXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-
-  
-
 1. 视频渲染器 Direct3D 11 改成自动选择
-
-  
 
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU3YmU5NTgyZGYzODAyZjc2MmYyMjY0NWExM2Y5MTdfM0NPN1RDa0syTGg5SUc4UDNZWm0yUWk1WEZSSHgxVWJfVG9rZW46UjZIY2I5NHM4b3NiRlZ4VThEa2NoOUFRblZmXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
 

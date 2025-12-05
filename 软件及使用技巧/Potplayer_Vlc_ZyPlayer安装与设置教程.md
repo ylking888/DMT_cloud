@@ -36,6 +36,9 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 ## 1、下载 & 安装
 [https://www.videolan.org/](https://www.videolan.org/)
 ## 2、皮肤 / 乱码问题
+5款自用精选衣服
+[https://pan.xunlei.com/x/VOc0pL0rtyeceWVRwdwToTMfA1?pwd=7bqi#](https://pan.xunlei.com/x/VOc0pL0rtyeceWVRwdwToTMfA1?pwd=7bqi#)
+
 
 python vlt_zh.py [vlt 文件路径或所在目录] [字体文件路径]
 

@@ -3,22 +3,14 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 # Potplayer
 
 ## 1. 基本设置
-官网网站下载
+- 官网网站下载
 [https://potplayer.tv/](https://potplayer.tv/)
 [https://potplayer.daum.net/](https://potplayer.daum.net/)
-迅雷云盘下载地址
+- 迅雷云盘下载地址
 [https://pan.xunlei.com/x/VOc0pCO4asKx2_T6pxDX9fZ0A1?pwd=hj3h#](https://pan.xunlei.com/x/VOc0pCO4asKx2_T6pxDX9fZ0A1?pwd=hj3h#)
 
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=MjAwZmNjMTRkY2RhY2I2MjYyZmE5YTA5MzdjN2UxMmZfQVV6WnJUN01LMmtzUjFpQ3pMT0lTNHhnYnhQZkZEelNfVG9rZW46TW4xMmJSWkFHbzRnYmt4UjBQNmNadkg1bnpiXzE3NjQ4OTY3NDY6MTc2NDkwMDM0Nl9WNA)
-
-  
-
-  
-
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=YWRiYTllOTExYmNjZjllOWY0YzlhZjE0NzQ4MDViNzhfaUNqSXlXMThhYTE5a3Y2emJnbW9CRWFpVnRqZXdtclRfVG9rZW46SXdiM2JIdThTb3BPS2h4OFVTT2NrbGxjbjJjXzE3NjQ4OTY3NDY6MTc2NDkwMDM0Nl9WNA)
-
-  
-
 ## 留言
 
 表情与角色

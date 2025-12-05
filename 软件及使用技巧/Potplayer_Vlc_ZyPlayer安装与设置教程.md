@@ -31,32 +31,32 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 1、视频渲染器 Direct3D 11 改成自动选择
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU3YmU5NTgyZGYzODAyZjc2MmYyMjY0NWExM2Y5MTdfM0NPN1RDa0syTGg5SUc4UDNZWm0yUWk1WEZSSHgxVWJfVG9rZW46UjZIY2I5NHM4b3NiRlZ4VThEa2NoOUFRblZmXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
 
-# 二 .VLC（直播）
+# 二、VLC（直播）
 
 ## 1、下载 & 安装
 [https://www.videolan.org/](https://www.videolan.org/)
 ## 2、皮肤 / 乱码问题
 5款自用精选衣服
 [https://pan.xunlei.com/x/VOc0pL0rtyeceWVRwdwToTMfA1?pwd=7bqi#](https://pan.xunlei.com/x/VOc0pL0rtyeceWVRwdwToTMfA1?pwd=7bqi#)
-
-
+中文乱码问题：
+借助脚本[https://github.com/linsui/vlt_zh](https://github.com/linsui/vlt_zh)
 python vlt_zh.py [vlt 文件路径或所在目录] [字体文件路径]
-
-1，下载 vlt_zh.py 下载 FusionX2_B_VLC.vlt 皮肤，这两个都放在桌面
-
-下载字体 [MiSans](https://hyperos.mi.com/font/zh/details/sc/) 字体，安装后文件路径：C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf
-
+使用方法：
+1、下载vlt_zh.py 下载FusionX2_B_VLC.vlt 皮肤，这两个都放在桌面
+下载字体[MiSans](https://hyperos.mi.com/font/zh/details/sc/)字体，安装后文件路径：C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf
+2、运行脚本
 python vlt_zh.py FusionX2_B_VLC.vlt "C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\MiSans-Bold.ttf"
 
-# 三 .ZyPlayer（点播）
+# 三 、ZyPlayer（点播）
 
 ## 下载地址
-
+[https://github.com/Hiram-Wong/ZyPlayer/tags](https://github.com/Hiram-Wong/ZyPlayer/tags)
 ## **zyplayer 基础配置，添加 json 视频源**
-
+[https://zhuanlan.zhihu.com/p/4858371822](https://zhuanlan.zhihu.com/p/4858371822)
 # 四 .Potplayer/Vlc 直播源
 
 ## M3U 直播源文件：
+下载地址：[点此下载](https://pan.xunlei.com/x/VOc0uy5mHvKh72Gm-JSTYdDfA1?pwd=g3ry#)
 
 下载后拖到 Potplayer/Vlc 就可以播放了，也可以用 Potplayer/Vlc 打开方式观看
 

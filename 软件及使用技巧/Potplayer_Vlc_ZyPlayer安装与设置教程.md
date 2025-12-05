@@ -27,17 +27,15 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 不显示视频缩略图，解决办法 : 安装 k-lite codec pack， [点击下载](https://www.codecguide.com/download_k-lite_codec_pack_standard.htm)
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=MDVhYjI2Y2IwNGI4M2VhMmYwMTdmNjNkZjhmOTU0ODlfRHNxdXlZYXR0cFRXM05yMzdkWER4MXUxZFlhWVpkb3JfVG9rZW46UnNxa2JtOVVHb3d0TDl4N0Y0R2NOcW9HbndoXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=MGYxZGJkMDgyOTk1NTBjMzg4NDQ3YmIxNDk5NTE3ZGFfM3VHR2hyVHdWbER4OUxkb1A5SEFvNnkwTUliYzR5N0dfVG9rZW46V29iT2J6d0pxb3lWdER4ejY3eGNyMkl5bnlnXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-1. 视频渲染器 Direct3D 11 改成自动选择
-
+打开文件很慢，解决办法
+1、视频渲染器 Direct3D 11 改成自动选择
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=NGU3YmU5NTgyZGYzODAyZjc2MmYyMjY0NWExM2Y5MTdfM0NPN1RDa0syTGg5SUc4UDNZWm0yUWk1WEZSSHgxVWJfVG9rZW46UjZIY2I5NHM4b3NiRlZ4VThEa2NoOUFRblZmXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
-
-  
 
 # 二 .VLC（直播）
 
-## 下载 & 安装
-
-## 2，皮肤 / 乱码问题
+## 1、下载 & 安装
+[https://www.videolan.org/](https://www.videolan.org/)
+## 2、皮肤 / 乱码问题
 
 python vlt_zh.py [vlt 文件路径或所在目录] [字体文件路径]
 

@@ -1,5 +1,5 @@
 开源地址：[pinokiocomputer/program.pinokio.computer: pinokio official documentation](https://github.com/pinokiocomputer/program.pinokio.computer)
-
+[Pinokio官网](https://pinokio.co/)
 #### Step 1. Download  第一步：下载
 [Download for Windows  下载适用于 Windows 的版本](https://github.com/pinokiocomputer/pinokio/releases/download/3.8.0/Pinokio-3.8.0-win32.zip)
 

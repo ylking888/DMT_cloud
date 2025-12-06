@@ -21,6 +21,7 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
 ![](assets/program.pinokio.computer匹诺曹/file-20251206144801222.png)
 你也可以按照教程部署Github上的项目。
 ![](assets/program.pinokio.computer匹诺曹/file-20251206145001469.png)
+这个安装过程是比较漫长的。deepseek说是安装到windows环境中，官方文件说是安装在pinokio独立的环境中。
 ![](assets/program.pinokio.computer匹诺曹/file-20251206145321554.png)
 开始自动下载安装。
 快速浏览一下每个文件夹的功能：

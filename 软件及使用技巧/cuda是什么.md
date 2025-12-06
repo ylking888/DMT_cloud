@@ -279,7 +279,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ### 使用国内镜像源
 1. 使用清华镜像源
 pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu130
-
+![](assets/cuda是什么/file-20251207005721261.png)
 2. 或者使用阿里云镜像
 pip install torch torchvision torchaudio -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://download.pytorch.org/whl/cu130
 

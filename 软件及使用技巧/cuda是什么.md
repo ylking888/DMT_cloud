@@ -274,10 +274,11 @@ conda install "D:\pinokio\bin\miniconda\pkgs\cudatoolkit-11.8.0-h09e9e62_13.cond
  显示 (base) 表示已激活
 2.卸载现有的 PyTorch（如果是 CUDA 12.1 版本）
 pip uninstall torch torchvision torchaudio -y
-3.安装正确的 PyTorch
+3.安装正确的 PyTorch（使用官网安装，网络不稳定，报错）
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+![](assets/cuda是什么/file-20251207005832038.png)
 ### 使用国内镜像源
-1. 使用清华镜像源
+1. 使用清华镜像源，速度也不快。
 pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu130
 ![](assets/cuda是什么/file-20251207005721261.png)
 2. 或者使用阿里云镜像

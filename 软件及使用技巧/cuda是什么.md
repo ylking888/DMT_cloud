@@ -266,3 +266,6 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 > 没有CUDA，GPU只是游戏显卡；有了CUDA，GPU变成超级计算机。
 
 对于你的情况：如果安装的AI应用运行特别慢，或者要求安装CUDA相关包，说明它需要GPU加速。你可以先确认自己的硬件，然后通过Conda简化安装过程。如果硬件不支持，用CPU版本也能运行，只是速度会慢很多。
+
+# 手动下载安装
+下载网址[Manage | Anaconda.org](https://anaconda.org/conda-forge/cudatoolkit/files/manage?version=11.8.0)

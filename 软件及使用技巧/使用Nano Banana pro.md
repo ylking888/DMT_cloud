@@ -5,7 +5,7 @@
 
 2、feilo ai
 https://felo.ai/
-谷歌登录，赠送积分非常友好。并且生成的是可编辑的PPT
+谷歌登录，赠送积分非常友好。并且生成的是可编辑的PPT可以导出。
 ![](assets/使用Nano%20Banana%20pro/file-20251206090918726.png)
 
 3、iMini

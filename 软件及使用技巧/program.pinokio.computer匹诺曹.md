@@ -21,5 +21,5 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
 ![](assets/program.pinokio.computer匹诺曹/file-20251206144801222.png)
 你也可以按照教程部署Github上的项目。
 ![](assets/program.pinokio.computer匹诺曹/file-20251206145001469.png)
-![](assets/program.pinokio.computer匹诺曹/file-20251206145041789.png)
+![](assets/program.pinokio.computer匹诺曹/file-20251206145321554.png)
 开始自动下载安装。

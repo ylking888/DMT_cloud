@@ -269,3 +269,4 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 
 # 手动下载安装
 下载网址[Manage | Anaconda.org](https://anaconda.org/conda-forge/cudatoolkit/files/manage?version=11.8.0)
+conda install "D:\pinokio\bin\miniconda\pkgs\cudatoolkit-11.8.0-h09e9e62_13.conda"

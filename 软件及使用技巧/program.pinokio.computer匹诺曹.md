@@ -16,3 +16,4 @@
     然后点击 **“仍然运行”。**
 ![](assets/program.pinokio.computer匹诺曹/file-20251206144244213.png)
 # Quickstart  快速入门
+Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序。

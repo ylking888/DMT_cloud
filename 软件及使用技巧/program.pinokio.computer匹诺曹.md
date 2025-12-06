@@ -7,6 +7,7 @@
 解压缩下载的文件，你会看到一个 .exe 安装程序文件。
 
 #### Step 3. Install  步骤 3. 安装
+![](assets/program.pinokio.computer匹诺曹/file-20251206144204564.png)
 1. Click **"More Info"**  
     点击 **“更多信息”**
 2. Then click **"Run anyway"**  

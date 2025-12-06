@@ -8,6 +8,8 @@
 
 #### Step 3. Install  步骤 3. 安装
 ![](assets/program.pinokio.computer匹诺曹/file-20251206144204564.png)
+如果出现提示信息
+![](assets/program.pinokio.computer匹诺曹/file-20251206144308197.png)
 1. Click **"More Info"**  
     点击 **“更多信息”**
 2. Then click **"Run anyway"**  

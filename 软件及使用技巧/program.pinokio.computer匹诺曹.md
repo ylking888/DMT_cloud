@@ -23,3 +23,12 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
 ![](assets/program.pinokio.computer匹诺曹/file-20251206145001469.png)
 ![](assets/program.pinokio.computer匹诺曹/file-20251206145321554.png)
 开始自动下载安装。
+快速浏览一下每个文件夹的功能：
+1. `api`  ：存储所有已下载的应用程序（脚本）。
+    此文件夹内的文件夹将显示在您的 Pinokio 主页上。
+2. `bin` ：存储多个应用程序共享的全局安装模块，这样您就不需要重复安装它们。例如， `ffmpeg` 、 `nodejs` 、 `python` 等。
+3. `cache` ：存储您运行的应用程序自动缓存的所有文件。
+    - 如果出现问题，删除此文件夹并重新开始可能会解决问题。
+    - 删除 `cache` 文件夹是可以的，因为当您开始使用应用程序时，应用程序会自动重新填充该文件夹。
+4. `drive` ：存储由 [fs.link](https://github.com/pinokiocomputer/program.pinokio.computer#fslink) Pinokio API 创建的所有虚拟驱动器
+5. `logs` ：存储每个应用程序的所有日志文件。![](assets/program.pinokio.computer匹诺曹/file-20251206150710600.png)

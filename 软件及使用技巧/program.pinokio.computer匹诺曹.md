@@ -12,3 +12,4 @@
     点击 **“更多信息”**
 2. Then click **"Run anyway"**  
     然后点击 **“仍然运行”。**
+![](assets/program.pinokio.computer匹诺曹/file-20251206144244213.png)

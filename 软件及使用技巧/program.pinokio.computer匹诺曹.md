@@ -22,7 +22,7 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
 这个安装过程是比较漫长的，而且一旦网络获取失败，它会报错，退出后没有检查已安装的部分，而是清除了bin目录下上一次的全局安装模块，重新再来一遍，非常的耗时。deepseek说是安装到windows环境中，官方文件说是安装在pinokio独立的环境中。
 实际上，安装的过程并不顺利，多次中断，需要重新再来，耗费了大量的耐心。
 ![](assets/program.pinokio.computer匹诺曹/file-20251206195049650.png)
-开始自动下载安装。
+![](assets/program.pinokio.computer匹诺曹/file-20251206200434524.png)![](assets/program.pinokio.computer匹诺曹/file-20251206200456724.png)![](assets/program.pinokio.computer匹诺曹/file-20251206200526474.png)![](assets/program.pinokio.computer匹诺曹/file-20251206200627755.png)开始自动下载安装。
 快速浏览一下每个文件夹的功能：
 1. `api`  ：存储所有已下载的应用程序（脚本）。
     此文件夹内的文件夹将显示在您的 Pinokio 主页上。

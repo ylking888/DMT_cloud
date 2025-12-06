@@ -270,10 +270,18 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 # 手动下载安装
 下载网址[Manage | Anaconda.org](https://anaconda.org/conda-forge/cudatoolkit/files/manage?version=11.8.0)
 conda install "D:\pinokio\bin\miniconda\pkgs\cudatoolkit-11.8.0-h09e9e62_13.conda"
-1. 确保你在 Pinokio 的 base 环境（已激活）
+1.确保 Pinokio 的 base 环境已激活
  显示 (base) 表示已激活
- 2. 卸载现有的 PyTorch（如果是 CUDA 12.1 版本）
+2.卸载现有的 PyTorch（如果是 CUDA 12.1 版本）
 pip uninstall torch torchvision torchaudio -y
-安装正确的 PyTorch
-pip uninstall torch torchvision torchaudio -y
+3.安装正确的 PyTorch
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
+### 使用国内镜像源
+1. 使用清华镜像源
+pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu130
+
+2. 或者使用阿里云镜像
+pip install torch torchvision torchaudio -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://download.pytorch.org/whl/cu130
+
+3. 或者使用豆瓣镜像
+pip install torch torchvision torchaudio -i https://pypi.douban.com/simple/ --extra-index-url https://download.pytorch.org/whl/cu130

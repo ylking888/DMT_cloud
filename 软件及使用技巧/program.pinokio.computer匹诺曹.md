@@ -2,6 +2,7 @@
 [Pinokio官网](https://pinokio.co/)
 #### Step 1. Download  第一步：下载
 到官网下载最新版安装程序[Pinokio官网](https://pinokio.co/)
+[Download for Windows  下载适用于 Windows 的版本3.8.0](https://github.com/pinokiocomputer/pinokio/releases/download/3.8.0/Pinokio-3.8.0-win32.zip)
 
 #### Step 2. Install  安装
 ![](assets/program.pinokio.computer匹诺曹/file-20251206144204564.png)

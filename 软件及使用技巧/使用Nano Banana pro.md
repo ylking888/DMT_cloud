@@ -1,11 +1,11 @@
 1、海螺ai
 [海螺视频：每个想法都是一部大片](https://hailuoai.com/agent)
-注册会员使用
+微信登录，注册会员免费使用香蕉Pro（**截止12月31号**）
 ![](assets/使用Nano%20Banana%20pro/file-20251206091005816.png)
 
 2、feilo ai
 https://felo.ai/
-赠送积分非常友好
+谷歌登录，赠送积分非常友好
 ![](assets/使用Nano%20Banana%20pro/file-20251206090918726.png)
 
 3、iMini

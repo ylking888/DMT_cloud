@@ -17,3 +17,6 @@
 ![](assets/program.pinokio.computer匹诺曹/file-20251206144244213.png)
 # Quickstart  快速入门
 Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序。
+你可以浏览主页上你感兴趣的软件一键部署
+![](assets/program.pinokio.computer匹诺曹/file-20251206144801222.png)
+你也可以按照教程部署Github上的项目。

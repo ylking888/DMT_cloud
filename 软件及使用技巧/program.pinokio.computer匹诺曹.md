@@ -24,7 +24,7 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
 ![](assets/program.pinokio.computer匹诺曹/file-20251206195049650.png)
 [conda是什么](conda是什么.md)
 ![](assets/program.pinokio.computer匹诺曹/file-20251206200434524.png)![](assets/program.pinokio.computer匹诺曹/file-20251206200456724.png)![](assets/program.pinokio.computer匹诺曹/file-20251206200526474.png)![](assets/program.pinokio.computer匹诺曹/file-20251206200627755.png)
-
+[cuda是什么](cuda是什么.md)
 开始自动下载安装。
 快速浏览一下每个文件夹的功能：
 1. `api`  ：存储所有已下载的应用程序（脚本）。

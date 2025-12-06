@@ -63,3 +63,5 @@ http://ax570383885.serv00.net/zy.txt
 https://iptv-org.github.io/iptv/index.m3u
 这里有1W多电视台可以点播。
 ![](assets/投影机电视直播TV软件筛选/file-20251206113702732.png)
+![](assets/投影机电视直播TV软件筛选/file-20251206114702727.png)
+![](assets/投影机电视直播TV软件筛选/file-20251206114740100.png)

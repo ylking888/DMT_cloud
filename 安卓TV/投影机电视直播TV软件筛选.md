@@ -61,4 +61,5 @@ http://ax570383885.serv00.net/zy.txt
 只需将其中一个播放列表的链接粘贴到[任何支持直播的视频播放器](https://github.com/iptv-org/awesome-iptv#apps)中，然后按 _“打开”_ 即可。
 
 https://iptv-org.github.io/iptv/index.m3u
-
+这里有1W多电视台可以点播。
+![](assets/投影机电视直播TV软件筛选/file-20251206113702732.png)

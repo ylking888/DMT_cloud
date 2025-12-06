@@ -4,3 +4,7 @@
 2、feilo ai
 https://felo.ai/
 
+3、iMini
+[iMini AI | All-in-One AI Image and Video Creation Platform](https://imini.com/)
+
+4、imarena.ai

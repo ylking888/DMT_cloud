@@ -12,4 +12,4 @@
 我们可以看到播客栏目内容非常丰富
 ![](assets/影子跟读插件language%20REACTOR/file-20251207162106939.png)
 此外她还有对话机器人，可以练习口语。
-![](assets/影子跟读插件language%20REACTOR/file-20251207162218351.png)
+![](assets/影子跟读插件language%20REACTOR/file-20251207162414885.png)她完全能够听的懂你的中英文混杂的交流。

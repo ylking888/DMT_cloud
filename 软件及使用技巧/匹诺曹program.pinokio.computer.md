@@ -24,7 +24,8 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
 ![](assets/匹诺曹program.pinokio.computer/file-20251206201538624%201.png)
 [conda是什么](conda是什么.md)
 ![](assets/匹诺曹program.pinokio.computer/file-20251206201538622%202.png)![](assets/匹诺曹program.pinokio.computer/file-20251206201538622%201.png)![](assets/匹诺曹program.pinokio.computer/file-20251206201538622.png)![](assets/匹诺曹program.pinokio.computer/file-20251206201538621.png)
-[cuda是什么及安装遇到的坑：注意显卡的版本](cuda是什么及安装遇到的坑：注意显卡的版本.md)
+- [cuda是什么及安装遇到的坑：注意显卡的版本](cuda是什么及安装遇到的坑：注意显卡的版本.md)
+- [pip是什么？简单来说，pip 就是 Python 的“应用商店”](pip是什么？简单来说，pip%20就是%20Python%20的“应用商店”.md)
 开始自动下载安装。
 快速浏览一下每个文件夹的功能：
 1. `api`  ：存储所有已下载的应用程序（脚本）。

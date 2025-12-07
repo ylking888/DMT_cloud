@@ -275,15 +275,22 @@ D:\pinokio>call bin\miniconda\Scripts\activate.bat
  显示 (base) 表示已激活
 2.卸载现有的 PyTorch（如果是 CUDA 12.1 版本）
 pip uninstall torch torchvision torchaudio -y
+验证 nvcc，可以看到cuda为13.1版本
+![](assets/cuda是什么及安装遇到的坑：注意显卡的版本/file-20251207092935910.png)
 3.安装正确的 PyTorch（使用官网安装，网络不稳定，报错）
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
 ![](assets/cuda是什么及安装遇到的坑：注意显卡的版本/file-20251207010409324.png)
 ### 使用国内镜像源
-1. 使用清华镜像源，速度也不快。
+1. 使用清华镜像源，速度也不快，最终失败。
 pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu130
 ![](assets/cuda是什么及安装遇到的坑：注意显卡的版本/file-20251207010409325.png)
-2. 或者使用阿里云镜像
+2. 或者使用阿里云镜像，失败
 pip install torch torchvision torchaudio -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://download.pytorch.org/whl/cu130
+### 手动下载并安装 wheel 文件
+下载以下文件（适用于 Python 3.10, CUDA 13.0, Windows 64-bit）：
+# 使用 PowerShell 下载
+powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu130/torch-2.3.0%2Bcu130-cp310-cp310-win_amd64.whl' -OutFile 'torch-2.3.0-cu130.whl'"
 
-3. 或者使用豆瓣镜像
-pip install torch torchvision torchaudio -i https://pypi.douban.com/simple/ --extra-index-url https://download.pytorch.org/whl/cu130
+powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu130/torchvision-0.18.0%2Bcu130-cp310-cp310-win_amd64.whl' -OutFile 'torchvision-0.18.0-cu130.whl'"
+
+powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu130/torchaudio-2.3.0%2Bcu130-cp310-cp310-win_amd64.whl' -OutFile 'torchaudio-2.3.0-cu130.whl'"

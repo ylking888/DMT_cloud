@@ -1,6 +1,8 @@
 打开谷歌插件商店
 [Chrome 应用商店 - 扩展程序](https://chromewebstore.google.com/category/extensions?hl=zh-CN)
 搜索Trancy
+官网：[Trancy - 沉浸式翻译 & YouTube AI 双语字幕 & 语言学习助手](https://www.trancy.org/zh-cn)
+
 ![](assets/Trancy%20-%20沉浸式翻译、双语字幕、语言学习/file-20251207163010634.png)
 ## 概述
 

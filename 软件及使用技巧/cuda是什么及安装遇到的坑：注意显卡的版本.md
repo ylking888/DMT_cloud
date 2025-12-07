@@ -299,4 +299,4 @@ https://download.pytorch.org/
 ![](assets/cuda是什么及安装遇到的坑：注意显卡的版本/file-20251207094501750.png)
 pip install torch-2.9.0+cu130-cp310-cp310-win_amd64.whl
 pip install torchvision-0.24.0+cu130-cp310-cp310-win_amd64.whl
-pip install torchaudio-2.3.0-cu130.whl
+pip install torchaudio-2.9.0+cu130-cp310-cp310-win_amd64.whl

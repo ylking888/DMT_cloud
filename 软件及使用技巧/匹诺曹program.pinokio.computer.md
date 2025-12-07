@@ -36,3 +36,14 @@ Pinokio 是一个独立的平台，允许您以隔离的方式安装应用程序
     - 删除 `cache` 文件夹是可以的，因为当您开始使用应用程序时，应用程序会自动重新填充该文件夹。
 4. `drive` ：存储由 [fs.link](https://github.com/pinokiocomputer/program.pinokio.computer#fslink) Pinokio API 创建的所有虚拟驱动器
 5. `logs` ：存储每个应用程序的所有日志文件。![](assets/匹诺曹program.pinokio.computer/file-20251206201538641%201.png)
+安装卡顿在这个状态
+![](assets/匹诺曹program.pinokio.computer/file-20251207102222023.png)
+我们注意到，命令行显示(env) (base) c:\pinokio\bin\py>
+(env)    # Python venv 虚拟环境（项目特定）
+(base)   # Anaconda 基础环境（系统级）
+c:\pinokio\bin\py>  # 当前目录
+### **为什么会有两个环境提示符？**
+这是因为：
+- **base** 环境提供了 `conda` 工具和一些基础依赖
+- **env** 环境是 Pinokio 创建的专用环境，用于安装项目特定的依赖
+- **两个环境都被激活**是为了让安装脚本能够访问两个环境的工具和库

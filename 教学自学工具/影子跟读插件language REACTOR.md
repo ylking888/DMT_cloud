@@ -9,3 +9,7 @@
 ![](assets/影子跟读插件language%20REACTOR/file-20251207161605565.png)
 ![](assets/影子跟读插件language%20REACTOR/file-20251207161647560.png)
 你甚至可以在右上角调整语速。
+我们可以看到播客栏目内容非常丰富
+![](assets/影子跟读插件language%20REACTOR/file-20251207162106939.png)
+此外她还有对话机器人，可以练习口语。
+![](assets/影子跟读插件language%20REACTOR/file-20251207162218351.png)

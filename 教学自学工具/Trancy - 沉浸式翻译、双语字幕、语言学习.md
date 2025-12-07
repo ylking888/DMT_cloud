@@ -44,3 +44,5 @@ Trancy 不仅提供对 YouTube, Udemy, Disney+, TED, edX, Kehan, Coursera 等平
 
 ![](assets/Trancy%20-%20沉浸式翻译、双语字幕、语言学习/file-20251207163654812.png)
 ![](assets/Trancy%20-%20沉浸式翻译、双语字幕、语言学习/file-20251207163746160.png)
+官网上的学习中心
+![](assets/Trancy%20-%20沉浸式翻译、双语字幕、语言学习/file-20251207164733747.png)

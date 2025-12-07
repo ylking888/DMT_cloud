@@ -8,3 +8,4 @@
 你甚至可以播放本地的视频，自动生成中英文字幕
 ![](assets/影子跟读插件language%20REACTOR/file-20251207161605565.png)
 ![](assets/影子跟读插件language%20REACTOR/file-20251207161647560.png)
+你甚至可以在右上角调整语速。

@@ -5,3 +5,6 @@
 ![](assets/影子跟读插件language%20REACTOR/file-20251207161049584.png)
 当你打开YouTube的长视频时，右侧自动出现跟读字幕，鼠标移动点击可查字典。
 ![](assets/影子跟读插件language%20REACTOR/file-20251207161141778.png)
+你甚至可以播放本地的视频，自动生成中英文字幕
+![](assets/影子跟读插件language%20REACTOR/file-20251207161605565.png)
+![](assets/影子跟读插件language%20REACTOR/file-20251207161647560.png)

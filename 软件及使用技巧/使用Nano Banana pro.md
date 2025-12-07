@@ -12,3 +12,5 @@ https://felo.ai/
 [iMini AI | All-in-One AI Image and Video Creation Platform](https://imini.com/)
 
 
+# Ai提示词网站
+[Nanobanana | AI Image Prompts & Generator Library](https://www.aiwind.org/)

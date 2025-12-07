@@ -271,6 +271,7 @@ pip install torch --index-url https://download.pytorch.org/whl/cpu
 下载网址[Manage | Anaconda.org](https://anaconda.org/conda-forge/cudatoolkit/files/manage?version=11.8.0)
 conda install "D:\pinokio\bin\miniconda\pkgs\cudatoolkit-11.8.0-h09e9e62_13.conda"
 1.确保 Pinokio 的 base 环境已激活
+D:\pinokio>call bin\miniconda\Scripts\activate.bat
  显示 (base) 表示已激活
 2.卸载现有的 PyTorch（如果是 CUDA 12.1 版本）
 pip uninstall torch torchvision torchaudio -y

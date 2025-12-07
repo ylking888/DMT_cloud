@@ -294,3 +294,6 @@ powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu
 powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu130/torchvision-0.18.0%2Bcu130-cp310-cp310-win_amd64.whl' -OutFile 'torchvision-0.18.0-cu130.whl'"
 
 powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu130/torchaudio-2.3.0%2Bcu130-cp310-cp310-win_amd64.whl' -OutFile 'torchaudio-2.3.0-cu130.whl'"
+### 手动检索
+https://download.pytorch.org/
+![](assets/cuda是什么及安装遇到的坑：注意显卡的版本/file-20251207094501750.png)

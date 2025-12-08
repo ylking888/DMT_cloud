@@ -6,5 +6,5 @@
 # OpenAI创始人Andrej Karpathy
 ![](assets/油管上学AI博主推荐/file-20251208095635609.png)
 
-# 吴恩达
+# 机器学习：吴恩达
 ![](assets/油管上学AI博主推荐/file-20251208095755580.png)

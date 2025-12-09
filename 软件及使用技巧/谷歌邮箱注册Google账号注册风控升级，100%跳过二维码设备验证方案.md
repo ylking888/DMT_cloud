@@ -70,3 +70,33 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
     - **A**: 请再次确认代理软件的 **TUN/透明代理** 模式已开启。如果仍不行，尝试在模拟器设置的网络选项中，将 DNS 修改为 Google DNS (8.8.8.8)。
 - **Q: 注册成功后需要注意什么？**
     - **A**: 新号建议在模拟器内“养号”三天（如看看 YouTube、收发邮件），不要立即在指纹复杂的 PC 浏览器上登录，否则容易触发二次风控。
+# gemini大学生认证
+
+Gemini 3pro大学生免费1年领取活动持续到12.9号没领赶紧去价值一千超有用！！
+
+## 1.首先去官网[https://gemini.google.com/](https://gemini.google.com/) 点击升级
+
+如果这一步出现说地区禁用这个大概率就是你节点问题 需要切换节点换魔法等。可以通过[https://ipdata.co/](https://ipdata.co/)这个网站查询 最好是美国ip并且下面的威胁为绿色通过概率大
+
+## 2.学生认证 这里有两种方法
+
+- 通过ai生成学生信息以及成绩单然后使用模板网站生成学生证推荐
+    - [https://thanhnguyxn.github.io/student-card-generator/](https://thanhnguyxn.github.io/student-card-generator/)
+    - [https://student.frp.gs/](https://student.frp.gs/)
+- 通过SheerID认证这个是最简单的只需要复制下面页面上的链接就可以了然后有两种方式
+    - [https://ikey.me/](https://ikey.me/)
+    - 通过Telegram 验证学生身份
+        - 教程可以参考[https://github.com/TanhNguyen/SheerID-Verification-Tool/blob/master/docs/README.zh.md](https://github.com/TanhNguyen/SheerID-Verification-Tool/blob/master/docs/README.zh.md)
+            1. 打开Telegram并访问以下机器人之一：
+                - SheerID Verify Bot
+                - SheerID VIP Bot
+            2. 发送此命令：`/verify https://verify.sheerid.com/verify/****`（替换为您的验证链接）
+            3. 等待机器人确认
+
+## 3.最后一步就是绑卡了
+
+需要Mastercard或者Visa类的国际银行卡或者使用PayPal或者虚拟卡这类怎么申请就不过多说明，
+
+如果没有想弄还是非常麻烦的推荐去闲鱼花几块钱弄一下 省时省心
+
+到此就完成订阅了！！！祝大家都能成功

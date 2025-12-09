@@ -1,6 +1,4 @@
-项目地址：https://github.com/ZuodaoTech/everyone-can-use-english
-
-![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=N2Y4Y2I1ODhjNTE5MzY1OTQ2ZmY1YjVhZGU0YjMxNDNfZEJNWFJtRDhGdlFVM2tsandybm9hc0dmQ3B2bEZFWGhfVG9rZW46TDl0UWJja1hRb1VnZ1F4dDNPSmNrQUUwbmxjXzE3NjUxNTczNzM6MTc2NTE2MDk3M19WNA)
+项目地址：[https://github.com/ZuodaoTech/everyone-can-use-english](https://github.com/ZuodaoTech/everyone-can-use-english)
 
 ## 桌面版安装
 

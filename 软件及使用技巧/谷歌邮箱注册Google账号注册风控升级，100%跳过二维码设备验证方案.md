@@ -9,7 +9,6 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
 **解决方案核心**： 使用 **BlueStacks（蓝叠）** 等安卓模拟器，在 PC 上模拟出一台全新的安卓手机。对 Google 服务器而言，这看起来像是一个全新的移动设备在尝试注册，因此通常会放宽验证门槛，允许直接通过手机号短信验证，如果你的ip足够纯净 甚至可以跳过扫码验证。
 
 ---
-
 ## 环境与工具准备
 
 在开始之前，请确保已准备好以下环境：
@@ -78,6 +77,9 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
 # gemini大学生认证
 
 Gemini 3pro大学生免费1年领取活动持续到12.9号没领赶紧去价值一千超有用！！
+[AI for Students: Free Study, Writing, & Career Tools & Training](https://grow.google/students/)
+![](assets/谷歌邮箱注册Google账号注册风控升级，100%跳过二维码设备验证方案/file-20251209111915684.png)
+![](assets/谷歌邮箱注册Google账号注册风控升级，100%跳过二维码设备验证方案/file-20251209111933447.png)
 
 ## 1.首先去官网[https://gemini.google.com/](https://gemini.google.com/) 点击升级
 

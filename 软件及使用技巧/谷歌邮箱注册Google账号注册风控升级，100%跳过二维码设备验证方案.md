@@ -17,7 +17,7 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
 1. **安卓模拟器**：
     - 推荐软件：**BlueStacks 5 国际版** (请勿使用国内版)。
     - 版本建议：**Android 11** 或 **Android 13 (Beta)** 实例（高版本安卓系统仿真度更高）。
-    - _下载地址请访问 BlueStacks 国际官网_
+    - _下载地址请访问 BlueStacks 国际官网_**【！打不开！】**
         - [**](https://www.bluestacks.com/download.html)[https://www.bluestacks.com/download.html**](https://www.bluestacks.com/download.html)_。_
 2. **网络环境（关键点）**：
     - 需要拥有稳定的科学网络节点。

@@ -1,4 +1,4 @@
-官网地址：[Search - Consensus: AI Search Engine for Research](https://consensus.app/)。登录，** 17579646@qq.com **
+官网地址：[Search - Consensus: AI Search Engine for Research](https://consensus.app/)。登录，** 17579646@qq.com **邮箱收登录验证码。
 
 好的，为您详细介绍 **Consensus** 网站及其使用方法。
 

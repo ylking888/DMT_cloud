@@ -2,4 +2,6 @@
 ![](assets/DEEPSEEK指令/file-20251209084941633.png)
 生成完毕，点击运行。
 ![](assets/DEEPSEEK指令/file-20251209085009157.png)
+对比扫描件原稿
+![](assets/DEEPSEEK指令/file-20251209085157700.png)
 

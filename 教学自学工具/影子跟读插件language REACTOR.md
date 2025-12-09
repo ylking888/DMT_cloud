@@ -17,11 +17,6 @@
 
 # 其他跟读软件推荐【但是都没有language REACTOR好用】
 
-# [Memo AI | AI 驱动的 All in One 本地音视频转文字，字幕翻译，语音合成以及 AI 总结思维导图生成工具](https://memo.ac/zh/)
-说明书：[学习使用 Memo AI | Memo AI](https://memo.ac/zh/guide/start-here)
-![](assets/影子跟读插件language%20REACTOR/file-20251209175631136.png)
-
-
 # PotPlayer
 PotPlayer无需额外字幕插件，通过其内置功能就能搭配本地字幕实现“任意句子点播+跟读”，具体操作步骤如下：
 ![](assets/影子跟读插件language%20REACTOR/file-20251209172230772.png)

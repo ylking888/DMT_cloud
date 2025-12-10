@@ -4,4 +4,8 @@
 # 1、安装windows Hyper-V组件
 ![](assets/TrendRadar-3.5.0/file-20251210140205898.png)
 
-# 2、安装
+# 2、安装Docker Desktop
+![](assets/TrendRadar-3.5.0/file-20251210140342244.png)
+
+# 3、获取代码
+

@@ -115,7 +115,7 @@
 curl -x http://127.0.0.1:17890 -H "Authorization: Bearer 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" https://api.openai.com/v1/models
 如果返回模型列表表示网络没有问题
 ![](assets/AI%20医疗会诊面板/file-20251210162404691.png)
-#### 2. Anthropic规范
+#### 2. Anthropic规范【提示不对新用户开放，无法获取API Key】
 - **API Key 获取**：访问 [Anthropic Console](https://console.anthropic.com/)
 - **推荐模型**：
     - `claude-3-5-sonnet-20241022`：最新旗舰模型
@@ -124,10 +124,7 @@ curl -x http://127.0.0.1:17890 -H "Authorization: Bearer sk-proj-rt9Y-MXl7u_KmUw
 - **Base URL**：默认为 `https://api.anthropic.com/v1`
 - **说明**：符合 Anthropic API 规范的服务商均可使用此选项
 
-#### 3. Gemini规范
-
-[](https://github.com/DragonChenCL/ai-doctor#3-gemini%E8%A7%84%E8%8C%83)
-
+#### 3. Gemini规范【失败，不开放，无法获取API Key】
 - **API Key 获取**：访问 [Google AI Studio](https://aistudio.google.com/app/apikey)
 - **推荐模型**：
     - `gemini-1.5-pro`：旗舰模型
@@ -136,9 +133,6 @@ curl -x http://127.0.0.1:17890 -H "Authorization: Bearer sk-proj-rt9Y-MXl7u_KmUw
 - **说明**：符合 Gemini API 规范的服务商均可使用此选项
 
 #### 4. 硅基流动
-
-[](https://github.com/DragonChenCL/ai-doctor#4-%E7%A1%85%E5%9F%BA%E6%B5%81%E5%8A%A8)
-
 - **API Key 获取**：访问 [硅基流动控制台](https://cloud.siliconflow.cn/account/ak)
 - **推荐模型**：
     - `Qwen/Qwen2.5-7B-Instruct`：通义千问系列

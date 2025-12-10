@@ -111,6 +111,10 @@
 - **Base URL**：默认为 `https://api.openai.com/v1`
 - **说明**：符合 OpenAI API 规范的服务商均可使用此选项
 ![](assets/AI%20医疗会诊面板/file-20251210160925691.png)
+如果将API Key输入全局设置后提示获取模型失败，排查网络连接
+curl -x http://127.0.0.1:17890 -H "Authorization: Bearer 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" https://api.openai.com/v1/models
+如果返回模型列表表示网络没有问题
+![](assets/AI%20医疗会诊面板/file-20251210162404691.png)
 #### 2. Anthropic规范
 - **API Key 获取**：访问 [Anthropic Console](https://console.anthropic.com/)
 - **推荐模型**：

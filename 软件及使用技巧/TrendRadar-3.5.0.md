@@ -13,6 +13,30 @@ git clone https://github.com/sansan0/TrendRadar.git
 ``` 
 但是，git失败，所以我用的方法是到## [Releases](https://github.com/sansan0/TrendRadar/releases)下载了最新版本到本地，解压到文件夹D:\TrendRadar-3.5.0
 
-# 4、获取飞书
+# 4、获取飞书`Webhook URL` 测试使用
+- 在飞书上新建一个群组——创建群组
+	- **群模式**：选择对话
+	- **群名称**：可以简单命名为 `TrendRadar测试群`。
+	- **添加成员**：为了测试不打扰他人，**在搜索框中搜索并添加自己的名字**，创建一个只有一个人的群即可。
+	- 创建完成后，就可以在群设置里添加“自定义机器人”并获取 `Webhook URL` 。
+` https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43b7-a8ea-26bf83281543`
 
+# 5、检查设置环境变量
+来到代码的目录下，使用记事本查看`.env`文件。
+- **开启核心开关**（如果还没开启）：
+```
+    # 是否启用爬虫 (true/false)
+    ENABLE_CRAWLER=true
+    # 是否启用通知 (true/false)
+    ENABLE_NOTIFICATION=true
+```
+- 将飞书机器人**webhook URL**添加到指定位置：
+```
+# 飞书机器人 webhook URL（多账号用 ; 分隔）
+FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43b7-a8ea-26bf83281543
+```
+保存。
+
+# 6、装载Docker
+- 在D:\TrendRadar-3.5.0\docker地址栏输入CMD回车进入命令窗口。
 

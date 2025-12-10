@@ -3,4 +3,6 @@
 # 1、准备好Docker Desktop
 
 # 2、获取代码
-在D盘运行`docker pull ghcr.io/wu529778790/panhub.shenzjd.com:latest`一键部署
+在CMD下运行`docker pull ghcr.io/wu529778790/panhub.shenzjd.com:latest`一键部署
+![](assets/本地部署网盘搜索PanHub/file-20251210152643862.png)
+在Docker下

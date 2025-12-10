@@ -52,7 +52,42 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 # 7、设置搜索的热点关键词
 在D:\TrendRadar-3.5.0\config目录下，打开frequency_words.txt文件，修改你所需要的关键词。
 
-
+# 8、**Web 服务器支持**
+- 新增内置 Web 服务器，支持通过浏览器访问生成的报告
+- 通过 `manage.py` 命令控制启动/停止：`docker exec -it trend-radar python manage.py start_webserver`
+- 访问地址：`http://localhost:8080`（端口可配置）
+![](assets/TrendRadar-3.5.0/file-20251210144054836.png)
 当日汇总 HTML 同时生成到两个位置
 - `index.html`（项目根目录）：供 GitHub Pages 访问
 - `output/index.html`：通过 Docker Volume 挂载，宿主机可直接访问
+
+# 9、报告配置
+**配置位置：** `config/config.yaml` 的 `report` 部分
+```
+report:
+  mode: "daily"                    # 推送模式
+  rank_threshold: 5                # 排名高亮阈值
+  sort_by_position_first: false    # 排序优先级
+  max_news_per_keyword: 0          # 每个关键词最大显示数量
+  reverse_content_order: false     # 内容顺序配置
+```
+#### 配置项详解
+
+|配置项|类型|默认值|说明|
+|---|---|---|---|
+|`mode`|string|`daily`|推送模式，可选 `daily`/`incremental`/`current`，详见 [推送模式详解](https://github.com/sansan0/TrendRadar?tab=readme-ov-file#3-%E6%8E%A8%E9%80%81%E6%A8%A1%E5%BC%8F%E8%AF%A6%E8%A7%A3)|
+|`rank_threshold`|int|`5`|排名高亮阈值，排名 ≤ 该值的新闻会加粗显示|
+|`sort_by_position_first`|bool|`false`|排序优先级：`false`=按热点条数排序，`true`=按配置位置排序|
+|`max_news_per_keyword`|int|`0`|每个关键词最大显示数量，`0`=不限制|
+|`reverse_content_order`|bool|`false`|内容顺序：`false`=热点词汇统计在前，`true`=新增热点新闻在前|
+#### 内容顺序配置（v3.5.0 新增）
+控制推送消息和 HTML 报告中两部分内容的显示顺序：
+
+|配置值|显示顺序|
+|---|---|
+|`false`（默认）|① 热点词汇统计 → ② 新增热点新闻|
+|`true`|① 新增热点新闻 → ② 热点词汇统计|
+
+**适用场景：**
+- `false`（默认）：适合关注关键词匹配结果的用户，先看分类统计
+- `true`：适合关注最新动态的用户，优先查看新增热点

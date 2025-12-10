@@ -2,7 +2,16 @@
 
 # 1、准备好Docker Desktop
 
-# 2、获取代码
-在CMD下运行`docker pull ghcr.io/wu529778790/panhub.shenzjd.com:latest`一键部署
+# 2、获取Docker镜像
+在CMD下运行`docker pull ghcr.io/wu529778790/panhub.shenzjd.com:latest`
 ![](assets/本地部署网盘搜索PanHub/file-20251210152643862.png)
-在Docker下
+在Docker的images下就会有镜像了。
+
+# 3、运行镜像
+在CMD下执行`docker run --name panhub -p 3000:3000 -d ghcr.io/wu529778790/panhub.shenzjd.com:latest`
+![](assets/本地部署网盘搜索PanHub/file-20251210152931120.png)
+
+# 4、打开WEB端
+[PanHub - 全网最全的网盘搜索 · PanHub](http://127.0.0.1:3000/)
+
+

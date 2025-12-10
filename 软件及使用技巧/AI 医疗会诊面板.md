@@ -143,9 +143,6 @@ curl -x http://127.0.0.1:17890 -H "Authorization: Bearer sk-proj-rt9Y-MXl7u_KmUw
 - **文档**：[硅基流动 API 文档](https://docs.siliconflow.cn/cn/userguide/introduction)
 
 #### 5. 魔搭社区
-
-[](https://github.com/DragonChenCL/ai-doctor#5-%E9%AD%94%E6%90%AD%E7%A4%BE%E5%8C%BA)
-
 - **API Key 获取**：访问 [魔搭社区 API-KEY](https://modelscope.cn/my/myaccesstoken)
 - **推荐模型**：
     - `qwen-turbo`：通义千问 Turbo

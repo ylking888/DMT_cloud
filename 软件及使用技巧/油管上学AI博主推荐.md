@@ -15,8 +15,11 @@ AI教母李飞飞的学生，他能用浅显易懂的语言解释复杂的AI原�
  
 
 # Greg Isenberg
+[Greg Isenberg - YouTube](https://www.youtube.com/@GregIsenberg)
 分享AI时代的各种创业想法，包括做产品、找赛道和赚钱的思路，非常具备实操性。 第四位，每周会发半小时的视频，总结盘点最新的AI热点和工具，内容轻松有趣，属于对非专业人士非常友好的AI科普。
 ![](assets/油管上学AI博主推荐/file-20251210082630906.png)
 
-Matt Wolfe
-它会深度解读AI论文和技术报告，能帮你看懂AI行业真正的前沿。最后三连一下，祝大家学的开心。 
+# Matt Wolfe
+[Matt Wolfe - YouTube](https://www.youtube.com/@mreflow)
+深度解读AI论文和技术报告，能帮你看懂AI行业真正的前沿。
+![](assets/油管上学AI博主推荐/file-20251210082702564.png)

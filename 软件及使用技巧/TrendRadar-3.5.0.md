@@ -37,11 +37,12 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 ```
 保存。
 
-# 6、装载Docker
+# 6、装载Docker镜像并运行
 - 在D:\TrendRadar-3.5.0\docker地址栏输入CMD回车进入命令窗口。
 目录中的 `docker-compose.yml` 和 `docker-compose-build.yml` 区别在于：
 - `docker-compose.yml`：**直接使用线上编译好的镜像**，启动最快，是常规选择。
 - `docker-compose-build.yml`：**从源代码重新构建镜像**，仅在你想修改代码或Dockerfile，需要自定义构建时使用。
 **使用docker-compose up -d命令**，它会默认读取 `docker-compose.yml` 文件。
 ![](assets/TrendRadar-3.5.0/file-20251210142541553.png)
-此时Docker Desktop上随即运行起
+此时Docker Desktop上随即运行起trend-rad，单击后可查看运行日志详情。
+![](assets/TrendRadar-3.5.0/file-20251210142752787.png)

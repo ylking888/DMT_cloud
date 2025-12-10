@@ -46,3 +46,8 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 ![](assets/TrendRadar-3.5.0/file-20251210142541553.png)
 此时Docker Desktop上随即运行起trend-rad，单击后可查看运行日志详情。
 ![](assets/TrendRadar-3.5.0/file-20251210142752787.png)
+![](assets/TrendRadar-3.5.0/file-20251210142955445.png)
+飞书上也随即收到机器人发来的信息。
+
+# 7、设置搜索的热点关键词
+在D:\TrendRadar-3.5.0\config目录下，打开frequency_words.txt文件，修改你所需要的关键词。

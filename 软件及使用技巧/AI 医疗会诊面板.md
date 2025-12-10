@@ -141,7 +141,7 @@ curl -x http://127.0.0.1:17890 -H "Authorization: Bearer sk-proj-rt9Y-MXl7u_KmUw
 - **Base URL**：默认为 `https://api.siliconflow.cn`
 - **说明**：硅基流动是国内领先的 AI 推理加速平台，提供高性价比的模型服务
 - **文档**：[硅基流动 API 文档](https://docs.siliconflow.cn/cn/userguide/introduction)
-
+`sk-mwnwqxmqdusyjutkmjgnielaayzmkojitzefetfyzujqxjlk`
 #### 5. 魔搭社区【国内，不走墙，需要修改js代码加个判断】
 - **API Key 获取**：访问 [魔搭社区 API-KEY](https://modelscope.cn/my/myaccesstoken)
 - **推荐模型**：

@@ -51,3 +51,8 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 
 # 7、设置搜索的热点关键词
 在D:\TrendRadar-3.5.0\config目录下，打开frequency_words.txt文件，修改你所需要的关键词。
+
+
+当日汇总 HTML 同时生成到两个位置
+- `index.html`（项目根目录）：供 GitHub Pages 访问
+- `output/index.html`：通过 Docker Volume 挂载，宿主机可直接访问

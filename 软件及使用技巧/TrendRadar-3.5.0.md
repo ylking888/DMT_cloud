@@ -146,9 +146,6 @@ Cron 是一种定时任务格式，由 5 个部分组成：`分 时 日 月 周`
 
 TrendRadar v3.0.0 新增了基于 **MCP (Model Context Protocol)** 的 AI 分析功能，让你可以通过自然语言与新闻数据对话，进行深度分析。
 #### 故障排查
-
-[](https://github.com/sansan0/TrendRadar?tab=readme-ov-file#%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5)
-
 ```shell
 # 检查容器状态
 docker inspect trend-radar

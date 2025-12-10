@@ -18,10 +18,10 @@ git clone https://github.com/sansan0/TrendRadar.git
 	- **群模式**：选择对话
 	- **群名称**：可以简单命名为 `TrendRadar测试群`。
 	- **添加成员**：为了测试不打扰他人，**在搜索框中搜索并添加自己的名字**，创建一个只有一个人的群即可。
-	- 创建完成后，就可以在群设置里添加“自定义机器人”并获取 `Webhook URL` 。
+	- 创建完成后，就可以在群设置里添加“自定义机器人”,- 给机器人起个名字，例如 “热点雷达”。并获取 `Webhook URL` 。
 ` https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43b7-a8ea-26bf83281543`
 
-# 5、检查设置环境变量
+#  🎛️5、检查设置环境变量
 来到代码的目录下，使用记事本查看`.env`文件。
 - **开启核心开关**（如果还没开启）：
 ```
@@ -39,4 +39,9 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 
 # 6、装载Docker
 - 在D:\TrendRadar-3.5.0\docker地址栏输入CMD回车进入命令窗口。
-
+目录中的 `docker-compose.yml` 和 `docker-compose-build.yml` 区别在于：
+- `docker-compose.yml`：**直接使用线上编译好的镜像**，启动最快，是常规选择。
+- `docker-compose-build.yml`：**从源代码重新构建镜像**，仅在你想修改代码或Dockerfile，需要自定义构建时使用。
+**使用docker-compose up -d命令**，它会默认读取 `docker-compose.yml` 文件。
+![](assets/TrendRadar-3.5.0/file-20251210142541553.png)
+此时Docker Desktop上随即运行起

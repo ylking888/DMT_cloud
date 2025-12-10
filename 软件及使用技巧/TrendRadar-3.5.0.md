@@ -8,4 +8,11 @@
 ![](assets/TrendRadar-3.5.0/file-20251210140342244.png)
 
 # 3、获取代码
+```
+git clone https://github.com/sansan0/TrendRadar.git
+``` 
+但是，git失败，所以我用的方法是到## [Releases](https://github.com/sansan0/TrendRadar/releases)下载了最新版本到本地，解压到文件夹D:\TrendRadar-3.5.0
+
+# 4、获取飞书
+
 

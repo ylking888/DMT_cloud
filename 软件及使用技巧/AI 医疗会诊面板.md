@@ -37,10 +37,9 @@
     # 或使用npm
     npm run dev
     ```
-    
+![](assets/AI%20医疗会诊面板/file-20251210155706178.png)
 4. **构建生产版本（可选）**若需要部署到服务器，可先构建生产包：
-    
-    ```Bash
+ ```Bash
     # 构建生产版本，产物在dist目录
     pnpm build
     # 或使用npm
@@ -49,23 +48,15 @@
     # 预览生产版本（可选）
     pnpm preview --port 4173
     ```
-    
-5. **访问应用**开发环境启动后，打开浏览器访问：`http://localhost:5173`
-    
-
+ **访问应用**开发环境启动后，打开浏览器访问：`http://localhost:5173`
 ### 方案二：Docker化部署（需手动创建配置）
 
 由于项目未提供Docker配置，需手动创建Dockerfile和相关配置实现Docker部署。
-
 #### 前置条件
 
 - 已安装 Docker Desktop 并启动（确保Docker服务正常运行）
-    
-
 #### 部署步骤
-
 1. **创建Dockerfile**在项目根目录（ai-doctor）下新建文件 `Dockerfile`，内容如下：
-    
     ```Dockerfile
     # 阶段1：构建生产版本
     FROM node:16-alpine as builder

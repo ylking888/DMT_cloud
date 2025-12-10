@@ -32,8 +32,7 @@
     npm install
   ```
 3. **启动开发环境**用于本地开发和调试，默认地址：[http://localhost:5173](http://localhost:5173)
-    
-    ```Bash
+ ```Bash
     pnpm dev
     # 或使用npm
     npm run dev

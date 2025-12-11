@@ -5,4 +5,6 @@
 我本地的 node 版本为 `22.17.0`
 D:\AIMedia2Doc>node -v
 v22.17.0
-# 3、
+# 3、安装依赖
+npm install
+

@@ -43,8 +43,66 @@ pip install -r requirements.txt
 - 项目依赖的库 **`melotts` (用于语音合成)** 强制要求 PyTorch 版本必须 **小于 2.0** (`torch<2.0`)。
 - 你当前的电脑环境安装了 **PyTorch 2.3.0** (而且是带 CUDA 12.1 的版本)。
 - 两者互不兼容，导致报错。
+#### 第一步：卸载当前冲突的 PyTorch
 
+在终端（backend 目录下）执行：
 
+Bash
+
+```
+pip uninstall torch torchvision torchaudio
+```
+
+_(过程中如果提示确认，输入 `y` 并回车)_
+
+#### 第二步：安装兼容版本的 PyTorch (1.13.1)
+
+这里分为 **CPU版本** 和 **GPU版本**，请根据你的需求选择：
+
+**选项 A：如果你只需要 CPU 运行（简单，文件小）**
+
+Bash
+
+```
+pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
+```
+
+**选项 B：如果你有 NVIDIA 显卡并需要 GPU 加速（推荐）**  
+_注意：Torch 1.x 通常配合 CUDA 11.x。_
+
+Bash
+
+```
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+```
+
+#### 第三步：重新安装项目依赖
+
+安装好正确的 Torch 后，再次运行项目依赖安装命令，确保其他库安装完整：
+
+Bash
+
+```
+pip install -r requirements.txt
+```
+### 💡 重要提示：关于虚拟环境
+看你的报错信息，你似乎是直接安装在全局 Python 环境或者现有的环境中。
+为了避免以后别的项目需要 Torch 2.0 导致再次冲突，强烈建议使用 **Conda** 或 **venv** 创建一个独立的虚拟环境：
+```Bash
+# 1. 创建名为 media2doc 的虚拟环境 (Python 3.10)
+conda create -n media2doc python=3.10
+# 或
+python -m venv venv
+
+# 2. 激活环境
+conda activate media2doc
+# 或 (Windows)
+.\venv\Scripts\activate
+
+# 3. 在这个新环境中重新安装依赖
+pip install torch==1.13.1+cu117 ... (参考上面的GPU命令)
+pip install -r requirements.txt
+```
 
 ## 5.2、 配置环境变量(除了 WEB_ACCESS_PASSWORD 之外缺一不可)
 ```shell

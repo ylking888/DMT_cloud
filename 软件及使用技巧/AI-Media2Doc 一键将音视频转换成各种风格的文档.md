@@ -81,7 +81,7 @@ D:\OpenVoiceV2-fix\OpenVoiceV2\py310\python -m venv venv
 
 # 3. 在这个新环境中重新安装依赖
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
-
+# 如果安装报错，下载失败，请按照下面的方式先下载再安装
 pip install -r requirements.txt
 ```
 对于这种 2GB 以上的大文件，直接用 pip 下载非常容易失败。推荐使用 **“迅雷/IDM/浏览器手动下载，再本地安装”** 的方式，或者**换用国内镜像源**。
@@ -90,12 +90,14 @@ pip install -r requirements.txt
 > **[点击下载 torch-1.13.1+cu117-cp310-win_amd64.whl](https://download.pytorch.org/whl/cu117/torch-1.13.1%2Bcu117-cp310-cp310-win_amd64.whl)**  
 > _(注意：这个文件约 2.25GB，请耐心等待下载完成)_
 **步骤 2：安装下载好的文件**  
-假设你把文件下载到了 `D:\Downloads` 文件夹下。  
+假设你把文件下载到了 `D:\` 文件夹下。  
 在你的 CMD 窗口（确保已经激活了 venv）中执行：
 ```cmd
 # 注意把下面的路径换成你实际下载文件的路径
-pip install "D:\Downloads\torch-1.13.1+cu117-cp310-cp310-win_amd64.whl"
+pip install "D:\torch-1.13.1+cu117-cp310-cp310-win_amd64.whl"
 ```
+![](assets/AI-Media2Doc%20一键将音视频转换成各种风格的文档/file-20251211101920912.png)
+
 **步骤 3：补全另外两个小文件**  
 Torch 装好后，还需要 torchvision 和 torchaudio。这两个文件比较小，直接 pip 安装即可：
 ```cmd
@@ -124,76 +126,37 @@ python app.py
 ```
 
 ## 在火山引擎获取对应的环境变量的值
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#%E5%9C%A8%E7%81%AB%E5%B1%B1%E5%BC%95%E6%93%8E%E8%8E%B7%E5%8F%96%E5%AF%B9%E5%BA%94%E7%9A%84%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC)
-
 主要分为三部分, 火山方舟/字节Tos/音频识别大模型
-
 ### 火山方舟
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#%E7%81%AB%E5%B1%B1%E6%96%B9%E8%88%9F)
-
 #### MODEL_ID
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#model_id)
-
 ⚠️: 最新版本的 AI-Media2Doc 已经不再需要 ENDPOINT_ID, 由 MODEL_ID 代替。
-
 登录[方舟控制台](https://console.volcengine.com/ark/region:ark+cn-beijing/openManagement?projectName=default)。进入开通管理, 选择开通一个大语言模型。 推荐使用 `doubao-1-5-pro-32k-250115` 。点击开通之后点击该大模型进入详情页，选择通用 LLM(没有就选主线模型), 复制红框内的 `模型 ID`，即为 `MODEL_ID` 的值。
-
 [![model id](https://github.com/hanshuaikang/AI-Media2Doc/raw/main/docs/images/model_id.png)](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/docs/images/model_id.png)
-
 #### ARK_API_KEY
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#ark_api_key)
-
 在 API Key 管理中创建一个 API Key [参考文档](https://www.volcengine.com/docs/82379/1399008#_3-%E5%88%9B%E5%BB%BAAPIKey) 你就得到了 `ARK_API_KEY` 的值。
 
 ### S3对象存储服务, 以火山引擎为例，你可以选择其他兼容 S3 协议的对象存储服务商。
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#s3%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1-%E4%BB%A5%E7%81%AB%E5%B1%B1%E5%BC%95%E6%93%8E%E4%B8%BA%E4%BE%8B%E4%BD%A0%E5%8F%AF%E4%BB%A5%E9%80%89%E6%8B%A9%E5%85%B6%E4%BB%96%E5%85%BC%E5%AE%B9-s3-%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8%E6%9C%8D%E5%8A%A1%E5%95%86)
-
 #### 创建 bucket 设置跨域规则
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#%E5%88%9B%E5%BB%BA-bucket-%E8%AE%BE%E7%BD%AE%E8%B7%A8%E5%9F%9F%E8%A7%84%E5%88%99)
-
 登录[对象存储控制台](https://console.volcengine.com/tos) 创建一个 bucket, 创建完毕之后进入该 bucket。点击右侧权限管理, 找到跨域访问设置, 新建一条跨域访问规则。
-
 [![tos access key](https://github.com/hanshuaikang/AI-Media2Doc/raw/main/docs/images/cors.png)](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/docs/images/cors.png)
-
 当然你也可以根据实际情况灵活选择。
-
 #### STORAGE_ENDPOINT
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#storage_endpoint)
-
 点击 **桶列表** -> **点进去你创建的那个 bucket** -> **点击概览** -> **眼睛往下看**
-
 你会看到一个访问域名, TOS_ENDPOINT 的值就是红框框里面那个，不同的区域 TOS_ENDPOINT 的值可能不一样。
-
 [![tos access key](https://github.com/hanshuaikang/AI-Media2Doc/raw/main/docs/images/tos_endpoint.png)](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/docs/images/tos_endpoint.png)
-
 #### STORAGE_BUCKET
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#storage_bucket)
 
 `STORAGE_BUCKET` 的值就是你创建的 bucket 的名称。
 
 #### STORAGE_REGION
 
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#storage_region)
-
 `STORAGE_REGION` 的值就是你创建的 bucket 的区域, 例如 `cn-beijing`。
 
 #### STORAGE_ACCESS_KEY 和 STORAGE_SECRET_KEY
 
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#storage_access_key-%E5%92%8C-storage_secret_key)
-
 进入 [IAM控制台](https://console.volcengine.com/iam/keymanage) 创建一个访问密钥, 你就得到了 `STORAGE_ACCESS_KEY` 和 `STORAGE_SECRET_KEY` 的值。
 
 ### 音频识别大模型
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#%E9%9F%B3%E9%A2%91%E8%AF%86%E5%88%AB%E5%A4%A7%E6%A8%A1%E5%9E%8B)
 
 火山方舟每个音频识别大模型都提供了 20 个小时的试用额度, 可以轮流试用。
 
@@ -201,18 +164,11 @@ python app.py
 
 #### AUC_APP_ID
 
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#auc_app_id)
-
 `AUC_APP_ID` 的值就是你创建的应用的 ID。
 
 #### AUC_ACCESS_TOKEN
 
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#auc_access_token)
-
 `AUC_ACCESS_TOKEN` 的值就是你创建的应用的 Access Token。
 
 #### AUC_CLUSTER_ID
-
-[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#auc_cluster_id)
-
 点击试用 `录音文件识别-通用-标准版` 或者极速版，**开通试用之后有 20 个小时的试用额度**，`Cluster ID` 列就表示 AUC_CLUSTER_ID 的值。

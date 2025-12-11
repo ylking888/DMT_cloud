@@ -73,14 +73,15 @@ pip install -r requirements.txt
 conda create -n media2doc python=3.10
 # 或
 python -m venv venv
+D:\OpenVoiceV2-fix\OpenVoiceV2\py310\python -m venv venv
 
 # 2. 激活环境
-conda activate media2doc
-# 或 (Windows)
 .\venv\Scripts\activate
+# (注意：执行完这行后，你的命令行前面应该会出现 `(venv)` 的字样，说明成功进入了独立环境)
 
 # 3. 在这个新环境中重新安装依赖
-pip install torch==1.13.1+cu117 ... (参考上面的GPU命令)
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+
 pip install -r requirements.txt
 ```
 

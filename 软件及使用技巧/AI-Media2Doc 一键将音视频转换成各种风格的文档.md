@@ -8,7 +8,7 @@ D:\AIMedia2Doc>node -v
 v22.17.0
 
 这是一个 **Python 后端 + 前端** 的项目：
-```
+```Txt
 AI-Media2Doc/ 
 ├── backend/ ← Python 后端 
 │ └── requirements.txt 
@@ -18,7 +18,7 @@ AI-Media2Doc/
 └── README.md
 ```
 # 3、安装依赖
-```
+```Shell
 # 进入前端目录再安装
 cd frontend
 npm install
@@ -28,6 +28,6 @@ npm install
 ```shell
 npm run dev
 ```
-
 ## 浏览器访问
 打开浏览器访问 `http://localhost:5173/` 即可。
+![](assets/AI-Media2Doc%20一键将音视频转换成各种风格的文档/file-20251211094957179.png)

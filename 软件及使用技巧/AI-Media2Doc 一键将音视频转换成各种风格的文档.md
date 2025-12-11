@@ -37,6 +37,15 @@ npm run dev
 cd backend
 pip install -r requirements.txt
 ```
+![](assets/AI-Media2Doc%20一键将音视频转换成各种风格的文档/file-20251211095552358.png)
+报错：这是一个典型的 **Python 依赖版本冲突** 问题。
+### 🔴 问题原因
+- 项目依赖的库 **`melotts` (用于语音合成)** 强制要求 PyTorch 版本必须 **小于 2.0** (`torch<2.0`)。
+- 你当前的电脑环境安装了 **PyTorch 2.3.0** (而且是带 CUDA 12.1 的版本)。
+- 两者互不兼容，导致报错。
+
+
+
 ## 5.2、 配置环境变量(除了 WEB_ACCESS_PASSWORD 之外缺一不可)
 ```shell
 export MODEL_ID=xxxx

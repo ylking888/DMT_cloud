@@ -24,4 +24,10 @@ cd frontend
 npm install
 ```
 
+# 4、启动服务
+```shell
+npm run dev
+```
 
+## 浏览器访问
+打开浏览器访问 `http://localhost:5173/` 即可。

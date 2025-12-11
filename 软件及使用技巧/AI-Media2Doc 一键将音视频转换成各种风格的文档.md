@@ -168,7 +168,12 @@ python app.py
 
 #### AUC_ACCESS_TOKEN
 
+[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#auc_access_token)
+
 `AUC_ACCESS_TOKEN` 的值就是你创建的应用的 Access Token。
 
 #### AUC_CLUSTER_ID
+
+[](https://github.com/hanshuaikang/AI-Media2Doc/blob/main/backend/README.md#auc_cluster_id)
+
 点击试用 `录音文件识别-通用-标准版` 或者极速版，**开通试用之后有 20 个小时的试用额度**，`Cluster ID` 列就表示 AUC_CLUSTER_ID 的值。

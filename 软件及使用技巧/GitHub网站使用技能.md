@@ -1,6 +1,7 @@
 # 总结热门应用 HelloGitHub
 官网地址：[有趣的开源社区 - HelloGitHub](https://hellogithub.com/)
-
+项目地址：
+[521xueweihan/HelloGitHub: :octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.](https://github.com/521xueweihan/HelloGitHub?tab=readme-ov-file)
 
 # GitHub网站汉化
 不是内容，是功能文字的汉化

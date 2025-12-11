@@ -5,6 +5,17 @@
 我本地的 node 版本为 `22.17.0`
 D:\AIMedia2Doc>node -v
 v22.17.0
+
+这是一个 **Python 后端 + 前端** 的项目：
+```
+AI-Media2Doc/ 
+├── backend/ ← Python 后端 
+│ └── requirements.txt 
+├── frontend/ ← 前端目录（这里才有 package.json）
+│ └── package.json 
+├── docker-compose.yml 
+└── README.md
+```
 # 3、安装依赖
 npm install
 

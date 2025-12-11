@@ -44,45 +44,25 @@ pip install -r requirements.txt
 - 你当前的电脑环境安装了 **PyTorch 2.3.0** (而且是带 CUDA 12.1 的版本)。
 - 两者互不兼容，导致报错。
 #### 第一步：卸载当前冲突的 PyTorch
-
 在终端（backend 目录下）执行：
-
-Bash
-
-```
+```Bash
 pip uninstall torch torchvision torchaudio
 ```
-
 _(过程中如果提示确认，输入 `y` 并回车)_
-
 #### 第二步：安装兼容版本的 PyTorch (1.13.1)
-
 这里分为 **CPU版本** 和 **GPU版本**，请根据你的需求选择：
-
 **选项 A：如果你只需要 CPU 运行（简单，文件小）**
-
-Bash
-
-```
+```Bash
 pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1
 ```
-
 **选项 B：如果你有 NVIDIA 显卡并需要 GPU 加速（推荐）**  
 _注意：Torch 1.x 通常配合 CUDA 11.x。_
-
-Bash
-
-```
+```Bash
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 ```
-
 #### 第三步：重新安装项目依赖
-
 安装好正确的 Torch 后，再次运行项目依赖安装命令，确保其他库安装完整：
-
-Bash
-
-```
+```Bash
 pip install -r requirements.txt
 ```
 ### 💡 重要提示：关于虚拟环境

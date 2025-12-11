@@ -84,7 +84,23 @@ pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --e
 
 pip install -r requirements.txt
 ```
-
+对于这种 2GB 以上的大文件，直接用 pip 下载非常容易失败。推荐使用 **“迅雷/IDM/浏览器手动下载，再本地安装”** 的方式，或者**换用国内镜像源**。
+**步骤 1：下载 `whl` 文件**  
+复制下面的链接到浏览器或下载工具中进行下载：
+> **[点击下载 torch-1.13.1+cu117-cp310-win_amd64.whl](https://download.pytorch.org/whl/cu117/torch-1.13.1%2Bcu117-cp310-cp310-win_amd64.whl)**  
+> _(注意：这个文件约 2.25GB，请耐心等待下载完成)_
+**步骤 2：安装下载好的文件**  
+假设你把文件下载到了 `D:\Downloads` 文件夹下。  
+在你的 CMD 窗口（确保已经激活了 venv）中执行：
+```cmd
+# 注意把下面的路径换成你实际下载文件的路径
+pip install "D:\Downloads\torch-1.13.1+cu117-cp310-cp310-win_amd64.whl"
+```
+**步骤 3：补全另外两个小文件**  
+Torch 装好后，还需要 torchvision 和 torchaudio。这两个文件比较小，直接 pip 安装即可：
+```cmd
+pip install torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
+```
 ## 5.2、 配置环境变量(除了 WEB_ACCESS_PASSWORD 之外缺一不可)
 ```shell
 export MODEL_ID=xxxx

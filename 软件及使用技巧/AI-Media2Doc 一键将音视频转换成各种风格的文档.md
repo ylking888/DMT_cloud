@@ -121,7 +121,11 @@ export WEB_ACCESS_PASSWORD=xxx
 **WEB_ACCESS_PASSWORD**【选填】:前端访问后端服务的密码,后端指定之后需要在前端自定义设置-> 访问密码填写该密码才可以正常使用。
 
 ## 3. 启动服务
+进入创建的虚拟环境后运行启动服务
 ```shell
+D:\OpenVoiceV2-fix\OpenVoiceV2\py310\python -m venv venv
+.\venv\Scripts\activate
+# (注意：执行完这行后，你的命令行前面应该会出现 `(venv)` 的字样，说明成功进入了独立环境)
 python app.py
 ```
 

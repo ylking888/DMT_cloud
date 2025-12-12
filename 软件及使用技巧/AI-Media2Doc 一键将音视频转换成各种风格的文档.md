@@ -158,6 +158,7 @@ python app.py
 
 ---
 # 对于对象存储部分，我使用的是MiniO
+官网链接：[S3 Compatible, Exascale Object Store for AI | MinIO](https://www.min.io/)
 
 
 

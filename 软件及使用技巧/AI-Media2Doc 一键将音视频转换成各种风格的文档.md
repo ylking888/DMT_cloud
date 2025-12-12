@@ -156,14 +156,6 @@ python app.py
 #### STORAGE_ACCESS_KEY 和 STORAGE_SECRET_KEY
 进入 [IAM控制台](https://console.volcengine.com/iam/keymanage) 创建一个访问密钥, 你就得到了 `STORAGE_ACCESS_KEY` 和 `STORAGE_SECRET_KEY` 的值。
 
----
-# 对于对象存储部分，我使用的是MiniO
-官网链接：[S3 Compatible, Exascale Object Store for AI | MinIO](https://www.min.io/)
-
-
-
----
-
 ### 音频识别大模型
 
 火山方舟每个音频识别大模型都提供了 20 个小时的试用额度, 可以轮流试用。

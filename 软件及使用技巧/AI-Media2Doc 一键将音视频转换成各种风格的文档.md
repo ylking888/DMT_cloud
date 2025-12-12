@@ -73,7 +73,6 @@ pip install -r requirements.txt
 conda create -n media2doc python=3.10
 # 或
 python -m venv venv
-D:\OpenVoiceV2-fix\OpenVoiceV2\py310\python -m venv venv
 
 # 2. 激活环境
 .\venv\Scripts\activate

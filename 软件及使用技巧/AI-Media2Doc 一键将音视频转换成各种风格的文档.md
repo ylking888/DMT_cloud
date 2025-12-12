@@ -151,14 +151,17 @@ python app.py
 #### STORAGE_BUCKET
 
 `STORAGE_BUCKET` 的值就是你创建的 bucket 的名称。
-
 #### STORAGE_REGION
-
 `STORAGE_REGION` 的值就是你创建的 bucket 的区域, 例如 `cn-beijing`。
-
 #### STORAGE_ACCESS_KEY 和 STORAGE_SECRET_KEY
-
 进入 [IAM控制台](https://console.volcengine.com/iam/keymanage) 创建一个访问密钥, 你就得到了 `STORAGE_ACCESS_KEY` 和 `STORAGE_SECRET_KEY` 的值。
+
+---
+# 对于对象存储部分，我使用的是MiniO
+
+
+
+---
 
 ### 音频识别大模型
 

@@ -11,7 +11,7 @@
 # 配置
 
 魔百盒M301H-数码视讯SM代工-海思Hi3798MV310芯片-无WIFI蓝牙-有线网卡-双端语音遥控
-![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775697378797.png)
+
 ## 刷机方法
 1、U盘拷贝update.zip根目录  插盒子靠近网口的USB
 2、断电按住机顶盒侧面RESET按键不要松，按开关盒子通电   
@@ -23,18 +23,14 @@
 
 原生设置阉割了USB调试，打开ADB需要在盒子上安装**神奇工具箱APP**，使用开心电视助手高版本打开适配性好
 
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_25d5de56-ae00-4861-b82a-4aea68a9a2bg_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogSdhdsOpoH0TpXG85SA64mzY1xbq0O4uvfu8MF2LYvvISDObtEtH1khtn%2FLhnbw%3D%3D&width=1271&height=810&zoom_image=true&gif_optimize=true)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775697378797.png)
 
 **安装的软件**
 
 1、**小白文件管理器**（安卓4版本），可以安装局域网内电脑上的共享文件夹下的应用，免得用U盘拷贝
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_e8bfaa0f-0a87-4336-a0a2-1b27977d25eg_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogkCDj7slfocUnLqthLU06RdAJkIIW8kMVTylDxLomeuUSDLw%2B%2FYKJqJDHFV5%2BtQ%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
-
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775697501752.png)
 2、**野草助手**（没有口令的，在微信搜野草之类的关键字，有很多口令的小程序试试）
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_11654224-51df-462b-ac1c-ccc99daee38g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogiy3bXAELvnO024DurewqIjo53IJga5HIkKoAcBsGHE8SDJRxyqO88%2FBeuQOpEg%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
-
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698371003.png)
 3、电视直播：**非凡TV**，有中央一套且适配安卓4.4.2比较好
 
 ![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_ae04253c-a116-419e-b0d2-2c416fd5371g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogkGoXDjKhdwCSCpiIcyRoSBXzne6pSFREocN%2FY9etZ%2FISDB%2FPYnjdEZmAs89Egg%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)

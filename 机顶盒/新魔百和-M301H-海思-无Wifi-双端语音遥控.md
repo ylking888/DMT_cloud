@@ -48,26 +48,8 @@
 ![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697645064.png)
 
 ![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697854432.png)
-
-
-
-
-
-
 遥控器多款机顶盒遥控器测试都适配，可**闲鱼以下测试过的款式**
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_dd1f8a7e-b92e-4bc2-9d28-31ab0be10ceg_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogzvcJb4e%2FQ164TASUSbEODV69Ny%2F5hwUO35EWOH6MH5ISDELno6MimKfyR5oeeg%3D%3D&width=470&height=773&zoom_image=true&gif_optimize=true)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/file-20260409120003942.jpg)
 
 流畅度：不错# 刷机
 [【新提醒】制作魔百盒M301H分区表文件及原系统备份_中国移动魔百盒_ZNDS](https://www.znds.com/tv-1168744-1-1.html)
-
-![小白文件](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775697501752.png)
-![剧迷TV](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697437894.png)
-![CIBN酷喵](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697645064.png)
-![云视听极光](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697854432.png)
-![咪视界](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697947947.png)
-![非凡TV](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698014758.png)
-![CCTV1](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698051177.png)
-![银河奇异果](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698321668.png)
-![screenshot__1775698371003](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698371003.png)
-![screenshot__1775698487868](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698487868.png)![screenshot__1775698393814](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698393814.png)

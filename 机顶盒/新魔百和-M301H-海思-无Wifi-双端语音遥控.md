@@ -32,30 +32,27 @@
 2、**野草助手**（没有口令的，在微信搜野草之类的关键字，有很多口令的小程序试试）
 ![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698371003.png)
 3、电视直播：**非凡TV**，有中央一套且适配安卓4.4.2比较好
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698014758.png)
 
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_ae04253c-a116-419e-b0d2-2c416fd5371g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogkGoXDjKhdwCSCpiIcyRoSBXzne6pSFREocN%2FY9etZ%2FISDB%2FPYnjdEZmAs89Egg%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_da24b045-1fd0-47ad-9bdb-d060888c482g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogQqliiaSqXGRjqgQ1XvkIN9FStkg9%2FjzozqC2fTWge4kSDPm46pFWmPAtYvUqVw%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
-
-4、点播：**TVBOX**，等于影视仓等，属于鼻祖APP，已适配播放源，也可以自己改最新播放源，微信搜TVBOX，有很多账号每天发布最新播放源，不能看或者不好用就换
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_53a2c780-7e32-41e7-b75e-e649eb6b5dag_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogJZdpEZR%2BUJKZdjdKkHAfkcN6yhK6MjE1EXqOUUI4WZYSDG8QuIn5fYWIzx20Ag%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698051177.png)
+4、点播：**TVBOX**，等于影视仓等，属于鼻祖APP，已适配播放源，也可以自己改最新播放源，微信搜TVBOX，![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698393814.png)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698487868.png)有很多账号每天发布最新播放源，不能看或者不好用就换
 
 5、体育：**咪视界**
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_6859f906-786e-4977-a08f-845a8289108g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogxsegugjL4Zflx4YMY9SpKNdlNEZdW5p6vOdSxiI2SyoSDCwzVUxBjXOmuSnEMA%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
-
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697947947.png)
 6、界面很好看的视频点播：**剧迷TV**
-
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_f6a0bb91-c51c-44db-b1e3-348fec3a386g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogB8yI4HadHiDufvGCpHhSAFzbdOxRfvA44AhDXdlBG5ISDAgDLDlL1KCQLLl2XA%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
-
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697437894.png)
 7、三大广告毒瘤APP：**CIBN酷喵、云视听极光、银河奇异果**，不开会员广告太多
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698321668.png)
 
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_eb918889-d426-4acc-a2bc-2a4df58d6bfg_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogYx4owsCbKP3TCyYe3HnRvfv2An%2FMc39tROuaaBhNicQSDMOYfJKLHUjmETsnJw%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697645064.png)
 
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_a862fa3a-a23f-407c-ba5a-d9e068b850bg_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAoggWAOquJl98MF3NVtgcwBWklaEaBT10lAtBG6wTmCcM8SDGIAhh%2BSPxFlnNo%2FLA%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697854432.png)
 
-![](native-resource://sdk/image?resource_type=image&key=img_v3_0210j_36667f9b-61bb-4c5f-9ec7-c7957223397g_MIDDLE_WEBP&fs_unit=eu_nc-cdn&crypto=CAESMAogFzWqe%2BSj4GanqoxdsZV0P5N072hQZ6jJ%2Ftzd3vKWr9USDPkiklabcZsZtvphMQ%3D%3D&width=1280&height=720&zoom_image=true&gif_optimize=true)
+
+
+
+
 
 遥控器多款机顶盒遥控器测试都适配，可**闲鱼以下测试过的款式**
 

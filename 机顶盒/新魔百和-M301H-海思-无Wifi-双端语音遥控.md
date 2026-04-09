@@ -1,13 +1,8 @@
 ## 主板
-![](assets/新概念英语自学/file-20251203101337522.png)
-
-![1775631006890](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775631006890.png)
-
-![1775631034774](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775631034774.png)
-
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775631006890.png)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775631034774.png)
 ## 芯片
-
-![1775635500288](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775635500288.png)
+![](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775635500288.png)
 
 ## 外壳
 
@@ -40,19 +35,11 @@
 ![小白文件](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/1775697501752.png)
 
 ![剧迷TV](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697437894.png)
-
 ![CIBN酷喵](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697645064.png)
-
 ![云视听极光](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697854432.png)
-
 ![咪视界](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697947947.png)
-
 ![非凡TV](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698014758.png)
-
 ![CCTV1](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698051177.png)
-
 ![银河奇异果](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698321668.png)
-
 ![screenshot__1775698371003](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698371003.png)
-
 ![screenshot__1775698487868](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698487868.png)![screenshot__1775698393814](assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775698393814.png)

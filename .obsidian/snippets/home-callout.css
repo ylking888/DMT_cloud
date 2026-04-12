@@ -1,0 +1,41 @@
+/* 自定义Home页Callout卡片样式，还原截图效果 */
+.callout {
+  border-radius: 12px !important;
+  border: 2px solid rgba(255,255,255,0.1) !important;
+  margin: 15px 0 !important;
+  padding: 12px 20px !important;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+/* 鼠标悬浮效果，更像按钮 */
+.callout:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+/* 隐藏Callout默认图标，和截图一致 */
+.callout-icon {
+  display: none !important;
+}
+/* 自定义各卡片颜色，对应Home.md的Callout类型 */
+.callout[data-callout="red"] {
+  background-color: #8b000080 !important;
+  color: #ff7f50 !important;
+}
+.callout[data-callout="green"] {
+  background-color: #2f4f4f80 !important;
+  color: #40e0d0 !important;
+}
+.callout[data-callout="gray"] {
+  background-color: #44444480 !important;
+  color: #ff8c00 !important;
+}
+.callout[data-callout="blue"] {
+  background-color: #19197080 !important;
+  color: #00bfff !important;
+}
+/* 调整链接样式，去掉下划线，和截图一致 */
+.callout a.internal-link {
+  text-decoration: none !important;
+  color: inherit !important;
+}

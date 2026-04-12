@@ -10,33 +10,23 @@ banner_hover: false
 
 ---
 
-columns
-left:
-> [!action]
-> **💪 行动**
-> [[Areas]]
-> [[Projects]]
+left: 
+> [!action] 
+> **💪 行动** 
+> [[Areas]] 
+> [[Projects]] 
+> [!calendar] 
 
-> [!calendar]
-> **📅 日历**
-> [[2026]]
-> [[Journaling]]
-> [[Template]]
-
-right:
-> [!note]
-> **📝 笔记**
-> [[Maps]]
-> [[Library]]
-
-> [!resource]
-> **📚 资源**
-> [[Books]]
-> [[Clippings]]
-> [[Courses]]
-left:
-> [!button] [[Today]]
-> [!button] [[Week]]
-right:
-> [!button] [[Month]]
-> [!button] [[Unique]]
+> **📅 日历** 
+> > [[2026]] 
+> > > [[Journaling]] 
+> > > > [[Template]] 
+> > > > 
+> > > > right: 
+> > > > > [!note] 
+> > > > > > **📝 笔记** 
+> > > > > > > [[Maps]] 
+> > > > > > > > [[Library]] 
+> > > > > > > > > [!resource] 
+> **📚 资源** 
+> [[Books]] > [[Clippings]] > [[Courses]]

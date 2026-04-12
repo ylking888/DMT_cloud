@@ -1,18 +1,1 @@
-
-
-
-# Home
-## Template
-## Courses
-
-> [!red|bg:#8b000080]
-> [[University Courses]]
-
-> [!green|bg:#2f4f4f80]
-> [[草稿本]] | [[草稿本 ex]]
-
-> [!gray|bg:#44444480]
-> [[+.base]] | [[Islands.base]]
-
-> [!blue|bg:#19197080]
-> [[FILES > PDF.base]] | [[IMAGES.base]]
+--- banner: "你的头图图片路径/赛博城市夜景图.png" banner_x: 0.5 banner_y: 0.2 banner_height: 30vh banner_hover: false --- # 🏠 Home --- ```columns left: > [!button] [[Today]] > [!button] [[Week]] right: > [!button] [[Month]] > [!button] [[Unique]]

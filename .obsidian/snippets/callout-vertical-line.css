@@ -2,9 +2,11 @@
 .callout {
   background-color: transparent !important;
   border: none !important;
-  border-left: 12px solid !important;
+  border-left: 8px solid !important;
   padding: 4px 12px !important;
   margin: 8px 0 !important;
+
+  border-radius: 0px !important; /*给竖条加圆角*/
 }
 .callout .callout-icon {
   display: none !important;

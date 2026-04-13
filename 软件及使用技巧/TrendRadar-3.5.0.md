@@ -2,10 +2,10 @@
 
 
 # 1、安装windows Hyper-V组件
-![](assets/TrendRadar-3.5.0/file-20251210140205898.png)
+![](../file-20251210140205898.png)
 
 # 2、安装Docker Desktop
-![](assets/TrendRadar-3.5.0/file-20251210140342244.png)
+![](../file-20251210140342244.png)
 
 # 3、获取代码
 ```
@@ -43,10 +43,10 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 - `docker-compose.yml`：**直接使用线上编译好的镜像**，启动最快，是常规选择。
 - `docker-compose-build.yml`：**从源代码重新构建镜像**，仅在你想修改代码或Dockerfile，需要自定义构建时使用。
 **使用docker-compose up -d命令**，它会默认读取 `docker-compose.yml` 文件。
-![](assets/TrendRadar-3.5.0/file-20251210142541553.png)
+![](../file-20251210142541553.png)
 此时Docker Desktop上随即运行起trend-rad，单击后可查看运行日志详情。
-![](assets/TrendRadar-3.5.0/file-20251210142752787.png)
-![](assets/TrendRadar-3.5.0/file-20251210142955445.png)
+![](../file-20251210142752787.png)
+![](../file-20251210142955445.png)
 飞书上也随即收到机器人发来的信息。
 
 # 7、设置搜索的热点关键词
@@ -56,7 +56,7 @@ FEISHU_WEBHOOK_URL=https://open.feishu.cn/open-apis/bot/v2/hook/a6d65e5f-0003-43
 - 新增内置 Web 服务器，支持通过浏览器访问生成的报告
 - 通过 `manage.py` 命令控制启动/停止：`docker exec -it trend-radar python manage.py start_webserver`
 - 访问地址：`http://localhost:8080`（端口可配置）
-![](assets/TrendRadar-3.5.0/file-20251210144054836.png)
+![](../file-20251210144054836.png)
 当日汇总 HTML 同时生成到两个位置
 - `index.html`（项目根目录）：供 GitHub Pages 访问
 - `output/index.html`：通过 Docker Volume 挂载，宿主机可直接访问
@@ -134,7 +134,7 @@ Cron 是一种定时任务格式，由 5 个部分组成：`分 时 日 月 周`
 > - **建议**：不要设置比 30 分钟更短的间隔
 > - **原因**：过于频繁可能被判定为滥用，面临封号风险
 > - **实际情况**：GitHub Actions 执行时间本身就有偏差，设置太精确意义不大
-![](assets/TrendRadar-3.5.0/file-20251210144730998.png)
+![](../file-20251210144730998.png)
 #### 修改方法
 1. 打开你 fork 的仓库
 2. 找到 `.github/workflows/crawler.yml` 文件

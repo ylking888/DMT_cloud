@@ -11,14 +11,14 @@ Potplayer 于 Vlc 都是开源的电脑播放器，但是可以播放 m3u 文件
 
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=MjAwZmNjMTRkY2RhY2I2MjYyZmE5YTA5MzdjN2UxMmZfQVV6WnJUN01LMmtzUjFpQ3pMT0lTNHhnYnhQZkZEelNfVG9rZW46TW4xMmJSWkFHbzRnYmt4UjBQNmNadkg1bnpiXzE3NjQ4OTY3NDY6MTc2NDkwMDM0Nl9WNA)
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=YWRiYTllOTExYmNjZjllOWY0YzlhZjE0NzQ4MDViNzhfaUNqSXlXMThhYTE5a3Y2emJnbW9CRWFpVnRqZXdtclRfVG9rZW46SXdiM2JIdThTb3BPS2h4OFVTT2NrbGxjbjJjXzE3NjQ4OTY3NDY6MTc2NDkwMDM0Nl9WNA)
-![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091512846.png)
+![](../file-20251205091512846.png)
 皮肤位置：D:\software\PotPlayer\Skins
-![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091545488.png)
-![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091605964.png)
+![](../file-20251205091545488.png)
+![](../file-20251205091605964.png)
 ## 2.播放设置
-![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091642003.png)
+![](../file-20251205091642003.png)
 ## 3.视频设置
-![](assets/Potplayer_Vlc_ZyPlayer安装与设置教程/file-20251205091710620.png)
+![](../file-20251205091710620.png)
 ## 4. 声音设置
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTNlYzk5MGM5NGFhMjJjMTcwNzdiMDYwZjVkMzU1NjRfTUw1TlJjSnk1bWM0TGRSV1pBQ0RKNndYYVVwOHQxZDhfVG9rZW46TmR6WGJBRTNlb1hndHh4TmhyVmN6ZlhGbkJoXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)
 ![](https://o1amgwu14au.feishu.cn/space/api/box/stream/download/asynccode/?code=ODY5MGYzOTY5MjQ0ZmU4ZDZhMGY4YTk0N2YxNTA0OTBfcGJkdzhUSlhSdnNmMlVNSTEzMHB4NG5rY21xazhWbUhfVG9rZW46VkJjT2J3eE11b1BPTUZ4Tm1yTGM3NlJablZiXzE3NjQ4OTY2Mzc6MTc2NDkwMDIzN19WNA)

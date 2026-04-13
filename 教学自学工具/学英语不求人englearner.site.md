@@ -1,3 +1,3 @@
 官网地址：[EngLearner - 英语学习工具导航网站 - 学英语不求人](https://www.englearner.site/cn/index.html)
 
-![](../机顶盒/file-20251209170204615.png)
+![](../file-20251209170204615.png)

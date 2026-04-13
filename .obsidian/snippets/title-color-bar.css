@@ -1,9 +1,9 @@
 /* ==============================================
-   终极修复版：H1~H6 色块全部正确显示
-   解决：所有标题都只显示黄色、颜色类不生效
+   终极版：H1~H6 自动彩色色块 + Callout 正常
+   不用写 {.xxx}，自动变色，100%生效
    ============================================== */
 
-/* ===================== 1. Callout 竖条（保持不变） ===================== */
+/* ===================== Callout 竖条样式 ===================== */
 .callout {
   background-color: transparent !important;
   border: none !important;
@@ -15,68 +15,47 @@
   display: none !important;
 }
 .callout .callout-title {
-  color: #1e1e1e !important;
+  color: inherit !important;
   font-size: 1.4em !important;
   font-weight: bold !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
-.callout[data-callout="lanse"],
-.callout[data-callout="info"],
-.callout[data-callout="note"] { border-left-color: #4a90e2 !important; }
-
-.callout[data-callout="lvse"],
-.callout[data-callout="success"] { border-left-color: #4caf50 !important; }
-
-.callout[data-callout="huangse"],
 .callout[data-callout="warning"] { border-left-color: #ffcc00 !important; }
-
-.callout[data-callout="chengse"],
+.callout[data-callout="info"] { border-left-color: #4a90e2 !important; }
+.callout[data-callout="success"] { border-left-color: #4caf50 !important; }
 .callout[data-callout="question"] { border-left-color: #ff9800 !important; }
+.callout[data-callout="danger"] { border-left-color: #f44336 !important; }
+.callout[data-callout="example"] { border-left-color: #9c27b0 !important; }
 
-.callout[data-callout="hongse"],
-.callout[data-callout="danger"],
-.callout[data-callout="failure"] { border-left-color: #f44336 !important; }
-
-.callout[data-callout="zise"],
-.callout[data-callout="example"],
-.callout[data-callout="bug"] { border-left-color: #9c27b0 !important; }
-
-/* ===================== 2. H1~H6 色块（强制生效，不被主题覆盖） ===================== */
-/* 通用容器：确保 H2~H6 具备定位条件 */
+/* ===================== 标题色块：自动变色（H1~H6 固定颜色） ===================== */
+/* 基础样式 */
 .markdown-preview-view h1,
 .markdown-preview-view h2,
 .markdown-preview-view h3,
 .markdown-preview-view h4,
 .markdown-preview-view h5,
 .markdown-preview-view h6,
-.cm-line.cm-header-1,
-.cm-line.cm-header-2,
-.cm-line.cm-header-3,
-.cm-line.cm-header-4,
-.cm-line.cm-header-5,
-.cm-line.cm-header-6 {
+.cm-header-1, .cm-header-2, .cm-header-3,
+.cm-header-4, .cm-header-5, .cm-header-6
+{
   position: relative !important;
-  padding-left: 14px !important;
-  margin-top: 8px !important;
-  margin-bottom: 0 !important; /* 去掉空行 */
-  line-height: 1.4 !important;
+  padding-left: 16px !important;
+  margin-top: 10px !important;
+  margin-bottom: 4px !important;
+  line-height: 1.5 !important;
 }
 
-/* 通用色块基础（黄色默认） */
+/* 统一色块样式 */
 .markdown-preview-view h1::before,
 .markdown-preview-view h2::before,
 .markdown-preview-view h3::before,
 .markdown-preview-view h4::before,
 .markdown-preview-view h5::before,
 .markdown-preview-view h6::before,
-.cm-line.cm-header-1::before,
-.cm-line.cm-header-2::before,
-.cm-line.cm-header-3::before,
-.cm-line.cm-header-4::before,
-.cm-line.cm-header-5::before,
-.cm-line.cm-header-6::before {
+.cm-header-1::before, .cm-header-2::before,
+.cm-header-3::before, .cm-header-4::before,
+.cm-header-5::before, .cm-header-6::before
+{
   content: "" !important;
   position: absolute !important;
   left: 0 !important;
@@ -84,113 +63,25 @@
   bottom: 0.2em !important;
   width: 6px !important;
   border-radius: 3px !important;
-  background-color: #ffcc00 !important; /* 默认黄色 */
   display: block !important;
 }
 
-/* ===================== 3. 颜色类（H1~H6 全部强制生效） ===================== */
-/* 蓝色 */
-.markdown-preview-view h1.lanse::before,
-.markdown-preview-view h2.lanse::before,
-.markdown-preview-view h3.lanse::before,
-.markdown-preview-view h4.lanse::before,
-.markdown-preview-view h5.lanse::before,
-.markdown-preview-view h6.lanse::before,
-.cm-line.cm-header-1.lanse::before,
-.cm-line.cm-header-2.lanse::before,
-.cm-line.cm-header-3.lanse::before,
-.cm-line.cm-header-4.lanse::before,
-.cm-line.cm-header-5.lanse::before,
-.cm-line.cm-header-6.lanse::before {
-  background-color: #4a90e2 !important;
-}
+/* ---------- 颜色自动分配 ---------- */
+/* H1 = 黄色 */
+.markdown-preview-view h1::before, .cm-header-1::before { background-color: #ffcc00 !important; }
+/* H2 = 蓝色 */
+.markdown-preview-view h2::before, .cm-header-2::before { background-color: #4a90e2 !important; }
+/* H3 = 绿色 */
+.markdown-preview-view h3::before, .cm-header-3::before { background-color: #4caf50 !important; }
+/* H4 = 橙色 */
+.markdown-preview-view h4::before, .cm-header-4::before { background-color: #ff9800 !important; }
+/* H5 = 红色 */
+.markdown-preview-view h5::before, .cm-header-5::before { background-color: #f44336 !important; }
+/* H6 = 紫色 */
+.markdown-preview-view h6::before, .cm-header-6::before { background-color: #9c27b0 !important; }
 
-/* 绿色 */
-.markdown-preview-view h1.lvse::before,
-.markdown-preview-view h2.lvse::before,
-.markdown-preview-view h3.lvse::before,
-.markdown-preview-view h4.lvse::before,
-.markdown-preview-view h5.lvse::before,
-.markdown-preview-view h6.lvse::before,
-.cm-line.cm-header-1.lvse::before,
-.cm-line.cm-header-2.lvse::before,
-.cm-line.cm-header-3.lvse::before,
-.cm-line.cm-header-4.lvse::before,
-.cm-line.cm-header-5.lvse::before,
-.cm-line.cm-header-6.lvse::before {
-  background-color: #4caf50 !important;
-}
-
-/* 橙色 */
-.markdown-preview-view h1.chengse::before,
-.markdown-preview-view h2.chengse::before,
-.markdown-preview-view h3.chengse::before,
-.markdown-preview-view h4.chengse::before,
-.markdown-preview-view h5.chengse::before,
-.markdown-preview-view h6.chengse::before,
-.cm-line.cm-header-1.chengse::before,
-.cm-line.cm-header-2.chengse::before,
-.cm-line.cm-header-3.chengse::before,
-.cm-line.cm-header-4.chengse::before,
-.cm-line.cm-header-5.chengse::before,
-.cm-line.cm-header-6.chengse::before {
-  background-color: #ff9800 !important;
-}
-
-/* 红色 */
-.markdown-preview-view h1.hongse::before,
-.markdown-preview-view h2.hongse::before,
-.markdown-preview-view h3.hongse::before,
-.markdown-preview-view h4.hongse::before,
-.markdown-preview-view h5.hongse::before,
-.markdown-preview-view h6.hongse::before,
-.cm-line.cm-header-1.hongse::before,
-.cm-line.cm-header-2.hongse::before,
-.cm-line.cm-header-3.hongse::before,
-.cm-line.cm-header-4.hongse::before,
-.cm-line.cm-header-5.hongse::before,
-.cm-line.cm-header-6.hongse::before {
-  background-color: #f44336 !important;
-}
-
-/* 黄色 */
-.markdown-preview-view h1.huangse::before,
-.markdown-preview-view h2.huangse::before,
-.markdown-preview-view h3.huangse::before,
-.markdown-preview-view h4.huangse::before,
-.markdown-preview-view h5.huangse::before,
-.markdown-preview-view h6.huangse::before,
-.cm-line.cm-header-1.huangse::before,
-.cm-line.cm-header-2.huangse::before,
-.cm-line.cm-header-3.huangse::before,
-.cm-line.cm-header-4.huangse::before,
-.cm-line.cm-header-5.huangse::before,
-.cm-line.cm-header-6.huangse::before {
-  background-color: #ffcc00 !important;
-}
-
-/* 紫色 */
-.markdown-preview-view h1.zise::before,
-.markdown-preview-view h2.zise::before,
-.markdown-preview-view h3.zise::before,
-.markdown-preview-view h4.zise::before,
-.markdown-preview-view h5.zise::before,
-.markdown-preview-view h6.zise::before,
-.cm-line.cm-header-1.zise::before,
-.cm-line.cm-header-2.zise::before,
-.cm-line.cm-header-3.zise::before,
-.cm-line.cm-header-4.zise::before,
-.cm-line.cm-header-5.zise::before,
-.cm-line.cm-header-6.zise::before {
-  background-color: #9c27b0 !important;
-}
-
-/* ===================== 4. 隐藏 {.xxx} 标记 ===================== */
-.cm-string.cm-url { display: none !important; }
-
-/* ===================== 5. 深色主题 ===================== */
-.theme-dark .callout .callout-title,
+/* ===================== 深色主题适配 ===================== */
 .theme-dark h1, .theme-dark h2, .theme-dark h3,
 .theme-dark h4, .theme-dark h5, .theme-dark h6 {
-  color: #ffffff !important;
+  color: #fff !important;
 }

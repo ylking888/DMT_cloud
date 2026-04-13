@@ -1,10 +1,9 @@
 /* ==============================================
-   【合并版】同时支持 Callout 竖条 + 标题色块
-   完全不冲突，编辑/阅读模式双生效，大纲正常显示
+   修复版：H1~H6 全部支持色块 + Callout 正常
+   解决：二级~六级不显示、颜色不生效问题
    ============================================== */
 
-/*1. Callout 竖条样式（原callout-vertical-line.css） */
-/* 通用Callout基础样式 */
+/* ===================== Callout 竖条样式 ===================== */
 .callout {
   background-color: transparent !important;
   border: none !important;
@@ -17,110 +16,124 @@
 }
 .callout .callout-title {
   color: #1e1e1e !important;
-  font-size: 1.5em !important;
+  font-size: 1.4em !important;
   font-weight: bold !important;
   margin: 0 !important;
   padding: 0 !important;
 }
 
-/* Callout颜色定义 */
-/* 蓝色（lanse/info/note） */
 .callout[data-callout="lanse"],
 .callout[data-callout="info"],
-.callout[data-callout="note"] {
-  border-left-color: #4a90e2 !important;
-}
-/* 绿色（lvse/success） */
+.callout[data-callout="note"] { border-left-color: #4a90e2 !important; }
 .callout[data-callout="lvse"],
-.callout[data-callout="success"] {
-  border-left-color: #4caf50 !important;
-}
-/* 黄色（huangse/warning） */
+.callout[data-callout="success"] { border-left-color: #4caf50 !important; }
 .callout[data-callout="huangse"],
-.callout[data-callout="warning"] {
-  border-left-color: #ffcc00 !important;
-}
-/* 橙色（chengse/question） */
+.callout[data-callout="warning"] { border-left-color: #ffcc00 !important; }
 .callout[data-callout="chengse"],
-.callout[data-callout="question"] {
-  border-left-color: #ff9800 !important;
-}
-/* 红色（hongse/danger/failure） */
+.callout[data-callout="question"] { border-left-color: #ff9800 !important; }
 .callout[data-callout="hongse"],
-.callout[data-callout="danger"],
-.callout[data-callout="failure"] {
-  border-left-color: #f44336 !important;
-}
-/* 紫色（zise/example/bug） */
+.callout[data-callout="danger"] { border-left-color: #f44336 !important; }
 .callout[data-callout="zise"],
-.callout[data-callout="example"],
-.callout[data-callout="bug"] {
-  border-left-color: #9c27b0 !important;
-}
+.callout[data-callout="example"] { border-left-color: #9c27b0 !important; }
 
-/* ===================== 2. 标题色块样式（原title-color-bar.css） ===================== */
-/* 一级标题 # 左侧色块 */
-.markdown-preview-view h1:not(.callout-title),
-.cm-line.cm-header-1:not(.callout-title) {
+/* ===================== H1 ~ H6 标题色块（修复版） ===================== */
+/* 基础样式 */
+h1, h2, h3, h4, h5, h6 {
   position: relative !important;
-  padding-left: 16px !important;
+  padding-left: 14px !important;
   margin-top: 8px !important;
-  margin-bottom: 0 !important; /* 标题和正文无空行 */
+  margin-bottom: 0px !important;
   line-height: 1.4 !important;
 }
-.markdown-preview-view h1:not(.callout-title)::before,
-.cm-line.cm-header-1:not(.callout-title)::before {
+
+h1::before,
+h2::before,
+h3::before,
+h4::before,
+h5::before,
+h6::before {
   content: "" !important;
   position: absolute !important;
   left: 0 !important;
   top: 0.2em !important;
   bottom: 0.2em !important;
-  width: 8px !important;
-  border-radius: 4px !important;
-  background-color: #ffcc00 !important; /* 默认黄色 */
+  width: 6px !important;
+  border-radius: 3px !important;
+  background-color: #ffcc00 !important;
   display: block !important;
 }
 
-/* 标题颜色类（通过{.类名}切换） */
+/* ===================== 颜色类（H1~H6 全部生效） ===================== */
 /* 蓝色 */
-.markdown-preview-view h1.lanse:not(.callout-title)::before,
-.cm-line.cm-header-1.lanse:not(.callout-title)::before {
+h1.lanse::before,
+h2.lanse::before,
+h3.lanse::before,
+h4.lanse::before,
+h5.lanse::before,
+h6.lanse::before {
   background-color: #4a90e2 !important;
 }
+
 /* 绿色 */
-.markdown-preview-view h1.lvse:not(.callout-title)::before,
-.cm-line.cm-header-1.lvse:not(.callout-title)::before {
+h1.lvse::before,
+h2.lvse::before,
+h3.lvse::before,
+h4.lvse::before,
+h5.lvse::before,
+h6.lvse::before {
   background-color: #4caf50 !important;
 }
+
 /* 橙色 */
-.markdown-preview-view h1.chengse:not(.callout-title)::before,
-.cm-line.cm-header-1.chengse:not(.callout-title)::before {
+h1.chengse::before,
+h2.chengse::before,
+h3.chengse::before,
+h4.chengse::before,
+h5.chengse::before,
+h6.chengse::before {
   background-color: #ff9800 !important;
 }
+
 /* 红色 */
-.markdown-preview-view h1.hongse:not(.callout-title)::before,
-.cm-line.cm-header-1.hongse:not(.callout-title)::before {
+h1.hongse::before,
+h2.hongse::before,
+h3.hongse::before,
+h4.hongse::before,
+h5.hongse::before,
+h6.hongse::before {
   background-color: #f44336 !important;
 }
+
 /* 黄色 */
-.markdown-preview-view h1.huangse:not(.callout-title)::before,
-.cm-line.cm-header-1.huangse:not(.callout-title)::before {
+h1.huangse::before,
+h2.huangse::before,
+h3.huangse::before,
+h4.huangse::before,
+h5.huangse::before,
+h6.huangse::before {
   background-color: #ffcc00 !important;
 }
 
-/* ===================== 3. 全局适配 ===================== */
-/* 隐藏{.类名}文本，编辑/阅读模式都不显示 */
-.cm-line .cm-header-1 .cm-formatting,
-.markdown-preview-view h1 .header-anchor {
-  display: none !important;
-}
-.cm-line.cm-header-1 .cm-string {
-  display: none !important;
+/* 紫色 */
+h1.zise::before,
+h2.zise::before,
+h3.zise::before,
+h4.zise::before,
+h5.zise::before,
+h6.zise::before {
+  background-color: #9c27b0 !important;
 }
 
-/* 深色主题文字自动变白 */
-.theme-dark .callout .callout-title,
-.theme-dark .markdown-preview-view h1:not(.callout-title),
-.theme-dark .cm-line.cm-header-1:not(.callout-title) {
+/* ===================== 隐藏 {.xxx} 标记 ===================== */
+.cm-string.cm-url { display: none !important; }
+
+/* ===================== 深色主题适配 ===================== */
+.theme-dark h1,
+.theme-dark h2,
+.theme-dark h3,
+.theme-dark h4,
+.theme-dark h5,
+.theme-dark h6,
+.theme-dark .callout .callout-title {
   color: #ffffff !important;
 }

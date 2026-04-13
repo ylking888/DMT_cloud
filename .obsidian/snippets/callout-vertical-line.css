@@ -2,10 +2,9 @@
 .callout {
   background-color: transparent !important;
   border: none !important;
-  border-left: 8px solid !important;
-  padding: 4px 12px !important;
-  margin: 8px 0 !important;
-
+  border-left: 8px solid !important; /*竖条粗细*/
+  padding: 4px 24px !important; /*竖条高度、文字与竖条距离*/
+  margin: 4px 0 !important; /*竖条间距*/
   border-radius: 0px !important; /*给竖条加圆角*/
 }
 .callout .callout-icon {

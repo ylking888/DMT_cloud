@@ -3,7 +3,7 @@
    完全不冲突，编辑/阅读模式双生效，大纲正常显示
    ============================================== */
 
-/* ===================== 1. Callout 竖条样式（原callout-vertical-line.css） ===================== */
+/*1. Callout 竖条样式（原callout-vertical-line.css） */
 /* 通用Callout基础样式 */
 .callout {
   background-color: transparent !important;

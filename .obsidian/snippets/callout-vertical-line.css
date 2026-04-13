@@ -1,16 +1,54 @@
-/* 把warning Callout改成仅左侧黄色竖条，无背景、无图标 */
-.callout[data-callout="warning"] {
+/* 通用Callout竖条基础样式 */
+.callout {
   background-color: transparent !important;
   border: none !important;
-  border-left: 8px solid #ffcc00 !important;
+  border-left: 8px solid !important;
   padding: 4px 12px !important;
   margin: 8px 0 !important;
 }
-.callout[data-callout="warning"] .callout-icon {
+.callout .callout-icon {
   display: none !important;
 }
-.callout[data-callout="warning"] .callout-title {
+.callout .callout-title {
   color: #1e1e1e !important;
   font-size: 1.5em !important;
   font-weight: bold !important;
+}
+
+/* 蓝色（info/note）：知识/笔记类 */
+.callout[data-callout="info"],
+.callout[data-callout="note"] {
+  border-left-color: #4a90e2 !important;
+}
+
+/* 绿色（success）：完成/进度类 */
+.callout[data-callout="success"] {
+  border-left-color: #4caf50 !important;
+}
+
+/* 黄色（warning）：提醒/待办类（你最初的样式） */
+.callout[data-callout="warning"] {
+  border-left-color: #ffcc00 !important;
+}
+
+/* 橙色（question）：疑问/思考类 */
+.callout[data-callout="question"] {
+  border-left-color: #ff9800 !important;
+}
+
+/* 红色（danger/failure）：风险/错误类 */
+.callout[data-callout="danger"],
+.callout[data-callout="failure"] {
+  border-left-color: #f44336 !important;
+}
+
+/* 紫色（example/bug）：示例/问题类（可选） */
+.callout[data-callout="example"],
+.callout[data-callout="bug"] {
+  border-left-color: #9c27b0 !important;
+}
+
+/* 适配深色主题：文字自动变白 */
+.theme-dark .callout .callout-title {
+  color: #ffffff !important;
 }

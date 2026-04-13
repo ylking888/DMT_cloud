@@ -16,8 +16,7 @@
 }
 
 /* 蓝色（info/note）：知识/笔记类 */
-.callout[data-callout="info"],
-.callout[data-callout="lanse"], {
+.callout[data-callout="lanse"]{
   border-left-color: #4a90e2 !important;
 }
 

@@ -17,7 +17,8 @@
 
 /* 蓝色（info/note）：知识/笔记类 */
 .callout[data-callout="info"],
-.callout[data-callout="note"] {
+.callout[data-callout="note"],
+.callout[data-callout="lanse"], {
   border-left-color: #4a90e2 !important;
 }
 
@@ -51,4 +52,9 @@
 /* 适配深色主题：文字自动变白 */
 .theme-dark .callout .callout-title {
   color: #ffffff !important;
+}
+
+/* 紫色（专属分类） */
+.callout[data-callout="purple"] {
+  border-left-color: #9c27b0 !important;
 }

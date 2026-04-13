@@ -276,14 +276,14 @@ D:\pinokio>call bin\miniconda\Scripts\activate.bat
 2.卸载现有的 PyTorch（如果是 CUDA 12.1 版本）
 pip uninstall torch torchvision torchaudio -y
 验证 nvcc，可以看到cuda为13.1版本
-![](../file-20251207092935910.png)
+![](../机顶盒/file-20251207092935910.png)
 3.安装正确的 PyTorch（使用官网安装，网络不稳定，报错）
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu130
-![](../file-20251207010409324.png)
+![](../机顶盒/file-20251207010409324.png)
 ### 使用国内镜像源
 1. 使用清华镜像源，速度也不快，最终失败。
 pip install torch torchvision torchaudio -i https://pypi.tuna.tsinghua.edu.cn/simple --extra-index-url https://download.pytorch.org/whl/cu130
-![](../file-20251207010409325.png)
+![](../机顶盒/file-20251207010409325.png)
 2. 或者使用阿里云镜像，失败
 pip install torch torchvision torchaudio -i https://mirrors.aliyun.com/pypi/simple/ --extra-index-url https://download.pytorch.org/whl/cu130
 ### 手动下载并安装 wheel 文件
@@ -296,7 +296,7 @@ powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu
 powershell -Command "Invoke-WebRequest -Uri 'https://download.pytorch.org/whl/cu130/torchaudio-2.3.0%2Bcu130-cp310-cp310-win_amd64.whl' -OutFile 'torchaudio-2.3.0-cu130.whl'"
 ### 手动检索
 https://download.pytorch.org/
-![](../file-20251207094501750.png)
+![](../机顶盒/file-20251207094501750.png)
 pip install torch-2.9.0+cu130-cp310-cp310-win_amd64.whl
 pip install torchvision-0.24.0+cu130-cp310-cp310-win_amd64.whl
 pip install torchaudio-2.9.0+cu130-cp310-cp310-win_amd64.whl

@@ -1,0 +1,16 @@
+/* 把warning Callout改成仅左侧黄色竖条，无背景、无图标 */
+.callout[data-callout="warning"] {
+  background-color: transparent !important;
+  border: none !important;
+  border-left: 8px solid #ffcc00 !important;
+  padding: 4px 12px !important;
+  margin: 8px 0 !important;
+}
+.callout[data-callout="warning"] .callout-icon {
+  display: none !important;
+}
+.callout[data-callout="warning"] .callout-title {
+  color: #1e1e1e !important;
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+}

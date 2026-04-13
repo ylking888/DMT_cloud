@@ -1,5 +1,6 @@
 {
   "enabledCssSnippets": [
-    "callout-vertical-line"
+    "callout-vertical-line",
+    "title-color-bar"
   ]
 }

@@ -1,0 +1,48 @@
+/* ========== 给#标题加左侧色块，不影响大纲 ========== */
+/* 一级标题 # */
+.markdown-preview-view h1,
+.cm-line.cm-header-1 {
+  position: relative;
+  padding-left: 16px !important;
+  margin-top: 8px !important;
+  margin-bottom: 4px !important; /* 控制标题和正文的间距，0就是无空行 */
+}
+.markdown-preview-view h1::before,
+.cm-line.cm-header-1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 8px; /* 色块宽度 */
+  border-radius: 4px; /* 圆角，可删除 */
+  background-color: #ffcc00 !important; /* 默认黄色，可改 */
+}
+
+/* 给不同标题加不同颜色（通过自定义class） */
+/* 蓝色标题：在#后加{.lanse}，如 # 标题 {.lanse} */
+.markdown-preview-view h1.lanse::before,
+.cm-line.cm-header-1.lanse::before {
+  background-color: #4a90e2 !important;
+}
+/* 绿色标题 */
+.markdown-preview-view h1.lvse::before,
+.cm-line.cm-header-1.lvse::before {
+  background-color: #4caf50 !important;
+}
+/* 橙色标题 */
+.markdown-preview-view h1.chengse::before,
+.cm-line.cm-header-1.chengse::before {
+  background-color: #ff9800 !important;
+}
+/* 红色标题 */
+.markdown-preview-view h1.hongse::before,
+.cm-line.cm-header-1.hongse::before {
+  background-color: #f44336 !important;
+}
+
+/* 适配深色主题，文字自动变白 */
+.theme-dark .markdown-preview-view h1,
+.theme-dark .cm-line.cm-header-1 {
+  color: #ffffff !important;
+}

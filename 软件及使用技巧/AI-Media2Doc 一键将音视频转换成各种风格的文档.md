@@ -30,14 +30,14 @@ npm run dev
 ```
 ## 浏览器访问
 打开浏览器访问 `http://localhost:5173/` 即可。
-![](../file-20251211094957179.png)
+![](../机顶盒/file-20251211094957179.png)
 # 5、后端部署
 ## 5.1、安装依赖
 ```shell
 cd backend
 pip install -r requirements.txt
 ```
-![](../file-20251211095552358.png)
+![](../机顶盒/file-20251211095552358.png)
 报错：这是一个典型的 **Python 依赖版本冲突** 问题。
 ### 🔴 问题原因
 - 项目依赖的库 **`melotts` (用于语音合成)** 强制要求 PyTorch 版本必须 **小于 2.0** (`torch<2.0`)。
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 # 注意把下面的路径换成你实际下载文件的路径
 pip install "D:\torch-1.13.1+cu117-cp310-cp310-win_amd64.whl"
 ```
-![](../file-20251211101920912.png)
+![](../机顶盒/file-20251211101920912.png)
 
 **步骤 3：补全另外两个小文件**  
 Torch 装好后，还需要 torchvision 和 torchaudio。这两个文件比较小，直接 pip 安装即可：

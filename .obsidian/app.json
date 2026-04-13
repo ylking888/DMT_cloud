@@ -1,6 +1,7 @@
 {
-  "useMarkdownLinks": true,
+  "useMarkdownLinks": false,
   "newLinkFormat": "relative",
-  "promptDelete": false,
-  "attachmentFolderPath": "./附件"
+  "promptDelete": true,
+  "attachmentFolderPath": "附件",
+  "alwaysUpdateLinks": true
 }

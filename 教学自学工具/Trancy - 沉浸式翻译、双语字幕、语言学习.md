@@ -3,7 +3,7 @@
 搜索Trancy
 官网：[Trancy - 沉浸式翻译 & YouTube AI 双语字幕 & 语言学习助手](https://www.trancy.org/zh-cn)
 
-![](../file-20251207163010634.png)
+![](../附件/file-20251207163010634.png)
 ## 概述
 
 Trancy 不仅提供对 YouTube, Udemy, Disney+, TED, edX, Kehan, Coursera 等平台的双语字幕支持，还能实现对普通网页的 AI 划词/划句翻译、全文沉浸翻译等功能，真正的语言学习全能助手。
@@ -42,7 +42,7 @@ Trancy 不仅提供对 YouTube, Udemy, Disney+, TED, edX, Kehan, Coursera 等平
 - 邮件：hello@trancy.org 
 - Discord 社群：https://discord.gg/DvD8MqTeY2
 
-![](../file-20251207163654812.png)
-![](../file-20251207163746160.png)
+![](../附件/file-20251207163654812.png)
+![](../附件/file-20251207163746160.png)
 官网上的学习中心
-![](../file-20251207164733747.png)
+![](../附件/file-20251207164733747.png)

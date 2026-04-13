@@ -53,8 +53,8 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
 2. 打开 **Google Play Store** 或 **Chrome**。
 3. 点击 **Sign in (登录)** -> **Create account (创建账号)**。
 4. 按常规流程填写姓名、生日、性别。
-![](../file-20251209100011673.png)
-![](../file-20251209100042751.png)
+![](../附件/file-20251209100011673.png)
+![](../附件/file-20251209100042751.png)
 
 5. **手机号验证环节**：
     - 系统会自动根据你的 IP 识别国家代码（如美国 IP 显示 +1）。
@@ -62,7 +62,7 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
 
 ---
 [显示查询自己的IP地址](https://www.ip111.cn/)
-![](../file-20251209095408231.png)
+![](../附件/file-20251209095408231.png)
 
 ## 常见问题排查
 
@@ -78,8 +78,8 @@ Google 的风控系统会检测浏览器指纹（User Agent, Cookies, Canvas 指
 
 Gemini 3pro大学生免费1年领取活动持续到12.9号没领赶紧去价值一千超有用！！
 [AI for Students: Free Study, Writing, & Career Tools & Training](https://grow.google/students/)
-![](../file-20251209111915684.png)
-![](../file-20251209111933447.png)
+![](../附件/file-20251209111915684.png)
+![](../附件/file-20251209111933447.png)
 
 ## 1.首先去官网[https://gemini.google.com/](https://gemini.google.com/) 点击升级
 

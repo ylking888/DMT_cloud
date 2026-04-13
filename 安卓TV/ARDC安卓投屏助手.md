@@ -30,9 +30,9 @@ https://gitcode.com/open-source-toolkit/f2956/?utm\_source=tools\_gitcode\&index
 
 * 在使用过程中，如遇到任何问题，请参考工具自带的帮助文档或联系技术支持。
 
-![ADB连接](../image-2%202.png)
+![ADB连接](../附件/image-2%202.png)
 
-![远程同屏](../image%202.png)
+![远程同屏](../附件/image%202.png)
 
-![下载文件](../image-1%202.png)
+![下载文件](../附件/image-1%202.png)
 

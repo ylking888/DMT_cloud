@@ -1,9 +1,9 @@
 ---
-banner: "机顶盒/assets/新魔百和-M301H-海思-无Wifi-双端语音遥控/screenshot__1775697645064.png"
+banner: 附件/screenshot__1775697645064.png
 banner_x: 0.5
 banner_y: 0.2
 banner_height: 30vh
-banner_hover: false
+banner_hover: true
 ---
 
 # 🏠 Home

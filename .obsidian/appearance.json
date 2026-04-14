@@ -2,5 +2,6 @@
   "enabledCssSnippets": [
     "callout-vertical-line",
     "title-color-bar"
-  ]
+  ],
+  "theme": "obsidian"
 }

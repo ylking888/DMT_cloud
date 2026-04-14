@@ -2,7 +2,7 @@
 banner: 附件/screenshot__1775697645064.png
 banner_x: 0.5
 banner_y: 0.2
-banner_height: 30vh
+banner_height: 60vh
 banner_hover: true
 ---
 
@@ -11,8 +11,7 @@ banner_hover: true
 ---
 
 left: 
-> [!action] 
-> **💪 行动** 
+> [!hongse]  **💪 行动** 
 > [[Areas]] 
 > [[Projects]] 
 > [!calendar] 

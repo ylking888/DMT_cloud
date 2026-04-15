@@ -39,3 +39,6 @@ Note-Taking
 
 # 图书馆
 ![](assets/OBsidian攻略/file-20260415121156109.png)
+
+# 博主推荐的博主
+我也参考了网络上很多不同的笔记系统，para、zettelkasten、kapano的笔记库等等，在笔记库里面注入了我自己的理解

@@ -41,4 +41,4 @@ Note-Taking
 ![](assets/OBsidian攻略/file-20260415121156109.png)
 
 # 博主推荐的博主
-我也参考了网络上很多不同的笔记系统，para、zettelkasten、kapano的笔记库等等，在笔记库里面注入了我自己的理解
+我也参考了网络上很多不同的笔记系统，para、zettelkasten、kapano的笔记库等等，在笔记库里面注入了我自己的理解：ideaverse（B站上有搬运）[Kiven大汉堡的个人空间-Kiven大汉堡个人主页-哔哩哔哩视频](https://space.bilibili.com/315945401?spm_id_from=333.788.upinfo.detail.click)

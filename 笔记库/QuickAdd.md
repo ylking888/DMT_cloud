@@ -1,4 +1,4 @@
-![](assets/QuickAdd/file-20260414134755175.png)
+![](assets/QuickAdd/file-20260415115202607.png)
 ## 使用 QuickAdd 插件（最推荐，最灵活）
 这是目前 Obsidian 社区解决此问题的最佳方案。
 **步骤：**

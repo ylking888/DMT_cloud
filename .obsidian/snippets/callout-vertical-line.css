@@ -2,17 +2,17 @@
 .callout {
   background-color: transparent !important;
   border: none !important;
-  border-left: 8px solid !important; /*竖条粗细*/
-  padding: 4px 24px !important; /*竖条高度、文字与竖条距离*/
+  border-left: 2px solid !important; /*竖条粗细*/
+  padding: 2px 24px !important; /*竖条高度、文字与竖条距离*/
   margin: 4px 0 !important; /*竖条间距*/
-  border-radius: 0px !important; /*给竖条加圆角*/
+  border-radius: 12px !important; /*给竖条加圆角*/
 }
 .callout .callout-icon {
   display: none !important;
 }
 .callout .callout-title {
   color: #1e1e1e !important;
-  font-size: 1.5em !important;
+  font-size: 1.0em !important;
   font-weight: bold !important;
 }
 

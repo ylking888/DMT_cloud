@@ -1,5 +1,6 @@
 ---
 date: 2026-04-15
+up: "[[../Obsidian/OBsidian攻略|OBsidian攻略]]"
 ---
 # one note one idea
 Zettelkasten的核心之一就是：**一个想法一条笔记**

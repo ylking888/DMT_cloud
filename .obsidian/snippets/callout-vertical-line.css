@@ -4,8 +4,8 @@
   border: none !important;
   border-left: 2px solid !important; /*竖条粗细*/
   padding: 2px 24px !important; /*竖条高度、文字与竖条距离*/
-  margin: 4px 0 !important; /*竖条间距*/
-  border-radius: 12px !important; /*给竖条加圆角*/
+  margin: 2px 0 !important; /*竖条间距*/
+  border-radius: 4px !important; /*给竖条加圆角*/
 }
 .callout .callout-icon {
   display: none !important;

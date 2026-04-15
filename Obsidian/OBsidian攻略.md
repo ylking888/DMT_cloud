@@ -31,3 +31,11 @@ Note-Taking
 ### **[[卡片式]]**
 实现方法：使用 Callout 语法
 ![](assets/OBsidian攻略/file-20260415111922633.png)
+# 日记模板
+![](assets/OBsidian攻略/file-20260415121110961.png)
+
+# 项目管理
+![](assets/OBsidian攻略/file-20260415121132709.png)
+
+# 图书馆
+![](assets/OBsidian攻略/file-20260415121156109.png)

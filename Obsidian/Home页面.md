@@ -1,72 +1,37 @@
-![](assets/Home页面/file-20260416104047802.png)要生成图片里那样的 Home 页面，需要用到几个插件的组合，并使用一种叫 **Callout** 的语法来实现那些带标题和边框的内容块。
-### 🛠️ 核心组件拆解
+![](assets/Home页面/file-20260416104047802.png)![](assets/Home页面/file-20260416151246822.png)
+### 🛠️ 
 这个 Home 页面主要由四个插件/功能协作完成：
-1.  **Homepage 插件**：负责将你指定的笔记（也就是这个 Home 页面）设置为 Obsidian 启动时自动打开的首页。
-2.  **Dataview 插件**：这是实现动态查询功能的核心。图中的 “Recent Files” 等模块，就是通过 Dataview 自动查询并列出最近更新或创建的笔记。
-3.  **Callout 语法**：这是 Obsidian 的原生功能。图中 `Home`、`Atlas`、`Calendar`、`Efforts` 这几个带底色和标题的框，就是用 Callout 实现的。
-4.  **Contribution Graph 插件**：图中的热力图（类似 GitHub 贡献图）是由 `Contribution Graph` 插件生成的。
 
-### 📄 源代码与配置步骤
 
-你可以新建一个笔记（比如命名为 `Home`），然后将下面的代码复制进去。
-
+### 📄 Obsidian 原生 Callout（提示框）+ 自定义 CSS 美化
+无需额外社区插件（仅需 Obsidian 1.0+ 原生支持），核心是：
+1. 用原生 `> [!note]` 等 Callout 语法创建可折叠面板
+2. 用 CSS 自定义每个面板的**背景色、边框色、图标、圆角、箭头样式**
+3. 实现点击按钮展开 / 收起内容，完全匹配你截图的效果
+#### 步骤 1：在 Home 笔记中插入 Callout 代码（直接复制）
 ```markdown
----
-banner: "![[banner.png]]" 
-cssclasses:
-  - hide-properties
-sticker: lucide//home
----
-> [!info] 你的名字 / 导航标题
-> Your launchpad and home base. That's here. That's home.
+> [!note]- Atlas
+> Where would you like to go?
+> 
+> - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
+> 
+> ![](https://example.com/your-image.jpg) <!-- 替换为你的图片链接 -->
+> 
+> - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
+> - To catalyze your mind, go to your [[Thinking Map]] and [[Concepts Map]].
+> - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[Meta PKM]].
 
-# 📇 最近更新
+> [!tip]- Calendar
+> 你的日历内容（可放 Dataview 日程、任务等）
 
-> [!note]- 📌 最近打开的文件
-> ```dataview
-> TABLE WITHOUT ID
->   file.link AS "文件名",
->   dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最后修改时间"
-> FROM "/"
-> SORT file.mtime DESC
-> LIMIT 5
-> ```
-
-> [!note]- 📝 最近创建的笔记
-> ```dataview
-> TABLE WITHOUT ID
->   file.link AS "文件名",
->   dateformat(file.ctime, "yyyy-MM-dd") AS "创建日期"
-> FROM "/"
-> SORT file.ctime DESC
-> LIMIT 5
-> ```
-
-# 📚 核心知识库
-
-> [!example]- Atlas (地图)
-> - [[概念索引]]
-> - [[MOC - 地图笔记]]
-
-> [!calendar]- Calendar (日历)
-> - [[日记/2026-04-16|今日记录]]
-> - `$= dv.list(dv.pages('"日记"').file.link.limit(5))`
-
-> [!tip]- Efforts (项目)
-> - [[当前任务]]
-> - [[项目进度跟踪]]
-
-# 🔥 创作热力图
-
-```contributionGraph
-title: 近期创作活跃度
-graphType: month-track
-dataSource:
-  type: PAGE
-  value: ""
-  dateField:
-    type: FILE_MTIME
+> [!warning]- Efforts
+> 你的努力追踪、习惯打卡等内容
 ```
+#### 语法说明：
+- `[!note]-`：`-` 代表**默认折叠**，去掉 `-` 则默认展开
+- `Atlas`：自定义面板标题（替换为你需要的文字）
+- 标题下方：面板展开后的内容，支持 Markdown 列表、图片、链接、Dataview 等所有 Obsidian 语法
+- 不同 Callout 类型（`note`/`tip`/`warning`）对应不同默认颜色，我们用 CSS 自定义成你要的青 / 紫 / 绿配色
 #### 📝 代码说明
 *   **YAML Frontmatter**：
   笔记开头的 `---` 部分是为笔记设置属性的，比如 `cssclasses` 可以隐藏属性本身，`sticker` 可以为笔记添加图标。

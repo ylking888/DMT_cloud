@@ -27,8 +27,8 @@ ta:
 > - 若想激活你的思维，可查看「思维图谱」与「概念图谱」。
 > - 若想落地实践，可查看「生活图谱」；若想提升技能，可查看「Ideaverse 图谱」；若想梳理规则，可查看「元个人知识管理」。
 
-> [!calendar]- Calendar
->> Your schedule & routines live here.
+> [!calendar]- Calendar日历
+>> 若想写日记、聚焦当日事务，或是捕捉灵感闪现，按下 Cmd-d（Mac）或 Ctrl-d（Windows）
 > - Today's tasks
 > - Upcoming events
 > [!calendar]- 📅 **Calendar**  

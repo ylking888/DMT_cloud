@@ -33,11 +33,30 @@ tags:
 > - Upcoming events
 
 > [!efforts]- Efforts
-> Track your energy & progress.
-> - Habits
-> - Goals
-> - Projects
-
+> > For a concentrated view, go to [[Efforts]].
+> > Use this to keep priorities in order and quickly adjust your bandwidth as needed.
+> 
+> <!-- On 子面板（自动生成） -->
+> > [!on]- 🔥 On
+> > ```dataview
+> > TABLE WITHOUT ID
+> >   ("[[" + file.name + "]]") AS "(" + length(where status = "On") + ")" + " " + file.link AS "任务",
+> >   rank AS Rank
+> > FROM "你的任务笔记文件夹路径"  # 例如："00 - Projects"
+> > WHERE status = "On"
+> > SORT rank DESC
+> > ```
+> 
+> <!-- Ongoing 子面板（自动生成） -->
+> > [!ongoing]- ♻️ Ongoing
+> > ```dataview
+> > TABLE WITHOUT ID
+> >   ("[[" + file.name + "]]") AS "(" + length(where status = "Ongoing") + ")" + " " + file.link AS "任务",
+> >   rank AS Rank
+> > FROM "你的任务笔记文件夹路径"
+> > WHERE status = "Ongoing"
+> > SORT rank DESC
+> > ```
 
 
 

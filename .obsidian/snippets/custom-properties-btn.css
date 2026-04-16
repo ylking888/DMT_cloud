@@ -1,38 +1,129 @@
-/* ===================================== */
-/* 彩色可折叠按钮（Atlas/Calendar/Efforts 最终修复版） */
-/* ===================================== */
-/* 全局Callout重置：彻底关闭左侧竖条，统一边框样式 */
+/* 核心按钮容器：1:1还原样本高度/比例 */
+.custom-properties-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px; /* 缩小内边距，匹配样本按钮高度 */
+  margin: 16px 0;
+  background-color: #e9e9e9; /* 样本浅灰色背景 */
+  border: 1px solid #d1d1d1; /* 细边框 */
+  border-radius: 2px; /* 极小圆角，匹配样本 */
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  box-sizing: border-box;
+}
+
+.custom-properties-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* 图标样式：缩小尺寸+纤细线条，匹配样本 */
+.properties-icon {
+  width: 20px;
+  height: 20px;
+  color: #000000;
+  margin-right: 12px;
+  flex-shrink: 0;
+  stroke-width: 2; /* 纤细线条，还原样本图标 */
+}
+
+/* 文字样式：大幅缩小字号，匹配样本小字效果 */
+.properties-text {
+  font-size: 16px; /* 从32px降至20px，完美匹配样本 */
+  font-weight: 500;
+  color: #000000;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 箭头样式：同步缩小，和文字比例匹配 */
+.properties-arrow {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-left: 8px;
+}
+
+/* 描述文字样式：保持和样本一致 */
+.properties-desc {
+  font-size: 18px;
+  color: #000000;
+  margin: 8px 0 24px 0;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* home链接样式：匹配样本蓝色 */
+.home-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+/* 隐藏原生属性面板，避免冲突 */
+/*.metadata-container {*/
+/*  display: none !important;*/
+/*}*/
+
+/* 适配深色模式（可选） */
+.theme-dark .custom-properties-btn {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+.theme-dark .properties-icon,
+.theme-dark .properties-text,
+.theme-dark .properties-arrow,
+.theme-dark .properties-desc {
+  color: #ffffff;
+}
+.theme-dark .home-link {
+  color: #4dabf7;
+}
+
+/* ============================== */
+/* 最终版：彩色折叠面板（100%不冲突Properties按钮） */
+/* ============================== */
+/* 全局Callout重置：彻底关闭左侧竖条，修复引用样式冲突 */
 .callout {
-  border-left: none !important; /* 强制关闭原生左侧竖条，解决你现在的问题！ */
-  border-radius: 12px !important; /* 圆角，匹配目标样式 */
-  border-width: 2px !important;
+  border-left: none !important;
+  border: 2px solid var(--callout-color) !important;
+  border-radius: 12px !important;
   margin: 16px 0 !important;
-  padding: 12px 20px !important;
-  background-color: var(--background-primary) !important;
+  padding: 0 !important;
+  background-color: rgba(var(--callout-rgb), 0.05) !important;
   box-shadow: none !important;
-  transition: all 0.2s ease;
+  overflow: hidden !important;
 }
 
 /* 折叠状态：纯按钮样式，无内容区 */
 .callout.is-collapsed {
-  padding: 16px 20px !important;
-  border-bottom: none !important;
+  padding: 12px 16px !important;
+  background-color: rgba(var(--callout-rgb), 0.05) !important;
 }
 
-/* 标题栏样式：匹配目标的文字大小、图标位置 */
+/* 标题栏样式：匹配目标大小、图标位置 */
 .callout-title {
+  padding: 12px 16px !important;
   font-size: 24px !important;
   font-weight: 600 !important;
   color: #000 !important;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
   margin: 0 !important;
-  padding: 0 !important;
   min-height: 32px;
 }
 
-/* 图标样式：和目标大小一致 */
+/* 图标样式：匹配目标大小 */
 .callout-icon {
   width: 28px !important;
   height: 28px !important;
@@ -40,7 +131,7 @@
   flex-shrink: 0;
 }
 
-/* 折叠箭头：右侧对齐，匹配目标 */
+/* 折叠箭头：右侧对齐 */
 .callout-fold {
   margin-left: auto !important;
   font-size: 24px !important;
@@ -48,24 +139,35 @@
   flex-shrink: 0;
 }
 
-/* 展开后的内容区：带顶部分隔线，匹配目标 */
+/* 内容区样式：修复首行引用问题，添加背景色 */
 .callout-content {
   font-size: 18px !important;
   line-height: 1.6 !important;
-  padding-top: 16px !important;
-  margin-top: 12px !important;
+  padding: 16px !important;
+  margin: 0 !important;
   border-top: 1px solid var(--callout-color) !important;
   color: #000 !important;
+  background-color: transparent !important;
+}
+
+/* 强制修复首行引用样式（解决变红带背景问题） */
+.callout-content > p:first-of-type {
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  border-left: none !important;
+  color: #000 !important;
+  font-style: normal !important;
 }
 
 /* -------------------- */
-/* 1. Atlas（青蓝色） */
+/* 1. Atlas（青蓝色，匹配目标） */
 /* -------------------- */
 .callout[data-callout="atlas"] {
   --callout-color: #2dd4bf;
+  --callout-rgb: 45, 212, 191;
   --callout-icon: lucide-book-open;
   border-color: #2dd4bf !important;
-  background-color: rgba(45, 212, 191, 0.05) !important; /* 淡青色背景 */
 }
 
 /* -------------------- */
@@ -73,9 +175,9 @@
 /* -------------------- */
 .callout[data-callout="calendar"] {
   --callout-color: #a78bfa;
+  --callout-rgb: 167, 139, 250;
   --callout-icon: lucide-calendar;
   border-color: #a78bfa !important;
-  background-color: rgba(167, 139, 250, 0.05) !important; /* 淡紫色背景 */
 }
 
 /* -------------------- */
@@ -83,14 +185,15 @@
 /* -------------------- */
 .callout[data-callout="efforts"] {
   --callout-color: #65a30d;
+  --callout-rgb: 101, 163, 13;
   --callout-icon: lucide-dumbbell;
   border-color: #65a30d !important;
-  background-color: rgba(101, 163, 13, 0.05) !important; /* 淡绿色背景 */
 }
 
 /* 深色模式适配 */
 .theme-dark .callout-title,
-.theme-dark .callout-content {
+.theme-dark .callout-content,
+.theme-dark .callout-content > p:first-of-type {
   color: #fff !important;
 }
 .theme-dark .callout[data-callout="atlas"] {

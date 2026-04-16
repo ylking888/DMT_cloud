@@ -88,3 +88,72 @@
 .theme-dark .home-link {
   color: #4dabf7;
 }
+
+/* ===================================== */
+/* 以下是：彩色折叠面板（Atlas/Calendar/Efforts） */
+/* ===================================== */
+.callout {
+  border-radius: 6px !important;
+  border-width: 2px !important;
+  margin: 12px 0 !important;
+  padding: 4px 12px !important;
+  background-color: var(--background-primary) !important;
+  box-shadow: none !important;
+}
+
+/* 标题样式（和你样本一模一样大小） */
+.callout-title {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  min-height: 36px !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 图标大小 */
+.callout-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* 折叠箭头 */
+.callout-fold {
+  margin-left: auto !important;
+  transform: scale(1.1);
+}
+
+/* 内容区 */
+.callout-content {
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  padding-top: 10px !important;
+  border-top: 1px solid var(--callout-color) !important;
+}
+
+/* -------------------- */
+/* 1. Atlas（青色） */
+/* -------------------- */
+.callout[data-callout="atlas"] {
+  --callout-color: #22c3b3;
+  --callout-icon: lucide-book-open;
+  border-color: #22c3b3 !important;
+}
+
+/* -------------------- */
+/* 2. Calendar（紫色） */
+/* -------------------- */
+.callout[data-callout="calendar"] {
+  --callout-color: #a06fee;
+  --callout-icon: lucide-calendar;
+  border-color: #a06fee !important;
+}
+
+/* -------------------- */
+/* 3. Efforts（绿色） */
+/* -------------------- */
+.callout[data-callout="efforts"] {
+  --callout-color: #56b964;
+  --callout-icon: lucide-trending-up;
+  border-color: #56b964 !important;
+}

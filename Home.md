@@ -12,7 +12,7 @@
 <span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
 
 > [!atlas]- Atlas
-> Where would you like to go?
+>> Where would you like to go?
 > 
 > - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
 > - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
@@ -20,7 +20,7 @@
 > - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[Meta PKM]].
 
 > [!calendar]- Calendar
-> Your schedule & routines live here.
+>> Your schedule & routines live here.
 > - Today's tasks
 > - Upcoming events
 

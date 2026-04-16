@@ -158,3 +158,33 @@ body .callout[data-callout="efforts"] {
   --callout-icon: lucide-trending-up;
   background-color: rgba(92, 193, 108, 0.07) !important;
 }
+
+
+/* ============================== */
+/* 嵌套引用块样式（匹配目标高亮效果） */
+/* ============================== */
+.callout-content blockquote {
+  border-left: 3px solid var(--callout-color) !important;
+  background-color: rgba(var(--callout-rgb), 0.08) !important;
+  border-radius: 4px !important;
+  padding: 12px 16px !important;
+  margin: 0 0 16px 0 !important;
+  font-size: 12px !important;
+  font-style: italic !important;
+  color: var(--callout-color) !important;
+}
+
+/* 适配Atlas（青色）引用块 */
+.callout[data-callout="atlas"] blockquote {
+  --callout-rgb: 45, 212, 191;
+}
+
+/* 适配Calendar（紫色）引用块 */
+.callout[data-callout="calendar"] blockquote {
+  --callout-rgb: 167, 139, 250;
+}
+
+/* 适配Efforts（绿色）引用块 */
+.callout[data-callout="efforts"] blockquote {
+  --callout-rgb: 101, 163, 13;
+}

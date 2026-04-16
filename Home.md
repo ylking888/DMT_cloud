@@ -1,11 +1,6 @@
 ---
 description: Your launchpad and home base. That's here. That's home.
 ---
-## Home
-
-
-
-
 ## 📍 快速导航
 
 > [!example]- 🗺️ **Atlas**
@@ -56,10 +51,14 @@ description: Your launchpad and home base. That's here. That's home.
 title: 近期活跃度
 graphType: month-track
 dateRangeType: LATEST_DAYS
-dateRangeValue: 365
+dateRangeValue: 30
 dataSource:
   type: PAGE
   value: ""
   dateField:
     type: FILE_MTIME
+titleStyle:
+  fontSize: 16px
+cellStyleRules: []
+
 ```

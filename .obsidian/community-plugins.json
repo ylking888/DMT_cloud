@@ -11,5 +11,6 @@
   "quickadd",
   "homepage",
   "dataview",
-  "contribution-graph"
+  "contribution-graph",
+  "templater-obsidian"
 ]

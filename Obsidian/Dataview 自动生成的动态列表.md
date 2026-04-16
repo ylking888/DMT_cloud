@@ -83,4 +83,4 @@ tags: ["efforts", "project"]
 > ```
 ```
 
-等等文章列表都是通过dataview插件来实现的。
+等等文章列表都可以通过dataview插件来实现的。

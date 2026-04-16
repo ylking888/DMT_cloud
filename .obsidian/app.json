@@ -3,5 +3,6 @@
   "newLinkFormat": "relative",
   "promptDelete": true,
   "attachmentFolderPath": "/附件",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "propertiesInDocument": "source"
 }

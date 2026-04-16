@@ -1,5 +1,5 @@
 ---
-description: Your launchpad and home base. That's here. That's home.
+📒description: Your launchpad and home base. That's here. That's home.
 ---
 ## 📍 快速导航
 

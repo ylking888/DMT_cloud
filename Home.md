@@ -28,12 +28,11 @@ ta:
 > - 若想落地实践，可查看「生活图谱」；若想提升技能，可查看「Ideaverse 图谱」；若想梳理规则，可查看「元个人知识管理」。
 
 > [!calendar]- Calendar日历
->> 若想写日记、聚焦当日事务，或是捕捉灵感闪现，按下 Cmd-d（Mac）或 Ctrl-d（Windows）
-> - Today's tasks
+>- 若想写日记、聚焦当日事务，或是捕捉灵感闪现，按下 Cmd-d（Mac）或 Ctrl-d（Windows）
+> - 若想分类记录特定内容，可前往「日志（Logs）」板块。
 > - Upcoming events
-> [!calendar]- 📅 **Calendar**  
-> 日记与时间管理
-> - [[日记/今日记录|今日记录]]
+> - 若想进行宏观复盘，可前往「计划与复盘（Plan and Review）」板块。
+>- 若想了解更多关于 “时间穿梭” 的用法，可查看「日历（Calendar）」相关说明。
 
 > [!efforts]- 📌 最近打开的文件
 > ```dataview

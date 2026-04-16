@@ -1,4 +1,11 @@
+---
+date: 2026-04-16
+up: "[[OBsidian攻略]]"
+---
 ![](assets/Home页面/file-20260416104047802.png)![](assets/Home页面/file-20260416151246822.png)
+我的示例：[[../Home|Home]]
+
+
 ### 🛠️ Properties按钮
 #### CSS部分
 ```CSS

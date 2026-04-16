@@ -51,3 +51,50 @@
 .theme-dark .callout .callout-title {
   color: #ffffff !important;
 }
+/* ===== 原生 Callout 类型支持（用于实现 Properties 效果） ===== */
+
+/* info 类型 - 最接近样本中的 Properties 区域效果 */
+.callout[data-callout="info"] {
+  border-left-color: #4a90e2 !important;
+  background-color: rgba(74, 144, 226, 0.08) !important;
+  border-radius: 12px !important;
+  border-left-width: 3px !important;
+  padding: 8px 20px !important;
+}
+
+/* 让 info 卡片的标题可选隐藏（如果不想显示 "Info" 标题） */
+.callout[data-callout="info"] .callout-title {
+  display: none !important;
+}
+
+/* 如果你希望保留标题但改文字，可以这样（去掉 display: none 并修改内容） */
+/* .callout[data-callout="info"] .callout-title-inner::before {
+  content: "📌 ";
+} */
+
+/* note 类型 - 备用 */
+.callout[data-callout="note"] {
+  border-left-color: #6c757d !important;
+  background-color: rgba(108, 117, 125, 0.08) !important;
+  border-radius: 12px !important;
+}
+
+/* tip 类型 - 备用 */
+.callout[data-callout="tip"] {
+  border-left-color: #4caf50 !important;
+  background-color: rgba(76, 175, 80, 0.08) !important;
+  border-radius: 12px !important;
+}
+
+/* 深色主题适配 */
+.theme-dark .callout[data-callout="info"] {
+  background-color: rgba(74, 144, 226, 0.15) !important;
+}
+
+.theme-dark .callout[data-callout="note"] {
+  background-color: rgba(108, 117, 125, 0.15) !important;
+}
+
+.theme-dark .callout[data-callout="tip"] {
+  background-color: rgba(76, 175, 80, 0.15) !important;
+}

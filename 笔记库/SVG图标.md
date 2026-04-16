@@ -17,3 +17,7 @@ Windows：右键 → 打开方式 → 记事本
 步骤 3：复制 `<svg ...> 到 </svg>` 的全部内容
 把整段代码全部复制。
 步骤 4：替换你笔记里的图标代码
+
+## 直接调用
+在[Tablericons - Free SVG Icons](https://tablericons.com/)网站上，可以直接点图标上的 「Copy SVG」（复制 SVG 代码）
+

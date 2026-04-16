@@ -50,4 +50,6 @@ Note-Taking
 [[Home页面]]，我的示例：[[../Home|Home]]
 ![](assets/OBsidian攻略/file-20260416162533958.png)
 
-## 
+## Dataview 自动生成的动态列表
+[[Dataview 自动生成的动态列表]]
+

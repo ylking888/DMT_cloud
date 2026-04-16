@@ -1,8 +1,7 @@
 ---
 📒description: Your launchpad and home base. That's here. That's [[home]].
 ---
-
-<div class="custom-properties-btn" onclick="app.workspace.openRightLeaf(false).setViewState({type: 'file-properties'})"> <svg class="properties-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect> <line x1="16" y1="3" x2="16" y2="7"></line> <line x1="8" y1="3" x2="8" y2="7"></line> <line x1="4" y1="11" x2="20" y2="11"></line> </svg> <span class="properties-text">Properties</span> <span class="properties-arrow">></span> </div> <p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#" class="home-link">home</a>.</p>
+<div class="custom-properties-btn" onclick="app.commands.executeCommandById('properties:open')"> <svg class="properties-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect> <line x1="3" y1="10" x2="21" y2="10"></line> </svg> <span class="properties-text">Properties</span> <span class="properties-arrow">></span> </div> <p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
 ## 📍 快速导航
 
 > [!example]- 🗺️ **Atlas**

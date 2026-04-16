@@ -1,55 +1,64 @@
-/* 自定义Properties按钮容器 */
+/* 核心按钮容器：1:1还原目标样式 */
 .custom-properties-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 16px 20px;
-  margin: 16px 0;
-  background-color: #e9e9e9; /* 浅灰色背景，匹配截图 */
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
+  padding: 18px 24px; /* 修正内边距，匹配目标高度 */
+  margin: 20px 0;
+  background-color: #e9e9e9; /* 目标浅灰色背景 */
+  border: 1px solid #d1d1d1; /* 细边框 */
+  border-radius: 2px; /* 极小圆角，匹配目标 */
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.15s ease;
+  box-sizing: border-box;
 }
 
 .custom-properties-btn:hover {
-  background-color: #e0e0e0; /*  hover效果 */
+  background-color: #e0e0e0; /* 轻微hover效果 */
 }
 
-/* 图标样式 */
+/* 图标样式：完美还原目标收纳盒形状 */
 .properties-icon {
-  color: #000;
-  margin-right: 12px;
+  width: 36px;
+  height: 36px;
+  color: #000000;
+  margin-right: 16px;
   flex-shrink: 0;
+  stroke-width: 2.5; /* 加粗线条，匹配目标图标粗细 */
 }
 
-/* 文字样式 */
+/* 文字样式：匹配目标大小/字重 */
 .properties-text {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 500;
-  color: #000;
+  color: #000000;
   flex-grow: 1;
   text-align: left;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* 箭头样式 */
+/* 箭头样式：匹配目标粗箭头 */
 .properties-arrow {
-  font-size: 24px;
-  font-weight: 500;
-  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000000;
   flex-shrink: 0;
+  line-height: 1;
+  margin-left: 12px;
 }
 
-/* 描述文字样式 */
+/* 描述文字样式：匹配目标 */
 .properties-desc {
-  font-size: 18px;
-  color: #000;
+  font-size: 20px;
+  color: #000000;
   margin: 8px 0 24px 0;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* home链接样式 */
+/* home链接样式：匹配目标蓝色 */
 .home-link {
   color: #0066cc;
   text-decoration: none;
@@ -60,7 +69,22 @@
   text-decoration: underline;
 }
 
-/* 隐藏原生笔记属性面板（避免冲突） */
+/* 隐藏原生属性面板，避免冲突 */
 .metadata-container {
   display: none !important;
+}
+
+/* 适配深色模式（可选） */
+.theme-dark .custom-properties-btn {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+.theme-dark .properties-icon,
+.theme-dark .properties-text,
+.theme-dark .properties-arrow,
+.theme-dark .properties-desc {
+  color: #ffffff;
+}
+.theme-dark .home-link {
+  color: #4dabf7;
 }

@@ -167,9 +167,11 @@ body .callout[data-callout="efforts"] {
   border-left: 3px solid var(--callout-color) !important;
   background-color: rgba(var(--callout-rgb), 0.08) !important;
   border-radius: 4px !important;
-  padding: 12px 16px !important;
-  margin: 0 0 16px 0 !important;
-  font-size: 12px !important;
+  padding: 0 4px 0px 0px !important;/* 👈 核心：内容区的内边距，控制首行与横线的距离 */
+  margin: 4px 0 16px 0 !important;/* 👈 标题栏下方的间距，0就是完全无间距 */
+/* 顺序：上 右 下 左 */
+/* 第一个数字 = 首行与横线的间距，数字越小，间距越近 */
+  font-size: 16px !important;
   font-style: italic !important;
   color: var(--callout-color) !important;
 }

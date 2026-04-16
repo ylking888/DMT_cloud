@@ -22,10 +22,10 @@ ta:
 > [!atlas]- Atlas
 >> 现在，选择你想去什么地方，或者做什么事情?
 > 
-> - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
-> - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
-> - To catalyze your mind, go to your [[Thinking Map]] and [[Concepts Map]].
-> - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[Meta PKM]].
+> - 若想开展富有灵感的创作，可前往[[添加]]、[[关联]]与[[分享]]板块、
+> - 若想深入探索你的知识库，可尝试：「资源库 | 人物图谱 | 来源图谱」.
+> - 若想激活你的思维，可查看「思维图谱」与「概念图谱」。
+> - 若想落地实践，可查看「生活图谱」；若想提升技能，可查看「Ideaverse 图谱」；若想梳理规则，可查看「元个人知识管理」。
 
 > [!calendar]- Calendar
 >> Your schedule & routines live here.

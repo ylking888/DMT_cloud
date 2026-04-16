@@ -15,7 +15,49 @@ rank: 5       # 优先级分数，1-5，数字越大优先级越高
 tags: ["efforts", "project"]
 ---
 ```
-步骤3：Home中的代码
+### 步骤3：Home中的代码
+```Markdown
+# Home
+
+<!-- Properties 按钮（保留你原来的） -->
+<div class="custom-properties-btn" onclick="app.commands.executeCommandById('properties:open')">
+  <svg class="properties-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect>
+    <line x1="3" y1="10" x2="21" y2="10"></line>
+  </svg>
+  <span class="properties-text">Properties</span>
+  <span class="properties-arrow">></span>
+</div>
+<p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
+
+<!-- Efforts 面板（外层 Callout） -->
+> [!efforts]- Efforts
+> > For a concentrated view, go to [[Efforts]].
+> > Use this to keep priorities in order and quickly adjust your bandwidth as needed.
+> 
+> <!-- On 子面板（自动生成，修复版） -->
+> > [!on]- 🔥 On
+> > ```dataview
+> > TABLE WITHOUT ID
+> >   ("( " + length(rows) + " ) " + file.link) AS "任务",
+> >   rank AS Rank
+> > FROM "00 - Projects"
+> > WHERE status = "On"
+> > SORT rank DESC
+> > ```
+> 
+> <!-- Ongoing 子面板（自动生成，修复版） -->
+> > [!ongoing]- ♻️ Ongoing
+> > ```dataview
+> > TABLE WITHOUT ID
+> >   ("( " + length(rows) + " ) " + file.link) AS "任务",
+> >   rank AS Rank
+> > FROM "00 - Projects"
+> > WHERE status = "Ongoing"
+> > SORT rank DESC
+> > ```
+```
+最近打开的文件文章列表
 ```Markdown
 
 

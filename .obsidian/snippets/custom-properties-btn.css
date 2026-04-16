@@ -90,118 +90,68 @@
 }
 
 /* ============================== */
-/* 最终版：彩色折叠面板（100%不冲突Properties按钮） */
+/* 安全版：彩色折叠面板（不影响任何现有样式） */
 /* ============================== */
-/* 全局Callout重置：彻底关闭左侧竖条，修复引用样式冲突 */
-.callout {
+body .callout {
   border-left: none !important;
-  border: 2px solid var(--callout-color) !important;
-  border-radius: 12px !important;
-  margin: 16px 0 !important;
+  border: 1.5px solid var(--callout-color) !important;
+  border-radius: 6px !important;
+  background: #ffffff03 !important;
+  margin: 14px 0 !important;
   padding: 0 !important;
-  background-color: rgba(var(--callout-rgb), 0.05) !important;
   box-shadow: none !important;
   overflow: hidden !important;
 }
 
-/* 折叠状态：纯按钮样式，无内容区 */
-.callout.is-collapsed {
+body .callout-title {
   padding: 12px 16px !important;
-  background-color: rgba(var(--callout-rgb), 0.05) !important;
-}
-
-/* 标题栏样式：匹配目标大小、图标位置 */
-.callout-title {
-  padding: 12px 16px !important;
-  font-size: 24px !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
-  color: #000 !important;
+  min-height: unset !important;
   display: flex !important;
   align-items: center !important;
-  gap: 12px !important;
-  margin: 0 !important;
-  min-height: 32px;
+  gap: 10px !important;
 }
 
-/* 图标样式：匹配目标大小 */
-.callout-icon {
-  width: 28px !important;
-  height: 28px !important;
+body .callout-icon {
+  width: 20px !important;
+  height: 20px !important;
   color: var(--callout-color) !important;
-  flex-shrink: 0;
 }
 
-/* 折叠箭头：右侧对齐 */
-.callout-fold {
+body .callout-fold {
   margin-left: auto !important;
-  font-size: 24px !important;
   color: var(--callout-color) !important;
-  flex-shrink: 0;
 }
 
-/* 内容区样式：修复首行引用问题，添加背景色 */
-.callout-content {
-  font-size: 18px !important;
+body .callout-content {
+  padding: 0 16px 14px 16px !important;
+  font-size: 15px !important;
   line-height: 1.6 !important;
-  padding: 16px !important;
-  margin: 0 !important;
   border-top: 1px solid var(--callout-color) !important;
-  color: #000 !important;
-  background-color: transparent !important;
-}
-
-/* 强制修复首行引用样式（解决变红带背景问题） */
-.callout-content > p:first-of-type {
-  margin: 0 0 16px 0 !important;
-  padding: 0 !important;
-  background: none !important;
-  border-left: none !important;
-  color: #000 !important;
-  font-style: normal !important;
+  margin: 0 16px !important;
 }
 
 /* -------------------- */
-/* 1. Atlas（青蓝色，匹配目标） */
+/* 1. Atlas（青色） */
 /* -------------------- */
-.callout[data-callout="atlas"] {
-  --callout-color: #2dd4bf;
-  --callout-rgb: 45, 212, 191;
+body .callout[data-callout="atlas"] {
+  --callout-color: #29ccb9;
   --callout-icon: lucide-book-open;
-  border-color: #2dd4bf !important;
 }
 
 /* -------------------- */
-/* 2. Calendar（淡紫色） */
+/* 2. Calendar（紫色） */
 /* -------------------- */
-.callout[data-callout="calendar"] {
-  --callout-color: #a78bfa;
-  --callout-rgb: 167, 139, 250;
+body .callout[data-callout="calendar"] {
+  --callout-color: #a885f6;
   --callout-icon: lucide-calendar;
-  border-color: #a78bfa !important;
 }
 
 /* -------------------- */
-/* 3. Efforts（淡绿色） */
+/* 3. Efforts（绿色） */
 /* -------------------- */
-.callout[data-callout="efforts"] {
-  --callout-color: #65a30d;
-  --callout-rgb: 101, 163, 13;
-  --callout-icon: lucide-dumbbell;
-  border-color: #65a30d !important;
-}
-
-/* 深色模式适配 */
-.theme-dark .callout-title,
-.theme-dark .callout-content,
-.theme-dark .callout-content > p:first-of-type {
-  color: #fff !important;
-}
-.theme-dark .callout[data-callout="atlas"] {
-  background-color: rgba(45, 212, 191, 0.1) !important;
-}
-.theme-dark .callout[data-callout="calendar"] {
-  background-color: rgba(167, 139, 250, 0.1) !important;
-}
-.theme-dark .callout[data-callout="efforts"] {
-  background-color: rgba(101, 163, 13, 0.1) !important;
+body .callout[data-callout="efforts"] {
+  --callout-color: #5cc16c;
+  --callout-icon: lucide-trending-up;
 }

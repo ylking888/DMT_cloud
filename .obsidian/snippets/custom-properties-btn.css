@@ -1,36 +1,36 @@
-/* 核心按钮容器：1:1还原目标样式 */
+/* 核心按钮容器：1:1还原样本高度/比例 */
 .custom-properties-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 18px 24px; /* 修正内边距，匹配目标高度 */
-  margin: 20px 0;
-  background-color: #e9e9e9; /* 目标浅灰色背景 */
+  padding: 12px 20px; /* 缩小内边距，匹配样本按钮高度 */
+  margin: 16px 0;
+  background-color: #e9e9e9; /* 样本浅灰色背景 */
   border: 1px solid #d1d1d1; /* 细边框 */
-  border-radius: 2px; /* 极小圆角，匹配目标 */
+  border-radius: 2px; /* 极小圆角，匹配样本 */
   cursor: pointer;
   transition: background-color 0.15s ease;
   box-sizing: border-box;
 }
 
 .custom-properties-btn:hover {
-  background-color: #e0e0e0; /* 轻微hover效果 */
+  background-color: #e0e0e0;
 }
 
-/* 图标样式：完美还原目标收纳盒形状 */
+/* 图标样式：缩小尺寸+纤细线条，匹配样本 */
 .properties-icon {
-  width: 36px;
-  height: 36px;
+  width: 20px;
+  height: 20px;
   color: #000000;
-  margin-right: 16px;
+  margin-right: 12px;
   flex-shrink: 0;
-  stroke-width: 2.5; /* 加粗线条，匹配目标图标粗细 */
+  stroke-width: 2; /* 纤细线条，还原样本图标 */
 }
 
-/* 文字样式：匹配目标大小/字重 */
+/* 文字样式：大幅缩小字号，匹配样本小字效果 */
 .properties-text {
-  font-size: 32px;
+  font-size: 16px; /* 从32px降至20px，完美匹配样本 */
   font-weight: 500;
   color: #000000;
   flex-grow: 1;
@@ -39,26 +39,26 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* 箭头样式：匹配目标粗箭头 */
+/* 箭头样式：同步缩小，和文字比例匹配 */
 .properties-arrow {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 600;
   color: #000000;
   flex-shrink: 0;
   line-height: 1;
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
-/* 描述文字样式：匹配目标 */
+/* 描述文字样式：保持和样本一致 */
 .properties-desc {
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
   margin: 8px 0 24px 0;
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
-/* home链接样式：匹配目标蓝色 */
+/* home链接样式：匹配样本蓝色 */
 .home-link {
   color: #0066cc;
   text-decoration: none;

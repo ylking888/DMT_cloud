@@ -68,12 +68,12 @@ ta:
 > <!-- On 子面板（自动生成） -->
 > > [!on]- 🔥 On
 > > ```dataview
-> > TABLE WITHOUT ID
-> >   ("[[" + file.name + "]]") AS "(" + length(where status = "On") + ")" + " " + file.link AS "任务",
-> >   rank AS Rank
-> > FROM "你的任务笔记文件夹路径"  # 例如："00 - Projects"
-> > WHERE status = "On"
-> > SORT rank DESC
+>> TABLE WITHOUT ID
+>>  ("( " + length(rows) + " ) " + file.link) AS "任务",
+>>  rank AS Rank
+>>FROM "你的任务笔记文件夹路径"
+>>WHERE status = "On"
+>>SORT rank DESC
 > > ```
 > 
 > <!-- Ongoing 子面板（自动生成） -->

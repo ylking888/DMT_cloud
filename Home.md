@@ -2,7 +2,7 @@
 status:
   - on
 rank: "5"
-tags:
+ta:
   - efforts
   - project
 ---
@@ -31,6 +31,23 @@ tags:
 >> Your schedule & routines live here.
 > - Today's tasks
 > - Upcoming events
+> [!calendar]- 📅 **Calendar**  
+> 日记与时间管理
+> - [[日记/今日记录|今日记录]]
+
+> [!example]- 🗺️ **Atlas**
+> 知识地图与概念索引
+> - [[MOC - 核心概念]]
+> - [[领域索引]]
+> - [[#]] 探索图谱
+
+> [!calendar]- 📅 **Calendar**  
+> 日记与时间管理
+> - `$= dv.current().file.link`
+> - [[日记/今日记录|今日记录]]
+> - `$= dv.list(dv.pages('"日记"').file.link.limit(3))`
+
+
 
 > [!efforts]- Efforts
 > > For a concentrated view, go to [[Efforts]].

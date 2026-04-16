@@ -19,10 +19,10 @@ ta:
 <span class="properties-text">  首页导航</span> 
 <span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
 
-> [!atlas]- Atlas
+> [!atlas]- Atlas知识管理/地图集
 >> 现在，选择你想去什么地方，或者做什么事情?
 > 
-> - 若想开展富有灵感的创作，可前往[[添加]]、[[关联]]与[[分享]]板块、
+> - 若想开展富有灵感的创作，可前往**「添加」**、**「关联」**与**「分享」**板块、
 > - 若想深入探索你的知识库，可尝试：「资源库 | 人物图谱 | 来源图谱」.
 > - 若想激活你的思维，可查看「思维图谱」与「概念图谱」。
 > - 若想落地实践，可查看「生活图谱」；若想提升技能，可查看「Ideaverse 图谱」；若想梳理规则，可查看「元个人知识管理」。

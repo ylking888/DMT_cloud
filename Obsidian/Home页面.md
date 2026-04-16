@@ -1,7 +1,114 @@
 ![](assets/Home页面/file-20260416104047802.png)![](assets/Home页面/file-20260416151246822.png)
 ### 🛠️ Properties按钮
+#### CSS部分
+```CSS
+/* 核心按钮容器：1:1还原样本高度/比例 */
+.custom-properties-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px; /* 缩小内边距，匹配样本按钮高度 */
+  margin: 16px 0;
+  background-color: #e9e9e9; /* 样本浅灰色背景 */
+  border: 1px solid #d1d1d1; /* 细边框 */
+  border-radius: 2px; /* 极小圆角，匹配样本 */
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  box-sizing: border-box;
+}
 
+.custom-properties-btn:hover {
+  background-color: #e0e0e0;
+}
 
+/* 图标样式：缩小尺寸+纤细线条，匹配样本 */
+.properties-icon {
+  width: 20px;
+  height: 20px;
+  color: #000000;
+  margin-right: 12px;
+  flex-shrink: 0;
+  stroke-width: 2; /* 纤细线条，还原样本图标 */
+}
+
+/* 文字样式：大幅缩小字号，匹配样本小字效果 */
+.properties-text {
+  font-size: 16px; /* 从32px降至20px，完美匹配样本 */
+  font-weight: 500;
+  color: #000000;
+  flex-grow: 1;
+  text-align: left;
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 箭头样式：同步缩小，和文字比例匹配 */
+.properties-arrow {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-left: 8px;
+}
+
+/* 描述文字样式：保持和样本一致 */
+.properties-desc {
+  font-size: 18px;
+  color: #000000;
+  margin: 8px 0 24px 0;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* home链接样式：匹配样本蓝色 */
+.home-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+/* 隐藏原生属性面板，避免冲突 */
+/*.metadata-container {*/
+/*  display: none !important;*/
+/*}*/
+
+/* 适配深色模式（可选） */
+.theme-dark .custom-properties-btn {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+.theme-dark .properties-icon,
+.theme-dark .properties-text,
+.theme-dark .properties-arrow,
+.theme-dark .properties-desc {
+  color: #ffffff;
+}
+.theme-dark .home-link {
+  color: #4dabf7;
+}
+```
+#### 显示部分
+图标可换[[../笔记库/SVG图标|SVG图标]]
+```Markdown
+<div class="custom-properties-btn" onclick="app.commands.executeCommandById('properties:open')"> 
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="currentColor"
+>
+  <path d="M19 2a3 3 0 0 1 2.995 2.824l.005 .176v14a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005h14zm-6.99 13l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -8a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z" />
+</svg>
+<span class="properties-text">  首页导航</span> 
+<span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
+```
 
 ### 📄 Obsidian 原生 Callout（提示框）+ 自定义 CSS 美化
 无需额外社区插件（仅需 Obsidian 1.0+ 原生支持），核心是：
@@ -27,96 +134,94 @@
 > [!warning]- Efforts
 > 你的努力追踪、习惯打卡等内容
 ```
+其他板块类似
+```Markdown
+> [!calendar]- Calendar ​ 
+> Your schedule & routines live here. ​ 
+> - Today's tasks ​ 
+> - Upcoming events
+```
+
+```Markdown
+ > [!efforts]- Efforts ​ 
+  Track your energy & progress. ​ 
+> - Habits ​ 
+> - Goals ​ 
+> - Projects
+```
 #### 步骤 2：添加 CSS 片段（1:1 还原截图样式）
 1. 打开 Obsidian → 左下角「设置」→「外观」→「CSS 片段」→「打开片段文件夹」
 2. 新建文件 custom-callout-buttons.css，粘贴以下完整代码：
 3. 回到 Obsidian，刷新 CSS 片段，启用 custom-callout-buttons.css
 ```CSS
-/* 全局 Callout 基础样式：统一按钮圆角、内边距、边框 */
-.callout {
-  border-radius: 12px !important;
-  border-width: 2px !important;
-  margin: 16px 0 !important;
+/* ============================== */
+/* 安全版：彩色折叠面板（不影响任何现有样式） */
+/* ============================== */
+body .callout {
+  border-left: none !important;
+  border: 1.5px solid var(--callout-color) !important;
+  border-radius: 6px !important;
+  background: #ffffff03 !important;
+  margin: 14px 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+}
+
+body .callout-title {
   padding: 12px 16px !important;
-  background-color: transparent !important;
-  transition: all 0.2s ease;
-}
-
-/* 折叠状态的 Callout 按钮样式（匹配你第一张截图的按钮效果） */
-.callout.is-collapsed {
-  padding: 16px 20px !important;
-  background-color: var(--background-primary) !important;
-}
-
-/* 自定义 Atlas 面板（青蓝色） */
-.callout[data-callout="note"] {
-  --callout-color: #2dd4bf !important;
-  --callout-icon: lucide-book-open !important; /* 对应截图的书本图标 */
-  border-color: #2dd4bf !important;
-  background-color: rgba(45, 212, 191, 0.05) !important;
-}
-
-/* 自定义 Calendar 面板（淡紫色） */
-.callout[data-callout="tip"] {
-  --callout-color: #a78bfa !important;
-  --callout-icon: lucide-calendar !important; /* 对应截图的日历图标 */
-  border-color: #a78bfa !important;
-  background-color: rgba(167, 139, 250, 0.05) !important;
-}
-
-/* 自定义 Efforts 面板（淡绿色） */
-.callout[data-callout="warning"] {
-  --callout-color: #65a30d !important;
-  --callout-icon: lucide-dumbbell !important; /* 对应截图的哑铃图标 */
-  border-color: #65a30d !important;
-  background-color: rgba(101, 163, 13, 0.05) !important;
-}
-
-/* 自定义标题文字样式：放大字号、加粗 */
-.callout-title {
-  font-size: 24px !important;
+  font-size: 16px !important;
   font-weight: 600 !important;
-  color: #000000 !important;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  min-height: unset !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
 }
 
-/* 自定义图标样式：放大、匹配颜色 */
-.callout-icon {
-  width: 28px !important;
-  height: 28px !important;
+body .callout-icon {
+  width: 20px !important;
+  height: 20px !important;
   color: var(--callout-color) !important;
 }
 
-/* 自定义折叠箭头样式：匹配截图的 > / ↓ */
-.callout-fold {
+body .callout-fold {
   margin-left: auto !important;
-  font-size: 24px !important;
   color: var(--callout-color) !important;
 }
 
-/* 展开后内容区域样式 */
-.callout-content {
-  font-size: 18px !important;
+body .callout-content {
+  padding: 0 16px 14px 16px !important;
+  font-size: 15px !important;
   line-height: 1.6 !important;
-  padding-top: 12px !important;
   border-top: 1px solid var(--callout-color) !important;
-  margin-top: 8px !important;
+  margin: 0 16px !important;
 }
 
-/* 适配深色模式（可选） */
-.theme-dark .callout-title {
-  color: #ffffff !important;
+/* -------------------- */
+/* 1. Atlas（青色 + 淡青背景） */
+/* -------------------- */
+body .callout[data-callout="atlas"] {
+  --callout-color: #29ccb9;
+  --callout-icon: lucide-book-open;
+  background-color: rgba(41, 204, 185, 0.07) !important;
 }
-.theme-dark .callout[data-callout="note"] {
-  background-color: rgba(45, 212, 191, 0.1) !important;
+
+/* -------------------- */
+/* 2. Calendar（紫色 + 淡紫背景） */
+/* -------------------- */
+body .callout[data-callout="calendar"] {
+  --callout-color: #a885f6;
+  --callout-icon: lucide-calendar;
+  background-color: rgba(168, 133, 246, 0.07) !important;
 }
-.theme-dark .callout[data-callout="tip"] {
-  background-color: rgba(167, 139, 250, 0.1) !important;
-}
-.theme-dark .callout[data-callout="warning"] {
-  background-color: rgba(101, 163, 13, 0.1) !important;
+
+/* -------------------- */
+/* 3. Efforts（绿色 + 淡绿背景） */
+/* -------------------- */
+body .callout[data-callout="efforts"] {
+  --callout-color: #5cc16c;
+  --callout-icon: lucide-trending-up;
+  background-color: rgba(92, 193, 108, 0.07) !important;
 }
 ```
 #### 📝 关键自定义指南（按需调整）

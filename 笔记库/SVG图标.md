@@ -5,7 +5,14 @@ up: "[[../Obsidian/OBsidian攻略|OBsidian攻略]]"
 https://feathericons.com/
 https://tablericons.com/
 
-## 使用方法
+##  2. 图标自定义（替换为你想要的图标） 
+Obsidian 原生支持 Lucide 图标库，直接修改 --callout-icon 即可，无需 SVG：
+- 书本图标：`lucide-book-open`
+- 日历图标：lucide-calendar 
+- 哑铃图标：lucide-dumbbell ​
+- 完整图标列表：https://lucide.dev/icons/ ​ 
+- ​  示例：把 Atlas 图标换成文件夹：--callout-icon: lucide-folder !important;
+### 网站资源使用方法
 步骤 1：找到你下载的 SVG 文件
 比如：properties.svg、icon.svg 之类
 步骤 2：用【记事本】打开它

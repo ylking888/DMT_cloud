@@ -1,7 +1,8 @@
 {
   "enabledCssSnippets": [
     "callout-vertical-line",
-    "title-color-bar"
+    "title-color-bar",
+    "property-redesign"
   ],
   "theme": "system"
 }

@@ -1,3 +1,11 @@
+---
+status:
+  - on
+rank: "5"
+tags:
+  - efforts
+  - project
+---
 <div class="custom-properties-btn" onclick="app.commands.executeCommandById('properties:open')"> 
 <svg
   xmlns="http://www.w3.org/2000/svg"

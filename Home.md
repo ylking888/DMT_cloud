@@ -10,13 +10,25 @@
 </svg>
 <span class="properties-text">  首页导航</span> 
 <span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
-> [!atlas]- Atlas 
->  Where would you like to go? 
-- To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]]. > - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]]. > - To catalyze your mind, go to your [[Thinking Map]] and [[Concepts Map]]. > - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[Meta PKM]].
 
+> [!atlas]- Atlas
+> Where would you like to go?
+> 
+> - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
+> - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
+> - To catalyze your mind, go to your [[Thinking Map]] and [[Concepts Map]].
+> - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[Meta PKM]].
 
+> [!calendar]- Calendar
+> Your schedule & routines live here.
+> - Today's tasks
+> - Upcoming events
 
-
+> [!efforts]- Efforts
+> Track your energy & progress.
+> - Habits
+> - Goals
+> - Projects
 
 
 

@@ -6,11 +6,10 @@ sticker: lucide//home
 description: Your launchpad and home base. That's here. That's home.
 ---
 ## Home
-> [!info] 
-Your launchpad and home base. That's here. That's [[home]].
-# PROPERTIES
-> [!info] 
-> Your launchpad and home base. That's here. That's **home**.
+
+
+
+
 ## 📍 快速导航
 
 > [!example]- 🗺️ **Atlas**

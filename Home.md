@@ -20,7 +20,7 @@ ta:
 <span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
 
 > [!atlas]- Atlas
->> Where would you like to go?
+>> 现在，选择你想去什么地方，或者做什么事情?
 > 
 > - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
 > - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].

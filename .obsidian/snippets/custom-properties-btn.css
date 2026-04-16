@@ -133,25 +133,28 @@ body .callout-content {
 }
 
 /* -------------------- */
-/* 1. Atlas（青色） */
+/* 1. Atlas（青色 + 淡青背景） */
 /* -------------------- */
 body .callout[data-callout="atlas"] {
   --callout-color: #29ccb9;
   --callout-icon: lucide-book-open;
+  background-color: rgba(41, 204, 185, 0.07) !important;
 }
 
 /* -------------------- */
-/* 2. Calendar（紫色） */
+/* 2. Calendar（紫色 + 淡紫背景） */
 /* -------------------- */
 body .callout[data-callout="calendar"] {
   --callout-color: #a885f6;
   --callout-icon: lucide-calendar;
+  background-color: rgba(168, 133, 246, 0.07) !important;
 }
 
 /* -------------------- */
-/* 3. Efforts（绿色） */
+/* 3. Efforts（绿色 + 淡绿背景） */
 /* -------------------- */
 body .callout[data-callout="efforts"] {
   --callout-color: #5cc16c;
   --callout-icon: lucide-trending-up;
+  background-color: rgba(92, 193, 108, 0.07) !important;
 }

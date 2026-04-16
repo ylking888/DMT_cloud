@@ -10,27 +10,7 @@
 </svg>
 <span class="properties-text">  首页导航</span> 
 <span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
-> [!atlas]- Atlas
-> Where would you like to go?
-> - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
-> - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
-
-> [!calendar]- Calendar
-> Your schedule & routines live here.
-> - Today’s tasks
-> - Upcoming events
-> [!example]- 🗺️ **Atlas**
-> 知识地图与概念索引
-> - [[MOC - 核心概念]]
-> - [[领域索引]]
-> - [[#]] 探索图谱
-
-> [!calendar]- 📅 **Calendar**  
-> 日记与时间管理
-> - `$= dv.current().file.link`
-> - [[日记/今日记录|今日记录]]
-> - `$= dv.list(dv.pages('"日记"').file.link.limit(3))`
-
+> 
 > [!tip]- ⚡ **Efforts**
 > 项目与任务追踪
 > - [[当前进行中]]

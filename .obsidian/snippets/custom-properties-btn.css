@@ -70,9 +70,9 @@
 }
 
 /* 隐藏原生属性面板，避免冲突 */
-.metadata-container {
-  display: none !important;
-}
+/*.metadata-container {*/
+/*  display: none !important;*/
+/*}*/
 
 /* 适配深色模式（可选） */
 .theme-dark .custom-properties-btn {

@@ -67,13 +67,12 @@ dataSource:
   dateField:
     type: FILE_MTIME
 ```
-
-```
-
 #### 📝 代码说明
-
-*   **YAML Frontmatter**：笔记开头的 `---` 部分是为笔记设置属性的，比如 `cssclasses` 可以隐藏属性本身，`sticker` 可以为笔记添加图标。
-*   **`> [!info]` 等 Callout**：这些就是图片中看到的彩色模块。`[!note]`、`[!example]`、`[!calendar]` 等决定了模块的标题和颜色。`-` 号（如 `[!note]-`）表示该模块默认是折叠的。
+*   **YAML Frontmatter**：
+  笔记开头的 `---` 部分是为笔记设置属性的，比如 `cssclasses` 可以隐藏属性本身，`sticker` 可以为笔记添加图标。
+*   **`> [!info]` 等 Callout**：这些就是图片中看到的彩色模块。
+  `[!note]`、`[!example]`、`[!calendar]` 等决定了模块的标题和颜色。
+  `-` 号（如 `[!note]-`）表示该模块默认是折叠的。
 *   **Dataview 代码块**：
     *   `TABLE WITHOUT ID ...` 是查询语句，意思是以表格形式，列出指定目录 (`FROM "/"`) 下的文件，并按修改时间 (`SORT file.mtime DESC`) 倒序排列，只显示前5条 (`LIMIT 5`)。
     *   `$=` 开头的行是**内联 DataviewJS 代码**，`dv.list(...)` 会生成一个列表。这里的功能是动态显示“日记”文件夹下的5个笔记链接。

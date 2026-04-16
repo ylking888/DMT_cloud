@@ -35,26 +35,7 @@ ta:
 > - 若想进行宏观复盘，可前往「计划与复盘（Plan and Review）」板块。
 >- 若想了解更多关于 “时间穿梭” 的用法，可查看「日历（Calendar）」相关说明。
 
-> [!efforts]- 📌 最近打开的文件
-> ```dataview
-> TABLE WITHOUT ID
->   file.link AS "文件名",
->   dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最后修改时间"
-> FROM "/"
-> SORT file.mtime DESC
-> LIMIT 5
-
-> [!note]- 📝 最近创建的笔记
-> ```dataview
-> TABLE WITHOUT ID
->   file.link AS "文件名",
->   dateformat(file.ctime, "yyyy-MM-dd") AS "创建日期"
-> FROM "/"
-> SORT file.ctime DESC
-> LIMIT 5
-> ```
-
-> [!efforts]- Efforts
+> [!efforts]- Efforts努力事项
 > > For a concentrated view, go to [[Efforts]].
 > > Use this to keep priorities in order and quickly adjust your bandwidth as needed.
 > 
@@ -79,6 +60,28 @@ ta:
 > > WHERE status = "Ongoing"
 > > SORT rank DESC
 > > ```
+
+
+> [!efforts]- 📌 最近打开的文件
+> ```dataview
+> TABLE WITHOUT ID
+>   file.link AS "文件名",
+>   dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最后修改时间"
+> FROM "/"
+> SORT file.mtime DESC
+> LIMIT 5
+
+> [!note]- 📝 最近创建的笔记
+> ```dataview
+> TABLE WITHOUT ID
+>   file.link AS "文件名",
+>   dateformat(file.ctime, "yyyy-MM-dd") AS "创建日期"
+> FROM "/"
+> SORT file.ctime DESC
+> LIMIT 5
+> ```
+
+
 
 
 

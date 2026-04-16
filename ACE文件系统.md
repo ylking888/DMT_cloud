@@ -9,8 +9,7 @@ Atlas、Calendar、Efforts
   - ACE帮你高效完成场景切换
   - 了解ACE文件夹框架如何适配你的需求
 - 深入拆解ACE的运作原理 + 运用STIR法强化记忆
-
----
+![](assets/ACE文件系统/file-20260416185809696.png)
 ### 补充术语&背景解读（结合LYT知识管理体系）
 1.  **ACE Folder Framework**：Nick Milo提出的LYT（Link Your Thinking）知识管理体系核心文件夹结构，ACE分别对应：
     - **A**：Atlas（知识地图/导航空间）

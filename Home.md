@@ -10,36 +10,19 @@
 </svg>
 <span class="properties-text">  首页导航</span> 
 <span class="properties-arrow">></span> </div><p class="properties-desc">Your launchpad and home base. That's here. That's <a href="#home" class="home-link">home</a>.</p>
+
+> [!atlas]- Atlas
+> Where would you like to go?
 > 
-> [!tip]- ⚡ **Efforts**
-> 项目与任务追踪
-> - [[当前进行中]]
-> - [[已完成项目]]
-> - [[任务看板]]
+> - To do inspired work, go to [[Add]], [[Relate]], and [[Communicate]].
+> - To launch into your knowledge, try out: [[Library]] | [[People Map]] | [[Sources Map]].
+> - To catalyze your mind, go to your [[Thinking Map]] and [[Concepts Map]].
+> - For grounding, [[Life Map]]. For training, [[Ideaverse Map]]. For rules, [[Meta PKM]].
 
----
 
-## 📊 知识库概览
 
-> [!info]- 📈 统计信息
-> ```dataviewjs
-> const allFiles = dv.pages('"/"').filter(p => p.file.name != "Home");
-> const noteCount = allFiles.length;
-> const tagCount = [...new Set(allFiles.flatMap(p => p.file.tags || []))].length;
-> const recentNotes = dv.pages('"/"')
->   .sort(p => p.file.mtime, 'desc')
->   .limit(5);
-> 
-> dv.span(`📄 **笔记总数**：${noteCount} 条`);
-> dv.span(`  🏷️ **标签总数**：${tagCount} 个`);
-> dv.span(`
-> 
-> **最近更新的笔记**：
-> ${recentNotes.map(p => `- [[${p.file.name}]]`).join('\n')}
-> `);
-> ```
 
----
+
 
 ## 🔥 创作热力图
 

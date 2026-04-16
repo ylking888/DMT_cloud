@@ -1,6 +1,6 @@
 ![](assets/Home页面/file-20260416104047802.png)![](assets/Home页面/file-20260416151246822.png)
 ### 🛠️ 
-这个 Home 页面主要由四个插件/功能协作完成：
+
 
 
 ### 📄 Obsidian 原生 Callout（提示框）+ 自定义 CSS 美化

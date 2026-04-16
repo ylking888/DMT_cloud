@@ -73,7 +73,7 @@ ta:
 > > [!ongoing]- ♻️ Ongoing
 > > ```dataview
 > > TABLE WITHOUT ID
-> >   ("[[" + file.name + "]]") AS "(" + length(where status = "Ongoing") + ")" + " " + file.link AS "任务",
+> >   ("( " + length(rows) + " ) " + file.link) AS "任务",
 > >   rank AS Rank
 > > FROM "你的任务笔记文件夹路径"
 > > WHERE status = "Ongoing"

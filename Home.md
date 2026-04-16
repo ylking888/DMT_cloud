@@ -1,14 +1,9 @@
 ---
 cssclasses:
   - hide-properties
-sticker: 🧿
----
----
-cssclasses:
-  - hide-properties
   - homepage
+sticker: lucide//home
 ---
-
 # 🌟 Ideaverse
 
 # Home

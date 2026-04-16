@@ -2,7 +2,8 @@
   "enabledCssSnippets": [
     "callout-vertical-line",
     "title-color-bar",
-    "properties-sidebar"
+    "properties-sidebar",
+    "custom-properties-btn"
   ],
   "theme": "system"
 }

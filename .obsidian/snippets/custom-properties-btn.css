@@ -1,0 +1,66 @@
+/* 自定义Properties按钮容器 */
+.custom-properties-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 20px;
+  margin: 16px 0;
+  background-color: #e9e9e9; /* 浅灰色背景，匹配截图 */
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.custom-properties-btn:hover {
+  background-color: #e0e0e0; /*  hover效果 */
+}
+
+/* 图标样式 */
+.properties-icon {
+  color: #000;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* 文字样式 */
+.properties-text {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* 箭头样式 */
+.properties-arrow {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  flex-shrink: 0;
+}
+
+/* 描述文字样式 */
+.properties-desc {
+  font-size: 18px;
+  color: #000;
+  margin: 8px 0 24px 0;
+  line-height: 1.5;
+}
+
+/* home链接样式 */
+.home-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+/* 隐藏原生笔记属性面板（避免冲突） */
+.metadata-container {
+  display: none !important;
+}

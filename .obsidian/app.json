@@ -4,5 +4,5 @@
   "promptDelete": true,
   "attachmentFolderPath": "/附件",
   "alwaysUpdateLinks": true,
-  "propertiesInDocument": "visible"
+  "propertiesInDocument": "source"
 }

@@ -3,52 +3,75 @@ cssclasses:
   - hide-properties
 sticker: 🧿
 ---
-> [!info] 你的名字 / 导航标题
-> Your launchpad and home base. That's here. That's home.
+---
+cssclasses:
+  - hide-properties
+  - homepage
+---
 
-# 📇 最近更新
+# 🌟 Ideaverse
 
-> [!note]- 📌 最近打开的文件
-> ```dataview
-> TABLE WITHOUT ID
->   file.link AS "文件名",
->   dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最后修改时间"
-> FROM "/"
-> SORT file.mtime DESC
-> LIMIT 5
+# Home
+
+> [!info] 
+> *Your launchpad and home base. That's here. That's home.*
+
+---
+
+## 📍 快速导航
+
+> [!example]- 🗺️ **Atlas**
+> 知识地图与概念索引
+> - [[MOC - 核心概念]]
+> - [[领域索引]]
+> - [[#]] 探索图谱
+
+> [!calendar]- 📅 **Calendar**  
+> 日记与时间管理
+> - `$= dv.current().file.link`
+> - [[日记/今日记录|今日记录]]
+> - `$= dv.list(dv.pages('"日记"').file.link.limit(3))`
+
+> [!tip]- ⚡ **Efforts**
+> 项目与任务追踪
+> - [[当前进行中]]
+> - [[已完成项目]]
+> - [[任务看板]]
+
+---
+
+## 📊 知识库概览
+
+> [!info]- 📈 统计信息
+> ```dataviewjs
+> const allFiles = dv.pages('"/"').filter(p => p.file.name != "Home");
+> const noteCount = allFiles.length;
+> const tagCount = [...new Set(allFiles.flatMap(p => p.file.tags || []))].length;
+> const recentNotes = dv.pages('"/"')
+>   .sort(p => p.file.mtime, 'desc')
+>   .limit(5);
+> 
+> dv.span(`📄 **笔记总数**：${noteCount} 条`);
+> dv.span(`  🏷️ **标签总数**：${tagCount} 个`);
+> dv.span(`
+> 
+> **最近更新的笔记**：
+> ${recentNotes.map(p => `- [[${p.file.name}]]`).join('\n')}
+> `);
 > ```
 
-> [!note]- 📝 最近创建的笔记
-> ```dataview
-> TABLE WITHOUT ID
->   file.link AS "文件名",
->   dateformat(file.ctime, "yyyy-MM-dd") AS "创建日期"
-> FROM "/"
-> SORT file.ctime DESC
-> LIMIT 5
-> ```
+---
 
-# 📚 核心知识库
-
-> [!example]- Atlas (地图)
-> - [[概念索引]]
-> - [[MOC - 地图笔记]]
-
-> [!calendar]- Calendar (日历)
-> - [[日记/2026-04-16|今日记录]]
-> - `$= dv.list(dv.pages('"日记"').file.link.limit(5))`
-
-> [!tip]- Efforts (项目)
-> - [[当前任务]]
-> - [[项目进度跟踪]]
-
-# 🔥 创作热力图
+## 🔥 创作热力图
 
 ```contributionGraph
-title: 近期创作活跃度
+title: 近期活跃度
 graphType: month-track
+dateRangeType: LATEST_DAYS
+dateRangeValue: 365
 dataSource:
   type: PAGE
   value: ""
   dateField:
     type: FILE_MTIME
+```

@@ -44,10 +44,6 @@ ta:
 > SORT file.mtime DESC
 > LIMIT 5
 
-
-
-
-
 > [!note]- 📝 最近创建的笔记
 > ```dataview
 > TABLE WITHOUT ID
@@ -57,9 +53,6 @@ ta:
 > SORT file.ctime DESC
 > LIMIT 5
 > ```
-
-
-
 
 > [!efforts]- Efforts
 > > For a concentrated view, go to [[Efforts]].

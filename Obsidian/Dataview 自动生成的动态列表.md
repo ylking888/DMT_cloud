@@ -59,6 +59,28 @@ tags: ["efforts", "project"]
 ```
 最近打开的文件文章列表
 ```Markdown
-
+> [!efforts]- 📌 最近打开的文件
+> ```dataview
+> TABLE WITHOUT ID
+>   file.link AS "文件名",
+>   dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最后修改时间"
+> FROM "/"
+> SORT file.mtime DESC
+> LIMIT 5
 
 ```
+
+最近创建的笔记文章列表
+```Markdown
+> [!note]- 📝 最近创建的笔记
+> ```dataview
+> TABLE WITHOUT ID
+>   file.link AS "文件名",
+>   dateformat(file.ctime, "yyyy-MM-dd") AS "创建日期"
+> FROM "/"
+> SORT file.ctime DESC
+> LIMIT 5
+> ```
+```
+
+等等文章列表都是通过dataview插件来实现的。

@@ -12,5 +12,6 @@
   "homepage",
   "dataview",
   "contribution-graph",
-  "templater-obsidian"
+  "templater-obsidian",
+  "mindmap"
 ]

@@ -35,17 +35,27 @@ ta:
 > 日记与时间管理
 > - [[日记/今日记录|今日记录]]
 
-> [!example]- 🗺️ **Atlas**
-> 知识地图与概念索引
-> - [[MOC - 核心概念]]
-> - [[领域索引]]
-> - [[#]] 探索图谱
+> [!efforts]- 📌 最近打开的文件
+> ```dataview
+> TABLE WITHOUT ID
+>   file.link AS "文件名",
+>   dateformat(file.mtime, "yyyy-MM-dd HH:mm") AS "最后修改时间"
+> FROM "/"
+> SORT file.mtime DESC
+> LIMIT 5
 
-> [!calendar]- 📅 **Calendar**  
-> 日记与时间管理
-> - `$= dv.current().file.link`
-> - [[日记/今日记录|今日记录]]
-> - `$= dv.list(dv.pages('"日记"').file.link.limit(3))`
+
+
+> [!note]- 📝 最近创建的笔记
+> ```dataview
+> TABLE WITHOUT ID
+>   file.link AS "文件名",
+>   dateformat(file.ctime, "yyyy-MM-dd") AS "创建日期"
+> FROM "/"
+> SORT file.ctime DESC
+> LIMIT 5
+> ```
+
 
 
 

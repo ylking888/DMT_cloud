@@ -1,7 +1,7 @@
 {
   "useMarkdownLinks": false,
   "newLinkFormat": "relative",
-  "promptDelete": true,
+  "promptDelete": false,
   "attachmentFolderPath": "/附件",
   "alwaysUpdateLinks": true,
   "propertiesInDocument": "source"

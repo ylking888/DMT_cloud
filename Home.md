@@ -28,7 +28,7 @@ ta:
 > - 若想落地实践，可查看「生活图谱」；若想提升技能，可查看「**Ideaverse 图谱**」；若想梳理规则，可查看「元个人知识管理」。
 
 > [!calendar]- Calendar日历
->- 若想写日记、聚焦当日事务，或是捕捉灵感闪现，按下 Cmd-d（Mac）或 Ctrl-d（Windows）
+>- 若想写日记、聚焦当日事务，或是捕捉灵感闪现，按下  Ctrl-d
 > - 若想分类记录特定内容，可前往「日志（Logs）」板块。
 > <img src="assets/Home/file-20260416174725312.png"  style="width: 100%; height: 200px; object-fit: cover; border-radius: 12px; display: block; margin: 0 0 12px -20px !important;" alt="飞船">
 >

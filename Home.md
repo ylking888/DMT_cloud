@@ -1,15 +1,7 @@
 ---
-banner: 附件/screenshot__1775697645064.png
-banner_x: 0.5
-banner_y: 0.2
-banner_height: 60vh
-banner_hover: true
----
----
-banner: "![[banner.png]]" 
 cssclasses:
   - hide-properties
-sticker: lucide//home
+sticker: 🧿
 ---
 > [!info] 你的名字 / 导航标题
 > Your launchpad and home base. That's here. That's home.

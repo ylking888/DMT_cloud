@@ -30,7 +30,8 @@ ta:
 > [!calendar]- Calendar日历
 >- 若想写日记、聚焦当日事务，或是捕捉灵感闪现，按下 Cmd-d（Mac）或 Ctrl-d（Windows）
 > - 若想分类记录特定内容，可前往「日志（Logs）」板块。
-> - ![](assets/Home/file-20260416174725312.png)" style="width: 100%; height: 120px; object-fit: cover; border-radius: 12px; display: block; margin: 0 auto 12px;" alt="飞船">
+> <img src="assets/Home/file-20260416174725312.png" style="width:100%; height:200px; object-fit:cover; border-radius:12px;">
+>
 > - 若想进行宏观复盘，可前往「计划与复盘（Plan and Review）」板块。
 >- 若想了解更多关于 “时间穿梭” 的用法，可查看「日历（Calendar）」相关说明。
 
@@ -82,7 +83,7 @@ ta:
 
 
 
-![](assets/Home/file-20260416174725312.png)
+
 
 
 

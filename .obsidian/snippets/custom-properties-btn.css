@@ -167,18 +167,21 @@ body .callout[data-callout="efforts"] {
   border-left: 3px solid var(--callout-color) !important;
   background-color: rgba(var(--callout-rgb), 0.08) !important;
   border-radius: 4px !important;
-  padding: 0 4px 0px 0px !important;/* 👈 核心：内容区的内边距，控制首行与横线的距离 */
+  padding: 0px 14px 0px 10px !important;/* 👈 核心：内容区的内边距，控制首行与横线的距离 */
   margin: 4px 0 16px 0 !important;/* 👈 标题栏下方的间距，0就是完全无间距 */
 /* 顺序：上 右 下 左 */
 /* 第一个数字 = 首行与横线的间距，数字越小，间距越近 */
   font-size: 16px !important;
-  font-style: italic !important;
-  color: var(--callout-color) !important;
+/*   font-style: italic !important; 斜体 */
+  font-weight: bold !important;  /* 加粗，新增这一行即可 */
+  color: var(--callout-color) !important;/* 👈 文字颜色为主题色的意思 */
 }
 
 /* 适配Atlas（青色）引用块 */
 .callout[data-callout="atlas"] blockquote {
-  --callout-rgb: 45, 212, 191;
+--callout-color: #d946ef; /* 亮粉紫/洋红，和截图颜色1:1匹配 */
+--callout-rgb: 217, 70, 239; /* 对应RGB值，用于背景色 */
+background-color: rgba(217, 70, 239, 0.07) !important;
 }
 
 /* 适配Calendar（紫色）引用块 */

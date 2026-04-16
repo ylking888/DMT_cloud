@@ -37,9 +37,12 @@ ta:
 
 > [!efforts]- 📌 最近打开的文件
 > ```dataview
-> TABLE WITHOUT ID file.link AS "文件名 (" + length(rows) + ")", file.mtime AS "最后修改时间" FROM "" SORT file.mtime DESC LIMIT 5
-> ```
-> ```
+> TABLE WITHOUT ID
+> file.link AS "文件名 (" + length(this) + ")",
+> file.mtime AS "最后修改时间"
+>FROM ""
+>SORT file.mtime DESC
+>LIMIT 5
 
 > [!note]- 📝 最近创建的笔记
 > ```dataview

@@ -1,15 +1,7 @@
 {
   "version": "2.0",
   "layout": [
-    [
-      null
-    ],
-    [
-      {
-        "type": "pinned",
-        "path": "理论物理学/朗道《力学》考前极简复习提纲（第一二章）.md"
-      }
-    ]
+    null
   ],
   "settings": {
     "splitDirection": "horizontal",

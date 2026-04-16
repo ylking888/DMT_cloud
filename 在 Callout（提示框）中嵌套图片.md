@@ -6,7 +6,7 @@ date: 2026-04-16
 
 ```html
 <img src="assets/Home/file-20260416174725312.png"  style="width: 100%; 
-height: 120px; 
+height: 200px; 
 object-fit: cover; 
 border-radius: 12px; 
 display: block; 

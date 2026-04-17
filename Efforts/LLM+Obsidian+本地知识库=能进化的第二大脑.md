@@ -8,7 +8,7 @@ Step1 建立知识库
 也可以按照ACE法则管理
 ## Typeless
 ![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260417180944143.png)
-识别准确率很高
+识别准确率很高，  [[../语音输入法Typeless]]
 
 ## 安装obsidian浏览器插件
 它能把网页一键转换成md文件保存到你的文件夹下

@@ -15,3 +15,7 @@ Step1 建立知识库
 
 # Step2 关联AI命令行工具
 ![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260417181259890.png)
+这才是重点需要突破的地方
+
+# Step3 提问
+![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260417181425235.png)

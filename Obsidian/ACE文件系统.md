@@ -9,7 +9,19 @@ Atlas、Calendar、Efforts
   - ACE帮你高效完成场景切换
   - 了解ACE文件夹框架如何适配你的需求
 - 深入拆解ACE的运作原理 + 运用STIR法强化记忆
-![](assets/ACE文件系统/file-20260416185809696.png)
+
+| Headspace    | Orienting Lens | Intention     | Organizing Principle | Underlying Benefit | Guiding Question              |
+| ------------ | -------------- | ------------- | -------------------- | ------------------ | ----------------------------- |
+| **Atlas**    | Knowledge      | To Understand | Relatedness / Space  | Learn / Remember   | _Where would you like to go?_ |
+| **Calendar** | Time           | To Focus      | Time                 | Remember / Reflect | _What's on your mind?_        |
+| **Efforts**  | Action         | To Act        | Importance           | Create             | _What can you work on?_       |
+
+| 心智空间   | 导向视角 | 意图  | 组织原则   | 核心益处  | 引导问题        |
+| ------ | ---- | --- | ------ | ----- | ----------- |
+| **图谱** | 认知   | 理解  | 关联性/空间 | 学习/记忆 | _你想去往何处？_   |
+| **日程** | 时间   | 专注  | 时间     | 铭记/反思 | _你心中所想为何？_  |
+| **践行** | 行动   | 行动  | 重要性    | 创造    | _你能着手做些什么？_ |
+![](assets/ACE文件系统/file-20260417172004962.png)
 ### 补充术语&背景解读（结合LYT知识管理体系）
 1.  **ACE Folder Framework**：Nick Milo提出的LYT（Link Your Thinking）知识管理体系核心文件夹结构，ACE分别对应：
     - **A**：Atlas（知识地图/导航空间）

@@ -12,10 +12,10 @@ ACE is the most universal folder system to help you to learn, remember, and crea
 
 The thing is, it's more than just a folder system. I just talk about it that way because that's what everybody wants. But ***ACE is really about the head spaces we orient our thoughts around.*** There are three. The table below will help provide perspective.
 
-| Headspace        | Orienting Lens | Intention     | Organizing Principle | Underlying Benefit | Guiding Question              |
+| Headspace    | Orienting Lens | Intention     | Organizing Principle | Underlying Benefit | Guiding Question              |
 | ------------ | -------------- | ------------- | -------------------- | ------------------ | ----------------------------- |
-| **Atlas**    | Knowledge      | To Understand | Relatedness / Space                | Learn / Remember             | _Where would you like to go?_ |
-| **Calendar** | Time           | To Focus      | Time                 | Remember / Reflect          | _What's on your mind?_        |
+| **Atlas**    | Knowledge      | To Understand | Relatedness / Space  | Learn / Remember   | _Where would you like to go?_ |
+| **Calendar** | Time           | To Focus      | Time                 | Remember / Reflect | _What's on your mind?_        |
 | **Efforts**  | Action         | To Act        | Importance           | Create             | _What can you work on?_       |
 
 If you want to learn how [[The ACE Folder Framework Flexes For You]], click there.

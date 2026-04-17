@@ -2,7 +2,7 @@
 up: "[[OBsidian攻略]]"
 date: 2026-04-16
 ---
-![](assets/在%20Callout（提示框）中嵌套图片/file-20260416175502704.png)
+![](assets/在%20Callout（提示框）中嵌套图片/file-20260417172013294.png)
 
 ```html
 <img src="assets/Home/file-20260416174725312.png"  style="width: 100%; 

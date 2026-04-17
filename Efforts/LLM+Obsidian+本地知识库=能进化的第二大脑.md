@@ -11,7 +11,7 @@ Step1 建立知识库
 识别准确率很高，  [[../语音输入法Typeless]]
 
 ## 安装obsidian浏览器插件
-[[obsidian浏览器插件]]
+[[../Obsidian/obsidian浏览器插件]]
 它能把网页一键转换成md文件保存到你的文件夹下
 
 # Step2 关联AI命令行工具

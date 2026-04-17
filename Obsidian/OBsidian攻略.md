@@ -63,7 +63,7 @@ Atlas、Calendar、Efforts
 **建立任务笔记**
 将分散的内容,整合到具体的任务笔记，设计具体的**行动计划**
 
-## [[../OBsidian-标题命名攻略]]
+## [[OBsidian-标题命名攻略]]
 
 
 # 主页Home

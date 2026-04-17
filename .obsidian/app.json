@@ -4,5 +4,12 @@
   "promptDelete": false,
   "attachmentFolderPath": "/附件",
   "alwaysUpdateLinks": true,
-  "propertiesInDocument": "source"
+  "propertiesInDocument": "source",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }

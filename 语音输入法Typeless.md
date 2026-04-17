@@ -1,7 +1,7 @@
 Typeless 官网：https://www.typeless.com/refer?code=CLADZB6
 如果你不想打字，又愿意花钱的土豪，这个软件可以尝试。
 
-官网打开
+官网打开[Typeless | 实际智能的AI语音听写](https://www.typeless.com/)
 谷歌登录
 ![](assets/语音输入法Typeless/file-20260417181807523.png)
 下载

@@ -13,5 +13,5 @@ Step1 建立知识库
 ## 安装obsidian浏览器插件
 它能把网页一键转换成md文件保存到你的文件夹下
 
-
-![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260417181142883.png)
+# Step2 关联AI命令行工具
+![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260417181259890.png)

@@ -16,7 +16,7 @@ Typeless 官网：https://www.typeless.com/refer?code=CLADZB6
 
 微信输入法
 
-智谱输入
+智谱ai输入法
 
 豆包
 

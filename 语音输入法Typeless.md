@@ -12,6 +12,14 @@ Typeless 官网：https://www.typeless.com/refer?code=CLADZB6
 开源平替下载地址：# Light-Whisper 轻语  光语 轻语
 [GitHub - sypsyp97/light-whisper: A better open-source alternative to Typeless. · GitHub](https://github.com/sypsyp97/light-whisper/tree/main)
 
+未测试：
+
+微信输入法
+
+智谱输入
+
+豆包
+
 ---
 ### 一、官方免费方案（零成本，合规可用）
 1. 免费版（Free Plan）：永久免费，**每周8000单词额度**，支持语音转文字、翻译、AI润色、个人词典、多语言，仅无无限字数、团队功能。适合轻度日常使用（每天约1100词）。

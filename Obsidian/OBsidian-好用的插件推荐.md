@@ -17,12 +17,12 @@ PDF++
 Periodic Notes
 Quick Switcher++
 Recent Files
-✅[[../笔记库/Simple Banner头图]]
+✅[[OBsidian-Simple Banner头图]]
 Simple Columns分栏
 ✅Style Settings美化样式
 
 Templater
-[[../笔记库/QuickAdd]]
+[[OBsidian-QuickAdd]]
 ## 核心必装（免费）：
 
 **Canvas**：无限画布，可自由拖拽笔记、图片、链接，构建思维导图、项目看板，可视化整理思路；

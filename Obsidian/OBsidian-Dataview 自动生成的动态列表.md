@@ -2,7 +2,7 @@
 up: "[[OBsidian攻略]]"
 date: 2026-04-16
 ---
-![](assets/Dataview%20自动生成的动态列表/file-20260416180729227.png)
+![](assets/OBsidian-Dataview%20自动生成的动态列表/file-20260417175702332.png)
 ### 步骤 1：安装 Dataview 插件
 1. 打开 Obsidian → 设置 → 社区插件 → 关闭安全模式
 2. 浏览 → 搜索 **Dataview** → 安装 → 启用
@@ -70,7 +70,7 @@ tags: ["efforts", "project"]
 > LIMIT 5
 
 ```
-![](assets/Dataview%20自动生成的动态列表/file-20260416180743760.png)
+![](assets/OBsidian-Dataview%20自动生成的动态列表/file-20260417175702331.png)
 最近创建的笔记文章列表
 ```Markdown
 > [!note]- 📝 最近创建的笔记
@@ -83,5 +83,5 @@ tags: ["efforts", "project"]
 > LIMIT 5
 > ```
 ```
-![](assets/Dataview%20自动生成的动态列表/file-20260416180752199.png)
+![](assets/OBsidian-Dataview%20自动生成的动态列表/file-20260417175702325.png)
 等等文章列表都可以通过dataview插件来实现的。

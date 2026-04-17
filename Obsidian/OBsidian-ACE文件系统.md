@@ -21,7 +21,7 @@ Atlas、Calendar、Efforts
 | **图谱** | 认知   | 理解  | 关联性/空间 | 学习/记忆 | _你想去往何处？_   |
 | **日程** | 时间   | 专注  | 时间     | 铭记/反思 | _你心中所想为何？_  |
 | **践行** | 行动   | 行动  | 重要性    | 创造    | _你能着手做些什么？_ |
-![](assets/ACE文件系统/file-20260417172004962.png)
+![](assets/OBsidian-ACE文件系统/file-20260417175634452.png)
 ### 补充术语&背景解读（结合LYT知识管理体系）
 1.  **ACE Folder Framework**：Nick Milo提出的LYT（Link Your Thinking）知识管理体系核心文件夹结构，ACE分别对应：
     - **A**：Atlas（知识地图/导航空间）

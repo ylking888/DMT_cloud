@@ -62,6 +62,9 @@ Atlas、Calendar、Efforts
 
 **建立任务笔记**
 将分散的内容,整合到具体的任务笔记，设计具体的**行动计划**
+
+
+
 # 主页Home
 [[Home页面]]，我的示例：[[../Home|Home]]
 ![](assets/OBsidian攻略/file-20260416162533958.png)

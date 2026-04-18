@@ -3,7 +3,7 @@ Typeless 官网：https://www.typeless.com/refer?code=CLADZB6
 
 官网打开[Typeless | 实际智能的AI语音听写](https://www.typeless.com/)
 谷歌登录
-![](assets/语音输入法Typeless/file-20260417181807523.png)
+![](assets/语音输入法Typeless/file-20260418090534740.png)
 下载
 很漂亮的软件，但是这是一个收费软件，每月12美元
 

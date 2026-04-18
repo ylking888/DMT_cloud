@@ -29,8 +29,4 @@ tags:
 2. 点 Edge 工具栏的 Obsidian 图标 → 点 **Connect to Obsidian**
 3. 弹出 Obsidian 授权窗口，点 **允许** ，完成连接
 4. 进入插件设置：设置默认保存文件夹（比如 Inbox、网页剪藏）、模板、格式，之后就能一键剪藏网页到 Obsidian 指定文件夹了
-### 常见问题
-
-- 连不上：检查 Obsidian 是否打开、仓库是否正确、Edge 是否允许跨应用通信；重启 Obsidian 和 Edge
-- 图标不显示：点 Edge 右上角拼图图标，找到 Obsidian Web Clipper，选 **在工具栏中显示**
 

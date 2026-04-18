@@ -3,7 +3,7 @@ date: 2026-04-16
 up: "[[OBsidian攻略]]"
 ---
 ![](assets/OBsidian-Home页面/file-20260417175649976%201.png)![](assets/OBsidian-Home页面/file-20260417175649976.png)
-我的示例：[[../Home|Home]]
+我的示例：[[../../Home|Home]]
 
 
 ### 🛠️ Properties按钮
@@ -101,7 +101,7 @@ up: "[[OBsidian攻略]]"
 }
 ```
 #### 显示部分
-图标可换[[../笔记库/SVG图标|SVG图标]]
+图标可换[[../../笔记库/SVG图标|SVG图标]]
 ```Markdown
 <div class="custom-properties-btn" onclick="app.commands.executeCommandById('properties:open')"> 
 <svg

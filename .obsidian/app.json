@@ -2,7 +2,7 @@
   "useMarkdownLinks": false,
   "newLinkFormat": "relative",
   "promptDelete": false,
-  "attachmentFolderPath": "/附件",
+  "attachmentFolderPath": "Atlas/assets",
   "alwaysUpdateLinks": true,
   "propertiesInDocument": "visible",
   "pdfExportSettings": {
@@ -11,5 +11,7 @@
     "landscape": false,
     "margin": "0",
     "downscalePercent": 100
-  }
+  },
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Atlas"
 }

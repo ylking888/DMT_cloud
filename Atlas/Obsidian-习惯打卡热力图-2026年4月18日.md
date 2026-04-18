@@ -1,3 +1,13 @@
+---
+tags:
+  - 热力图
+  - OBsidian
+  - ContributionGraph
+  - checkbox
+  - dataview
+  - Calendar
+  - Tracker
+---
 # 最初的基础样式
 ![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418092724622.png)
 

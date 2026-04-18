@@ -1,3 +1,9 @@
+---
+tags:
+  - OBsidian
+  - 热力图
+  - ContributionGraph
+---
 ## 安装插件Contribution Graph
 ![](assets/OBsidian-Contribution%20Graph生成热力图/file-20260418120331327.png)
 

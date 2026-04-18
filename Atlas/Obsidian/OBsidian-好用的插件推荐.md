@@ -9,7 +9,9 @@ tags:
 作者视频：[Obsidian 最强笔记本导航仪插件_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BjidB1Edr/?spm_id_from=333.337.search-card.all.click&vd_source=b00ffc87d2f4365faf01741e93e463bb)
 视频非常有启发，讲解了插件的各个使用的细节
 
-
+### Tracker插件
+项目开源地址：[pyrochlore/obsidian-tracker: A plugin tracks occurrences and numbers in your notes](https://github.com/pyrochlore/obsidian-tracker)
+用于做热力图的一个插件
 
 ### Advanced Tables
  ##### ✅作用

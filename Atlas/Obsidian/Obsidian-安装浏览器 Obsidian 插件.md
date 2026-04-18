@@ -4,7 +4,8 @@ author:
   - 豆包
 created: 2026-04-17
 tags:
-  - clippings
+  - OBsidian
+  - 浏览器
 ---
 装的是 Obsidian 官方的 **Web Clipper（网页剪藏）** Edge 插件，下面分 **官方商店安装（最稳）、Chrome 商店安装（更新版）、手动加载（备用）** 三步，附连接 Obsidian 的配置，直接照着做就行。
 ### 一、官方 Edge 商店安装（推荐，最简单）

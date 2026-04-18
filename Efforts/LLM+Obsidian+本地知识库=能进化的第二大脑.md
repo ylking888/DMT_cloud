@@ -66,7 +66,7 @@ from "论文"
 输入：`CTRL`+`→`(自定义)选择 emoji
 ![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260418151925682.png)
 
-## Excalidraw (强烈推荐)
+## Excalidraw⭐ (强烈推荐)
 #### 作用
 在 Obsidian 里画图
 思维导图

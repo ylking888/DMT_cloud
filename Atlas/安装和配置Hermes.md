@@ -67,3 +67,7 @@ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 hermes-agent 依赖 API 密钥、服务配置等环境变量，需要创建 .env 文件来配置，步骤如下：
 ### 1. 在项目目录创建 .env 文件
 在 D:\hermes-agent-deploy\hermes-agent 目录下，新建一个名为 .env 的文本文件（注意文件名以.开头，无后缀）
+```
+Copy-Item .env.example -Destination .env -Force
+```
+### 安装Ollama

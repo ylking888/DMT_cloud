@@ -21,27 +21,43 @@ wsl -d Ubuntu
 ```
 ![](assets/安装和配置Hermes/file-20260418204906059.png)
 期间会要求输入密码，然后进入到这个提示符下。
-## 3、先回到你的主目录
-你现在在 Windows 的 system32 目录下，不适合在这里操作，先切回 Ubuntu 主目录：
-运行
-```bash
-cd ~
+## 3、在D盘新建hermes-agent-deploy目录
+我在D盘新建了hermes-agent-deploy目录，并在这个目录下打开了Powershell窗口
+先检查 Python 版本是否符合要求（hermes-agent 要求 Python 3.8 及以上）
 ```
-## 4、更新系统并安装基础依赖
-```bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y git python3 python3-pip python3-venv
+C:\Users\ylking\AppData\Local\Programs\Python\Python312\python.exe --version
 ```
-## 5、克隆 hermes-agent项目并准备虚拟环境
-```bash
-# 克隆官方仓库 
-git clone https://github.com/NousResearch/hermes-agent.git 
-cd hermes 
-# 创建并激活虚拟环境 
-python3 -m venv venv 
-source venv/bin/activate
+#### 执行创建独立虚拟环境的命令
 ```
-激活成功后，终端提示符前会出现 (venv) 标识。
+& "C:\Users\ylking\AppData\Local\Programs\Python\Python312\python.exe" -m venv .\venv
+```
+命令说明：-m venv 是 Python 内置的创建虚拟环境模块，.\venv 表示在当前hermes-agent-deploy目录下创建名为venv的虚拟环境文件夹；
+执行后，你的D:\hermes-agent-deploy目录下会新增一个venv文件夹，无报错即代表虚拟环境创建成功。
+#### 执行激活虚拟环境的命令
+```
+.\venv\Scripts\Activate.ps1
+```
+执行成功的标识：PowerShell 窗口左侧会出现 (venv) 前缀（比如 (venv) PS D:\hermes-agent-deploy>），说明虚拟环境已激活，后续所有 Python/pip 操作都会局限在这个独立环境中，不会污染系统 Python
+
+## 4、检查 Git 版本（确认是否安装）
+```bash
+git --version
+```
+输出显示git version 2.49.0.windows.1，如果没有需要先安装Git
+## 5、克隆 hermes-agent 代码仓库
+```bash
+git clone https://github.com/NousResearch/hermes-agent.git
+```
+这个步骤可能需要等待很长时间
+![](assets/安装和配置Hermes/file-20260418214844628.png)
+执行后预期表现：PowerShell 会显示克隆进度（比如 “Cloning into 'hermes-agent'...”），最终无报错则代表仓库克隆成功，你的D:\hermes-agent-deploy目录下会新增hermes-agent文件夹；
+会在D:\hermes-agent-deploy目录下生成hermes-agent文件夹，包含项目所有源码
+#### 进入 hermes-agent 项目目录
+```
+cd .\hermes-agent\
+```
+PowerShell 路径变为 (venv) PS D:\hermes-agent-deploy\hermes-agent>
+
 
 
 

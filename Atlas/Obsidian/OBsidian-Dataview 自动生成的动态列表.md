@@ -1,6 +1,8 @@
 ---
 up: "[[OBsidian攻略]]"
 date: 2026-04-16
+tags:
+  - OBsidian
 ---
 ![](assets/OBsidian-Dataview%20自动生成的动态列表/file-20260417175702332.png)
 ### 步骤 1：安装 Dataview 插件

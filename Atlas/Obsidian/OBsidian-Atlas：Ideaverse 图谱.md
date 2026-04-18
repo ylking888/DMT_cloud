@@ -1,3 +1,7 @@
+---
+tags:
+  - OBsidian
+---
 ### 翻译
 1. 🌐 如何定制你的「想法宇宙」（Ideaverse）
 2.  ⚙️ 「连接你的思考（Linking Your Thinking）」体系是如何运作的

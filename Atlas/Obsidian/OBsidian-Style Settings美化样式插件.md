@@ -1,3 +1,7 @@
+---
+tags:
+  - OBsidian
+---
 ## 一、插件核心作用
 Style Settings 是 Obsidian 最核心的**样式管理插件**，它的核心功能是：
 ✅ 给 CSS 片段 / 主题添加**可视化设置面板**，不用手动改 CSS 代码

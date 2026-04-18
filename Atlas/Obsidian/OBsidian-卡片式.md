@@ -1,6 +1,8 @@
 ---
 up: "[[OBsidian攻略]]"
 date: 2026-04-15
+tags:
+  - OBsidian
 ---
 ![](assets/OBsidian-卡片式/file-20260417175825069.png)
 实现方法：使用 Callout 语法

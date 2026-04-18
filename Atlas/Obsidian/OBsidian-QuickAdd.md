@@ -1,3 +1,7 @@
+---
+tags:
+  - OBsidian
+---
 ![](assets/OBsidian-QuickAdd/file-20260417175847449.png)
 ## 使用 QuickAdd 插件（最推荐，最灵活）
 这是目前 Obsidian 社区解决此问题的最佳方案。

@@ -1,6 +1,8 @@
 ---
 date: 2026-04-16
 up: "[[OBsidian攻略]]"
+tags:
+  - OBsidian
 ---
 ![](assets/OBsidian-Home页面/file-20260417175649976%201.png)![](assets/OBsidian-Home页面/file-20260417175649976.png)
 我的示例：[[../../Home|Home]]

@@ -1,6 +1,8 @@
 ---
 up: "[[OBsidian攻略]]"
 date: 2026-04-16
+tags:
+  - OBsidian
 ---
 ![](assets/OBsidian-在%20Callout（提示框）中嵌套图片/file-20260417175712429.png)
 

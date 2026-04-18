@@ -1,3 +1,7 @@
+---
+tags:
+  - OBsidian
+---
 Atlas、Calendar、Efforts 
 我的理解是地图集、日历、执行 
 对应的是知识、时间和努力

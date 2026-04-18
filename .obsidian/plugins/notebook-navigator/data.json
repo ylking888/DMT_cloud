@@ -212,7 +212,7 @@
   "showAllPropertiesFolder": true,
   "scopePropertiesToCurrentContext": false,
   "defaultListMode": "standard",
-  "includeDescendantNotes": false,
+  "includeDescendantNotes": true,
   "defaultFolderSort": "modified-desc",
   "propertySortKey": "",
   "propertySortSecondary": "title",
@@ -476,7 +476,7 @@
       "groupBy": "folder"
     },
     "Atlas": {
-      "previewRows": 5
+      "previewRows": 2
     }
   },
   "tagIcons": {},

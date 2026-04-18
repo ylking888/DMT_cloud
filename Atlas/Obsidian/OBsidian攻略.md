@@ -1,5 +1,7 @@
 ---
 banner: assets/OBsidian攻略/file-20260414133748309.png
+tags:
+  - OBsidian
 ---
 # [[OBsidian-好用的插件推荐]]
 # [[Obsidian-获取软件方式]]

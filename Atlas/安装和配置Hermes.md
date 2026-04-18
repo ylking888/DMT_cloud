@@ -50,7 +50,11 @@ fatal: unable to access 'https://github.com/HyperbolicLabs/hermes.git/': Failed 
 ```
 这是WSL 里连不上 GitHub 的网络问题，国内常见
 直接在你当前的 Ubuntu 终端里复制运行这两行命令，立刻解决：
-
+```
+git config --global --unset http.proxy 
+git config --global --unset https.proxy
+```
+执行之后重新克隆，就进去了，要求输入用户名（ylking）设置密码
 ## 6、安装 Hermes 依赖
 ```bash
 pip install --upgrade pip

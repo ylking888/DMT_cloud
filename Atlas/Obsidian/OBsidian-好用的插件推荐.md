@@ -1,5 +1,7 @@
 ---
 up: "[[OBsidian攻略]]"
+tags:
+  - OBsidian
 ---
 ### notebook navigator
 👍Obsidian 最强笔记本导航仪插件

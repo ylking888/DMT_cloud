@@ -1,5 +1,10 @@
 ---
 up: "[[Obsidian/OBsidian攻略|OBsidian攻略]]"
+tags:
+  - OBsidian
+  - SVG
+  - 图标
+  - Emoji
 ---
 ## 资源网站
 https://feathericons.com/

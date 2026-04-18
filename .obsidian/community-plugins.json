@@ -7,7 +7,6 @@
   "hotkey-helper",
   "obsidian-excalidraw-plugin",
   "obsidian-style-settings",
-  "chinese-calendar",
   "quickadd",
   "homepage",
   "dataview",
@@ -15,5 +14,7 @@
   "templater-obsidian",
   "obsidian-mindmap-nextgen",
   "obsidian-tracker",
-  "heatmap-calendar"
+  "heatmap-calendar",
+  "tasknotes",
+  "oz-calendar"
 ]

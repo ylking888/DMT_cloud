@@ -57,7 +57,10 @@ git config --global --unset https.proxy
 执行之后重新克隆，就进去了，要求输入用户名（ylking）设置密码Yl741023
 ![](assets/安装和配置Hermes/file-20260418205939947.png)
 这里等待很长的时间
-如果上面不行，试试这个国内加速地址
+如果上面不行，试试这个GitHub国内加速地址
+```
+git clone https://ghproxy.net/https://github.com/HyperbolicLabs/hermes.git
+```
 ## 6、安装 Hermes 依赖
 ```bash
 pip install --upgrade pip

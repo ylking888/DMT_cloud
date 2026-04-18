@@ -5,8 +5,9 @@ tags:
   - Emoji
 ---
 ### notebook navigator
-👍Obsidian 最强笔记本导航仪插件
+👍Obsidian **最强笔记本导航仪插件**
 作者视频：[Obsidian 最强笔记本导航仪插件_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1BjidB1Edr/?spm_id_from=333.337.search-card.all.click&vd_source=b00ffc87d2f4365faf01741e93e463bb)
+视频非常有启发，讲解了插件的各个使用的细节
 
 
 

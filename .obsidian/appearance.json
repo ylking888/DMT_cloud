@@ -5,5 +5,7 @@
     "properties-sidebar",
     "custom-properties-btn"
   ],
-  "theme": "system"
+  "theme": "obsidian",
+  "cssTheme": "Primary",
+  "nativeMenus": false
 }

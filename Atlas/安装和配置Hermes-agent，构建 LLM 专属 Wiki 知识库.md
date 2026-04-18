@@ -3,7 +3,7 @@ tags:
   - OBsidian
   - Hermes-agent
 ---
-```
+```mermaid
 graph LR
     A[Obsidian（Wiki内容存储）] -->|1.知识检索/文本输入| B[Hermes Agent（智能中枢）]
     B -->|2.调用推理| C[Ollama/llama.cpp（本地LLM）]

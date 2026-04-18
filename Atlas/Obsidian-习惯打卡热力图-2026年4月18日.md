@@ -1,6 +1,20 @@
-```dataviewjs
+# 最初的基础样式
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418092724622.png)
 
+# 基础样式的实现
+## 日历模板中代码
+使用Markdown的任务列表（checkbox）来记录
+```Markdown
+## 📅 今日打卡 
+- [ ] 早上空腹服药 
+- [ ] 六味地黄丸 
+- [ ] 午餐前打针 
+- [ ] 晚餐前打针 
+- [ ] 睡前打针 
+- [ ] 散步5000步
 ```
+## 显示页面中代码
+```Markdown
 ```dataviewjs
 // 配置区
 const diaryFolder = "Calendar";
@@ -136,8 +150,30 @@ taskList.forEach(item => {
   statsContainer.appendChild(card);
 });
 ```
+```
+```
 
+## 使用说明
+1. 日记必须放在 Calendar 文件夹
+2. 日记文件名必须是 2026-04-18.md 这种日期格式
+3. 每天勾选 - [x] 即可
+4. 打开本页自动显示当前月，不用改任何代码
+5. 格子颜色越深 = 打卡完成率越高
+6. 点击数字可直接跳转到当天日记
+7. Dataview（必须开 Enable JavaScript queries）
+8. Templater（可选，用于自动新建日记）
+9. 不需要 Tasks 插件，原生 - [ ] 即可
 
+# 优化样式
+教程参考：[Obsidian：习惯打卡热力图_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1orubzJEi7/?spm_id_from=333.337.search-card.all.click&vd_source=b00ffc87d2f4365faf01741e93e463bb)
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418093349446.png)
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418093417562.png)
+## 第一种：Tracker插件
+项目开源地址：[pyrochlore/obsidian-tracker: A plugin tracks occurrences and numbers in your notes](https://github.com/pyrochlore/obsidian-tracker)
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418101626542.png)
+### 使用方法
+使用Tracker代码块
+```Markdown
 ```tracker
 searchType: task.done #备注
 searchTarget: 早上空腹服药 #查询的名称
@@ -147,32 +183,89 @@ endDate: 2026-04-30 #最终的日期
 month: #显示的形式：年月日
 	color: "#e06c75" #显示的颜色
 ```
+```
+```
+在其Github站点上有很多示例可以参考，其中关于日历的在这里[obsidian-tracker/examples/TestCalendar.md at master · pyrochlore/obsidian-tracker](https://github.com/pyrochlore/obsidian-tracker/blob/master/examples/TestCalendar.md)
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418103442259.png)
+## 第二种 使用heatmap calendar插件
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418103613936.png)
+开源仓库地址：[Richardsl/heatmap-calendar-obsidian: An Obsidian plugin for displaying data in a calendar similar to the github activity calendar](https://github.com/Richardsl/heatmap-calendar-obsidian) 网站说明文档中有示例代码。
+Heatmap calendar的原理是基于**Date view**
+它只有一种视图类型——**全年视图**，没有办法单独显示某一个月的视图
+### 示例代码及显示效果
 
-```tracker
-searchType: task.done
-searchTarget: 散步5000步
-datasetName: 散步5000步
-folder: Calendar
-endDate: 2026-06-30
-month:
-    startWeekOn:
-    threshold: 40
-    thresholdType: LessThan
-    color: green
-    headerMonthColor: orange
-    dimNotInMonth: false
-    todayRingColor: orange
-    selectedRingColor: steelblue
-    showSelectedValue: true
+```Markdown
+```dataviewjs
+// 6 合一 健康打卡仪表盘
+dv.span("### 📅 本月打卡总览")
+dv.span("<br>")
+
+// 配置项
+const config = [
+  { name: "早上空腹服药", icon: "💊", color: "blue" },
+  { name: "六味地黄丸", icon: "🌿", color: "green" },
+  { name: "午餐前打针", icon: "💉", color: "orange" },
+  { name: "晚餐前打针", icon: "💉", color: "orange" },
+  { name: "睡前打针", icon: "🌙", color: "purple" },
+  { name: "散步5000步", icon: "🚶", color: "green" },
+]
+
+const now = new Date()
+const year = now.getFullYear()
+const month = now.getMonth() + 1
+
+for (const task of config) {
+  dv.span(`**${task.icon} ${task.name}**`)
+  
+  const calendarData = {
+    year,
+    month,
+    colors: {
+      blue:   ["#e0ebff","#8cb9ff","#69a3ff","#1872ff","#0058e2"],
+      green:  ["#e6f7d2","#c6e48b","#7bc96f","#49af5d","#196127"],
+      orange: ["#fff2cc","#ffdf80","#ffbd33","#ff9800","#e67700"],
+      purple: ["#f0e6ff","#c9adff","#9f7aea","#775ac4","#553999"],
+    },
+    showCurrentDayBorder: true,
+    defaultEntryIntensity: 4,
+    entries: []
+  }
+
+  // 遍历日记，匹配任务
+  for (let page of dv.pages('"Calendar"').where(p => p.file.day)) {
+    const done = page.file.tasks.some(t =>
+      t.text.trim() === task.name && t.completed
+    )
+    if (done) {
+      calendarData.entries.push({
+        date: page.file.name,
+        intensity: 100,//强度，比如健身40分钟或者60分钟对应不同的颜色
+        content: task.icon,//注释掉这一行在打卡色块里就不会出现图标了
+        color: task.color
+      })
+    }
+  }
+
+  renderHeatmapCalendar(this.container, calendarData)
+  dv.span("<br><br>")
+}
 ```
 
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418105423295.png)
+
+## 进阶设置：打卡强度功能
+我需要对热力图的颜色进行强度的区分，比如中午打针从10个单位到20个单位进行不同的颜色由浅入深的显示。
+### 日记里的写法（确保格式正确）
+你需要用标准的 Obsidian 内联属性格式，用两个冒号：
+### 热力图代码调整
+```Markdown
 ```dataviewjs
 dv.span("### 📅 本月打卡总览")
 dv.span("<br>")
 
 // 配置：自动区分 任务勾选 / 数字计量
 const config = [
-  { name: "早上空腹服药", type: "task", icon: "💊", color: "red" },
+  { name: "早上空腹服药", type: "task", icon: "💊", color: "blue" },
   { name: "六味地黄丸", type: "task", icon: "🌿", color: "green" },
   { name: "午餐前打针", type: "dose", key: "午餐前打针", icon: "💉", color: "orange" },
   { name: "晚餐前打针", type: "task", icon: "💉", color: "orange" },
@@ -245,5 +338,5 @@ for (const item of config) {
   dv.span("<br><br>")
 }
 ```
-```
-```
+
+![](assets/Obsidian-习惯打卡热力图-2026年4月18日/file-20260418111820235.png)

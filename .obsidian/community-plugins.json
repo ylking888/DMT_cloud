@@ -13,5 +13,7 @@
   "dataview",
   "contribution-graph",
   "templater-obsidian",
-  "obsidian-mindmap-nextgen"
+  "obsidian-mindmap-nextgen",
+  "obsidian-tracker",
+  "heatmap-calendar"
 ]

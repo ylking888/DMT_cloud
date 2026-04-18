@@ -110,7 +110,7 @@
     "file": null
   },
   "dualPane": true,
-  "dualPaneOrientation": "horizontal",
+  "dualPaneOrientation": "vertical",
   "showTooltips": false,
   "showTooltipPath": true,
   "desktopBackground": "separate",

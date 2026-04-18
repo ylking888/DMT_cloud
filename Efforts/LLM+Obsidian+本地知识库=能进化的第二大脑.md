@@ -25,12 +25,14 @@ created: 2026-04-17
 
 
  带有启发的视频2：[Obsidian+AI构建个人知识库_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1c6XDBCEfw/?spm_id_from=333.337.search-card.all.click&vd_source=b00ffc87d2f4365faf01741e93e463bb)
- 使用的插件
- ### Advanced Tables
+ ## 使用的插件
+ 
+### Advanced Tables
  ##### ✅作用
 - 自动格式是Markdown表格
 - 自动列宽
 - Tab键快速编辑表格
+
 ### Claudian
 #### 作用
 Claude AI 在 Obsidian 里的入口
@@ -39,4 +41,20 @@ Claude AI 在 Obsidian 里的入口
 #### 用法
 - 选中一段文字 -> 让 AI 改写/总结
 - 写论文草稿
+
+### Dataview ★ (核心插件)
+#### 作用
+把 Obsidian 变成数据库
+查询笔记
+自动生成表格
+动态数据展示
+#### 用法 (核心! )
+table author, year
+from "论文"
+自动列出所有论文
+适合你(重点)
+#### 做:
+文献管理
+实验数据索引
+项目管理
 

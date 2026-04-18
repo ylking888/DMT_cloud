@@ -10,4 +10,7 @@
 ```Powershell
 wsl --shutdown
 ```
-我先关闭所有的虚拟机，
+我先关闭所有的虚拟机，然后再打开Ubuntu
+```
+wsl -d Ubuntu
+```

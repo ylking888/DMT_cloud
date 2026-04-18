@@ -49,6 +49,7 @@ Cloning into 'hermes'...
 fatal: unable to access 'https://github.com/HyperbolicLabs/hermes.git/': Failed to connect to github.com port 443 after 126930 ms: Couldn't connect to server
 ```
 这是WSL 里连不上 GitHub 的网络问题，国内常见
+直接在你当前的 Ubuntu 终端里复制运行这两行命令，立刻解决：
 
 ## 6、安装 Hermes 依赖
 ```bash

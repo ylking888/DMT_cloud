@@ -61,6 +61,14 @@ git config --global --unset https.proxy
 ```
 git clone https://ghproxy.net/https://github.com/HyperbolicLabs/hermes.git
 ```
+尝试失败，究其原因是WSL 里完全无法访问外网，不是 GitHub 的问题，是系统网络不通。
+现在**用下载方式获取源码**
+```
+wget https://ghproxy.net/https://codeload.github.com/HyperbolicLabs/hermes/zip/refs/heads/main -O hermes.zip
+```
+
+
+
 ## 6、安装 Hermes 依赖
 ```bash
 pip install --upgrade pip

@@ -120,7 +120,7 @@
   },
   "dualPane": true,
   "dualPaneOrientation": "horizontal",
-  "showTooltips": false,
+  "showTooltips": true,
   "showTooltipPath": true,
   "desktopBackground": "separate",
   "desktopScale": 1,
@@ -231,7 +231,7 @@
   "quickActionAddTag": true,
   "quickActionAddToShortcuts": true,
   "quickActionPinNote": true,
-  "quickActionOpenInNewTab": false,
+  "quickActionOpenInNewTab": true,
   "useFrontmatterMetadata": false,
   "frontmatterIconField": "icon",
   "frontmatterColorField": "color",
@@ -461,7 +461,18 @@
     ]
   },
   "customVaultName": "",
-  "pinnedNotes": {},
+  "pinnedNotes": {
+    "Atlas/机顶盒/中兴ZXV10 B860AV2.1-T 3.0-2022.9-江苏电信.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    },
+    "Atlas/Obsidian/OBsidian攻略.md": {
+      "folder": true,
+      "tag": false,
+      "property": false
+    }
+  },
   "fileIcons": {},
   "fileColors": {},
   "fileBackgroundColors": {},
@@ -476,6 +487,9 @@
       "groupBy": "folder"
     },
     "Atlas": {
+      "previewRows": 2
+    },
+    "Atlas/机顶盒": {
       "previewRows": 2
     }
   },

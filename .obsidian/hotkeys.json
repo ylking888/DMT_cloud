@@ -15,14 +15,6 @@
       "key": "Q"
     }
   ],
-  "obsidian-excalidraw-plugin:toggle-excalidraw-view": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "E"
-    }
-  ],
   "obsidian-excalidraw-plugin:convert-to-excalidraw": [
     {
       "modifiers": [
@@ -57,5 +49,7 @@
       ],
       "key": "ArrowRight"
     }
-  ]
+  ],
+  "editor:save-file": [],
+  "file-explorer:new-file": []
 }

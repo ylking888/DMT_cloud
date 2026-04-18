@@ -42,6 +42,14 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 激活成功后，终端提示符前会出现 (venv) 标识。
+克隆的时候遇到了问题，提示：
+```
+ylking@DESKTOP-0H4T6JJ:~$ git clone https://github.com/HyperbolicLabs/hermes.git
+Cloning into 'hermes'...
+fatal: unable to access 'https://github.com/HyperbolicLabs/hermes.git/': Failed to connect to github.com port 443 after 126930 ms: Couldn't connect to server
+```
+这是WSL 里连不上 GitHub 的网络问题，国内常见
+
 ## 6、安装 Hermes 依赖
 ```bash
 pip install --upgrade pip

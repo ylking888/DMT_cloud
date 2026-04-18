@@ -71,3 +71,5 @@ hermes-agent 依赖 API 密钥、服务配置等环境变量，需要创建 .env
 Copy-Item .env.example -Destination .env -Force
 ```
 ### 安装Ollama
+下载地址`https://ollama.com/download/windows`
+![](assets/安装和配置Hermes/file-20260418222443284.png)

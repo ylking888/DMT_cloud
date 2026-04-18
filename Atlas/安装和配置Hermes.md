@@ -27,3 +27,14 @@ cd ~
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git python3 python3-pip python3-venv
 ```
+## 5、克隆 Hermes 项目并准备虚拟环境
+```Powershell
+# 克隆官方仓库 
+git clone https://github.com/HyperbolicLabs/hermes.git 
+cd hermes 
+# 创建并激活虚拟环境 
+python3 -m venv venv 
+source venv/bin/activate
+```
+激活成功后，终端提示符前会出现 (venv) 标识。
+##

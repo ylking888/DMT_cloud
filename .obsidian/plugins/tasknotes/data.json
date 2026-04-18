@@ -316,5 +316,24 @@
     "defaultReminderMinutes": null
   },
   "enableDebugLogging": false,
-  "lastSeenVersion": "4.5.1"
+  "lastSeenVersion": "4.5.1",
+  "lastSelectedTaskPath": "TaskNotes/Tasks/今天下午3点专注于OBsidian建立知识库的入门.md",
+  "pomodoroState": {
+    "isRunning": true,
+    "timeRemaining": 1500,
+    "currentSession": {
+      "id": "1776495895698",
+      "taskPath": "TaskNotes/Tasks/今天下午3点专注于OBsidian建立知识库的入门.md",
+      "startTime": "2026-04-18T15:04:55.698+08:00",
+      "plannedDuration": 25,
+      "type": "work",
+      "completed": false,
+      "activePeriods": [
+        {
+          "startTime": "2026-04-18T15:04:55.698+08:00"
+        }
+      ]
+    }
+  },
+  "lastPomodoroDate": "2026-04-17"
 }

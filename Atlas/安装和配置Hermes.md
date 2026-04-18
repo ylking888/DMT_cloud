@@ -52,17 +52,14 @@ git clone https://github.com/NousResearch/hermes-agent.git
 ![](assets/安装和配置Hermes/file-20260418214844628.png)
 执行后预期表现：PowerShell 会显示克隆进度（比如 “Cloning into 'hermes-agent'...”），最终无报错则代表仓库克隆成功，你的D:\hermes-agent-deploy目录下会新增hermes-agent文件夹；
 会在D:\hermes-agent-deploy目录下生成hermes-agent文件夹，包含项目所有源码
+克隆不成功，我直接从Github上下载最新的版本到D:\hermes-agent-deploy目录下hermes-agent文件夹
 #### 进入 hermes-agent 项目目录
 ```
 cd .\hermes-agent\
 ```
 PowerShell 路径变为 (venv) PS D:\hermes-agent-deploy\hermes-agent>
-
-
-
-
-## 6、安装 Hermes 依赖
+## 6、安装项目 Python 依赖
+优先用清华 PyPI 镜像源，解决国内下载慢的问题
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```

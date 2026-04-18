@@ -1,6 +1,7 @@
 ---
 tags:
   - OBsidian
+up: "[[OBsidian攻略]]"
 ---
 ## 一、插件核心作用
 Style Settings 是 Obsidian 最核心的**样式管理插件**，它的核心功能是：

@@ -31,4 +31,12 @@ created: 2026-04-17
 - 自动格式是Markdown表格
 - 自动列宽
 - Tab键快速编辑表格
+### Claudian
+#### 作用
+Claude AI 在 Obsidian 里的入口
+- 调用 Claude (类似 ChatGPT)
+- 写作、总结、润色
+#### 用法
+- 选中一段文字 -> 让 AI 改写/总结
+- 写论文草稿
 

@@ -74,4 +74,8 @@ Copy-Item .env.example -Destination .env -Force
 下载地址`https://ollama.com/download/windows`
 ![](assets/安装和配置Hermes/file-20260418222810978.png)
 Ollama 是独立的本地模型服务（安装后会在后台运行服务进程），不是 Python 依赖，所以不受虚拟环境 / 工作目录限制。只要 Ollama 安装成功，任何 PowerShell 窗口都能调用 ollama 命令。
+```
+ollama pull llama3
+```
+拉取模型测试一下
 

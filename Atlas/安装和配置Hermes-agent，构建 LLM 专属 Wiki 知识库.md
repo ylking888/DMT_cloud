@@ -4,7 +4,12 @@ tags:
   - Hermes-agent
 ---
 ```
-
+graph LR
+    A[Obsidian（Wiki内容存储）] -->|1.知识检索/文本输入| B[Hermes Agent（智能中枢）]
+    B -->|2.调用推理| C[Ollama/llama.cpp（本地LLM）]
+    C -->|3.生成回答/总结/分类| B
+    B -->|4.返回结果/更新Wiki| A
+    B -->|5.定时自动化| D[Cron调度（Wiki维护）]
 ```
 
 聚焦「LLM 相关内容」结构化存储，建议分类：

@@ -17,3 +17,13 @@ wsl -d Ubuntu
 ![](assets/安装和配置Hermes/file-20260418204906059.png)
 期间会要求输入密码，然后进入到这个提示符下。
 ## 3、先回到你的主目录
+你现在在 Windows 的 system32 目录下，不适合在这里操作，先切回 Ubuntu 主目录：
+运行
+```Powershell
+cd ~
+```
+## 4、更新系统并安装基础依赖
+```Powershell
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y git python3 python3-pip python3-venv
+```

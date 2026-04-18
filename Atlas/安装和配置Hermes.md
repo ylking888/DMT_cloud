@@ -32,7 +32,7 @@ cd ~
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git python3 python3-pip python3-venv
 ```
-## 5、克隆 Hermes 项目并准备虚拟环境
+## 5、克隆 hermes-agent项目并准备虚拟环境
 ```bash
 # 克隆官方仓库 
 git clone https://github.com/NousResearch/hermes-agent.git 

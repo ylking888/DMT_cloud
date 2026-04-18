@@ -319,21 +319,40 @@
   "lastSeenVersion": "4.5.1",
   "lastSelectedTaskPath": "TaskNotes/Tasks/今天下午3点专注于OBsidian建立知识库的入门.md",
   "pomodoroState": {
-    "isRunning": true,
+    "isRunning": false,
     "timeRemaining": 1500,
-    "currentSession": {
+    "nextSessionType": "work"
+  },
+  "lastPomodoroDate": "2026-04-17",
+  "pomodoroHistory": [
+    {
       "id": "1776495895698",
-      "taskPath": "TaskNotes/Tasks/今天下午3点专注于OBsidian建立知识库的入门.md",
       "startTime": "2026-04-18T15:04:55.698+08:00",
+      "endTime": "2026-04-18T15:29:55.712+08:00",
       "plannedDuration": 25,
       "type": "work",
-      "completed": false,
+      "taskPath": "TaskNotes/Tasks/今天下午3点专注于OBsidian建立知识库的入门.md",
+      "completed": true,
       "activePeriods": [
         {
-          "startTime": "2026-04-18T15:04:55.698+08:00"
+          "startTime": "2026-04-18T15:04:55.698+08:00",
+          "endTime": "2026-04-18T15:29:55.712+08:00"
+        }
+      ]
+    },
+    {
+      "id": "1776497396754",
+      "startTime": "2026-04-18T15:29:56.754+08:00",
+      "endTime": "2026-04-18T15:34:56.757+08:00",
+      "plannedDuration": 5,
+      "type": "short-break",
+      "completed": true,
+      "activePeriods": [
+        {
+          "startTime": "2026-04-18T15:29:56.754+08:00",
+          "endTime": "2026-04-18T15:34:56.757+08:00"
         }
       ]
     }
-  },
-  "lastPomodoroDate": "2026-04-17"
+  ]
 }

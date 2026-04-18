@@ -4,11 +4,12 @@ status: open
 priority: normal
 scheduled: 2026-04-18
 dateCreated: 2026-04-18T15:04:45.157+08:00
-dateModified: 2026-04-18T15:04:55.704+08:00
+dateModified: 2026-04-18T15:29:55.712+08:00
 tags:
   - task
 timeEntries:
   - startTime: 2026-04-18T07:04:55.704Z
     description: Work session
+    endTime: 2026-04-18T07:29:55.712Z
 ---
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Hermes
+  - OBsidian
+---
 ## 1、Windows的虚拟环境
 打开 “启用或关闭 Windows 功能”
 找到并勾选：
@@ -19,16 +24,16 @@ wsl -d Ubuntu
 ## 3、先回到你的主目录
 你现在在 Windows 的 system32 目录下，不适合在这里操作，先切回 Ubuntu 主目录：
 运行
-```Powershell
+```bash
 cd ~
 ```
 ## 4、更新系统并安装基础依赖
-```Powershell
+```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y git python3 python3-pip python3-venv
 ```
 ## 5、克隆 Hermes 项目并准备虚拟环境
-```Powershell
+```bash
 # 克隆官方仓库 
 git clone https://github.com/HyperbolicLabs/hermes.git 
 cd hermes 
@@ -37,4 +42,8 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 激活成功后，终端提示符前会出现 (venv) 标识。
-##
+## 6、安装 Hermes 依赖
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```

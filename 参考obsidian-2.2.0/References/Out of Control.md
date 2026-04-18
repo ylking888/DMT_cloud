@@ -1,7 +1,7 @@
 ---
 categories:
   - "[[../Categories/Books]]"
-cover: "[[../../附件/out-of-control.jpg]]"
+cover: "[[../../Atlas/附件/out-of-control.jpg]]"
 isbn: 201483408
 isbn13: 9780201483406
 pages: 528

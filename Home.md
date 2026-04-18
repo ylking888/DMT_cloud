@@ -109,11 +109,14 @@ dataSource:
   type: PAGE
   value: ""
   dateField: {}
-fillTheScreen: false
-enableMainContainerShadow: false
+fillTheScreen: true
+enableMainContainerShadow: true
 fromDate: 2025-10-01
 toDate: 2026-06-30
 cellStyleRules: []
+cellStyle:
+  borderRadius: 0%
+  minHeight: 13px
 
 ```
 

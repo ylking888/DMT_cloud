@@ -101,7 +101,7 @@ up: "[[OBsidian攻略]]"
 }
 ```
 #### 显示部分
-图标可换[[../../笔记库/SVG图标|SVG图标]]
+图标可换[[../SVG图标|SVG图标]]
 ```Markdown
 <div class="custom-properties-btn" onclick="app.commands.executeCommandById('properties:open')"> 
 <svg

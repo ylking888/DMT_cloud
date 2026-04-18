@@ -1,5 +1,5 @@
 ---
-up: "[[../Atlas/Obsidian/OBsidian攻略|OBsidian攻略]]"
+up: "[[Obsidian/OBsidian攻略|OBsidian攻略]]"
 ---
 ## 资源网站
 https://feathericons.com/

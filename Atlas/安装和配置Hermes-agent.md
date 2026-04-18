@@ -1,7 +1,7 @@
 ---
 tags:
-  - Hermes
   - OBsidian
+  - Hermes-agent
 ---
 ## 1、Windows的虚拟环境
 打开 “启用或关闭 Windows 功能”
@@ -19,7 +19,7 @@ wsl --shutdown
 ```
 wsl -d Ubuntu
 ```
-![](assets/安装和配置Hermes/file-20260418204906059.png)
+![](assets/安装和配置Hermes-agent/file-20260418224401510.png)
 期间会要求输入密码，然后进入到这个提示符下。
 ## 3、在D盘新建hermes-agent-deploy目录
 我在D盘新建了hermes-agent-deploy目录，并在这个目录下打开了Powershell窗口
@@ -49,7 +49,7 @@ git --version
 git clone https://github.com/NousResearch/hermes-agent.git
 ```
 这个步骤可能需要等待很长时间
-![](assets/安装和配置Hermes/file-20260418214844628.png)
+![](assets/安装和配置Hermes-agent/file-20260418224401507.png)
 执行后预期表现：PowerShell 会显示克隆进度（比如 “Cloning into 'hermes-agent'...”），最终无报错则代表仓库克隆成功，你的D:\hermes-agent-deploy目录下会新增hermes-agent文件夹；
 会在D:\hermes-agent-deploy目录下生成hermes-agent文件夹，包含项目所有源码
 克隆不成功，我直接从Github上下载最新的版本到D:\hermes-agent-deploy目录下hermes-agent文件夹
@@ -72,7 +72,7 @@ Copy-Item .env.example -Destination .env -Force
 ```
 ### 安装Ollama
 下载地址`https://ollama.com/download/windows`
-![](assets/安装和配置Hermes/file-20260418222810978.png)
+![](assets/安装和配置Hermes-agent/file-20260418224401499.png)
 Ollama 是独立的本地模型服务（安装后会在后台运行服务进程），不是 Python 依赖，所以不受虚拟环境 / 工作目录限制。只要 Ollama 安装成功，任何 PowerShell 窗口都能调用 ollama 命令。
 ```
 ollama pull llama3

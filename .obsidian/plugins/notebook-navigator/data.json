@@ -14,7 +14,12 @@
       ],
       "navigationBanner": null,
       "periodicNotesFolder": "",
-      "shortcuts": [],
+      "shortcuts": [
+        {
+          "type": "note",
+          "path": "Atlas/Obsidian/OBsidian-好用的插件推荐.md"
+        }
+      ],
       "navRainbow": {
         "mode": "none",
         "balanceHueLuminance": true,
@@ -110,7 +115,7 @@
     "file": null
   },
   "dualPane": true,
-  "dualPaneOrientation": "vertical",
+  "dualPaneOrientation": "horizontal",
   "showTooltips": false,
   "showTooltipPath": true,
   "desktopBackground": "separate",
@@ -196,7 +201,7 @@
   "showAllPropertiesFolder": true,
   "scopePropertiesToCurrentContext": false,
   "defaultListMode": "standard",
-  "includeDescendantNotes": true,
+  "includeDescendantNotes": false,
   "defaultFolderSort": "modified-desc",
   "propertySortKey": "",
   "propertySortSecondary": "title",
@@ -230,10 +235,10 @@
   "showFileIcons": true,
   "showFilenameMatchIcons": false,
   "fileNameIconMap": {},
-  "showCategoryIcons": false,
+  "showCategoryIcons": true,
   "fileTypeIconMap": {},
   "fileNameRows": 1,
-  "showFilePreview": true,
+  "showFilePreview": false,
   "skipHeadingsInPreview": true,
   "skipCodeBlocksInPreview": true,
   "stripHtmlInPreview": true,
@@ -241,7 +246,7 @@
   "previewRows": 2,
   "previewProperties": [],
   "previewPropertiesFallback": true,
-  "showFeatureImage": true,
+  "showFeatureImage": false,
   "featureImageProperties": [],
   "featureImageExcludeProperties": [],
   "featureImageSize": "64",

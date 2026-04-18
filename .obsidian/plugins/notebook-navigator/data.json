@@ -9,7 +9,9 @@
       "hiddenTags": [],
       "hiddenFileNames": [],
       "hiddenFileTags": [],
-      "hiddenFileProperties": [],
+      "hiddenFileProperties": [
+        "/_*"
+      ],
       "navigationBanner": null,
       "periodicNotesFolder": "",
       "shortcuts": [],

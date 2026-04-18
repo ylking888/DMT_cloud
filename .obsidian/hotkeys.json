@@ -51,5 +51,22 @@
     }
   ],
   "editor:save-file": [],
-  "file-explorer:new-file": []
+  "file-explorer:new-file": [],
+  "notebook-navigator:new-note": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "notebook-navigator:new-note-from-template": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ]
 }

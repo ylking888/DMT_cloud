@@ -18,6 +18,10 @@
         {
           "type": "note",
           "path": "Atlas/Obsidian/OBsidian-好用的插件推荐.md"
+        },
+        {
+          "type": "note",
+          "path": "Home.md"
         }
       ],
       "navRainbow": {
@@ -148,7 +152,14 @@
   "confirmBeforeDelete": true,
   "deleteAttachments": "ask",
   "moveFileConflicts": "ask",
-  "externalIconProviders": {},
+  "externalIconProviders": {
+    "bootstrap-icons": true,
+    "fontawesome-solid": true,
+    "material-icons": true,
+    "phosphor": true,
+    "rpg-awesome": true,
+    "simple-icons": true
+  },
   "checkForUpdatesOnStart": true,
   "pinNavigationBanner": true,
   "showNoteCount": true,

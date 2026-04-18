@@ -473,10 +473,21 @@
       "property": false
     }
   },
-  "fileIcons": {},
-  "fileColors": {},
-  "fileBackgroundColors": {},
-  "folderIcons": {},
+  "fileIcons": {
+    "Atlas/Obsidian/OBsidian攻略.md": "rpg-awesome:fire",
+    "Atlas/Obsidian/OBsidian-好用的插件推荐.md": "rpg-awesome:fire"
+  },
+  "fileColors": {
+    "Atlas/Obsidian/OBsidian攻略.md": "#f97316",
+    "Atlas/Obsidian/OBsidian-好用的插件推荐.md": "#ef4444"
+  },
+  "fileBackgroundColors": {
+    "Atlas/Obsidian/OBsidian攻略.md": "#f59e0b32",
+    "Atlas/Obsidian/OBsidian-好用的插件推荐.md": "#84cc164c"
+  },
+  "folderIcons": {
+    "营销": "umbrella"
+  },
   "folderColors": {},
   "folderBackgroundColors": {},
   "folderSortOverrides": {},
@@ -494,7 +505,9 @@
     }
   },
   "tagIcons": {},
-  "tagColors": {},
+  "tagColors": {
+    "obsidian": "#84cc16"
+  },
   "tagBackgroundColors": {},
   "tagSortOverrides": {},
   "tagTreeSortOverrides": {},

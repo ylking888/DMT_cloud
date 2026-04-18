@@ -83,7 +83,7 @@ ta:
 title: 近期活跃度
 graphType: month-track
 dateRangeType: LATEST_DAYS
-dateRangeValue: 30
+dateRangeValue: 180
 dataSource:
   type: PAGE
   value: ""

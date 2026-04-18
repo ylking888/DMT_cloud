@@ -60,10 +60,11 @@ from "论文"
 
 ### Emoji Toolbar
 #### 作用
-- 插入表情
+- 插入表情📰
 - 快速美化笔记
 #### 用法
-输入：→选择 emoji
+输入：`CTRL`+`→`(自定义)选择 emoji
+![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260418151925682.png)
 
 ## Excalidraw (强烈推荐)
 #### 作用

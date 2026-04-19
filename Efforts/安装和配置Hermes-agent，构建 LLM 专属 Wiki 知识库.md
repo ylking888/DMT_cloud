@@ -139,7 +139,7 @@ LLM_PROVIDER=openai
 # 运行日志级别（可选，方便调试）
 LOG_LEVEL=INFO
 ```
-
+进入虚拟环境测试
 ```
 .\venv\Scripts\Activate
 cd .\hermes-agent\

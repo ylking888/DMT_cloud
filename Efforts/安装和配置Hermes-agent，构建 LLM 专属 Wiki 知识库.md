@@ -98,6 +98,8 @@ ollama pull qwen2:7b
 你刚拉取的 qwen2:7b 模型，默认存放在 Windows 这个路径：
 C:\Users <你的用户名>.ollama\models
 地址栏粘贴：`%USERPROFILE%\.ollama\models` 回车，直接进入
-里面有两个核心文件夹：
-`blobs/`：存放模型权重文件（.gguf 格式，qwen2:7b 约 4.4GB）
+里面有两个核心文件夹，Ollama 的模型存储结构是：
+`blobs/`：存所有文件的哈希副本（模型权重、配置、元数据）（qwen2:7b 约 4.4GB）
 `manifests/`：存放模型清单 / 索引文件（记录模型版本、哈希）
+### Hermes Agent 的 .env 配置
+

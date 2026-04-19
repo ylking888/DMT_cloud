@@ -35,7 +35,7 @@ wsl --shutdown
 ```
 wsl -d Ubuntu
 ```
-![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260418235447188.png)
+![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260419150857177.png)
 期间会要求输入密码，然后进入到这个提示符下。
 ## 3、在D盘新建hermes-agent-deploy目录
 我在D盘新建了hermes-agent-deploy目录，并在这个目录下打开了Powershell窗口
@@ -65,7 +65,7 @@ git --version
 git clone https://github.com/NousResearch/hermes-agent.git
 ```
 这个步骤可能需要等待很长时间
-![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260418235447197.png)
+![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260419150857164.png)
 执行后预期表现：PowerShell 会显示克隆进度（比如 “Cloning into 'hermes-agent'...”），最终无报错则代表仓库克隆成功，你的D:\hermes-agent-deploy目录下会新增hermes-agent文件夹；
 会在D:\hermes-agent-deploy目录下生成hermes-agent文件夹，包含项目所有源码
 克隆不成功，我直接从Github上下载最新的版本到D:\hermes-agent-deploy目录下hermes-agent文件夹

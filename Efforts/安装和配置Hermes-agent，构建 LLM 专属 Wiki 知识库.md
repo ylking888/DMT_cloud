@@ -97,3 +97,7 @@ ollama pull qwen2:7b
 查看安装了哪些大模型，可以在命令行输入：`ollama list`
 你刚拉取的 qwen2:7b 模型，默认存放在 Windows 这个路径：
 C:\Users <你的用户名>.ollama\models
+地址栏粘贴：`%USERPROFILE%\.ollama\models` 回车，直接进入
+里面有两个核心文件夹：
+`blobs/`：存放模型权重文件（.gguf 格式，qwen2:7b 约 4.4GB）
+`manifests/`：存放模型清单 / 索引文件（记录模型版本、哈希）

@@ -22,8 +22,8 @@ graph LR
 ## 1、Windows的虚拟环境
 打开 “启用或关闭 Windows 功能”
 找到并勾选：
--[*] 适用于 Linux 的 Windows 子系统
--[*] 虚拟机平台
+- [x] 适用于 Linux 的 Windows 子系统
+- [x] 虚拟机平台
 确定 → 重启电脑
 以管理员身份打开 PowerShell：`wsl --set-default-version 2`（把默认设为 WSL2）
 

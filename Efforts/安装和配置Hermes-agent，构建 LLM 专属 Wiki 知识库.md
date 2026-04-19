@@ -95,4 +95,5 @@ ollama pull qwen2:7b
 ```
 拉取模型测试一下
 查看安装了哪些大模型，可以在命令行输入：`ollama list`
-
+你刚拉取的 qwen2:7b 模型，默认存放在 Windows 这个路径：
+C:\Users <你的用户名>.ollama\models

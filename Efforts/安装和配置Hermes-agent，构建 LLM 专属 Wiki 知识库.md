@@ -140,3 +140,8 @@ LLM_PROVIDER=openai
 LOG_LEVEL=INFO
 ```
 
+```
+.\venv\Scripts\Activate
+cd .\hermes-agent\
+hermes
+```

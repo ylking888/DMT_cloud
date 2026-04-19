@@ -76,6 +76,7 @@ PowerShell 路径变为 (venv) PS D:\hermes-agent-deploy\hermes-agent>
 ## 6、安装项目 Python 依赖
 优先用清华 PyPI 镜像源，解决国内下载慢的问题
 ```bash
+.\venv\Scripts\Activate
 pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 ## 7、配置项目环境变量（核心步骤）
@@ -138,3 +139,4 @@ LLM_PROVIDER=openai
 # 运行日志级别（可选，方便调试）
 LOG_LEVEL=INFO
 ```
+

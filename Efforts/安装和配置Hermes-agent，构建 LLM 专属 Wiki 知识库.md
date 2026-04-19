@@ -145,3 +145,4 @@ LOG_LEVEL=INFO
 cd .\hermes-agent\
 hermes
 ```
+能跑但是速度很慢，在Ollama下秒回，在Hermes下需要等待很久甚至不出结果，这个问题以后还要深入研究解决。

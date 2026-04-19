@@ -101,5 +101,20 @@ C:\Users <你的用户名>.ollama\models
 里面有两个核心文件夹，Ollama 的模型存储结构是：
 `blobs/`：存所有文件的哈希副本（模型权重、配置、元数据）（qwen2:7b 约 4.4GB）
 `manifests/`：存放模型清单 / 索引文件（记录模型版本、哈希）
+
+---
+qwen2:7b模型在Hermes下报错，重新下载测试Qwen3:14b(9.3Gb)
+使用**阿里云镜像加速**（如果可用）：
+```
+set OLLAMA_REGISTRY_MIRROR=https://ollama.mirrorz.org 
+ollama pull qwen3:14b
+```
+模型	显存需求	你能跑吗？
+qwen3:8b	~6GB	✅ 轻松
+qwen3:14b	~10GB	✅ 完美
+qwen3:32b	~20GB	✅ 可以（内存补充）
+qwen3:72b	~45GB	⚠️ 太大，跑不动
+
+
 ### Hermes Agent 的 .env 配置
 

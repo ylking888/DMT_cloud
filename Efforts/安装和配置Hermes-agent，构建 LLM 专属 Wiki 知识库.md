@@ -89,7 +89,7 @@ Copy-Item .env.example -Destination .env -Force
 ### 安装Ollama
 下载地址`https://ollama.com/download/windows`
 ### 安装之后拉取模型文件
-Ollama 是独立的本地模型服务（安装后会在后台运行服务进程），不是 Python 依赖，所以不受虚拟环境 / 工作目录限制。只要 Ollama 安装成功，任何 PowerShell 窗口都能调用 ollama 命令。模型选型：优先 Qwen 2 7B（中文 + 长上下文），嵌入模型选 BGE-M3（检索精准）；
+Ollama 是独立的本地模型服务（安装后会在后台运行服务进程），不是 Python 依赖，所以不受虚拟环境 / 工作目录限制。只要 Ollama 安装成功，任何 PowerShell 窗口都能调用 ollama 命令。
 ```
 ollama pull qwen2:7b
 ```

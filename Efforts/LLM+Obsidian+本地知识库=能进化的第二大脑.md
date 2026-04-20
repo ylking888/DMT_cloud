@@ -227,3 +227,7 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 4. **保存记录**：将有价值的回答自动存入 `wiki/outputs/YYYY-MM-DD-topics.md`。
 5. **输出格式**：支持 Markdown 格式，如果是趋势分析则输出表格。
 ```
+### 第一次“人机对话”测试
+```
+python scripts/query.py "Cursor 有哪些核心功能？"
+```

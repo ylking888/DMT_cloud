@@ -204,4 +204,5 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 确保在调用 ollama/default 时，Prompt 依然要求它输出中文。
 运行前在终端显示：“正在启动本地工厂，使用模型：ollama/default...”。
 ```
-修改完，再运行测试
+修改完，再运行测试，如有问题再发给Gemini生成指令给Cursor修改
+

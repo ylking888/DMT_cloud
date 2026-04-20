@@ -1,5 +1,7 @@
 ---
-up: "[[Obsidian/OBsidian-好用的插件推荐|OBsidian-好用的插件推荐]]"
+up:
+  - "[[Obsidian/OBsidian-好用的插件推荐|OBsidian-好用的插件推荐]]"
+  - "[[../Efforts/🔗OBsidian连接Ollama|🔗OBsidian连接Ollama]]"
 ---
 首先打通 Obsidian 与本地 Ollama 的连接！🎉 作为一款开源 AI 文本生成工具，**Text Generator** 除了基础的生成回复外，还有很多能极大提升你笔记效率的高级功能，以下是核心功能一览与快速上手建议：
 ### 安装Text Generator插件

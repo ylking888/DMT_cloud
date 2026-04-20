@@ -45,7 +45,7 @@ created: 2026-04-17
 提问测试
 ![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260420160923921.png)
 
-## **Andre Karpathy 的 `llm.c` 微型本地 Wiki**
+## Andre Karpathy 的 llm.c 微型本地 Wiki
 Step 1: Bootstrap（基础搭建）；
 Step 2: 标定（首次使用前必做）；
 step 3：全系统Audit；
@@ -110,7 +110,7 @@ Step 4: 配置 Obsidian Web Clipper
 ```
 
 ## 安装本地大模型引擎 (Ollama)
-
+之前已经安装过，这里略过
 ## 安装 Ollama 插件
 让系统能调用你的 Qwen 模型
 ```

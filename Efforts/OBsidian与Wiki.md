@@ -152,18 +152,23 @@ last_reviewed 字段**
     - 用户确认后，执行 QUERY 并将结果写入 wiki/synthesis/，同时在 QUESTIONS.md
 中将该问题移入 Answered
 11. 在 wiki/log.md 末尾添加：`YYYY-MM-DD HH:MM | ingest | [来源标题]`
-*个人写作流程（不同于标准流程）*：
+    
+**个人写作流程（不同于标准流程）**：
 - 不生成 Summary 节，跳过客观观察
 - 核心 graph 写人相关的 ## My Position 节（标注「个人认知」）
 - 不参与 confidence 的 source_count 计数（避免用自己的文章给自己背书）
 - 若文章中引用了外部来源，提取这些引用并尝试与已有 wiki/sources/ 页面建立 wikilinks
 - raw_sha256 哈希值同样适用
 - Evolution Log 记录：[YYYY-MM-DD 个人写作] [[stag]] 确立了对此概念的明确立场
+  
 ### QUERY 操作规范
 触发词：直接提问，或「根据我的知识库」
+
 执行步骤：
 Step Q1. 执行 qad query "<用户问题>" --json，获取 top 5 相关页面（若 qad 报墙则降级读取 wiki/index.md）
 Step Q2. 逐一回答 top 5 文件
 Step Q3. 合成答案，每个核心结论必须溯源到具体 wiki/sources/<<slug>>.md（不允许只引用 concept）；注明来源 confidence 级别；来源相互矛盾时显式标注分极
 Step Q4. 若答案具有实用价值，写入 wiki/outputs/YYYY-MM-DD-topics.md 文件 frontmatter 含 graph: evaluated: true；输出在末尾包含 ▶ Confidence Notes 节；更新 wiki/index.md 的 Recent Synthesis 列表；添加 wiki/log.md
+
+
 ```

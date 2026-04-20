@@ -146,3 +146,21 @@ cd .\hermes-agent\
 hermes
 ```
 能跑但是速度很慢，在Ollama下秒回，在Hermes下需要等待很久甚至不出结果，这个问题以后还要深入研究解决。
+
+
+## 安装Node
+官网下载安装https://nodejs.org/zh-cn/download/
+![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260420144642680.png)
+验证安装
+```
+node -v
+npm -v
+```
+
+```
+C:\Users\ylking>node -v
+v24.15.0
+
+C:\Users\ylking>npm -v
+11.8.0
+```

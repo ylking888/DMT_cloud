@@ -108,3 +108,31 @@ Step 4: 配置 Obsidian Web Clipper
 4. 集成 Karpathy 的 wiki.py 思路，使用 llm 库来提取摘要和概念。
 5. 完成后在 wiki/log.md 记录日志。
 ```
+
+## 安装本地大模型引擎 (Ollama)
+
+## 安装 Ollama 插件
+让系统能调用你的 Qwen 模型
+```
+pip install llm-ollama
+```
+## 安装本地嵌入插件
+让系统能在本地处理搜索，不需要联网
+```
+pip install llm-sentence-transformers
+```
+## 注册本地嵌入模型
+这步是告诉系统，以后用这个轻量级模型来处理文字向量
+```
+llm embed-models register-lazy sentence-transformers all-MiniLM-L6-v2
+```
+## 修改 ingest.py 切换到全本地运行
+```
+指令：
+我的本地 Ollama 已经准备好了 qwen3:14b 模型。请修改 scripts/ingest.py 脚本：”
+1. 大模型调用：将所有总结、提取概念和实体的逻辑，从 OpenAI 切换为调用本地的 ollama/qwen3:14b。
+2. 嵌入计算：使用本地的 sentence-transformers/all-MiniLM-L6-v2 来处理向量嵌入，不要调用任何外部 API。
+3. 语言本地化：由于使用的是 Qwen 模型，请确保生成的所有摘要、概念名称和笔记内容统一使用中文。
+4. 去中心化：删除脚本中对 OpenAI API Key 的所有检查逻辑，确保脚本在离线状态下也能正常运行。
+5. 更新 CLAUDE.md：如果必要，在 CLAUDE.md 中记录现在系统已切换为本地运行模式。
+```

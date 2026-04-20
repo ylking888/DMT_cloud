@@ -384,3 +384,25 @@ cp ~/你的文章.md ~/knowledge-base/raw/articles/
 输出: ✅ 通过 / ❌ 未通过（含缺失内容） / 建议修复优先级
 ```
 
+## Step 4: 配置 Obsidian Web Clipper
+1. 安装 Obsidian Web Clipper 浏览器扩展
+2. 创建「LLM Wiki - Article」模板:
+**Note location:** raw/clippings
+
+**Note name: **{{data\date:YYYY-MM-DD}}-{{title}}
+
+**Properties:**
+
+| Property Name | Property Value |
+| ------------- | -------------- |
+| title         | {{title}}      |
+| source        | {{url}}        |
+| author        | {{author}}     |
+| date          | {{data\date:YYYY-MM-DD}} |
+| tags          | ["ram", "ram/clipping"] |
+| processed     | false          |
+
+**Note content: **{{content}}
+
+3. 附件路径设为 raw/images/
+4. 快捷键建议: Ctrl+Shift+D

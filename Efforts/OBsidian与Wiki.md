@@ -68,4 +68,19 @@ frontmatter 字段: type, title, date, source_url, domain, author, tags, process
 frontmatter 字段: type: personal-writing, date, status(draft/published/deprecated), topic_tags, confidence_low_at_writing(low/medium/high), superseded_by, ram_file, ram_sha256, last_verified, tags, title, date
 主要结构: ## Core Argument. ## Key Claims. ## Evidence Referenced. ## Limitations
 
+### wiki/templates/concept-template.md
+frontmatter 字段: type: concept, (中文名主名称) , date, updated, tags,
+source_count, confidence(low/medium/high),
+domain_volatility(low/medium/high), last_reviewed, aliases (微组, 存储中英文所有叫法)
+正文结构: ## Definition (暂行用 (中文名 (English Name)) 格式)、## Key Points、## My Position、## Contradictions、## Sources (仅 wikilinks 列表)、## Evolution Log (每次更新前加一条)
+
+### wiki/templates/entity-template.md
+frontmatter 字段: type: entity, title, date, tags,
+entity_type(person/tool/institution/paper), aliases
+正文结构: ## Description、## Key Contributions、## Related Concepts、## Sources
+
+### wiki/templates/synthesis-template.md
+frontmatter 字段: type: synthesis, title, date, tags, source_count, confidence
+正文结构: ## Thesis、## Evidence、## Counter - evidence (Stage 0 反向检验站)
+
 ```

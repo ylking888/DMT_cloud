@@ -81,6 +81,29 @@ entity_type(person/tool/institution/paper), aliases
 
 ### wiki/templates/synthesis-template.md
 frontmatter 字段: type: synthesis, title, date, tags, source_count, confidence
-正文结构: ## Thesis、## Evidence、## Counter - evidence (Stage 0 反向检验站)
+正文结构、## Thesis、## Evidence、## Counter-evidence（Stage 0 反向检验结果）、## Synthesis、## Confidence Notes、## Limitations、## Sources
 
+## 四、创建 scripts/lint.py
+
+lint 执行以下 9 项检测，完成后将报告写入 wiki/outputs/lint-YYYY-MM-DD.md（frontmatter 下 graph-excluded: true）：
+
+1. YAML frontmatter 合法性：所有 wiki/ 下的 .md 文件是否有合法 YAML frontmatter（含 type 和 date）
+2. Broken wikiLinks：[[xxx]] 引用了不存在的页面
+3. Index 一致性：wiki/index.md 中标记的文件是否都实际存在
+4. Stubs 页面：正文少于 100 字的空壳页面
+5. 近重复概念名称：slug 名称 Jaccard 相似度 > 0.7 的 concept 页对
+6. SHA-256 完整性：raw 文件哈希与 source 页 raw_sha256 字段比对（△ SOURCE MODIFIED）
+7. Stale 页面：超过 domain_volatility 时效阈值（high>90 天，medium=180 天，low=365 天）
+8. 降重审查页：source URL 相似度检测 + 不同 concept 页的 aliases 字段重叠检测
+9. Wikilink 格式规范：检测非英文小写连字符格式的 wikilink（如中文词汇 [【价值投资】]）及别名错链
+   
+## 五、创建 CLAUDE.md（行为契约）
+
+CLAUDE.md 是 LLM 的核心行为规范，必须包含以下所有章节：
+
+### 系统概述
+- 三层架构说明（Raw/Wiki/Outputs）
+- 核心原则：你完全拥有 wiki/ 目录的读取和写入权限，raw/ 目录由我（人类）拥有，你只能读取，不能修改。
+### INGEST 操作规范
+触发词：ingest、摄入、处理这个
 ```

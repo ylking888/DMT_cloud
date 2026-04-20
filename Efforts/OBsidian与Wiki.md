@@ -313,3 +313,16 @@ qmd status
 4. qmd status 输出 (索引文件数量)
 5. scripts/lint.py 包含的检查项列表
 ```
+
+## Step 2: 标定（首次使用前必做）
+Karpathy 原文特别强调：在正式批量处理前，先交互式标定 2-3 篇最典型的来源，审查输出质量后再调整 CLAUDE.md。
+```
+# 先放入 1 篇测试文章
+cp ~/你的文章.md ~/knowledge-base/raw/articles/
+# 告诉 Claude Code
+你：ingest raw/articles/你的文章.md
+# 仔细审查：摘要质量、概念提取是否准确、wikilinks 格式是否正确
+# 若不满意，告诉 LLM：请更新 CLAUDE.md，以后处理 [情况] 时要 [规范]
+```
+**标定后再处理剩余文章，避免大量文章风格不一致。**
+

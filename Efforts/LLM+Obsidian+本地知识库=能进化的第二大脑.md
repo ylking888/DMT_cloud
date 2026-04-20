@@ -44,3 +44,11 @@ created: 2026-04-17
 快捷键Ctrl+L打开/关闭对话窗口
 提问测试
 ![](assets/LLM+Obsidian+本地知识库=能进化的第二大脑/file-20260420160923921.png)
+
+## **Andre Karpathy 的 `llm.c` 微型本地 Wiki**
+Step 1: Bootstrap（基础搭建）；
+Step 2: 标定（首次使用前必做）；
+step 3：全系统Audit；
+Step 4: 配置 Obsidian Web Clipper
+
+我现在准备使用它来搭建Andre Karpathy 的 llm.c 微型本地 Wiki ，计划的步骤为：Step 1: Bootstrap（基础搭建）； Step 2: 标定（首次使用前必做）； step 3：全系统Audit； Step 4: 配置 Obsidian Web Clipper，这是作者在说明文档中建议的，具体开源地址在[https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)

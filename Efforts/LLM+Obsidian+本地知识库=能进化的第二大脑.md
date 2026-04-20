@@ -231,3 +231,26 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 ```
 python scripts/query.py "Cursor 有哪些核心功能？"
 ```
+### 1. 修正检索范围（排除干扰）
+```
+指令：
+优化 scripts/query.py。”
+1. 排除干扰：在语义搜索时，明确排除 wiki/templates/ 文件夹，不要检索模板文件。
+2. 权重调整：在检索时，优先检索 wiki/sources/ 文件夹下的内容，因为那里保存了最原始、最详细的信息。
+3. 增加检索深度：将检索的相关文件数量从 5 个增加到 7 个，以确保原始来源（Sources）能被包含进去。
+```
+### 2. 增强“工厂”生产力（让摘要更丰富）
+```
+指令：
+优化 scripts/ingest.py 的 Prompt。”
+1. 拒绝偷懒：要求本地模型在提取 Concept 和 Entity 的 Description（描述）或 Key Points（关键点）时，必须从原文中提取至少 3-5 句话，不能只写标题或留空。
+2. 强制关联：在生成 Source 文件时，确保正文的 Summary 节包含足够详细的背景信息。
+```
+
+###  “对比实验”
+1. **重新“喂”一次数据**：  
+    由于你之前的 `test.md` 已经被处理过了，我们需要把它改个名字或者稍微改点内容（比如在 `test.md` 里多加两句话），然后再次运行：
+	`python scripts/ingest.py ram/articles/test.md`
+
+2. **再次提问**： ```
+    python scripts/query.py "Cursor 有哪些核心功能？"

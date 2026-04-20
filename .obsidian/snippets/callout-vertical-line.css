@@ -24,29 +24,6 @@
 }
 
 /* ======================================== */
-/* 自定义中文 Callout 类型 */
-/* ======================================== */
-.callout[data-callout="lanse"] {
-  border-left-color: #4a90e2 !important;
-}
-.callout[data-callout="lvse"] {
-  border-left-color: #4caf50 !important;
-}
-.callout[data-callout="huangse"] {
-  border-left-color: #ffcc00 !important;
-}
-.callout[data-callout="chengse"] {
-  border-left-color: #ff9800 !important;
-}
-.callout[data-callout="hongse"],
-.callout[data-callout="红色"] {
-  border-left-color: #f44336 !important;
-}
-.callout[data-callout="zise"] {
-  border-left-color: #9c27b0 !important;
-}
-
-/* ======================================== */
 /* 样板效果：原生 info 类型（无边框圆角，简洁风格） */
 /* ======================================== */
 .callout[data-callout="info"] {
@@ -107,4 +84,27 @@
 
 .theme-dark .callout[data-callout="info"] .callout-content {
   color: #dddddd !important;
+}
+
+/* ======================================== */
+/* 自定义中文 Callout 类型 —— 放在最后，保证最高优先级 */
+/* ======================================== */
+.callout[data-callout="lanse"] {
+  border-left-color: #4a90e2 !important;
+}
+.callout[data-callout="lvse"] {
+  border-left-color: #4caf50 !important;
+}
+.callout[data-callout="huangse"] {
+  border-left-color: #ffcc00 !important;
+}
+.callout[data-callout="chengse"] {
+  border-left-color: #ff9800 !important;
+}
+.callout[data-callout="hongse"],
+.callout[data-callout="红色"] {
+  border-left-color: #f44336 !important;
+}
+.callout[data-callout="zise"] {
+  border-left-color: #9c27b0 !important;
 }

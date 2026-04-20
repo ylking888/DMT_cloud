@@ -1,9 +1,9 @@
 {
   "enabledCssSnippets": [
     "callout-vertical-line",
-    "title-color-bar",
     "properties-sidebar",
-    "custom-properties-btn"
+    "custom-properties-btn",
+    "title-color-bar"
   ],
   "theme": "moonstone",
   "cssTheme": "Blue Topaz",

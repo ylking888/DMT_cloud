@@ -252,16 +252,8 @@ python scripts/query.py "Cursor 有哪些核心功能？"
     由于你之前的 `test.md` 已经被处理过了，我们需要把它改个名字或者稍微改点内容（比如在 `test.md` 里多加两句话），然后再次运行：
 	`python scripts/ingest.py ram/articles/test.md`
 
-2. **再次提问**： ```
+2. **再次测试提问**： ```
     python scripts/query.py "Cursor 有哪些核心功能？"
 
----
 
-Cursor和Trae对比哪个好用？
-
-本段内容来自AI，请自行甄别。  
-Cursor和Trae的对比需根据具体场景：  
-1. **Cursor**：AI代码生成工具，擅长根据自然语言生成代码片段，集成LLM能力，适合快速开发原型。  
-2. **Trae**（假设为其他工具）：若指类似工具（如Trae可能为拼写错误），需明确具体功能。  
-
-若问题针对代码生成工具，Cursor在AI辅助编程上更成熟；若Trae是特定领域工具（如设计/协作），需具体分析。建议确认工具名称及使用场景后再对比。
+### 投喂数据

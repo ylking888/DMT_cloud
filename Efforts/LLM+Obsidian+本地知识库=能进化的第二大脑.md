@@ -205,4 +205,6 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 运行前在终端显示：“正在启动本地工厂，使用模型：ollama/default...”。
 ```
 修改完，再运行测试，如有问题再发给Gemini生成指令给Cursor修改
+主要是模型名称被我修改的比较乱
+待会还要**恢复成默认的名称上去**
 

@@ -168,7 +168,148 @@ last_reviewed 字段**
 Step Q1. 执行 qad query "<用户问题>" --json，获取 top 5 相关页面（若 qad 报墙则降级读取wiki/index.md）
 Step Q2. 逐一回答 top 5 文件
 Step Q3. 合成答案，每个核心结论必须溯源到具体 wiki/sources/<<slug>>.md（不允许只引用 concept）；注明来源 confidence 级别；来源相互矛盾时显式标注分极
-Step Q4. 若答案具有实用价值，写入 wiki/outputs/YYYY-MM-DD-topics.md 文件 frontmatter 含 graph: evaluated: true；输出在末尾包含 ▶ Confidence Notes 节；更新 wiki/index.md 的 Recent Synthesis 列表；添加 wiki/log.md
+Step Q4. 若答案具有实用价值，写入 wiki/outputs/YYYY-MM-DD-topics.md 文件 frontmatter 含 graph: evaluated: true；输出在末尾包含 Confidence Notes 节；更新 wiki/index.md 的 Recent Synthesis 列表；添加 wiki/log.md
 
+输出格式按问题类型：
+- 普通问题→Markdown 正文
+- 比校→Markdown 表格
+- 演示类→Markdown 幻灯片 (frontmatter 加 marp: true)
+- 趋势类→Python matplotlib 代码块
+- 清单类→结构化 bullet list
+  
+### LINT 操作规范
+触发词：lint、检查、健康检查
+执行步骤：
+1. 运行 scripts/lint.py（包含 9 项检查）
+2. 将报告写入 wiki/outputs/lint-YYYY-MM-DD.md（frontmatter 含 graph-excluded: true）
+3. 执行 gmd status，对比索引文件数与 wiki/实际 .md 文件数（指搬移线文件）；若索引错后须执行 gmd add wiki/，在报告中记录
+4. 向用户展示摘要并询问是否修复
+   
+执行步骤:
+1. 运行 scripts/lint.py (包含 9 项检查)
+2. 将报告写入 wiki/outputs/lint-YYYY-MM-DD.md (frontmatter 含 graph-
+excluded: true)
+3. 执行 qmd status, 对比索引文件数与 wiki/实际 .md 文件数( 指
+引潜后端执行 qmd add wiki/，在报告中记录
+4. 向用户展示摘要并询问是否修复
 
+### REFLECT 操作规范
+触发发现,reflect、综合分析、发现规律
+四阶段执行:
+Stage 0(反向检验):在生成任何合成结论之前,主动排查质疑证据,若无质对来源,在
+Limitations 节标注[△ 因苦觅风险,未找到反驳来源,结论可能存在确认偏误!]
+Stage 1(模式扫描):使用 qmd 批量扫描
+qmd multi-get "wiki/concepts/*.md" -1 40
+qmd multi-get "wiki/entities/*.md" -1 40
+qmd multi-get "wiki/synthesis/*.md" -1 60
+识别来源模板式、隐性关联、内容空白、矛盾对
+Stage 2 (深度合成)：对有证据支撑的被完成，完整读取相关页面，写入
+wiki/synthesis/<topic>->synthesis.md
+Stage 3 (Gap Analysis)：
+- source_count = 1 且创建通过 30 天的孤立概念
+- 多处理及很无独立页面的概念/实体(隐性盲区)
+- 覆盖明显将漏的主题领域
+- 输出到 frontmatter 合 graph - excluded: true)
+  
+完成后更新 wiki/overview.md 的 Health Dashboard，更新 wiki/index.md，添加
+wiki/log.md
+
+### MERGE 操作规范
+触发词: merge、去重
+
+同语言合并流程:
+1. 与用户确认合并方案(绝不自动合并)
+2. 主 slug 保留，被合并页面的 wikilinks 全部更新
+3. 被合并文件替换为重合的文件(内容: redirect: [[wiki/concepts/主 slug]])
+4. log.md 记录: YYYY - MM - DD | merge | [旧 slug]→[主 slug]
+   
+跨语言合并专项流程(区别于同语言 MERGE):
+1. 主 slug 保留英文
+2. aliases 取两个页面的并集
+3. Key Points/Sources/Evolution Log 按并集+去重合并
+4.  My Position 若两页都有，先向用户展示对比后再合并
+5. 被合并的旧 slug 文件保留为 redirect 文件(确保旧 wikilinks 不 broken)
+6. log.md 记录: YYYY - MM - DD | merge | [旧 slug]→[主 slug](跨语言合并)
+
+### ADD - QUESTION 操作规范
+触发词: 我想清楚些、add question、记录一个问题
+
+执行步骤:
+1. 将问题规范化(提取核心疑问)
+2. 添加到 wiki/QUESTIONS.md (checkbox 格式: - [ ] 问题内容(opened YYYY - MM - DD))
+3. 添加 wiki/log.md
+
+### Wikilink 使用规范
+执行步骤:
+1. 再提现规范(提取核心疑问)
+2. 添加到 wiki/QUESTIONS.md (checkbox 格式, - [ ] 问题内容 opened YYYY-MM-DD )
+3. 添加到 wiki/log.md
+
+### Wikilink 使用规范
+**格式规律(不可违反)**：
+所有 wikilink 目标必须使用英文小写连字符格式
+[[value-investing]]  [[attention-mechanism]]  [[warren-buffett]]
+× [[价值投资]]（中文词汇）× [[ValueInvesting]]（驼峰）×
+[[value_investing]]（下划线）
+中文名称的正确处理方式:
+- 写入 frontmatter 的 alias 字段
+- concept 页正文第一行使用括号标注：「价值投资（Value Investing）」
+- wikilink 始终用英文 slug
+  
+**允许使用 wikilinks 的场景**：
+- concept 页引用其他 concept/entity 页
+- source 页引用 concept/entity 页
+- synthesis 页引用 concept/source/entity 页
+
+**禁止使用 wikilinks 的场景**：
+- 任何页面不引用系统文件，[[logo]] [[index]] [[overview]] [[QUESTIONS]]
+- 任何页面不再引用 lint 报告，[[outputs/lint-xxx]]
+- 任何页面不再以操作名作为 wikilink，[[ingest]] [[query]] [[reflect]]
+- log.md 内部记录使用纯文本路径（如 wiki/sources/xxx.md），不使用 wikilinks
+
+### Wiki 语言规范
+- Wiki 层（concept/entity/synthesis 页）换一用中文写作
+- concept 页 title 字段使用中文主名称（图情节点显示）
+- 英文术语在 concept 页面次出现时标注，[注意力机制（Attention Mechanism）]
+- 所有 slug（文件名）换一用英文小写连字符，不使用中文文件名
+- aliases 字段覆盖中英文所有叫法
+
+### Confidence 更新规则
+| 来源数量 | Confidence | 处理方式 |
+| --- | --- | --- |
+| 1 个来源 | low | 自动设置 |
+| 3 个来源 | medium | 自动设置 |
+| 5 个来源且无重大矛盾 | 快速 high | 向用户展示 Definition 和 Sources 列表，等待确认 |
+| 用户明确写作（确认）或 ok | high | 才可设置 |
+
+注意：个人漏斗（ram/personal）不参与 count 计数
+
+### Source Integrity Rules
+- re-ingest 规则，若 lint 报告 ▲ SOURCE MODIFIED，需重新插入该文件并更新所有受影响的 concept/entity 页面，Evolution Log 记录 YYYY-MM-DD 来源更新：[[slug]] 哈希变更，内容已重新摄取
+- 来源超过 2 年标注 possibly_outdated: true
+- 矛盾来源必须在 source 页和 concept 页的 Contradictions 节显式记录，不得静默覆盖
+
+### 系统文件隔离规则
+以下文件的 frontmatter 必须含 graph-excluded: true，不参与 Obsidian 图谱：
+- wiki/log.md
+- wiki/index.md
+- wiki/overview.md
+- wiki/QUESTIONS.md
+- wiki/outputs/ 下所有文件
+  
+### 文档维护规则
+当 CLAUDE.md 规则更新时，同步更新 USER_GUIDE.md 对应章节，确保两份文档一致。
+
+## 六、初始化 qmd 索引
+执行：
+qmd add wiki/
+qmd status
+
+## 八、执行完成后的验证
+输出以下验证报告：
+1. 目录树树 (tree -L 3 或 find)
+2. CLAUDE.md 包含的章节列表
+3. wiki/templates/ 下的模板文件列表
+4. qmd status 输出 (索引文件数量)
+5. scripts/lint.py 包含的检查项列表
 ```

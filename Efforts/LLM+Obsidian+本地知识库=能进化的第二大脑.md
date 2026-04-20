@@ -126,6 +126,22 @@ pip install llm-sentence-transformers
 ```
 llm embed-models register-lazy sentence-transformers all-MiniLM-L6-v2
 ```
+### 这里有报错按照下面的操作运行
+#### 在Cursor 界面下操作
+
+1. 按快捷键 `` Ctrl + ` `` (键盘左上角，Tab键上方那个点) 打开 Cursor 内部的终端。
+2. 确保终端显示的路径是 `D:\wikiforysc>`。（你的项目目录）
+3. 在**这里面**运行命令。
+**这样做的好处：**
+- Cursor 的终端会自动识别你的 Python 环境。
+- 后续运行 `ingest.py` 时，脚本能直接找到你的 `wiki/` 文件夹，不会因为路径对不上而报错。
+在 Cursor 终端里试一下 `python -m llm models`。如果能看到一串模型列表就是对的。
+```
+python -m llm sentence-transformers register all-MiniLM-L6-v2
+```
+
+
+
 ## 修改 ingest.py 切换到全本地运行
 ```
 指令：

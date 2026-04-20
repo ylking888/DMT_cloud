@@ -77,4 +77,22 @@ Step 4: 配置 Obsidian Web Clipper
         - index.md, log.md ...
     - **scripts/** (存放脚本)
     - **CLAUDE.md** (你的 AI 行为准则)
-
+### Gemini给出第二步创建全自动质检脚本 scripts/lint.py的提示词交给Cursor
+```
+指令：
+根据 CLAUDE.md 中的规范（特别是第四章 Lint 执行的 9 项检测），编写 scripts/lint.py 脚本。
+脚本要求：”
+1. 自动遍历 wiki/ 目录下的所有 .md 文件。
+2. 执行以下检测：YAML 合法性、Broken wikiLinks、Index 一致性、Stubs 页面（少于100字）、近重复概念名称（Jaccard 相似度）、SHA-256 完整性、Stale 页面检测（时效阈值）、降重审查、Wikilink 格式规范（必须英文小写连字符）。
+3. 运行结束后，将详细报告写入 wiki/outputs/lint-YYYY-MM-DD.md。
+4. 确保脚本可以从项目根目录 D:\wikiforysc 直接运行。
+```
+完成了 `lint.py` 代码的编写，并且非常贴心地为你准备好了“试运行”的命令。
+现在你只需要做两件事来完成这一步：
+#### 1. 接受并保存代码
+在那个显示 `lint.py +385` 的代码块上方或底部，点击 **「Accept」**（或者 **「Save」** / **「Keep」**）。
+- _这一步是把 AI 写的代码正式存入你的 `D:\wikiforysc\scripts\lint.py` 文件中。_
+### 2. 点击「Run」运行测试
+在代码块下方的那个黑框（显示 `python "scripts/lint.py"` 的地方），点击右侧蓝色的 **「Run」** 按钮。
+- **预期结果：** 你会看到下方的 Terminal（终端）窗口闪过一些文字。
+- **检查结果：** 运行完后，去你的左侧文件夹里看一眼 `wiki/outputs/`。如果出现了一个名为 `lint-202X-XX-XX.md` 的文件，说明质检脚本已经正式上岗了！

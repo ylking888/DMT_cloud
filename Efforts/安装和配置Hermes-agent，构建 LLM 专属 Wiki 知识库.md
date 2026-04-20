@@ -173,3 +173,5 @@ C:\Users\ylking>npm -v
 官网：https://claude.com/product/claude-code
 安装命令：`irm https://claude.ai/install.ps1 | iex`
 ![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260420145447251.png)
+如果卡死，3-5分钟没有反应，那么就需要进一步调整后再安装了
+

@@ -161,3 +161,33 @@ Error: Model all-MiniLM-L6-v2 is already registered表示它在告诉你 `all-M
 5. 概念对齐：在提取概念时，检查 wiki/concepts/ 下是否已有同名文件（支持中文名和 aliases 匹配），实现增量更新而非重复创建。
 6. 错误处理：如果本地 Ollama 服务未响应，请给出友好的错误提示。
 ```
+### 测试和报错改Bug
+在Cursor终端运行（ `` Ctrl + ` ``打开终端）
+```
+python scripts/ingest.py ram/articles/test.md
+```
+报错
+```PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md                           
+usage: ingest.py [-h] [--root ROOT] [--dry-run]
+ingest.py: error: unrecognized arguments: ram/articles/test.md
+
+```
+发指令给Cursor修改
+```
+指令：
+刚才运行 python scripts/ingest.py ram/articles/test.md 报错了。
+请修改 scripts/ingest.py，确保它能够接收一个或多个文件路径作为参数。
+
+修改要求：
+
+1. 修改 argparse 部分，增加一个名为 files 的位置参数，允许运行命令如 python scripts/ingest.py <文件路径>。
+2. 如果运行脚本时没有提供文件路径，则默认扫描并处理 ram/articles/ 目录下所有未处理的文件。
+3. 确保核心逻辑依然遵循 CLAUDE.md 的 11 步规范。
+```
+再次尝试在终端运行，还有报错
+```
+PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
+[ingest] 错误: 无法初始化本地模型。'Unknown model: ollama/qwen3:14b'
+[ingest] 请确认已配置模型: ollama/qwen3:14b 和 sentence-transformers/all-MiniLM-L6-v2
+```
+

@@ -207,4 +207,11 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 修改完，再运行测试，如有问题再发给Gemini生成指令给Cursor修改
 主要是模型名称被我修改的比较乱
 待会还要**恢复成默认的名称上去**
+### 💡 运行后你应该看到什么？
+1. 终端会显示：正在启动本地工厂... -> [ingest] Processing: test.md...
+2. 大模型在思考：你的电脑风扇可能会转一下，那是 Qwen 模型在后台帮你总结这段文字并提取概念。
+3. 奇迹发生：运行结束后，请立刻去看这两个地方：
+• wiki/sources/ 文件夹下：应该出现了一个处理好的 cursor-ai.md（或者类似的英文名文件）。
+• wiki/concepts/ 文件夹下：应该出现了一些新文件，比如 cursor-ai.md 或 ai-editor.md。
+
 

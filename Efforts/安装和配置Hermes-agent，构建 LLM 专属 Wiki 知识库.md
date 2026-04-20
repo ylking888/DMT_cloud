@@ -174,4 +174,8 @@ C:\Users\ylking>npm -v
 安装命令：`irm https://claude.ai/install.ps1 | iex`
 ![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260420145447251.png)
 如果卡死，3-5分钟没有反应，那么就需要进一步调整后再安装了
+卡住的原因，大概率是：
+网络问题：国内访问 claude.ai 下载速度慢或中断
+权限问题：用了 system32 目录，可能存在权限限制
+脚本执行被安全软件拦截
 

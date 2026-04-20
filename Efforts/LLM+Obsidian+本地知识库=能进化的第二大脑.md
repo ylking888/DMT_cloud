@@ -92,7 +92,19 @@ Step 4: 配置 Obsidian Web Clipper
 #### 1. 接受并保存代码
 在那个显示 `lint.py +385` 的代码块上方或底部，点击 **「Accept」**（或者 **「Save」** / **「Keep」**）。
 - _这一步是把 AI 写的代码正式存入你的 `D:\wikiforysc\scripts\lint.py` 文件中。_
-### 2. 点击「Run」运行测试
+#### 2. 点击「Run」运行测试
 在代码块下方的那个黑框（显示 `python "scripts/lint.py"` 的地方），点击右侧蓝色的 **「Run」** 按钮。
 - **预期结果：** 你会看到下方的 Terminal（终端）窗口闪过一些文字。
 - **检查结果：** 运行完后，去你的左侧文件夹里看一眼 `wiki/outputs/`。如果出现了一个名为 `lint-202X-XX-XX.md` 的文件，说明质检脚本已经正式上岗了！
+### **INGEST（摄入）流程**
+同样把Gemini给出的提示词丢给Cursor
+```
+指令：
+现在请根据 CLAUDE.md 中的「INGEST 操作规范」，编写 scripts/ingest.py 脚本。
+脚本要求：”
+1. 实现 11 步外部来源标准流程：读取 ram/ 文件 -> 计算 SHA-256 -> 生成 slug -> 创建 wiki/sources/ 文件 -> 概念名称对齐校验 -> 更新 concept/entity 页面 -> 更新 Evolution Log。
+2. 严格遵循 wiki/templates/ 下的模板格式。
+3. 核心逻辑： 必须能自动识别概念（Concepts）和实体（Entities），并检查是否已存在（通过 slug 或 aliases 匹配）。
+4. 集成 Karpathy 的 wiki.py 思路，使用 llm 库来提取摘要和概念。
+5. 完成后在 wiki/log.md 记录日志。
+```

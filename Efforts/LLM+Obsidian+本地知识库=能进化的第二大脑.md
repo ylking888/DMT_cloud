@@ -150,10 +150,14 @@ Error: Model all-MiniLM-L6-v2 is already registered表示它在告诉你 `all-M
 ## 修改 ingest.py 切换到全本地运行
 ```
 指令：
-我的本地 Ollama 已经准备好了 qwen3:14b 模型。请修改 scripts/ingest.py 脚本：”
-1. 大模型调用：将所有总结、提取概念和实体的逻辑，从 OpenAI 切换为调用本地的 ollama/qwen3:14b。
-2. 嵌入计算：使用本地的 sentence-transformers/all-MiniLM-L6-v2 来处理向量嵌入，不要调用任何外部 API。
-3. 语言本地化：由于使用的是 Qwen 模型，请确保生成的所有摘要、概念名称和笔记内容统一使用中文。
-4. 去中心化：删除脚本中对 OpenAI API Key 的所有检查逻辑，确保脚本在离线状态下也能正常运行。
-5. 更新 CLAUDE.md：如果必要，在 CLAUDE.md 中记录现在系统已切换为本地运行模式。
+现在请根据我已经配置好的本地环境，彻底改写 scripts/ingest.py。
+
+脚本逻辑要求：
+
+1. 核心调用：使用 llm 的 Python 接口，显式指定模型为 ollama/qwen3:14b（大模型）和 sentence-transformers/all-MiniLM-L6-v2（嵌入模型）。
+2. 执行流程：严格执行 CLAUDE.md 中的 11 步 INGEST 规范（SHA-256校验、Slug生成、模板填充、概念对齐等）。
+3. 中文强化：在 Prompt 中明确要求 AI 使用中文进行摘要提取和概念命名。
+4. 去联网化：移除所有 OpenAI 相关的逻辑和 API Key 检查。
+5. 概念对齐：在提取概念时，检查 wiki/concepts/ 下是否已有同名文件（支持中文名和 aliases 匹配），实现增量更新而非重复创建。
+6. 错误处理：如果本地 Ollama 服务未响应，请给出友好的错误提示。
 ```

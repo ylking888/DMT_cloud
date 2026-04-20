@@ -136,4 +136,34 @@ CLAUDE.md 是 LLM 的核心行为规范，必须包含以下所有章节：
   - **同时检查所有已有 concept 页的 'aliases' 字段**：遍历 wiki/.concepts/*.md, 解析每页 frontmatter 的 aliases 列表, 检查是否包含当前新概名称(支持中英文别名配)
   - 若通过 slug 匹配或通过 aliases 匹配到已有页面, 更新已有页面, 不创建新页面, 若找不到任何匹配项, 才创建新页面, 并在 frontmatter 中的 'aliases' 中填入中文和英文捞取到的概念
 7. 为每个新找到的概念
+   - 如 wiki/concepts/<<concept>>.md 已存在，更新它，通知新来源引用，在
+Evolution Log 增加源，使新 source_count 和 confidence，同时更新
+last_reviewed 字段**
+- 如真不存在，创建新文件（使用 concept-template.md），同时在 aliases 字段填入该概念的中英文名称**
+- **Evolution Log 添加规则**：
+    - 若本次来源跟当前 Definition 一致，写「强化」
+    - 若有修正，写「修正：[具体变化]」
+    - 若相互矛盾，写「新增分歧：[分歧内容]，见 Contradictions 节」
+    - 格式：- YYYY-MM-DD（In sources）：[本次认知变化的一句话描述]
+8. 为每个提取到的实体，同上逻辑
+9. 更新 wiki/inde.md，将来源从 Unprocessed 移动到 Processed
+10. 读取 wiki/QUESTIONS.md，检查本次来源是否能回答开放问题，
+    - 若能，提示用户是否可以「开源写入」[问答标题]，是否立即执行 QUERY？
+    - 用户确认后，执行 QUERY 并将结果写入 wiki/synthesis/，同时在 QUESTIONS.md
+中将该问题移入 Answered
+11. 在 wiki/log.md 末尾添加：`YYYY-MM-DD HH:MM | ingest | [来源标题]`
+*个人写作流程（不同于标准流程）*：
+- 不生成 Summary 节，跳过客观观察
+- 核心 graph 写人相关的 ## My Position 节（标注「个人认知」）
+- 不参与 confidence 的 source_count 计数（避免用自己的文章给自己背书）
+- 若文章中引用了外部来源，提取这些引用并尝试与已有 wiki/sources/ 页面建立 wikilinks
+- raw_sha256 哈希值同样适用
+- Evolution Log 记录：[YYYY-MM-DD 个人写作] [[stag]] 确立了对此概念的明确立场
+### QUERY 操作规范
+触发词：直接提问，或「根据我的知识库」
+执行步骤：
+Step Q1. 执行 qad query "<用户问题>" --json，获取 top 5 相关页面（若 qad 报墙则降级读取 wiki/index.md）
+Step Q2. 逐一回答 top 5 文件
+Step Q3. 合成答案，每个核心结论必须溯源到具体 wiki/sources/<<slug>>.md（不允许只引用 concept）；注明来源 confidence 级别；来源相互矛盾时显式标注分极
+Step Q4. 若答案具有实用价值，写入 wiki/outputs/YYYY-MM-DD-topics.md 文件 frontmatter 含 graph: evaluated: true；输出在末尾包含 ▶ Confidence Notes 节；更新 wiki/index.md 的 Recent Synthesis 列表；添加 wiki/log.md
 ```

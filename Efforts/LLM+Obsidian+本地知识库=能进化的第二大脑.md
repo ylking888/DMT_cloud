@@ -190,4 +190,18 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 [ingest] 错误: 无法初始化本地模型。'Unknown model: ollama/qwen3:14b'
 [ingest] 请确认已配置模型: ollama/qwen3:14b 和 sentence-transformers/all-MiniLM-L6-v2
 ```
+这是因为我的模型名称是自己瞎改的，再次发指令给Cursor
+```
+指令：
+明确了！我的本地 Ollama 模型名称就是 default。
+请修改 scripts/ingest.py，将所有的 AI 调用逻辑直接指向以下两个确定的 ID：
 
+大模型：使用 ollama/default
+嵌入模型：使用 sentence-transformers/all-MiniLM-L6-v2
+要求：
+
+删掉之前那些“自动搜索”的复杂逻辑，直接用这两个 ID。
+确保在调用 ollama/default 时，Prompt 依然要求它输出中文。
+运行前在终端显示：“正在启动本地工厂，使用模型：ollama/default...”。
+```
+修改完，再运行测试

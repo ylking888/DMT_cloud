@@ -51,4 +51,30 @@ Step 2: 标定（首次使用前必做）；
 step 3：全系统Audit；
 Step 4: 配置 Obsidian Web Clipper
 
-我现在准备使用它来搭建Andre Karpathy 的 llm.c 微型本地 Wiki ，计划的步骤为：Step 1: Bootstrap（基础搭建）； Step 2: 标定（首次使用前必做）； step 3：全系统Audit； Step 4: 配置 Obsidian Web Clipper，这是作者在说明文档中建议的，具体开源地址在[https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+### 启动的提示词给到Gemini网页问答
+```
+`我现在准备使用它来搭建Andre Karpathy 的 llm.c 微型本地 Wiki ，计划的步骤为：Step 1: Bootstrap（基础搭建）； Step 2: 标定（首次使用前必做）； step 3：全系统Audit； Step 4: 配置 Obsidian Web Clipper，这是作者在说明文档中建议的，具体开源地址在https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+```
+
+### Gemini给出的第一步基础搭建的提示词给到Cursor
+```
+**指令：**  
+请在当前目录 `D:\wikiforysc` 下执行以下初始化操作：
+
+1. 创建目录结构：`ram/articles/`, `ram/clippings/`, `ram/images/`, `ram/pdfs/`, `ram/notes/`, `ram/personal/`, `wiki/sources/`, `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/templates/`, `outputs/`, `scripts/`。
+2. 在 `wiki/` 下创建基础文件：`index.md`, `log.md`, `overview.md`, `QUESTIONS.md`。
+3. 在 `wiki/templates/` 下创建五个模板文件：`source-template.md`, `personal-writing-template.md`, `concept-template.md`, `entity-template.md`, `synthesis-template.md`。
+4. 在根目录创建 `CLAUDE.md`。
+
+请根据我刚才提供给你的详细提示词内容，填充这些文件的具体字段和结构。
+```
+当你点击 **"Apply"** 或 **"Accept All"** 后，Cursor 会自动帮你刷刷刷地建好所有文件。完成后，请检查你的左侧文件树，应该看起来像这样：
+
+- **D:\wikiforysc**
+    - **ram/** (存放原始资料)
+    - **wiki/** (存放处理后的知识)
+        - **templates/** (五个模板文件)
+        - index.md, log.md ...
+    - **scripts/** (存放脚本)
+    - **CLAUDE.md** (你的 AI 行为准则)
+

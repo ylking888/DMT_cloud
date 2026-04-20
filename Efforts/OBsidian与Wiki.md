@@ -9,3 +9,9 @@
 
 ## 建文件夹
 
+
+## Step 1: Bootstrap（基础搭建）
+mkdir -p ~/knowledge-base
+cd ~/knowledge-base
+在终端输入：claude code
+将以下提示词完整粘贴给 Claude Code：

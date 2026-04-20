@@ -214,4 +214,16 @@ PS D:\wikuforysc> python scripts/ingest.py ram/articles/test.md
 • wiki/sources/ 文件夹下：应该出现了一个处理好的 cursor-ai.md（或者类似的英文名文件）。
 • wiki/concepts/ 文件夹下：应该出现了一些新文件，比如 cursor-ai.md 或 ai-editor.md。
 
+## 安装系统的“大脑互动部” (创建 `query.py`)
+```
+**指令：**  
+“生产线”已经跑通，现在请根据 `CLAUDE.md` 中的「QUERY 操作规范」，编写 `scripts/query.py` 脚本。
 
+**脚本要求：**
+
+1. **语义搜索**：使用本地嵌入模型 `all-MiniLM-L6-v2` 将用户的提问转为向量，并与 `wiki/` 目录下的文件进行比对，找出最相关的 5 个页面。
+2. **本地回答**：调用本地大模型 `ollama/default`（Qwen），基于找出的相关页面内容回答用户的问题。
+3. **引用溯源**：要求 AI 在回答中必须明确标注：[根据 wiki/sources/xxx.md 的内容...]，实现强制溯源。
+4. **保存记录**：将有价值的回答自动存入 `wiki/outputs/YYYY-MM-DD-topics.md`。
+5. **输出格式**：支持 Markdown 格式，如果是趋势分析则输出表格。
+```

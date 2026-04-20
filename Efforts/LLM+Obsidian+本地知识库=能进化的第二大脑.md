@@ -139,9 +139,14 @@ llm embed-models register-lazy sentence-transformers all-MiniLM-L6-v2
 ```
 python -m llm sentence-transformers register all-MiniLM-L6-v2
 ```
+提示：PS D:\wikuforysc> python -m llm sentence-transformers register all-MiniLM-L6-v2
+Error: Model all-MiniLM-L6-v2 is already registered表示它在告诉你 `all-MiniLM-L6-v2` 已经躺在你的系统里，准备好随时为你工作了。
 
-
-
+---
+你的本地环境已经完全具备了两个核心能力：
+1. **大脑 (Ollama)**：可以调用 `qwen3:14b`。
+2. **翻译官 (Embeddings)**：可以调用 `all-MiniLM-L6-v2`。
+---
 ## 修改 ingest.py 切换到全本地运行
 ```
 指令：

@@ -3,7 +3,7 @@
 # 搭建步骤
 ## 安装环境
 - Node.js (用于安装各种软件, https://nodejs.org/en)
-- 已安装 Claude Code (npm install -g @anthropic-ai/claude-code)
+- 已安装 **Claude Code** (npm install -g @anthropic-ai/claude-code)
 - Python 3.8+ (用于 lint 脚本)
 - Obsidian (https://obsidian.md/, 用于管理本地化知识库)
 - qmd 已安装 (npm install -g @tobi/qmd)

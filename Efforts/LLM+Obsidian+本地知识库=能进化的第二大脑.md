@@ -248,12 +248,20 @@ python scripts/query.py "Cursor 有哪些核心功能？"
 ```
 
 ###  “对比实验”
-1. **重新“喂”一次数据**：  
-    由于你之前的 `test.md` 已经被处理过了，我们需要把它改个名字或者稍微改点内容（比如在 `test.md` 里多加两句话），然后再次运行：
-	`python scripts/ingest.py ram/articles/test.md`
+### 让它支持扫描版的pdf
+#### 在终端安装解析工具
+```
+pip install docling
+```
+Docling 是 IBM 开源的，处理 PDF 效果极好，它会自动处理 OCR。
+#### 让 Cursor 修改 ingest.py 增加 PDF 深度解析逻辑。
+```
+**指令：**  
+我的 `ram/pdfs/` 文件夹下有很多扫描版的教材（包含公式和图片）。目前的脚本无法有效读取。请修改 `scripts/ingest.py`：
 
-2. **再次测试提问**： ```
-    python scripts/query.py "Cursor 有哪些核心功能？"
-
-
-### 投喂数据
+1. **引入 Docling**：增加对 `.pdf` 文件的支持，使用 `docling` 库来解析 PDF。
+2. **OCR 逻辑**：确保即使是扫描件，也能通过 `docling` 的内置 OCR 功能提取出文字。
+3. **公式处理**：理力教材有很多公式，要求解析时尽可能保持公式的结构。
+4. **分段处理**：PDF 通常很大（一整章内容很多），请在脚本中增加“分段（Chunking）”逻辑，将解析出的长文本切成 1000 字左右的片段，分批交给本地模型（Qwen）去总结和提取概念。
+5. **容错**：如果 `docling` 解析失败，请回退到简单的文本提取模式并提醒我。
+```

@@ -13,5 +13,9 @@
     "downscalePercent": 100
   },
   "newFileLocation": "folder",
-  "newFileFolderPath": "Atlas"
+  "newFileFolderPath": "Atlas",
+  "userIgnoreFilters": [
+    "Ideaverse（中文只翻译到了一半~会更新完）/",
+    "参考obsidian-2.2.0/"
+  ]
 }

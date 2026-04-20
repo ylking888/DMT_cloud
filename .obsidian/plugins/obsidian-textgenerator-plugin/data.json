@@ -21,7 +21,7 @@
   "context": {
     "customInstructEnabled": true,
     "includeClipboard": true,
-    "customInstruct": "Title: {{title}}\n  \nStarred Blocks: {{starredBlocks}}\n\t  \n{{tg_selection}}",
+    "customInstruct": "你是一个专业的知识库助手，回答简洁、准确、有条理，只讲重点，不啰嗦。 在生成的部分标注一下：本段内容来自AI，请自行甄别。 \n Title: {{title}}    \nStarred Blocks: {{starredBlocks}} ​ \t    \n{{tg_selection}}",
     "contextTemplate": "Title: {{title}}\n\t\nStarred Blocks: {{starredBlocks}}\n\t  \n{{tg_selection}}"
   },
   "requestTimeout": 300000,
@@ -77,7 +77,7 @@
     "overrideTrigger": " "
   },
   "slashSuggestOptions": {
-    "isEnabled": false,
+    "isEnabled": true,
     "triggerPhrase": "/"
   },
   "extractorsOptions": {

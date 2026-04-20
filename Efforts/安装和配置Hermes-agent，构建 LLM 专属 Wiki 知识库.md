@@ -164,3 +164,11 @@ v24.15.0
 C:\Users\ylking>npm -v
 11.8.0
 ```
+
+## 安装Claude Code
+我们采用最简单的使用方式和安装方式，在终端执行安装命令
+> [!hongse] 温馨提示
+> 要在 *Windows PowerShell* 下执行安装命令，安装需要等待几分钟...
+
+官网：https://claude.com/product/claude-code
+安装命令：`irm https://claude.ai/install.ps1 | iex`

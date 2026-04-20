@@ -104,6 +104,36 @@ CLAUDE.md 是 LLM 的核心行为规范，必须包含以下所有章节：
 ### 系统概述
 - 三层架构说明（Raw/Wiki/Outputs）
 - 核心原则：你完全拥有 wiki/ 目录的读取和写入权限，raw/ 目录由我（人类）拥有，你只能读取，不能修改。
+  
 ### INGEST 操作规范
 触发词：ingest、摄入、处理这个
+
+来源类型判断(优先级由高到低)：
+1. frontmatter 含 type: personal-writing → 走「个人写作」流程
+2. 文档路径包含 ram/personal/ → 走「个人写作」流程
+3. frontmatter 含 type: pdf-reference → 走「PDF 参考」流程
+4. 其他 → 走「外部来源」标准流程
+   
+缺少 frontmatter 时的处理流程:
+- 从文件预干：标题提取 title, 若无标题则从文件名推断
+- source 平个留空, 在 wiki/sources/<slug>.md 中标注「来源未知」
+- date 使用文件系统推放时间
+- 不中断 INGEST, 但在 log.md 记录「警告, 来源文件缺少标准 frontmatter」
+  
+**外部来源标准流程(11 步)**
+1. 读取目标原始来源（ram/ 中的文件, 只读）
+2. 计算原始文件的 SHA-256 哈希（Python hashlib）
+3. 与用户库确认核心信息（逐一摄入, 保持参与感）
+4. 生成 slug（小写英文, 用连字符, 例如 'attention-is-all-you-need'）
+5. 创建 wiki/sources/<slug>.md (使用 source-template.md), +frontmatter 中写入:
+  - 'raw_file': 相对路径（如 'raw/articles/filename.md'）
+  - 'raw_sha256': SHA-256 哈希值
+  - 'last_verified': 摄入日期(YYYY-MM-DD)
+  - 若来源发表日期超过 2 年前, 标注 'possibly_outdated: true', 并在摘要末尾添加提示
+6. **概念名称对齐校验**（提取概念之前必须执行）
+  - 将每个捞取到的概念名称统一映射为小写连字符 slug（例如「第一性原理」→ first-principles-thinking）
+  - 在 wiki/concepts/ 中查找该 slug 是否已存在对应文件
+  - **同时检查所有已有 concept 页的 'aliases' 字段**：遍历 wiki/.concepts/*.md, 解析每页 frontmatter 的 aliases 列表, 检查是否包含当前新概名称(支持中英文别名配)
+  - 若通过 slug 匹配或通过 aliases 匹配到已有页面, 更新已有页面, 不创建新页面, 若找不到任何匹配项, 才创建新页面, 并在 frontmatter 中的 'aliases' 中填入中文和英文捞取到的概念
+7. 为每个新找到的概念
 ```

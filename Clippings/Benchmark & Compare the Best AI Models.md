@@ -25,9 +25,9 @@ gemini-3-flash
 		- **公式转换：** 自动将图片中的数学公式转换为 **LaTeX 代码** 。
 		- **Python 集成：** 提供原生的 Python SDK。
 - **安装与使用：**
-	```
-	Bashpip install magic-pdf[full] --extra-index-url https://pypi.nvidia.com
-	```
+```
+pip install magic-pdf[full] --extra-index-url https://pypi.nvidia.com
+```
 - **代码示例：**
 	```
 	Pythonfrom magic_pdf.pipe.UNIPipe import UNIPipe

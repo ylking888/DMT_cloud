@@ -59,7 +59,7 @@ Step 4: 配置 Obsidian Web Clipper
 ### Gemini给出的第一步基础搭建的提示词给到Cursor
 ```
 **指令：**  
-请在当前目录 `D:\wikiforysc` 下执行以下初始化操作：
+请在当前目录 `D:\wiki` 下执行以下初始化操作：
 
 1. 创建目录结构：`ram/articles/`, `ram/clippings/`, `ram/images/`, `ram/pdfs/`, `ram/notes/`, `ram/personal/`, `wiki/sources/`, `wiki/concepts/`, `wiki/entities/`, `wiki/synthesis/`, `wiki/templates/`, `outputs/`, `scripts/`。
 2. 在 `wiki/` 下创建基础文件：`index.md`, `log.md`, `overview.md`, `QUESTIONS.md`。

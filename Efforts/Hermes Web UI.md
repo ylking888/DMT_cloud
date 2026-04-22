@@ -15,15 +15,8 @@ tags:
 `npm install -g hermes-web-ui && hermes-web-ui start`
 
 [![Hermes Web UI 演示](https://github.com/EKKOLearnAI/hermes-web-ui/raw/main/packages/client/src/assets/output.gif)](https://github.com/EKKOLearnAI/hermes-web-ui/blob/main/packages/client/src/assets/output.gif)
-
-**移动端**
-
----
-
 ## 功能特性
-
 ### AI 聊天
-
 - 通过 SSE 实时流式输出，支持异步 Run
 - 多会话管理 — 创建、重命名、删除、切换会话
 - 按来源分组会话（Telegram、Discord、Slack 等），可折叠手风琴面板
@@ -36,7 +29,6 @@ tags:
 - 每个会话显示模型标签和上下文 Token 用量
 
 ### 平台渠道
-
 在一个页面统一配置 **8 个平台** ：
 
 | 平台 | 功能 |

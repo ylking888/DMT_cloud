@@ -43,4 +43,6 @@ services:
     restart: unless-stopped
 ```
 用它去Container Manager的项目上拉取
+![](assets/NAS的Container%20Manager访问受限解决方案/file-20260422163343488.png)
+
 

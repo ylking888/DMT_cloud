@@ -201,7 +201,7 @@ hermes-web-ui stop
 Hermes update
 ```
 
-# 官方WebUI
+# 官方WebUI（管理）
 ```
 Shermes dashboard
 ```

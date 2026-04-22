@@ -1,4 +1,4 @@
-# Docker部署
+# Docker/Container部署
 `linuxserver/emulatorjs`
 
 ![](assets/NAS安装复古游戏机/file-20260422151705467%201.png)

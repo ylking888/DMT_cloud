@@ -21,3 +21,5 @@ tags:
 
 ## 使用yaml文件安装
 比如我们要安装EmulatorJS
+在Github上可以搜索到：[linuxserver/docker-emulatorjs: Web based retro emulation frontend with rom scanning and automated art ingestion.](https://github.com/linuxserver/docker-emulatorjs)
+说明文档上就有

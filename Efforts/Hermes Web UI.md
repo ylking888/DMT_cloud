@@ -48,7 +48,6 @@ tags:
 - 每个平台已配置/未配置状态检测
 
 ### 用量分析
-
 - Token 总用量明细（输入 / 输出）
 - 会话数及日均统计
 - 预估费用追踪及缓存命中率
@@ -56,13 +55,11 @@ tags:
 - 30 天每日趋势（柱状图 + 数据表格）
 
 ### 定时任务
-
 - 创建、编辑、暂停、恢复、删除 Cron 任务
 - 立即触发执行
 - Cron 表达式快捷预设
 
 ### 模型管理
-
 - 从凭证池自动发现模型（ `~/.hermes/auth.json` ）
 - 从每个 Provider 端点获取可用模型（ `/v1/models` ）
 - 添加、更新、删除 Provider（预设 & 自定义 OpenAI 兼容）
@@ -70,7 +67,6 @@ tags:
 - Provider 级别模型分组，支持切换默认模型
 
 ### 多配置文件与网关
-
 - 创建、重命名、删除、切换 Hermes 配置文件（Profile）
 - 克隆现有配置文件或从归档导入（`.tar.gz` ）
 - 导出配置文件用于备份或分享
@@ -79,19 +75,16 @@ tags:
 - 配置文件级别的配置和缓存隔离
 
 ### 技能与记忆
-
 - 浏览和搜索已安装的技能
 - 查看技能详情和附件
 - 用户笔记和档案管理
 
 ### 日志
-
 - 查看 Agent / Gateway / Error 日志
 - 按日志级别、日志文件和关键词过滤
 - 结构化日志解析，HTTP 访问日志高亮
 
 ### 设置
-
 - 显示（流式输出、紧凑模式、推理过程、费用显示）
 - Agent（最大轮次、超时时间、工具强制执行）
 - 记忆（启用/禁用、字符限制）
@@ -101,7 +94,6 @@ tags:
 - API 服务器配置
 
 ### Web 终端
-
 - 集成终端，基于 node-pty 和 @xterm/xterm
 - 多会话支持 — 创建、切换、关闭终端会话
 - 通过 WebSocket 实时传输键盘输入和 PTY 输出
@@ -112,7 +104,6 @@ tags:
 ## 快速开始
 
 ### npm 安装（推荐）
-
 ```
 npm install -g hermes-web-ui
 hermes-web-ui start
@@ -121,26 +112,20 @@ hermes-web-ui start
 打开 **[http://localhost:8648](http://localhost:8648/)**
 
 ### 一键安装（自动检测系统）
-
 自动安装 Node.js（如未安装）和 hermes-web-ui，支持 Debian/Ubuntu/macOS：
-
 ```
 bash <(curl -fsSL https://cdn.jsdelivr.net/gh/EKKOLearnAI/hermes-web-ui@main/scripts/setup.sh)
 ```
 
 ### WSL
-
 ```
 bash <(curl -fsSL https://cdn.jsdelivr.net/gh/EKKOLearnAI/hermes-web-ui@main/scripts/setup.sh)
 hermes-web-ui start
 ```
 
 > WSL 会自动检测并使用 `hermes gateway run` 进行后台启动（无需 launchd/systemd）。
-
 ### Docker Compose
-
 使用仓库内置的 compose 文件联合运行 Hermes Agent + Web UI：
-
 ```
 # 使用预构建镜像（推荐）
 WEBUI_IMAGE=ekkoye8888/hermes-web-ui:latest docker compose up -d hermes-agent hermes-webui
@@ -152,7 +137,6 @@ docker compose logs -f hermes-webui
 ```
 
 打开 **[http://localhost:6060](http://localhost:6060/)**
-
 - Hermes 持久化数据目录：`./hermes_data`
 - Web UI 认证 Token 存储在 `./hermes_data/hermes-web-ui/.token`
 - 首次启动并开启认证时，Token 会打印到容器日志中
@@ -174,9 +158,7 @@ docker compose logs -f hermes-webui
 | `hermes-web-ui -h` | 显示帮助信息 |
 
 ### 自动配置
-
 启动时 BFF 服务器会自动：
-
 - 校验 `~/.hermes/config.yaml` 并补全缺失的 `api_server` 字段
 - 修改时备份原配置到 `config.yaml.bak`
 - 检测并启动网关（如未运行）
@@ -186,7 +168,6 @@ docker compose logs -f hermes-webui
 ---
 
 ## 开发
-
 ```
 git clone https://github.com/EKKOLearnAI/hermes-web-ui.git
 cd hermes-web-ui
@@ -200,7 +181,6 @@ npm run build   # 构建输出到 dist/
 ```
 
 ## 架构
-
 ```
 浏览器 → BFF (Koa, :8648) → Hermes 网关 (:8642)
                 ↓
@@ -216,15 +196,11 @@ npm run build   # 构建输出到 dist/
 BFF 层负责：API 代理（含路径重写）、SSE 流式推送、文件上传、通过 CLI 管理会话 CRUD、配置/凭证管理、微信扫码登录、模型发现、技能/记忆管理、日志读取和静态文件服务。
 
 ## 技术栈
-
 **前端：** Vue 3 + TypeScript + Vite + Naive UI + Pinia + Vue Router + vue-i18n + SCSS + markdown-it + highlight.js
 
 **后端：** Koa 2（BFF 服务器）+ node-pty（Web 终端）
 
-## Star 历史
-
-[![Star 历史图表](https://camo.githubusercontent.com/5e6eb7ff7b8ba2bbfd497a35298e517cce3059c525a3c611c2dd45b696aae97e/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d454b4b4f4c6561726e41492f6865726d65732d7765622d756926747970653d44617465)](https://star-history.com/#EKKOLearnAI/hermes-web-ui&Date)
+## Star 历史[![Star 历史图表](https://camo.githubusercontent.com/5e6eb7ff7b8ba2bbfd497a35298e517cce3059c525a3c611c2dd45b696aae97e/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d454b4b4f4c6561726e41492f6865726d65732d7765622d756926747970653d44617465)](https://star-history.com/#EKKOLearnAI/hermes-web-ui&Date)
 
 ## 许可证
-
 [MIT](https://github.com/EKKOLearnAI/hermes-web-ui/blob/main/LICENSE)

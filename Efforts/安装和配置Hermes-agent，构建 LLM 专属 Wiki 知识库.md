@@ -181,3 +181,17 @@ C:\Users\ylking>npm -v
 **确认你的代理 / 科学上网工具已经开启全局模式，确保 PowerShell 能正常访问外网**
 先切换到一个非系统目录（比如你的用户目录）
 
+
+## 创建WebUI
+```
+npm install -g hermes-web-ui
+```
+
+## 使用WebUI启动
+```
+hermes-web-ui start
+```
+停止WebUI
+```
+hermes-web-ui stop
+```

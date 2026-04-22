@@ -1,4 +1,14 @@
-# Docker/Container部署
+---
+up:
+  - "[[../../Home|Home]]"
+tags:
+  - NAS
+  - 群晖
+  - 游戏
+  - docker
+  - Container_Manager
+---
+# Docker/Container Manager部署
 `linuxserver/emulatorjs`
 
 ![](assets/NAS安装复古游戏机/file-20260422151705467%201.png)

@@ -22,4 +22,25 @@ tags:
 ## 使用yaml文件安装
 比如我们要安装EmulatorJS
 在Github上可以搜索到：[linuxserver/docker-emulatorjs: Web based retro emulation frontend with rom scanning and automated art ingestion.](https://github.com/linuxserver/docker-emulatorjs)
-说明文档上就有
+说明文档上找到docker-compose
+```
+services:
+  emulatorjs:
+    image: lscr.io/linuxserver/emulatorjs:latest
+    container_name: emulatorjs
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - SUBFOLDER=/ #optional
+    volumes:
+      - /path/to/config:/config
+      - /path/to/data:/data
+    ports:
+      - 3000:3000
+      - 80:80
+      - 4001:4001 #optional
+    restart: unless-stopped
+```
+用它去Container Manager的项目上拉取
+

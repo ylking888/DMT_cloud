@@ -24,25 +24,25 @@ tags:
 在Github上可以搜索到：[linuxserver/docker-emulatorjs: Web based retro emulation frontend with rom scanning and automated art ingestion.](https://github.com/linuxserver/docker-emulatorjs)
 说明文档上找到docker-compose
 ```
+version: "3"
 services:
   emulatorjs:
     image: lscr.io/linuxserver/emulatorjs:latest
+    platform: linux/amd64
     container_name: emulatorjs
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
-      - SUBFOLDER=/ #optional
+      - PUID=1026
+      - PGID=100
+      - TZ=Asia/Shanghai
     volumes:
-      - /path/to/config:/config
-      - /path/to/data:/data
+      - /volume1/docker/emulatorjs/config:/config
+      - /volume1/docker/emulatorjs/data:/data
     ports:
       - 3000:3000
-      - 80:80
-      - 4001:4001 #optional
+      - 8080:80
     restart: unless-stopped
 ```
 用它去Container Manager的项目上拉取
-![](assets/NAS的Container%20Manager访问受限解决方案/file-20260422163343488.png)
+
 
 

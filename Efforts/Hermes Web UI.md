@@ -9,11 +9,9 @@ tags:
   - "clippings"
 ---
 **Hermes Web UI** [英文](https://github.com/EKKOLearnAI/hermes-web-ui/blob/main/README.md)
-
 [Hermes Agent](https://github.com/NousResearch/hermes-agent) 的全功能 Web 管理面板。  
 管理 AI 聊天会话、监控用量与成本、配置平台渠道、  
 管理定时任务、浏览技能 —— 全部在一个简洁响应式的 Web 界面中完成。
-
 `npm install -g hermes-web-ui && hermes-web-ui start`
 
 [![Hermes Web UI 演示](https://github.com/EKKOLearnAI/hermes-web-ui/raw/main/packages/client/src/assets/output.gif)](https://github.com/EKKOLearnAI/hermes-web-ui/blob/main/packages/client/src/assets/output.gif)

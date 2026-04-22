@@ -46,3 +46,44 @@ services:
 
 
 
+
+```
+version: "3"
+services:
+  # MT Photos 主服务
+  mtphotos:
+    image: mtphotos/mt-photos:latest
+    container_name: mtphotos
+    restart: always
+    ports:
+      - 8063:8063
+    volumes:
+      - /volume2/docker/mtphotos/config:/config
+      - /volume2/docker/mtphotos/upload:/upload
+      - /volume2/photo:/photos
+    environment:
+      - TZ=Asia/Shanghai
+    depends_on:
+      - mtphotos_ai          # 确保主服务在 AI 服务之后启动
+      - mtphotos_face_api    # 确保主服务在人脸识别 API 之后启动
+
+  # AI 核心服务（负责场景识别、以文搜图、OCR文字识别）
+  mtphotos_ai:
+    image: mtphotos/mt-photos-ai:onnx-latest    # onnx-latest 兼容性好，资源占用相对较低
+    container_name: mtphotos_ai
+    restart: always
+    ports:
+      - 8060:8000    # 注意：容器内是8000端口，映射到宿主机的8060
+    environment:
+      - API_AUTH_KEY=11111111   # 认证密钥，可自行修改（需记住）
+
+  # 人脸识别专用服务（基于 InsightFace，准确性更高）
+  mtphotos_face_api:
+    image: crpi-gcuyquw9co62xzjn.cn-guangzhou.personal.cr.aliyuncs.com/devfox101/mt-photos-insightface-unofficial:latest
+    container_name: mtphotos_face_api
+    restart: always
+    ports:
+      - 8066:8066
+    environment:
+      - API_AUTH_KEY=11111111   # 建议与上面的密钥保持一致，方便记忆
+```

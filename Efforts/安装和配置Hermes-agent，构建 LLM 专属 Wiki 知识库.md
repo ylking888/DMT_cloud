@@ -180,8 +180,8 @@ C:\Users\ylking>npm -v
 脚本执行被安全软件拦截
 **确认你的代理 / 科学上网工具已经开启全局模式，确保 PowerShell 能正常访问外网**
 先切换到一个非系统目录（比如你的用户目录）
-
-
+# hermes-web-ui
+开源地址：https://github.com/EKKOLearnAI/hermes-web-ui
 ## 创建WebUI
 ```
 npm install -g hermes-web-ui

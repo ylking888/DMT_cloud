@@ -13,33 +13,24 @@ tags:
 
 ## 一、界面设计
 
+## figma
 ### 简介
-
 figma 是一个基于 Figma MCP Server 的设计到代码转换工具。其标准流程包括：通过设计链接获取节点结构（get\_design\_context）与参考截图（get\_screenshot），生成初始代码（通常为 React + Tailwind），然后将生成的初始代码重构为符合项目规范的代码。
-
 在实现过程中，该技能会让 AI 优先复用现有设计系统（如 tokens、基础组件、架构模式），并通过原生接口直接集成所需的图像与 SVG 资源，最终通过截图对比来完成视觉与行为校验。
-
 ### 应用场景
-
 - **将 Figma 设计稿实现为代码**
 	通过该技能，AI 可以把 Figma 中的某个页面、组件或模块实现为精确的前端代码。适用于对视觉一致性要求极高的场景，比如产品官网、落地页、营销页等。
 - **用现有组件实现 Figma 设计**
 	当设计稿与现有项目的设计系统存在差异时，可以用这个技能做转换。在尽量还原 Figma 视觉效果的前提下，AI 会优先复用项目中已有的组件和样式规范（如 color、typography、spacing 等），避免重复实现或引入不一致的写法。
 - **按节点实现或修改代码**
 	当你只需要实现或修改 Figma 中的某个具体部分（比如按钮、卡片或一个模块）时，可以直接针对这个节点来开发。通过 Figma 链接定位到对应的节点，并获取相关的设计上下文，只改需要改的部分，适合做局部调整或增量迭代。
-
-> **提示**
-> 
+>[!hongse] **提示**
 > 在使用 “figma” 技能前，你需要从 TRAE SOLO 的 MCP 市场添加 “Figma AI Bridge” 这一 MCP Server，详细步骤参考此文档：https://docs.trae.cn/solo/remote-mcp-server#5f985f98
-
 ### 使用案例
-
 Figma 设计稿：
-
 ![图片描述](https://p5-ex-gddgtc-sign.douyinpic.com/tos-cn-i-jm8ajry58r/9ab9181c646f4b70b4fac3a29a7c0611~tplv-dy-long-article:0:0.jpeg?lk3s=138a59ce&x-expires=1778025600&x-signature=RaiXUcFQs6bOW%2F0RhHTDj%2FwdDVY%3D&from=327834062)
-
 AI 调用 “Figma AI Bridge” MCP Server 和 “figma” 技能后，其初次生成的代码已具备极高的视觉还原度。
-
+![](assets/SOLO%20必装的14个%20Skills，看这一篇就够了%20（下）%20TRAE%20最佳实践/file-20260422090341154.png)
 ## frontend-design
 
 ### 作者

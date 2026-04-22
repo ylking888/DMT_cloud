@@ -1,13 +1,13 @@
 ---
 up:
-  - "[[../../Home|Home]]"
+  - "[[../Home|Home]]"
 tags:
   - NAS
   - 群晖
   - Container_Manager
 ---
 遇到访问受限，没有办法搜索到镜像去安装
-![](assets/NAS的Container%20Manager访问受限解决方案/file-20260422153414979.png)
+![](assets/NAS的Container%20Manager访问受限解决方案【暂未成功】/file-20260422172935075.png)
 ## 首先尝试
 打开 Container Manager → 注册表 → 右上角 设置 → 新增
 添加以下任一稳定仓库（建议多选几个）：

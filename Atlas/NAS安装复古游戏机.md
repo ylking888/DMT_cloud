@@ -10,7 +10,7 @@ tags:
 ---
 # Docker/Container Manager部署
 `linuxserver/emulatorjs`
-
+[[NAS的Container Manager访问受限解决方案]]
 ![](assets/NAS安装复古游戏机/file-20260422151705467%201.png)
 # 创建容器
 ![](assets/NAS安装复古游戏机/file-20260422151705467.png)

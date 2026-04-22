@@ -19,3 +19,5 @@ tags:
 - 选中 Docker Hub → 编辑
 - 勾选刚加的镜像仓库 → 确定 → 重启 Container Manager
 
+## 使用yaml文件安装
+比如我们要安装EmulatorJS

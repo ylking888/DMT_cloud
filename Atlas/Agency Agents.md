@@ -52,3 +52,52 @@
 ### 四、补充说明
 - 项目目前包含 **12 大部门、140+ 个专业 Agent**，覆盖开发、设计、营销、产品、学术、游戏开发等几乎所有常见场景
 - 它完全开源免费，所有 Agent 提示词都可以直接修改、二次定制，适配你的具体需求
+**可以，Agency Agents 完全支持在 Trae 中使用**。
+
+### 一、如何在 Trae 中安装 Agency Agents
+**方法 1：命令行一键转换（推荐）**
+1. 克隆中文社区版（支持 Trae）：
+   ```bash
+   git clone https://github.com/jnMetaCode/agency-agents-zh.git
+   cd agency-agents-zh
+   ```
+2. 转换为 Trae 格式：
+   ```bash
+   ./scripts/convert.sh --tool trae
+   ```
+3. 安装到你的项目：
+   ```bash
+   cd /你的项目目录
+   /路径/agency-agents-zh/scripts/install.sh --tool trae
+   ```
+   会自动把角色规则安装到项目内的 `.trae/rules/`
+
+**方法 2：手动复制粘贴（最简单）**
+1. 打开 GitHub 上任意一个 `.md` 角色文件（如 `engineering/前端开发工程师.md`）
+2. **全选复制**里面的所有提示词内容
+3. 打开 Trae → 新建对话 → **直接粘贴** → 发送
+4. 成功激活该专业角色，直接下达任务
+
+### 二、在 Trae 里怎么用这些 Agent
+- **普通对话**：粘贴角色提示词 → 直接发需求（如“帮我写一个登录页面”）
+- **SOLO 模式**：
+  - 粘贴角色提示词
+  - 开启 SOLO Builder/Coder
+  - 描述完整项目需求（如“Vue3 电商后台，带权限”）
+  - Trae 会自动拆解、生成代码、出可运行项目
+- **Skills 技能包**：
+  - 把 Agency Agents 的角色保存为 `skill.md`
+  - 导入 Trae 的 Skills 系统
+  - 以后一键启用该专业角色
+
+### 三、适合 Trae 的热门 Agent
+- 工程类：**前端开发工程师、后端架构师、全栈工程师、DevOps 专家**
+- 产品类：**产品经理、需求分析师、PRD 专家**
+- 设计类：**UI/UX 设计师、页面交互专家**
+- 代码质量：**代码评审官、Bug 修复工程师、测试工程师**
+
+### 四、为什么适合 Trae
+- Trae 是**中文原生 AI IDE**，对中文术语、国内框架支持更好
+- 支持**SOLO 全自动开发**，配合 Agency Agents 专业角色 = 超级开发团队
+- 一键生成**完整项目+可运行代码**，不用自己搭环境
+

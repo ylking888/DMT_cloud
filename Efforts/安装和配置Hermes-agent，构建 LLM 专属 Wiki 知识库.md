@@ -195,3 +195,13 @@ hermes-web-ui start
 ```
 hermes-web-ui stop
 ```
+
+# 升级到最新版
+```
+Hermes update
+```
+
+# 官方WebUI
+```
+Shermes dashboard
+```

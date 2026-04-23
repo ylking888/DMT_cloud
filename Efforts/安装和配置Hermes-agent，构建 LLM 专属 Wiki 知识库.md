@@ -165,21 +165,6 @@ C:\Users\ylking>npm -v
 11.8.0
 ```
 
-## 安装Claude Code
-我们采用最简单的使用方式和安装方式，在终端执行安装命令
-> [!hongse] 温馨提示
-> 要在 *Windows PowerShell* 下执行安装命令，安装需要等待几分钟...
-
-官网：https://claude.com/product/claude-code
-安装命令：`irm https://claude.ai/install.ps1 | iex`
-![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260420145447251.png)
-如果卡死，3-5分钟没有反应，那么就需要进一步调整后再安装了
-卡住的原因，大概率是：
-网络问题：国内访问 claude.ai 下载速度慢或中断
-权限问题：用了 system32 目录，可能存在权限限制
-脚本执行被安全软件拦截
-**确认你的代理 / 科学上网工具已经开启全局模式，确保 PowerShell 能正常访问外网**
-先切换到一个非系统目录（比如你的用户目录）
 # hermes-web-ui
 开源地址：https://github.com/EKKOLearnAI/hermes-web-ui
 ## 创建WebUI

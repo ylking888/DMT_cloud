@@ -6,7 +6,7 @@ tags:
 # Hermes Agent的打开
 ## 1、Ollama 是否自动启动？
 - 如果之前设置了开机自启，可能会自动运行
-- 没有的话，手动开：`ollama serve`
+- 没有的话，手动开：`ollama serve`；`ollama run qwen3-hermes`
 Ollama是全局的，任意CMD窗口都可以运行
 检查Ollama是否在运行
 ```cmd

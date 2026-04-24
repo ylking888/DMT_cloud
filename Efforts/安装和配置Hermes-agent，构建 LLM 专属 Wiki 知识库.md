@@ -371,6 +371,11 @@ Toggle # (or Enter to confirm):
 绑定后：微信私聊 / 群里都能调用你本地 Ollama 大模型
 后续不想用了，随时进配置取消 14 号勾选，或清空 token 即可关闭
 等待二维码出现 → 微信扫码 → 登录完成即可。
+Start QR login now? [Y/n]: 
+请使用微信扫描以下二维码：
+https://liteapp.weixin.qq.com/q/7GiQu1?qrcode=43aab892dd7397af745ac6397e40dc2d&bot_type=3
+（终端二维码渲染失败: No module named 'qrcode'，请直接打开上面的二维码链接）
+微信连接成功，account_id=cf2bfbad252c@im.bot
 
 
 

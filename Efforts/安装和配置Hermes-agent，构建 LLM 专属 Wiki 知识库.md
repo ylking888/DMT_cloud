@@ -191,6 +191,189 @@ Select provider:
   (○) 30. Configure auxiliary models...
   (○) 31. Leave unchanged
 
+- 国内直连、网络稳定、不用代理、编码能力强、适配中文开发
+选18. Kimi / Moonshot China (Moonshot CN direct API)
+- 如果你主要用通义千问、阿里系模型
+选 22. Alibaba Cloud / DashScope Coding
+- 如果你本地装了 Ollama 本地大模型，连 Ollama 官方云
+选 23. Ollama Cloud / 或者后续填本地地址
+- 想用免费 Gemini 无需 API 密钥
+选 13. Google Gemini via OAuth + Code Assist
+- 只想临时用、不想改配置
+选 31. Leave unchanged 保持原有配置
+- 连你自己电脑上的**本地 Ollama**
+选29. Custom endpoint (enter URL manually)
+连接对象：你自己电脑里跑的 Ollama（127.0.0.1:11434）
+网络：完全本地 / 离线，不走外网，国内稳定
+模型：用你本地 ollama pull 下载的模型，占本地显存
+费用：完全免费、无额度限制
+隐私：数据只在你电脑里，最安全
+
+Custom OpenAI-compatible endpoint configuration:
+API base URL [e.g. https://api.example.com/v1]: http://127.0.0.1:11434/v1
+API key [optional]: 不需要 API Key，空白留空就行
+Verified endpoint via http://127.0.0.1:11434/v1/models (4 model(s) visible)
+  Available models:
+    1. default:latest
+    2. qwen2:7b
+    3. qwen3-hermes:latest
+    4. qwen3:14b
+  Select model [1-4] or type name:
+  输入你准备用的模型编号：3
+
+Context length in tokens [leave blank for auto-detect]:
+常见本地模型参考值：
+7B 小模型：8192
+14B 编码模型：16384
+30B + 长上下文：32768 / 65536
+
+Display name [Local (127.0.0.1:11434)]:
+直接回车，默认名称保留就行。
+如果想自定义，输入简单好记的名字，比如：本地 Ollama，再回车。
+
+Default model set to: qwen3-hermes:latest (via http://127.0.0.1:11434/v1)
+  💾 Saved to custom providers as "Local (127.0.0.1:11434)" (edit in config.yaml)
+  完美配置完成 ✅
+当前已成功绑定你的本地 Ollama，默认模型：qwen3-hermes:latest
+后续想切换本地其他模型（deepseek-coder、llama3、glm 等），直接在工具内切换即可
+全程纯本地调用、无外网、无 API 密钥、完全离线
+如需修改接口 / 名称 / 上下文限制，可编辑提示里的 config.yaml
+
+◆ Text-to-Speech Provider (optional)
+ Current: Edge TTS
+  Select TTS provider:
+Select by number, Enter to confirm.
+  (○)  1. Edge TTS (free, cloud-based, no setup needed)
+  (○)  2. ElevenLabs (premium quality, needs API key)
+  (○)  3. OpenAI TTS (good quality, needs API key)
+  (○)  4. xAI TTS (Grok voices, needs API key)
+  (○)  5. MiniMax TTS (high quality with voice cloning, needs API key)
+  (○)  6. Mistral Voxtral TTS (multilingual, native Opus, needs API key)
+  (○)  7. Google Gemini TTS (30 prebuilt voices, prompt-controllable, needs API key)
+  (○)  8. NeuTTS (local on-device, free, ~300MB model download)
+  (○)  9. KittenTTS (local on-device, free, lightweight ~25-80MB ONNX)
+  (●) 10. Keep current (Edge TTS)
+Edge TTS 国内能用、免费、无需配置、中文语音自然，完全够用。
+如果想要纯本地离线、不上网，就选 9 KittenTTS，轻量无依赖。
+日常使用无脑保留当前 Edge TTS 就好。
+
+  Select terminal backend:
+Select by number, Enter to confirm.
+  (○)  1. Local - run directly on this machine (default)
+  (○)  2. Docker - isolated container with configurable resources
+  (○)  3. Modal - serverless cloud sandbox
+  (○)  4. SSH - run on a remote machine
+  (○)  5. Daytona - persistent cloud development environment
+  (●) 6. Keep current (local)
+直接输入 6 回车，保持默认本地终端即可。
+解释：
+本地模式：直接调用你电脑的 PowerShell、CMD、终端，权限正常、操作本地文件 / 命令完全没问题
+Docker / 云端 / SSH 对你纯本地 Ollama 开发完全用不上，反而增加冗余和故障
+保持第 6 项，最优选择。
+
+ Skipped (keeping current)
+ Keeping current backend: local
+◆ Agent Settings
+Guide: https://hermes-agent.nousresearch.com/docs/user-guide/configuration
+ Maximum tool-calling iterations per conversation.
+Higher = more complex tasks, but costs more tokens.
+Press Enter to keep 90. Use 90 for most tasks or 150+ for open exploration.
+直接回车，默认保留 90 就行。
+简单说明
+90：日常编码、查错、写脚本完全够用，不会冗余消耗本地模型性能
+只有做超复杂多步骤长任务，才需要改 150+
+你是本地 Ollama 部署，默认数值最均衡，不用修改
+
+Tool Progress Display
+Controls how much tool activity is shown (CLI and messaging).
+ off     — Silent, just the final response
+ new     — Show tool name only when it changes (less noise)
+ all     — Show every tool call with a short preview
+ verbose — Full args, results, and debug logs
+日常使用推荐输入：new
+兼顾简洁，不会刷屏杂乱，又能看到关键工具调用。
+追求极简安静：填 off
+需要排错、调试问题：填 all
+深度排查报错：填 verbose
+直接回车默认一般是 new，无脑回车也行。
+
+◆ Context Compression
+Automatically summarizes old messages when context gets too long.
+Higher threshold = compress later (use more context). Lower = compress sooner.
+33mCompression threshold (0.5-0.95) [0.5]:
+本地 Ollama 场景，推荐设置：
+输入 0.75 回车
+参数说明
+0.5（默认）：压缩触发太早，容易丢失历史上下文
+0.75：均衡方案，兼顾上下文完整度与显存占用，适合日常编码、项目开发
+0.9~0.95：很晚才压缩，保留全部对话，但小显存设备容易卡顿溢出
+直接填 0.75 即可，适配你本地模型使用。
+
+Select by number, Enter to confirm.
+  (●)1. Inactivity + daily reset (recommended - reset whichever comes first)
+  (○)  2. Inactivity only (reset after N minutes of no messages)
+  (○)  3. Daily only (reset at a fixed hour each day)
+  (○)  4. Never auto-reset (context lives until /reset or context compression)
+  (○)  5. Keep current settings
+ Choice [default 1]: 
+ 直接回车，默认选 1 即可。
+简要说明
+闲置 + 每日自动重置：官方推荐，防止本地上下文无限堆积、占用显存，适配 Ollama 本地运行
+选 4 永不重置：长期对话会越来越卡、上下文爆炸，本地模型不推荐
+日常使用保持默认 1 就足够舒服。
+
+Inactivity timeout (minutes) [1440]: 
+默认 1440 分钟 =24 小时，太久了，本地 ollama 容易堆积上下文占显存。
+推荐直接输入：30 回车
+闲置 30 分钟自动清空会话，轻量又够用。
+想要久一点就填：60
+无脑省心就直接回车保留默认也行。
+个人根据情况选择
+
+Daily reset hour (0-23, local time) [4]: 
+推荐改为 3 或者直接回车保留默认 4 点。
+凌晨 4 点属于深夜，完全不影响白天使用，自动重置清理上下文、释放本地 Ollama 资源，非常适合本地部署。
+直接回车，保持默认 4 即可。
+
+Messaging Platforms
+Connect to messaging platforms to chat with Hermes from anywhere.
+Toggle with Space, confirm with Enter.
+Select platforms to configure:
+Toggle by number, Enter to confirm.
+  [ ]  1. Telegram
+  [ ]  2. Discord
+  [ ]  3. Slack
+  [ ]  4. Signal
+  [ ]  5. Email
+  [ ]  6. SMS (Twilio)
+  [ ]  7. Matrix
+  [ ]  8. Mattermost
+  [ ]  9. WhatsApp
+  [ ] 10. DingTalk
+  [ ] 11. Feishu / Lark
+  [ ] 12. WeCom (Enterprise WeChat)
+  [ ] 13. WeCom Callback (Self-Built App)
+  [ ] 14. Weixin (WeChat)
+  [ ] 15. BlueBubbles (iMessage)
+  [ ] 16. QQ Bot
+  [ ] 17. Webhooks (GitHub, GitLab, etc.)
+Toggle # (or Enter to confirm):
+想接微信现在选 **14** ，后续随时能启用 / 关闭，不冲突。
+后续会引导配置微信接入参数，不想立刻配置也可以先空着跳过，**只勾选不填参数不会生效，不影响你现在本地 Ollama 使用**。
+
+─── 💬 Weixin / WeChat Setup ───
+ 1. Hermes will open Tencent iLink QR login in this terminal.
+ 2. Use WeChat to scan and confirm the QR code.
+ 3. Hermes will store the returned account_id/token in ~/.hermes/.env
+ 4. This adapter supports native text, image, video, and document delivery.
+接下来终端会弹出微信扫码二维码，用你日常微信扫码登录、确认授权，就绑定完成。
+这是网页微信协议登录，安全合规，令牌存在本地 .hermes 文件夹，只有你本机能用
+绑定后：微信私聊 / 群里都能调用你本地 Ollama 大模型
+后续不想用了，随时进配置取消 14 号勾选，或清空 token 即可关闭
+等待二维码出现 → 微信扫码 → 登录完成即可。
+
+
+
 ### Hermes Agent 的 .env 配置
 ```
 # --- 核心模型配置 ---

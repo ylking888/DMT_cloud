@@ -30,9 +30,8 @@ hermes
 ```
 # 4、打开对话WebUI
 ```cmd
-d:  
-cd D:\hermes-agent-deploy\hermes-agent  
-.venv\Scripts\activate 
+hermes gateway run 
+# 另外开个CMD窗口运行 
 hermes-web-ui start
 ```
 
@@ -210,6 +209,8 @@ npm install -g hermes-web-ui
 
 ## 使用WebUI启动
 ```
+hermes gateway run
+# 另外开个CMD窗口运行
 hermes-web-ui start
 ```
 停止WebUI

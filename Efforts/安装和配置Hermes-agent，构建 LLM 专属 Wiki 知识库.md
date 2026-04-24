@@ -464,6 +464,43 @@ Choose a provider:
 Choice [default 1]: 
 直接回车，默认选择6跳过浏览器依赖安装，完全不影响你本地 Ollama + 微信 的核心功能。
 
+🎨 Image Generation - Choose a provider 
+Choose a provider:
+ Select by number, Enter to confirm.
+  (●)  1. FAL.ai [paid] — Pick from flux-2-klein, flux-2-pro, gpt-image, nano-banana, etc.
+  (○)  2. OpenAI [paid] — gpt-image-2 at low/medium/high quality tiers
+  (○)  3. OpenAI (Codex auth) [free] — gpt-image-2 via ChatGPT/Codex OAuth — no API key required
+  (○)  4. xAI (Grok) [paid] — Native xAI image generation via grok-imagine-image
+  (○)  5. Skip — keep defaults / configure later
+直接选 5 回车，跳过图片生成。
+你本地 Ollama + 微信核心用不到，而且都是付费接口，后续需要再补配就行，完全不影响 WebUI 和其他功能。
+
+🔊 Text-to-Speech - Choose a provider 
+Choose a provider:
+Select by number, Enter to confirm.
+  (●) 1. Microsoft Edge TTS [★ recommended · free] — Good quality, no API key needed [active]
+  (○)  2. OpenAI TTS [paid] — High quality voices
+  (○)  3. xAI TTS — Grok voices - requires xAI API key
+  (○)  4. ElevenLabs [paid] — Most natural voices
+  (○)  5. Mistral (Voxtral TTS) [paid] — Multilingual, native Opus
+  (○)  6. Google Gemini TTS [preview] — 30 prebuilt voices, controllable via prompts
+  (○)  7. KittenTTS [local · free] — Lightweight local ONNX TTS (~25MB), no API key
+  (○)  8. Skip — keep defaults / configure later
+直接回车，保留默认 1 Microsoft Edge TTS
+Windows 原生免费、无需额外部署，够用且不报错，本地环境完美兼容。
+
+🔍 Web Search & Extract - Select Search Provider
+ A free DuckDuckGo search skill is also included — skip this if you don't need a premium provider.
+Select Search Provider:
+Select by number, Enter to confirm.
+  (●)  1. Firecrawl Cloud [★ recommended] — Full-featured search, extract, and crawl
+  (○)  2. Exa [paid] — Neural search with semantic understanding
+  (○)  3. Parallel [paid] — AI-powered search and extract
+  (○)  4. Tavily [free tier] — Search, extract, and crawl — 1000 free searches/mo
+  (○)  5. Firecrawl Self-Hosted [free · self-hosted] — Run your own Firecrawl instance (Docker)
+  (○)  6. Skip — keep defaults / configure later
+选 6 回车跳过
+自带免费 DuckDuckGo 搜索，足够日常使用，不用额外配置付费 / 自建搜索服务，避免多余依赖报错。
 
 
 ### Hermes Agent 的 .env 配置

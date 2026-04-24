@@ -36,6 +36,8 @@ hermes gateway run
 hermes-web-ui start
 ```
 ![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260424173839712.png)
+## 微信面板
+![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260424174127164.png)
 
 
 

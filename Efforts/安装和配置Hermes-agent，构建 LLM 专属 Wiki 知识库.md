@@ -227,5 +227,5 @@ Hermes update
 
 # 官方WebUI（管理）
 ```
-Shermes dashboard
+hermes dashboard
 ```

@@ -7,7 +7,7 @@ tags:
 ## 1、Ollama 是否自动启动？
 - 如果之前设置了开机自启，可能会自动运行
 - 没有的话，手动开：`ollama serve`；`ollama run qwen3:14b`
-Ollama是全局的，任意CMD窗口都可以运行
+Ollama是全局的，任意CMD窗口都可以运行，保持窗口不关闭
 检查Ollama是否在运行
 ```cmd
 # curl检查
@@ -19,10 +19,6 @@ netstat -ano | findstr :11434
 ```
 ## 2、打开监控WebUI
 ```cmd
-d:
-cd D:\hermes-agent-deploy\hermes-agent
-.venv\Scripts\activate
-set HERMES_WEB_DIST=D:\hermes-agent-deploy\hermes-agent\hermes_cli\web_dist
 hermes dashboard
 ```
 ## 3、打开命令界面

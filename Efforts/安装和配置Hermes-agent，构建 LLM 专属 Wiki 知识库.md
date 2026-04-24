@@ -17,21 +17,25 @@ Ctrl + Shift + Esc 打开任务管理器，搜索 ollama，看到 ollama.exe 在
 # 检查端口
 netstat -ano | findstr :11434
 ```
-## 2、打开监控WebUI
+## 2、打开管理面板
 ```cmd
+hermes gateway run  # 另外开个CMD窗口运行 
 hermes dashboard
 ```
+![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260424173928954.png)
 ## 3、打开命令界面
 ```cmd
 hermes gateway run  # 另外开个CMD窗口运行 
 hermes
 ```
-# 4、打开对话WebUI
+
+## 4、打开对话WebUI
 ```cmd
 hermes gateway run 
 # 另外开个CMD窗口运行 
 hermes-web-ui start
 ```
+![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260424173839712.png)
 
 
 

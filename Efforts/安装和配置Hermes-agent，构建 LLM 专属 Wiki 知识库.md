@@ -377,6 +377,94 @@ https://liteapp.weixin.qq.com/q/7GiQu1?qrcode=43aab892dd7397af745ac6397e40dc2d&b
 （终端二维码渲染失败: No module named 'qrcode'，请直接打开上面的二维码链接）
 微信连接成功，account_id=cf2bfbad252c@im.bot
 
+How should direct messages be authorized?
+Select by number, Enter to confirm.
+  (●)1. Use DM pairing approval (recommended)
+  (○)  2. Allow all direct messages
+  (○)  3. Only allow listed user IDs
+  (○)  4. Disable direct messages
+Choice [default 1]: 
+直接回车，保留默认 1
+选项解释
+1、Use DM pairing approval（推荐）
+私聊需要你手动同意配对，安全防骚扰，最适合个人自用。
+2、Allow all direct messages
+任何人都能私聊调用 AI，不安全，不推荐。
+3、Only allow listed user IDs
+仅白名单用户，适合多人共用，配置麻烦。
+4、Disable direct messages
+直接关闭私聊功能。
+个人本地自用，默认选项 1 完美适配。
+
+How should group chats be handled?
+Select by number, Enter to confirm.
+  (●) 1. Disable group chats (recommended)
+  (○)  2. Allow all group chats
+  (○)  3. Only allow listed group chat IDs
+直接回车保留默认 1. Disable group chats
+说明
+- 关闭群聊，只保留私聊使用，干净不扰民、不会在群里自动乱回复，减少风控与报错。
+- 后续想开启指定群聊，随时可以重新进配置改成 3、添加群聊白名单。
+
+Use your Weixin user ID (o9cq80zjjE-J7ZowrCPAw-TwvGNQ@im.wechat) as the home channel? [Y/n]: 
+直接输入 Y 回车即可。
+作用：
+把你的微信私聊窗口设为默认主控会话，方便直接私聊使用本地 Ollama 模型，管理指令、查看运行状态，简洁安全。
+
+ Start the gateway to bring your bots online:
+hermes gateway              # Run in foreground
+ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚕ Hermes Tool Configuration
+Enable or disable tools per platform.
+Tools that need API keys will be configured when enabled.
+Guide: https://hermes-agent.nousresearch.com/docs/user-guide/features/tools
+
+Tools for 🖥️  CLI
+Toggle by number, Enter to confirm.
+[✓]  1. 🔍 Web Search & Scraping  (web_search, web_extract)  [no API key]
+[✓] 2. 🌐 Browser Automation  (navigate, click, type, scroll)
+[✓]3. 💻 Terminal & Processes  (terminal, process)
+[✓]4. 📁 File Operations  (read, write, patch, search)
+[✓]5. ⚡ Code Execution  (execute_code)
+[✓]6. 👁️  Vision / Image Analysis  (vision_analyze)
+[✓]7. 🎨 Image Generation  (image_generate)
+  [ ]  8. 🧠 Mixture of Agents  (mixture_of_agents)  [no API key]
+[✓] 9. 🔊 Text-to-Speech  (text_to_speech)
+[✓]10. 📚 Skills  (list, view, manage)
+[✓]11. 📋 Task Planning  (todo)
+[✓]12. 💾 Memory  (persistent memory across sessions)
+[✓]13. 🔎 Session Search  (search past conversations)
+[✓]14. ❓ Clarifying Questions  (clarify)
+[✓]15. 👥 Task Delegation  (delegate_task)
+[✓]16. ⏰ Cron Jobs  (create/list/update/pause/resume/run, with optional attached skills)
+[✓]17. 📨 Cross-Platform Messaging  (send_message)
+  [ ] 18. 🧪 RL Training  (Tinker-Atropos training tools)  [no API key]
+  [ ] 19. 🏠 Home Assistant  (smart home device control)  [no API key]
+Toggle # (or Enter to confirm): 
+自用本地 Ollama 环境，文件操作、终端、代码执行、图片解析、记忆功能全部开启完全够用，无需手动关闭工具，配置直接收尾完成。
+直接回车确认，保持默认勾选状态即可。
+
+ Configuring 5 tool(s):
+• 🌐 Browser Automation
+• 🎨 Image Generation
+• 🔊 Text-to-Speech
+• 👁️  Vision / Image Analysis
+• 🔍 Web Search & Scraping
+You can skip any tool you don't need right now.
+ 🌐 Browser Automation - Choose a provider ---
+
+Choose a provider:
+ Select by number, Enter to confirm.
+  (●)[0m  1. Local Browser [★ recommended · free] — Headless Chromium, no API key needed
+  (○)  2. Browserbase [paid] — Cloud browser with stealth and proxies
+  (○)  3. Browser Use [paid] — Cloud browser with remote execution
+  (○)  4. Firecrawl [paid] — Cloud browser with remote execution
+  (○)  5. Camofox [free · local] — Anti-detection browser (Firefox/Camoufox)
+  (○)  6. Skip — keep defaults / configure later
+Choice [default 1]: 
+直接回车，默认选择 1 本地浏览器
+纯本地免费、无需额外付费服务，适配你现在的本地部署环境，最合适。
+
 
 
 ### Hermes Agent 的 .env 配置

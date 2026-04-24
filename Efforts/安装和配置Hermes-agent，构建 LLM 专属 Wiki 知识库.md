@@ -4,6 +4,9 @@ tags:
   - Hermes-agent
 ---
 # Hermes Agent的打开
+1、Ollama 是否自动启动？
+- 如果之前设置了开机自启，可能会自动运行
+- 没有的话，手动开：`ollama serve`
 
 
 ```mermaid

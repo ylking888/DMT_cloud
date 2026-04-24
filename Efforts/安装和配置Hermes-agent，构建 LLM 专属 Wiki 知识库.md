@@ -153,6 +153,10 @@ qwen3:14b	~10GB	✅ 完美
 qwen3:32b	~20GB	✅ 可以（内存补充）
 qwen3:72b	~45GB	⚠️ 太大，跑不动
 
+## 第一次使用的配置
+  How would you like to set up Hermes?
+(●) 1. Quick setup — provider, model & messaging (recommended)
+(○)  2. Full setup — configure everything
 
 ### Hermes Agent 的 .env 配置
 ```

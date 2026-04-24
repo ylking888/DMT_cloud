@@ -39,6 +39,8 @@ hermes-web-ui start
 ## 微信面板
 ![](assets/安装和配置Hermes-agent，构建%20LLM%20专属%20Wiki%20知识库/file-20260424174616609.png)
 
+## 对于初始安装成功后不会切换中文回答的问题
+[[Hermes需要设置一下人格]]
 
 
 ```mermaid

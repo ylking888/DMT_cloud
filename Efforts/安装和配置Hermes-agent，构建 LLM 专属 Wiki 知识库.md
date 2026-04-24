@@ -384,7 +384,7 @@ Select by number, Enter to confirm.
   (○)  3. Only allow listed user IDs
   (○)  4. Disable direct messages
 Choice [default 1]: 
-直接回车，保留默认 1
+直接回车，保留默认 1，之后有选用了2
 选项解释
 1、Use DM pairing approval（推荐）
 私聊需要你手动同意配对，安全防骚扰，最适合个人自用。

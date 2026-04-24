@@ -4,11 +4,28 @@ tags:
   - Hermes-agent
 ---
 # Hermes Agent的打开
-1、Ollama 是否自动启动？
+## 1、Ollama 是否自动启动？
 - 如果之前设置了开机自启，可能会自动运行
 - 没有的话，手动开：`ollama serve`
 Ollama是全局的，任意CMD窗口都可以运行
 检查Ollama是否在运行
+```cmd
+# curl检查
+curl http://localhost:11434/api/tags
+# 任务管理器查看
+Ctrl + Shift + Esc 打开任务管理器，搜索 ollama，看到 ollama.exe 在运行就说明已启动
+# 检查端口
+netstat -ano | findstr :11434
+```
+## 2、打开监控WebUI
+```cmd
+d:
+cd D:\hermes-agent-deploy\hermes-agent
+.venv\Scripts\activate
+set HERMES_WEB_DIST=D:\hermes-agent-deploy\hermes-agent\hermes_cli\web_dist
+hermes dashboard
+```
+## 打开命令界面
 
 
 ```mermaid

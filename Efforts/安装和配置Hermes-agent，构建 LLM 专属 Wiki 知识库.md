@@ -23,9 +23,7 @@ hermes dashboard
 ```
 ## 3、打开命令界面
 ```cmd
-d: 
-cd D:\hermes-agent-deploy\hermes-agent 
-.venv\Scripts\activate 
+hermes gateway run  # 另外开个CMD窗口运行 
 hermes
 ```
 # 4、打开对话WebUI

@@ -33,7 +33,12 @@ cd D:\hermes-agent-deploy\hermes-agent
 hermes
 ```
 # 4、打开对话WebUI
-
+```cmd
+d:  
+cd D:\hermes-agent-deploy\hermes-agent  
+.venv\Scripts\activate 
+hermes-web-ui start
+```
 
 
 

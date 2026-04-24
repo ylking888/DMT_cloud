@@ -3,6 +3,9 @@ tags:
   - OBsidian
   - Hermes-agent
 ---
+# Hermes Agent的打开
+
+
 ```mermaid
 graph LR
     A[Obsidian（Wiki内容存储）] -->|1.知识检索/文本输入| B[Hermes Agent（智能中枢）]

@@ -462,8 +462,7 @@ Choose a provider:
   (○)  5. Camofox [free · local] — Anti-detection browser (Firefox/Camoufox)
   (○)  6. Skip — keep defaults / configure later
 Choice [default 1]: 
-直接回车，默认选择 1 本地浏览器
-纯本地免费、无需额外付费服务，适配你现在的本地部署环境，最合适。
+直接回车，默认选择6跳过浏览器依赖安装，完全不影响你本地 Ollama + 微信 的核心功能。
 
 
 

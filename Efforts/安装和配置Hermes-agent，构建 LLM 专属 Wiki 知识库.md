@@ -25,7 +25,16 @@ cd D:\hermes-agent-deploy\hermes-agent
 set HERMES_WEB_DIST=D:\hermes-agent-deploy\hermes-agent\hermes_cli\web_dist
 hermes dashboard
 ```
-## 打开命令界面
+## 3、打开命令界面
+```cmd
+d: 
+cd D:\hermes-agent-deploy\hermes-agent 
+.venv\Scripts\activate 
+hermes
+```
+# 4、打开对话WebUI
+
+
 
 
 ```mermaid

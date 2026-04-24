@@ -157,6 +157,39 @@ qwen3:72b	~45GB	⚠️ 太大，跑不动
   How would you like to set up Hermes?
 (●) 1. Quick setup — provider, model & messaging (recommended)
 (○)  2. Full setup — configure everything
+Select provider:
+ Select by number, Enter to confirm.
+  (●)1. Nous Portal (Nous Research subscription)
+  (○)  2. OpenRouter (100+ models, pay-per-use)
+  (○)  3. Vercel AI Gateway (200+ models, $5 free credit, no markup)
+  (○)  4. Anthropic (Claude models — API key or Claude Code)
+  (○)  5. OpenAI Codex
+  (○)  6. Xiaomi MiMo (MiMo-V2.5 and V2 models — pro, omni, flash)
+  (○)  7. NVIDIA NIM (Nemotron models — build.nvidia.com or local NIM)
+  (○)  8. Qwen OAuth (reuses local Qwen CLI login)
+  (○)  9. GitHub Copilot (uses GITHUB_TOKEN or gh auth token)
+  (○) 10. GitHub Copilot ACP (spawns `copilot --acp --stdio`)
+  (○) 11. Hugging Face Inference Providers (20+ open models)
+  (○) 12. Google AI Studio (Gemini models — native Gemini API)
+  (○) 13. Google Gemini via OAuth + Code Assist (free tier supported; no API key needed)
+  (○) 14. DeepSeek (DeepSeek-V3, R1, coder — direct API)
+  (○) 15. xAI (Grok models — direct API)
+  (○) 16. Z.AI / GLM (Zhipu AI direct API)
+  (○) 17. Kimi Coding Plan (api.kimi.com) & Moonshot API
+  (○) 18. Kimi / Moonshot China (Moonshot CN direct API)
+  (○) 19. StepFun Step Plan (agent/coding models via Step Plan API)
+  (○) 20. MiniMax (global direct API)
+  (○) 21. MiniMax China (domestic direct API)
+  (○) 22. Alibaba Cloud / DashScope Coding (Qwen + multi-provider)
+  (○) 23. Ollama Cloud (cloud-hosted open models — ollama.com)
+  (○) 24. Arcee AI (Trinity models — direct API)
+  (○) 25. Kilo Code (Kilo Gateway API)
+  (○) 26. OpenCode Zen (35+ curated models, pay-as-you-go)
+  (○) 27. OpenCode Go (open models, $10/month subscription)
+  (○) 28. AWS Bedrock (Claude, Nova, Llama, DeepSeek — IAM or API key)
+  (○) 29. Custom endpoint (enter URL manually)
+  (○) 30. Configure auxiliary models...
+  (○) 31. Leave unchanged
 
 ### Hermes Agent 的 .env 配置
 ```

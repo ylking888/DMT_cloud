@@ -65,6 +65,9 @@ curl https://api.302.ai/v1/chat/completions \
 
 ```
 curl https://api.302.ai/v1/models -H "Authorization: Bearer sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2"
+
+curl https://api.302.ai/v1/chat/completions -H "Content-Type: application/json" -H "Authorization: Bearer sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2" -d "{\"model\": \"gpt-4o-mini\", \"messages\": [{\"role\": \"user\", \"content\": \"Hi\"}]}"
+
 ```
 
 

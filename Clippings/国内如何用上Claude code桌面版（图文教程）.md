@@ -47,6 +47,9 @@ Claude 的 Mac 桌面客户端。
 [Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://api.302.ai", "User")
 [Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2", "User")
 [Environment]::SetEnvironmentVariable("ANTHROPIC_MODEL", "claude-sonnet-4-5", "User")
+
+$env:ANTHROPIC_API_KEY="sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2"
+$env:ANTHROPIC_BASE_URL="https://api.302.ai/anthropic"
 ```
 
 ## 第一步：下载 Claude Desktop

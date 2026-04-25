@@ -9,100 +9,41 @@ tags:
   - "clippings"
 ---
 国内如何用上Claude code桌面版（图文教程）
-
 一个是价格。
-
 Claude Max 20x 是每月 200 美金。
 
 另一个是账号。
-
 最麻烦的地方在于：它可能要求外籍证件和真人验证。
-
 如果身份资料过不了，账号就有被限制甚至封掉的风险。
-
 一个月前，我跑通了在国内终端使用 Claude Code 的方式。
-
 ![图片描述](https://p3-sign.douyinpic.com/tos-cn-i-jm8ajry58r/b2bb7231466f450187368305f8bc472f~tplv-dy-long-article:0:0.jpeg?lk3s=138a59ce&x-expires=1778306400&x-signature=rjNcZKAv5LiBaOBjkVzBthz00Nw%3D&from=327834062)
 
-上篇教程已经写过。有的朋友看完觉得还是太难。
+在国内使用 Claude Code，不打开终端命令行，直接把 Claude Code 桌面版用起来的方式。
 
-所以这篇分享一下：
-
-\*\*在国内使用 Claude Code，
-
-不打开终端命令行，
-
-直接把 Claude Code 桌面版用起来的方式。\*\*
-
-跑通以后，
-
-桌面端大概长这样。
-
+跑通以后，桌面端大概长这样。
+![](assets/国内如何用上Claude%20code桌面版（图文教程）/file-20260425142133260.png)
 桌面版 Claude Code 跑通效果
 
 先说说我自己用 Claude Code 几个月下来的感觉：
-
-Claude Code 强，
-
-一半是模型强，一半是应用强。
-
-就像一个人干活厉害，不能只有脑子好。
-
-还得有一副好身体。脑子负责想。
-
-身体负责看文件，改代码，
-
-跑命令，检查结果。
-
-以前这副身体主要在终端里。
+Claude Code 强，一半是模型强，一半是应用强。
+就像一个人干活厉害，不能只有脑子好。还得有一副好身体。脑子负责想。身体负责看文件，改代码，跑命令，检查结果。以前这副身体主要在终端里。
 
 现在 Claude Desktop（Claude 桌面客户端）里也有了一个入口。
-
 这篇就写：如何不用终端命令行，把 Claude Desktop 接到第三方 API（模型接口）。
-
-**我用 Kimi 举例。**
-
-火山方舟、小米、其他支持 Anthropic-compatible（兼容 Anthropic 格式）的接口，
-
-逻辑一样。
+**我用 Kimi 举例。** 火山方舟、小米、其他支持 Anthropic-compatible（兼容 Anthropic 格式）的接口，逻辑一样。
 
 ## 先说准备
-
 你需要三样东西：
-
 第一，Claude Desktop。
-
 Claude 的 Mac 桌面客户端。
-
 第二，一个可用的第三方 API。
-
-比如 Kimi。
-
-比如火山方舟。
-
-比如小米。
-
-比如其他支持 Anthropic-compatible（兼容 Anthropic 格式）的接口。
-
+比如 Kimi。比如火山方舟。比如小米。比如其他支持 Anthropic-compatible（兼容 Anthropic 格式）的接口。
 第三，对应服务商的 Base URL（接口地址）和 API Key（接口密钥）。
 
-本文用 Kimi 举例。
-
-如果你也用 Kimi，
-
-后台地址是：\`https://www.kimi.com/code/console\\\`
-
-这里拿 Kimi 的 API Key。
-
-后面填 Base URL（接口地址）时，
-
-也填 Kimi Coding Plan 对应的地址。
+本文用 Kimi 举例。如果你也用 Kimi，后台地址是：`https://www.kimi.com/code/console`这里拿 Kimi 的 API Key。后面填 Base URL（接口地址）时，也填 Kimi Coding Plan 对应的地址。
 
 ## 第一步：下载 Claude Desktop
-
-打开这个地址：
-
-claude.ai,下载 \`Claude\`。
+打开这个地址：claude.ai,下载 `Claude`。
 
 如果你已经装过 Claude Desktop，
 

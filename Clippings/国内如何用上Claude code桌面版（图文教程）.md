@@ -42,6 +42,14 @@ Claude 的 Mac 桌面客户端。
 
 本文用 Kimi 举例。如果你也用 Kimi，后台地址是：`https://www.kimi.com/code/console`这里拿 Kimi 的 API Key。后面填 Base URL（接口地址）时，也填 Kimi Coding Plan 对应的地址。
 
+三条命令分别执行，把第二行的 sk-你的Key 换成你在 302.ai 复制的实际 Key。
+```powershell
+[Environment]::SetEnvironmentVariable("ANTHROPIC_BASE_URL", "https://api.302.ai", "User")
+[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2", "User")
+[Environment]::SetEnvironmentVariable("ANTHROPIC_MODEL", "claude-sonnet-4-5", "User")
+
+```
+
 ## 第一步：下载 Claude Desktop
 打开这个地址：claude.ai,下载 `Claude`。
 如果你已经装过 Claude Desktop，

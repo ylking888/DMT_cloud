@@ -44,41 +44,25 @@ Claude 的 Mac 桌面客户端。
 
 ## 第一步：下载 Claude Desktop
 打开这个地址：claude.ai,下载 `Claude`。
-
 如果你已经装过 Claude Desktop，
-
 这一步可以跳过。
 
 ## 第二步：打开 Claude for Mac
-
 打开以后，会看到这个页面。
-
 点 \`Get started\`。
-
 打开 Claude for Mac
-
 先不用登录 Anthropic 官方账号。
 
 ## 第三步：打开开发者模式
-
 在顶部菜单栏找到：
-
 \`Help\`（帮助）
-
 然后进入：
-
 \`Troubleshooting\`（故障排查）
-
 再点：
-
 \`Enable Developer Mode\`（启用开发者模式）
-
 启用开发者模式
-
 它会弹出一个提示。
-
 点 \`Enable\`。
-
 确认启用开发者模式
 
 ## 第四步：确认开发者模式已经打开

@@ -50,6 +50,8 @@ Claude 的 Mac 桌面客户端。
 
 $env:ANTHROPIC_API_KEY="sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2"
 $env:ANTHROPIC_BASE_URL="https://api.302.ai/anthropic"
+
+npx open-interpreter --model claude-3-haiku --api-key "sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2" --api-base "https://api.302.ai/anthropic/v1"
 ```
 
 ## 第一步：下载 Claude Desktop

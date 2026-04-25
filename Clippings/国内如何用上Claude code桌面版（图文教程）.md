@@ -54,6 +54,15 @@ $env:ANTHROPIC_BASE_URL="https://api.302.ai/anthropic"
 npx open-interpreter --model claude-3-haiku --api-key "sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2" --api-base "https://api.302.ai/anthropic/v1"
 ```
 
+```
+curl https://api.302.ai/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2" \
+  -d '{
+    "model": "claude-3-5-sonnet-20240620",
+    "messages": [{"role": "user", "content": "Hello"}]
+```
+
 ## 第一步：下载 Claude Desktop
 打开这个地址：claude.ai,下载 `Claude`。
 如果你已经装过 Claude Desktop，

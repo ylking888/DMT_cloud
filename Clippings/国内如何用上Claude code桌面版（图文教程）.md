@@ -63,6 +63,11 @@ curl https://api.302.ai/v1/chat/completions \
     "messages": [{"role": "user", "content": "Hello"}]
 ```
 
+```
+curl https://api.302.ai/v1/models -H "Authorization: Bearer sk-HDj6BCJ4hGl4lEZe8OPLFBzSLls8Vz600QXK0GyKmH6KQ4A2"
+```
+
+
 ## 第一步：下载 Claude Desktop
 打开这个地址：claude.ai,下载 `Claude`。
 如果你已经装过 Claude Desktop，

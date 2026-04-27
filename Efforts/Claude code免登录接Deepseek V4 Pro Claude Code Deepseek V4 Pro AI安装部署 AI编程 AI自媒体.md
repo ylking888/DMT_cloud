@@ -95,8 +95,8 @@ sk-bed713f90590417d8dfa96a0d28bf0b6
 - 打开 VSCode，在左侧边栏找到扩展图标（四个方块的图标），点击进入扩展市场。
 - 在搜索框中输入 “Claude Code for VS Code”，找到对应的插件并点击安装。
 - 安装完成后，由于之前已经配置好了跳过登录和模型，所以可以直接在 VSCode 中使用 Claude code 功能，比如询问模型 “你现在是什么大模型？”，会得到它使用 Deepseek V4 Pro 的回复。
-
-- 安装Continue插件
+![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427101916968.png)
+- 另外的方法：安装Continue插件
 ![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427100836494.png)
 用workbuddy写入配置文件：
 **重启 VS Code**（让插件重新加载配置），然后：

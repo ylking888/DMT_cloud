@@ -87,13 +87,11 @@ sk-bed713f90590417d8dfa96a0d28bf0b6
 - 在配置项中，填写模型名称为 deepseek-v4-pro，然后输入之前获取的 Deepseek API Key。
 - 保存配置。
 
-#### 3\. 验证 Claude code 接入 Deepseek V4 Pro
-
+#### 3、 验证 Claude code 接入 Deepseek V4 Pro
 - 关闭 CC Switch，然后打开 Claude code（可在终端中直接输入 claude 启动）。
 - 此时可以看到 Claude code 后台使用的模型已经是 Deepseek V4 Pro 了。
 
 ### 四、在 VSCode 中使用 Claude code
-
 - 打开 VSCode，在左侧边栏找到扩展图标（四个方块的图标），点击进入扩展市场。
 - 在搜索框中输入 “Claude Code for VS Code”，找到对应的插件并点击安装。
 - 安装完成后，由于之前已经配置好了跳过登录和模型，所以可以直接在 VSCode 中使用 Claude code 功能，比如询问模型 “你现在是什么大模型？”，会得到它使用 Deepseek V4 Pro 的回复。

@@ -90,7 +90,7 @@ sk-bed713f90590417d8dfa96a0d28bf0b6
 #### 3、 验证 Claude code 接入 Deepseek V4 Pro
 - 关闭 CC Switch，然后打开 Claude code（可在终端中直接输入 claude 启动）。
 - 此时可以看到 Claude code 后台使用的模型已经是 Deepseek V4 Pro 了。
-
+![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427095844221.png)
 ### 四、在 VSCode 中使用 Claude code
 - 打开 VSCode，在左侧边栏找到扩展图标（四个方块的图标），点击进入扩展市场。
 - 在搜索框中输入 “Claude Code for VS Code”，找到对应的插件并点击安装。

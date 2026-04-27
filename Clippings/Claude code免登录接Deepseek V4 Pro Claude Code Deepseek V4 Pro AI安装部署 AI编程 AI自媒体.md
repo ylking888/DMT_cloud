@@ -38,7 +38,7 @@ v24.15.0
 C:\Windows\system32>claude --version
 2.1.119 (Claude Code)
 ```
-#### 3\. 下载并安装 CC Switch
+#### ✅3、 下载并安装 CC Switch
 - **作用** ：开源工具，用于添加和配置 Deepseek 等大模型。
 - **下载地址** ：可在其开源仓库（如 GitHub）或相关资源站查找下载，确保下载的是官方正规版本。
 - **安装步骤** ：
@@ -46,13 +46,25 @@ C:\Windows\system32>claude --version
 	2：安装 CC Switch 找到下载好的 exe 安装包，双击运行。 按照安装向导的提示，一路点击 “下一步”“安装” 等按钮，即可完成安装。 安装完成后，你就可以打开 CC Switch 来配置 Deepseek V4 Pro 模型了。
 我下的是这个[发行版 CC Switch v3.14.1 · farion1231/cc-switch](https://github.com/farion1231/cc-switch/releases/tag/v3.14.1)
 
-#### 4\. 安装 VSCode（可选，为了更方便使用）
+#### ✅4、 安装 VSCode（可选，为了更方便使用）
 - **作用** ：代码编辑器，可安装 Claude code 插件，在其中直接使用大模型功能。
 - **下载地址** ：https://code.visualstudio.com/
 - **安装步骤** ：进入官网下载对应系统的安装包，运行后按照提示安装即可。
+##### 第一次打开VSCode 设置中文界面两种方法：
+- 方法一：命令面板（推荐） 
+  1. 打开 VSCode 后，按快捷键： Ctrl + Shift + P
+  2. 在弹出的命令面板里输入： Configure Display Language
+  3. 选择 zh-cn（如果没有会提示安装中文语言包） 
+  4. 点击 Restart 重启 VSCode 即生效
+  ![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427085320847.png)
+- 方法二：安装中文语言包扩展 
+1. 按 Ctrl + Shift + X 打开扩展市场 
+2. 搜索： Chinese (Simplified)
+3. 找到 Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code（微软官方出品） 
+4. 点击 Install 安装 
+5. 安装完右下角会弹出提示，点击 Restart and Switch to Chinese Simplified 即可
 
 ### 二、跳过 Claude code 登录
-
 - 找到 Claude 的配置文件：
 	- Windows 系统：在文件资源管理器中输入 %USERPROFILE%\\.claude.json 并回车，找到该文件。
 		- macOS/Linux 系统：在终端输入 cd ~，然后找到.claude.json 文件。

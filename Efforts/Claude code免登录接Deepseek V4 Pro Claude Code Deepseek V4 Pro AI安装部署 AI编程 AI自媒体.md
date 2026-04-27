@@ -56,7 +56,7 @@ C:\Windows\system32>claude --version
   2. 在弹出的命令面板里输入： Configure Display Language
   3. 选择 zh-cn（如果没有会提示安装中文语言包） 
   4. 点击 Restart 重启 VSCode 即生效
-  ![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427085320847.png)
+  ![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427100836498.png)
 - 方法二：安装中文语言包扩展 
 1. 按 Ctrl + Shift + X 打开扩展市场 
 2. 搜索： Chinese (Simplified)
@@ -90,8 +90,11 @@ sk-bed713f90590417d8dfa96a0d28bf0b6
 #### 3、 验证 Claude code 接入 Deepseek V4 Pro
 - 关闭 CC Switch，然后打开 Claude code（可在终端中直接输入 claude 启动）。
 - 此时可以看到 Claude code 后台使用的模型已经是 Deepseek V4 Pro 了。
-![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427095844221.png)
+![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427100836496.png)
 ### 四、在 VSCode 中使用 Claude code
 - 打开 VSCode，在左侧边栏找到扩展图标（四个方块的图标），点击进入扩展市场。
 - 在搜索框中输入 “Claude Code for VS Code”，找到对应的插件并点击安装。
 - 安装完成后，由于之前已经配置好了跳过登录和模型，所以可以直接在 VSCode 中使用 Claude code 功能，比如询问模型 “你现在是什么大模型？”，会得到它使用 Deepseek V4 Pro 的回复。
+
+- 安装Continue插件
+![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427100836494.png)

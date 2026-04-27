@@ -66,7 +66,7 @@ C:\Windows\system32>claude --version
 
 ### 二、跳过 Claude code 登录
 - 找到 Claude 的配置文件：
-	- Windows 系统：在文件资源管理器中输入 %USERPROFILE%\\.claude.json 并回车，找到该文件。
+	- Windows 系统：在文件资源管理器中输入 %USERPROFILE%\.claude.json 并回车，找到该文件。
 		- macOS/Linux 系统：在终端输入 cd ~，然后找到.claude.json 文件。
 - 编辑该文件，添加以下内容：
 

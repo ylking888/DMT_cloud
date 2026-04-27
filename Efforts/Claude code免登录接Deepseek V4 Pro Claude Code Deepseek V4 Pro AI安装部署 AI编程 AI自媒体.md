@@ -106,5 +106,5 @@ sk-bed713f90590417d8dfa96a0d28bf0b6
 | `Ctrl+L` | 打开 AI 对话面板，问编程问题 |
 | `Ctrl+I` | 选中一段代码，让 AI 帮你修改/解释 |
 | 打字时 `Tab` | 接受 DeepSeek Coder 的自动补全建议 |
-
 左侧活动栏会出现 Continue 的图标（一个圆形 logo），点进去就是对话界面。
+![](assets/Claude%20code免登录接Deepseek%20V4%20Pro%20Claude%20Code%20Deepseek%20V4%20Pro%20AI安装部署%20AI编程%20AI自媒体/file-20260427101513134.png)

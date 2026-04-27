@@ -69,17 +69,13 @@ C:\Windows\system32>claude --version
 	- Windows 系统：在文件资源管理器中输入 %USERPROFILE%\.claude.json 并回车，找到该文件。
 		- macOS/Linux 系统：在终端输入 cd ~，然后找到.claude.json 文件。
 - 编辑该文件，添加以下内容：
-
-json
-
+```json
 { "hasCompletedOnboarding": true }
-
+```
 - 保存文件，这样就可以跳过 Claude code 的登录步骤了。
 
 ### 三、配置 Deepseek V4 Pro 模型
-
 #### 1\. 获取 Deepseek API Key
-
 - 进入 Deepseek 官网 https://platform.deepseek.com/sign\_in ，注册账号并登录。
 - 找到 API 开放平台相关入口，创建并获取 API Key，记住这个 Key，后续会用到。
 

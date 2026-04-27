@@ -75,12 +75,13 @@ C:\Windows\system32>claude --version
 - 保存文件，这样就可以跳过 Claude code 的登录步骤了。
 
 ### 三、配置 Deepseek V4 Pro 模型
-#### 1\. 获取 Deepseek API Key
-- 进入 Deepseek 官网 https://platform.deepseek.com/sign\_in ，注册账号并登录。
+#### 1、获取 Deepseek API Key
+- 进入 Deepseek 官网 https://platform.deepseek.com/sign\_in ，注册账号并登录。我是用谷歌账号登录的。之前有充值记录。
 - 找到 API 开放平台相关入口，创建并获取 API Key，记住这个 Key，后续会用到。
-
-#### 2\. 在 CC Switch 中添加 Deepseek V4 Pro 模型
-
+```
+sk-bed713f90590417d8dfa96a0d28bf0b6
+```
+#### 2、在 CC Switch 中添加 Deepseek V4 Pro 模型
 - 打开 CC Switch 软件。
 - 找到添加模型的入口，选择添加 Deepseek 模型。
 - 在配置项中，填写模型名称为 deepseek-v4-pro，然后输入之前获取的 Deepseek API Key。

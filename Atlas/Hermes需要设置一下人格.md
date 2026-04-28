@@ -62,11 +62,3 @@ agent:
 确认配置文件中dashboard.language设置正确
 更新 WebUI 到最新版本
 完成以上设置后，Hermes Agent 将永久默认使用中文界面和中文回答，无需每次手动切换。
-
-### **拉格朗日方程的基本形式**
-
-对于一个具有广义坐标 $q_i$ 和广义速度 $\dot{q}_i$ 的系统，拉格朗日方程为： $$ \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_i} \right) - \frac{\partial L}{\partial q_i} = 0 $$ 其中：
-
-- $L = T - V$ 是系统的拉格朗日量（动能 $ T $ 减去势能 $ V $）。
-- $q_i$ 是广义坐标（如角度、位移等）。
-- $\dot{q}_i$ 是广义速度（广义坐标的导数）。

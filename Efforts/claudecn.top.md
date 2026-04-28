@@ -26,3 +26,10 @@ https://jp.claudecn.top
 ### 模型列表
 ![](assets/claudecn.top/file-20260428101007574.png)
 ## CC Switch
+### 右上角+号
+### 自定义配置
+名称：`ClaudeCN`（可以自定义）
+官网链接：`https://claudecn.top/console`
+API Key：`sk-xEgBsbagdeq1rPDpoFSl4F4zVz2vlJFH95sERboCV8bRRMwY`（刚才申请的）
+请求地址：`https://claudecn.top`（在仪表盘—BaseUrl）
+高级设置（选模型）：在模型列表里面选择你想要的模型，复制名称，粘贴到这边

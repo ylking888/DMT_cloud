@@ -21,8 +21,7 @@ tags:
 ## 🎤 演讲者模式（全新）
 
 在任何 deck 里按 `S` 键，弹出一个独立的演讲者窗口，包含 4 个 **可拖拽、 可调整大小的磁吸卡片** ：当前页预览、下一页预览、逐字稿、计时器。两个窗口 通过 `BroadcastChannel` 双向同步翻页。
-
-[![演讲者模式 · 4 个磁吸卡片](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/presenter-mode.png)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/presenter-mode.png)
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161158564.png)
 
 **为什么预览是像素级完美的：** 每个卡片是一个 `<iframe>` ，加载的是 **同一 份 deck HTML 文件** ，只是 URL 多了 `?preview=N` 参数。runtime 检测到这个 参数后，只渲染第 N 页并隐藏所有 chrome —— 所以预览使用 **和观众视图完全相 同的 CSS、主题、字体、viewport** ，颜色和排版保证 100% 一致。
 
@@ -63,7 +62,6 @@ npx skills add https://github.com/lewislulu/html-ppt-skill
 
 `minimal-white` 、 `editorial-serif` 、 `soft-pastel` 、 `sharp-mono` 、 `arctic-cool` 、 `sunset-warm` 、 `catppuccin-latte` 、 `catppuccin-mocha` 、 `dracula` 、 `tokyo-night` 、 `nord` 、 `solarized-light` 、 `gruvbox-dark` 、 `rose-pine` 、 `neo-brutalism` 、 `glassmorphism` 、 `bauhaus` 、 `swiss-grid` 、 `terminal-green` 、 `xiaohongshu-white` 、 `rainbow-gradient` 、 `aurora` 、 `blueprint` 、 `memphis-pop` 、 `cyberpunk-neon` 、 `y2k-chrome` 、 `retro-tv` 、 `japanese-minimal` 、 `vaporwave` 、 `midcentury` 、 `corporate-clean` 、 `academic-paper` 、 `news-broadcast` 、 `pitch-deck-vc` 、 `magazine-bold` 、 `engineering-whiteprint`
 
-[![36 主题 · 其中 8 个](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/themes.png)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/themes.png)
 
 每个主题都是一份纯 CSS token 文件 —— 只需要换一行 `<link>` 就能给整份 deck 换皮。在 `templates/theme-showcase.html` 里可以浏览全部（每一页用独立 iframe 渲染，避免样式互相污染）。
 

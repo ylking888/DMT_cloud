@@ -28,3 +28,27 @@ hermes memory setup
 - Pandoc
 - Marker
 搜索增强/格式转换/PDF 增强
+
+## 5 多模态表达:听说读画
+不止会打字，还能听、说、画
+多模态能力，内容生产更强大
+- Whisper
+- Edge TTS
+- Fal.ai
+- FLUX Skill
+语音识别/语音合成/图像生成
+
+## 6 效率与成本：精细掌控
+看清消耗，压缩输出，自动优化
+让每一分 Token 都花在刀刃上
+- Tokscale 成本总览与趋势分析
+- hermes-hudui 多维度成本拆解
+- RTK 终稿输出压缩器
+- Self - evolution 让 Hermes 自我进化
+
+## 7 生态入口：资源总入口
+不重复造轮子，站在生态的肩膀上
+让 Hermes 成为你的能力平台
+- awesome-hermes-agent
+- hermes-ecosystem
+资源目录/能力地图

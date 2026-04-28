@@ -61,12 +61,9 @@ npx skills add https://github.com/lewislulu/html-ppt-skill
 ### 36 套主题
 
 `minimal-white` 、 `editorial-serif` 、 `soft-pastel` 、 `sharp-mono` 、 `arctic-cool` 、 `sunset-warm` 、 `catppuccin-latte` 、 `catppuccin-mocha` 、 `dracula` 、 `tokyo-night` 、 `nord` 、 `solarized-light` 、 `gruvbox-dark` 、 `rose-pine` 、 `neo-brutalism` 、 `glassmorphism` 、 `bauhaus` 、 `swiss-grid` 、 `terminal-green` 、 `xiaohongshu-white` 、 `rainbow-gradient` 、 `aurora` 、 `blueprint` 、 `memphis-pop` 、 `cyberpunk-neon` 、 `y2k-chrome` 、 `retro-tv` 、 `japanese-minimal` 、 `vaporwave` 、 `midcentury` 、 `corporate-clean` 、 `academic-paper` 、 `news-broadcast` 、 `pitch-deck-vc` 、 `magazine-bold` 、 `engineering-whiteprint`
-
-
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161411045.png)
 每个主题都是一份纯 CSS token 文件 —— 只需要换一行 `<link>` 就能给整份 deck 换皮。在 `templates/theme-showcase.html` 里可以浏览全部（每一页用独立 iframe 渲染，避免样式互相污染）。
-
-[![15 套完整 deck 模板](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/templates.png)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/templates.png)
-
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161429772.png)
 ### 15 套完整 deck 模板
 
 8 个从真实作品提炼的视觉语言，7 个通用场景脚手架：
@@ -93,9 +90,7 @@ npx skills add https://github.com/lewislulu/html-ppt-skill
 - **`presenter-mode-reveal`** 🎤 — 完整分享模板， **每一页都带 150-300 字 的示例逐字稿** ，围绕 `S` 键演讲者模式专门设计
 
 每个模板都是自包含的文件夹，用 scoped `.tpl-<name>` CSS，所以多个模板可以 同时加载不会互相污染。在 `templates/full-decks-index.html` 可以看全套 gallery。
-
-[![31 种单页布局](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/layouts.png)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/layouts.png)
-
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161531155.png)
 ### 31 种单页布局
 
 cover · toc · section-divider · bullets · two-column · three-column · big-quote · stat-highlight · kpi-grid · table · code · diff · terminal · flow-diagram · timeline · roadmap · mindmap · comparison · pros-cons · todo-checklist · gantt · image-hero · image-grid · chart-bar · chart-line · chart-pie · chart-radar · arch-diagram · process-steps · cta · thanks

@@ -50,7 +50,7 @@ npm init -y       # 全部使用默认值，快速创建
 npm install                    # 安装 package.json 中所有依赖
 npm install express            # 安装到 dependencies（生产依赖）
 npm install typescript -D      # 安装到 devDependencies（开发依赖）
-npm install -g nodemon         # 全局安装（-g 就是你刚才用的方式）
+npm install -g nodemon         # 全局安装-g 
 ```
 
 ### 卸载依赖
@@ -123,7 +123,7 @@ optionalDependencies # 可选依赖，安装失败不影响整体
 
 ---
 
-## 关于你刚才的操作
+## 具体示例操作
 
 ```bash
 npm install -g 302cc

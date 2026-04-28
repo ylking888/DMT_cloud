@@ -1,5 +1,5 @@
 >[!hongse] 我们需要**一个链接、一个密钥、一个模型名字**
-
+## 中转站配置
 ### 官网地址
 [ClaudeCN - 让世界顶尖 AI，触手可及](https://claudecn.top/)
 
@@ -25,3 +25,4 @@ https://jp.claudecn.top
 ```
 ### 模型列表
 ![](assets/claudecn.top/file-20260428101007574.png)
+## CC Switch

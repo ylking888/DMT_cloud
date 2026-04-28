@@ -8,8 +8,7 @@ description: "HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ ani
 tags:
   - "clippings"
 ---
-#开源地址：[lewislulu/html-ppt-skill: HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations](https://github.com/lewislulu/html-ppt-skill)
-![](assets/Html-PPT-Skill2/file-20260428162738962.png)
+#开源地址[lewislulu/html-ppt-skill: HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations](https://github.com/lewislulu/html-ppt-skill)
 中文说明：[html-ppt-skill/README.zh-CN.md at main · lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill/blob/main/README.zh-CN.md)
 ## html-ppt · HTML PPT 工作室
 

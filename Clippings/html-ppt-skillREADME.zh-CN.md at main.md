@@ -96,8 +96,7 @@ npx skills add https://github.com/lewislulu/html-ppt-skill
 cover · toc · section-divider · bullets · two-column · three-column · big-quote · stat-highlight · kpi-grid · table · code · diff · terminal · flow-diagram · timeline · roadmap · mindmap · comparison · pros-cons · todo-checklist · gantt · image-hero · image-grid · chart-bar · chart-line · chart-pie · chart-radar · arch-diagram · process-steps · cta · thanks
 
 每个布局都带真实的示例数据，拖进 deck 立即看得到效果。
-
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161544257.png)
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161820376.gif)
 *大 iframe 直接加载 `templates/single-page/<name>.html` 文件，每 2.8 秒 自动切换到下一个布局。*
 ![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161618423.png)
 ### 27 个 CSS 动画 + 20 个 Canvas FX

@@ -97,12 +97,9 @@ cover · toc · section-divider · bullets · two-column · three-column · big-
 
 每个布局都带真实的示例数据，拖进 deck 立即看得到效果。
 
-[![31 种布局通过真实模板文件自动循环播放](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/layouts-live.gif)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/layouts-live.gif)
-
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161544257.png)
 *大 iframe 直接加载 `templates/single-page/<name>.html` 文件，每 2.8 秒 自动切换到下一个布局。*
-
-[![47 个动效 · 27 CSS + 20 Canvas FX](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/animations.png)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/animations.png)
-
+![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161618423.png)
 ### 27 个 CSS 动画 + 20 个 Canvas FX
 
 **CSS 动画（轻量）** — 方向性淡入、 `rise-in` 、 `zoom-pop` 、 `blur-in` 、 `glitch-in` 、 `typewriter` （打字机）、 `neon-glow` （霓虹光晕）、 `shimmer-sweep` （流光）、 `gradient-flow` （渐变流动）、 `stagger-list` （列表错开入场）、 `counter-up` （数字滚动）、 `path-draw` （路径绘制）、 `morph-shape` 、 `parallax-tilt` 、 `card-flip-3d` 、 `cube-rotate-3d` 、 `page-turn-3d` 、 `perspective-zoom` 、 `marquee-scroll` 、 `kenburns` 、 `ripple-reveal` 、 `spotlight` 、…

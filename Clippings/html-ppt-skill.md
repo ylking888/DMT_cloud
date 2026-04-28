@@ -13,22 +13,16 @@ tags:
 > 一款专业级的 AgentSkill，让 AI 做出真正能打的 HTML 演示文稿。 **36 套主题** 、 **15 套完整 deck 模板** 、 **31 种页面布局** 、 **47 个动效** (27 个 CSS + 20 个 Canvas FX)，加上全新的 **演讲者模式** —— 像素级 完美预览 + 逐字稿提词器 + 计时器。纯静态 HTML/CSS/JS，无需构建。
 
 **作者：** lewis < [sudolewis@gmail.com](mailto:sudolewis@gmail.com) > **协议：** MIT **English docs:** [README.md](https://github.com/lewislulu/html-ppt-skill/blob/main/README.md)
-
-[![html-ppt 封面 · 实时预览](https://github.com/lewislulu/html-ppt-skill/raw/main/docs/readme/hero.gif)](https://github.com/lewislulu/html-ppt-skill/blob/main/docs/readme/hero.gif)
-
+![](assets/html-ppt-skill/file-20260428162529791.gif)
 > 一行命令装好 **36 主题 × 20 Canvas FX × 31 布局 × 15 完整 deck + 演讲者模式** 。 上图里的每一个预览都是真实的 iframe 加载真实模板文件 —— 不是截图，不是色卡。
-
 ## 🎤 演讲者模式（全新）
-
 在任何 deck 里按 `S` 键，弹出一个独立的演讲者窗口，包含 4 个 **可拖拽、 可调整大小的磁吸卡片** ：当前页预览、下一页预览、逐字稿、计时器。两个窗口 通过 `BroadcastChannel` 双向同步翻页。
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161158564.png)
-
+![](assets/html-ppt-skill/file-20260428162528102.png)
 **为什么预览是像素级完美的：** 每个卡片是一个 `<iframe>` ，加载的是 **同一 份 deck HTML 文件** ，只是 URL 多了 `?preview=N` 参数。runtime 检测到这个 参数后，只渲染第 N 页并隐藏所有 chrome —— 所以预览使用 **和观众视图完全相 同的 CSS、主题、字体、viewport** ，颜色和排版保证 100% 一致。
 
 **丝滑翻页（零闪烁）：** 翻页时演讲者窗口通过 `postMessage({type:'preview-goto', idx:N})` 通知 iframe，iframe 只是切换 `.is-active` class —— **不重新加载、 不白屏、不闪烁** 。
 
 **逐字稿 3 条铁律：**
-
 1. **提示信号，不是讲稿** — 关键词加粗，过渡句独立成段
 2. **每页 150–300 字** — 约 2–3 分钟/页的节奏
 3. **用口语，不用书面语** — "所以" 不是 "因此"，"这个" 不是 "该"
@@ -36,11 +30,9 @@ tags:
 详见 [`references/presenter-mode.md`](https://github.com/lewislulu/html-ppt-skill/blob/main/references/presenter-mode.md) ，或直接复制 `templates/full-decks/presenter-mode-reveal/` 这个现成模板 —— 每一页都带完整 150–300 字的示例逐字稿。
 
 ## 一行命令安装
-
 ```
 npx skills add https://github.com/lewislulu/html-ppt-skill
 ```
-
 装好后，任何支持 AgentSkill 的 agent（Claude Code / Codex / Cursor / OpenClaw 等） 都能用这套能力做 PPT。对 agent 说：
 
 > "做一份 8 页的技术分享 slides，用 cyberpunk 主题" "把这段 outline 变成投资人 pitch deck" "做一个小红书图文，9 张，白底柔和风" "做一份带演讲者模式的产品分享，我想要有逐字稿"
@@ -61,9 +53,9 @@ npx skills add https://github.com/lewislulu/html-ppt-skill
 ### 36 套主题
 
 `minimal-white` 、 `editorial-serif` 、 `soft-pastel` 、 `sharp-mono` 、 `arctic-cool` 、 `sunset-warm` 、 `catppuccin-latte` 、 `catppuccin-mocha` 、 `dracula` 、 `tokyo-night` 、 `nord` 、 `solarized-light` 、 `gruvbox-dark` 、 `rose-pine` 、 `neo-brutalism` 、 `glassmorphism` 、 `bauhaus` 、 `swiss-grid` 、 `terminal-green` 、 `xiaohongshu-white` 、 `rainbow-gradient` 、 `aurora` 、 `blueprint` 、 `memphis-pop` 、 `cyberpunk-neon` 、 `y2k-chrome` 、 `retro-tv` 、 `japanese-minimal` 、 `vaporwave` 、 `midcentury` 、 `corporate-clean` 、 `academic-paper` 、 `news-broadcast` 、 `pitch-deck-vc` 、 `magazine-bold` 、 `engineering-whiteprint`
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161411045.png)
+![](assets/html-ppt-skill/file-20260428162528100.png)
 每个主题都是一份纯 CSS token 文件 —— 只需要换一行 `<link>` 就能给整份 deck 换皮。在 `templates/theme-showcase.html` 里可以浏览全部（每一页用独立 iframe 渲染，避免样式互相污染）。
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161429772.png)
+![](assets/html-ppt-skill/file-20260428162528099.png)
 ### 15 套完整 deck 模板
 
 8 个从真实作品提炼的视觉语言，7 个通用场景脚手架：
@@ -90,15 +82,15 @@ npx skills add https://github.com/lewislulu/html-ppt-skill
 - **`presenter-mode-reveal`** 🎤 — 完整分享模板， **每一页都带 150-300 字 的示例逐字稿** ，围绕 `S` 键演讲者模式专门设计
 
 每个模板都是自包含的文件夹，用 scoped `.tpl-<name>` CSS，所以多个模板可以 同时加载不会互相污染。在 `templates/full-decks-index.html` 可以看全套 gallery。
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161531155.png)
+![](assets/html-ppt-skill/file-20260428162528098.png)
 ### 31 种单页布局
 
 cover · toc · section-divider · bullets · two-column · three-column · big-quote · stat-highlight · kpi-grid · table · code · diff · terminal · flow-diagram · timeline · roadmap · mindmap · comparison · pros-cons · todo-checklist · gantt · image-hero · image-grid · chart-bar · chart-line · chart-pie · chart-radar · arch-diagram · process-steps · cta · thanks
 
 每个布局都带真实的示例数据，拖进 deck 立即看得到效果。
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161820376.gif)
+![](assets/html-ppt-skill/file-20260428162528090.gif)
 *大 iframe 直接加载 `templates/single-page/<name>.html` 文件，每 2.8 秒 自动切换到下一个布局。*
-![](assets/html-ppt-skillREADME.zh-CN.md%20at%20main/file-20260428161618423.png)
+![](assets/html-ppt-skill/file-20260428162528096.png)
 ### 27 个 CSS 动画 + 20 个 Canvas FX
 
 **CSS 动画（轻量）** — 方向性淡入、 `rise-in` 、 `zoom-pop` 、 `blur-in` 、 `glitch-in` 、 `typewriter` （打字机）、 `neon-glow` （霓虹光晕）、 `shimmer-sweep` （流光）、 `gradient-flow` （渐变流动）、 `stagger-list` （列表错开入场）、 `counter-up` （数字滚动）、 `path-draw` （路径绘制）、 `morph-shape` 、 `parallax-tilt` 、 `card-flip-3d` 、 `cube-rotate-3d` 、 `page-turn-3d` 、 `perspective-zoom` 、 `marquee-scroll` 、 `kenburns` 、 `ripple-reveal` 、 `spotlight` 、…

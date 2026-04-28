@@ -15,7 +15,7 @@ tags:
 一个 [Claude Code / Claude Agent Skills](https://agentskills.io/) 技能,用于生成 **单文件 HTML 横向翻页 PPT**,视觉基调是" **电子杂志 × 电子墨水** "——像 *Monocle* 贴上了代码的样子。
 
 > 由 [歸藏](https://x.com/op7418) 在"一人公司:被 AI 折叠的组织"、"一种新的工作方式"等线下分享中沉淀而成,踩过的每一个坑都写进了 `checklist.md` 。
-![](assets/Magazine%20Web%20PPT%20·%20电子杂志风网页%20PPT%20Skill/file-20260428163831993.png)
+![](assets/Magazine%20Web%20PPT%20·%20电子杂志风网页%20PPT%20Skill/file-20260428164918782.png)
 ## 效果
 
 - 🖋 **衬线大标题 + 非衬线正文 + 等宽元数据** 的三级字体分工

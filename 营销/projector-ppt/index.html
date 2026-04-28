@@ -3,22 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[必填] 替换为 PPT 标题 · Deck Title</title>
+<title>家用投影仪深度对比 · J10S vs X30 vs Q30</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    /* ============ 主题色(默认:🖋 墨水经典) ============
-       切换主题:从 references/themes.md 复制对应的 :root 块
-       整体替换这几行(--ink / --ink-rgb / --paper / --paper-rgb)
-       其他地方散落的 rgba() 都走 var(--ink-rgb) / var(--paper-rgb),无需逐处改 */
-    --ink:#0a0a0b;
-    --ink-rgb:10,10,11;
-    --paper:#f1efea;
-    --paper-rgb:241,239,234;
-    --paper-tint:#e8e5de;
-    --ink-tint:#18181a;
+    /* ============ 主题色：靛蓝瓷 ============ */
+    --ink:#0a1f3d;
+    --ink-rgb:10,31,61;
+    --paper:#f1f3f5;
+    --paper-rgb:241,243,245;
+    --paper-tint:#e4e8ec;
+    --ink-tint:#152a4a;
 
     /* ============ 字体(跨主题固定) ============ */
     --mono:"IBM Plex Mono",ui-monospace,monospace;
@@ -38,7 +35,6 @@
   body.light-bg canvas#bg-dark{opacity:0}
 
   /* ============ Deck 容器 + 翻页 ============ */
-  /* width: NSLIDES * 100vw，会在 JS 里动态矫正 */
   #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .9s cubic-bezier(.77,0,.175,1);z-index:10;will-change:transform}
   .slide{width:100vw;height:100vh;flex:0 0 100vw;position:relative;padding:6vh 6vw 10vh 6vw;display:flex;flex-direction:column;overflow:hidden}
   .slide.light{color:var(--ink)}
@@ -67,11 +63,7 @@
   .rule{width:100%;height:1px;background:currentColor;opacity:.25;margin:3vh 0}
   .rule.v{width:1px;height:100%;margin:0}
 
-  /* ============ 字体规则 ============
-     · 衬线（Noto Serif SC / Playfair）：大标题、重点金句、数字
-     · 非衬线（Noto Sans SC）：正文描述、body、补充说明
-     · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
-  */
+  /* ============ 字体规则 ============ */
   .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
   .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
   .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
@@ -150,7 +142,7 @@
   .ico-md{width:1.8vw;height:1.8vw;stroke-width:1.3;display:inline-block;vertical-align:-.4em}
   .ico-sm{width:1.1vw;height:1.1vw;stroke-width:1.4;display:inline-block;vertical-align:-.15em;opacity:.7}
 
-  /* ============ 图片占位（虚线框，提示设计师位置） ============ */
+  /* ============ 图片占位 ============ */
   .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
   .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
   .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
@@ -159,10 +151,7 @@
   .img-slot.r-3x2{aspect-ratio:3/2}
   .img-slot.r-1x1{aspect-ratio:1/1}
 
-  /* ============ 图片实填框（关键：固定高度 + 只裁底部） ============
-     重要约束：高度用内联 height:Nvh 精确控制，不要用 aspect-ratio（会撑破布局）
-     object-position:top center 保证严禁裁剪顶部和左右，只裁剪底部
-  */
+  /* ============ 图片实填框 ============ */
   .frame-img{overflow:hidden;position:relative;background:rgba(0,0,0,.04);box-sizing:border-box;width:100%;border-radius:4px}
   .slide.dark .frame-img{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
   .frame-img > img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
@@ -185,20 +174,17 @@
 
   /* ============================================================
      ============ LAYOUTS API · 面向 agent 的类（v2）============
-     所有 layouts.md 中的骨架都基于下面这套命名。
-     如果你在 layouts.md 里看到某个类，它必须在下面有定义。
      ============================================================ */
 
   /* ---------- .frame：每页主内容容器 ---------- */
   .frame{flex:1;display:flex;flex-direction:column;min-height:0;overflow:hidden}
-  /* 当 .frame 同时加了 grid 类时，grid 的 display:grid 覆盖 flex */
   .frame.grid-2-7-5,
   .frame.grid-2-6-6,
   .frame.grid-2-8-4,
   .frame.grid-3-3,
   .frame.grid-6{display:grid}
 
-  /* ---------- 标题层级（API 名称，衬线为主） ---------- */
+  /* ---------- 标题层级 ---------- */
   .h-hero{
     font-family:var(--serif-zh);
     font-weight:900;
@@ -227,7 +213,6 @@
     font-size:2.3vw;
     line-height:1.3;
   }
-  /* 英文标题专用（Playfair 衬线） */
   .h-hero-en,.h-xl-en{font-family:var(--serif-en);letter-spacing:-.025em}
 
   /* ---------- lead 引语 ---------- */
@@ -294,9 +279,7 @@
     opacity:.72;
     margin-top:.6vh;
   }
-  /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
   .grid-4 .stat-card .stat-nb{font-size:5vw}
-  /* 当只有 3 个，字也可以稍大 */
   .grid-3 .stat-card .stat-nb{font-size:6.8vw}
 
   /* ---------- pipeline（流水线） ---------- */
@@ -356,8 +339,7 @@
     opacity:.72;
   }
 
-  /* ---------- 网格（layouts.md 所用） ---------- */
-  /* 这些类独立挂到任何容器上都能生效，不依赖 .frame 复合选择器 */
+  /* ---------- 网格 ---------- */
   .grid-2-7-5{display:grid;grid-template-columns:7fr 5fr;gap:3vw 4vh;align-items:start}
   .grid-2-6-6{display:grid;grid-template-columns:1fr 1fr;gap:3vw 4vh;align-items:start}
   .grid-2-8-4{display:grid;grid-template-columns:8fr 4fr;gap:3vw 4vh;align-items:start}
@@ -367,10 +349,8 @@
     grid-auto-rows:minmax(0,1fr);
     gap:2.4vh 2vw;
   }
-  /* grid-6 已在旧样式里定义为 3x2，这里仅补 align */
 
-  /* ---------- 图片 frame-img（layouts.md 主命名） ---------- */
-  /* 在旧样式里已定义，这里补 img-cap 命名别名与增强 */
+  /* ---------- img-cap / callout-src ---------- */
   figure.frame-img{margin:0;display:flex;flex-direction:column;min-width:0}
   .img-cap{
     display:block;
@@ -381,7 +361,6 @@
     text-transform:uppercase;
     opacity:.6;
   }
-  /* callout src 命名别名 */
   .callout-src{
     display:block;
     margin-top:1.6vh;
@@ -392,19 +371,11 @@
     opacity:.6;
   }
 
-  /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
+  /* ---------- chrome & foot 补位 ---------- */
   .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
   .foot{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
 
-  /* ============ 动效系统(Motion One 驱动) ============
-     所有 [data-anim] 元素默认隐藏,进入页面时由 JS 逐个揭示。
-     - cascade(默认):按 DOM 顺序 stagger 120ms 淡入 + y:16→0
-     - hero(hero 页自动):慢一点的 stagger 180ms
-     - quote(含 [data-anim="line"]):逐行 600ms 淡入
-     - directional(含 [data-anim="left|right"]):左→分隔线→右
-     - pipeline(data-animate="pipeline"):Space/→ 手动推进
-     Motion One 没加载成功时(CDN 断 + 本地丢),所有 [data-anim] 会兜底显示。
-  */
+  /* ============ 动效系统 ============ */
   [data-anim]{opacity:0}
   [data-anim="left"]{transform:translateX(-24px)}
   [data-anim="right"]{transform:translateX(24px)}
@@ -432,23 +403,607 @@
 <div id="deck">
 
 <!-- ============================================================
-     SLIDES 插入区 · 在此处填充所有 <section class="slide ..."> 页面
-     每页模板参考 references/page-patterns.md
-     页面组件参考 references/components.md
+     PAGE 1 · 封面
      ============================================================ -->
+<section class="slide hero dark">
+  <div class="chrome">
+    <div>Deep Comparison · 2026</div>
+    <div>Vol.01</div>
+  </div>
+  <div class="frame" style="display:grid; gap:4vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>家用投影仪 · Projector</div>
+    <h1 class="h-hero" data-anim>三强对决</h1>
+    <h2 class="h-sub" data-anim>坚果 J10S vs 大眼橙 X30 vs 优派 Q30</h2>
+    <p class="lead" style="max-width:60vw" data-anim>
+      国产新势力与传统光学大厂的正面碰撞。同价位、不同流派，谁更值得买？
+    </p>
+    <div class="meta-row" data-anim>
+      <span>3000–5000 元价位</span><span>·</span><span>1080P LED 投影仪</span>
+    </div>
+  </div>
+  <div class="foot">
+    <div>家用投影仪深度对比</div>
+    <div>— 2026 —</div>
+  </div>
+</section>
 
-<!-- SLIDES_HERE -->
+<!-- ============================================================
+     PAGE 2 · Act I 幕封
+     ============================================================ -->
+<section class="slide hero light">
+  <div class="chrome">
+    <div>第一幕 · 硬件底子</div>
+    <div>Act I · 01 / 16</div>
+  </div>
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>Act I</div>
+    <h1 class="h-hero" style="font-size:8.5vw" data-anim>硬件底子</h1>
+    <p class="lead" style="max-width:55vw" data-anim>
+      底大一级压死人。先看芯片、再看亮度，参数是一切体验的起点。
+    </p>
+  </div>
+  <div class="foot">
+    <div>芯片与光源</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 3 · 核心参数速览
+     ============================================================ -->
+<section class="slide light">
+  <div class="chrome">
+    <div>参数速览 · Specs</div>
+    <div>Act I · 03 / 16</div>
+  </div>
+  <div class="frame" style="padding-top:6vh">
+    <div class="kicker" data-anim>Core Specs · 三款核心参数</div>
+    <h2 class="h-xl" data-anim>一眼看穿差异</h2>
+    <p class="lead" style="margin-bottom:4vh" data-anim>硬件参数是选购的第一道门槛。</p>
+
+    <div class="grid-6" style="margin-top:4vh">
+      <div class="stat-card" data-anim>
+        <div class="stat-label">坚果 J10S · DMD</div>
+        <div class="stat-nb">0.47<span class="stat-unit">"</span></div>
+        <div class="stat-note">主流旗舰标配</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">大眼橙 X30 · 亮度</div>
+        <div class="stat-nb">2800</div>
+        <div class="stat-note">ANSI 流明 · 三款最高</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">优派 Q30 · DMD</div>
+        <div class="stat-nb">0.65<span class="stat-unit">"</span></div>
+        <div class="stat-note">大底优势 · 画质上限最高</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">J10S · 音响</div>
+        <div class="stat-nb">Dyn<span class="stat-unit">audio</span></div>
+        <div class="stat-note">丹拿调音 · 音质最佳</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">X30 · 性价比</div>
+        <div class="stat-nb">Top</div>
+        <div class="stat-note">同价位亮度最高</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">Q30 · 对比度</div>
+        <div class="stat-nb">2x</div>
+        <div class="stat-note">0.47"芯片的两倍</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>核心参数速览</div>
+    <div>Specs Overview</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 4 · DMD 芯片对比（左文右图）
+     ============================================================ -->
+<section class="slide dark">
+  <div class="chrome">
+    <div>画质核心 · Chip</div>
+    <div>Act I · 04 / 16</div>
+  </div>
+  <div class="frame grid-2-7-5" style="padding-top:6vh">
+    <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
+      <div>
+        <div class="kicker" data-anim>Bottom Line · 关键差异</div>
+        <h2 class="h-xl" style="white-space:nowrap; font-size:5.8vw" data-anim>
+          底大一级压死人
+        </h2>
+        <p class="lead" style="margin-top:3vh" data-anim>
+          0.65" DMD 的通光量远超 0.47"。原生对比度约为两倍，暗部细节更深沉，画面更通透，更有电影感。
+        </p>
+      </div>
+      <div class="callout" data-anim>
+        "0.47 寸是主流旗舰的标配，<br>
+        但 0.65 寸才是画质的分水岭。"
+        <div class="callout-src">— DMD 芯片规格对照</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:3vh">
+      <div class="img-slot r-3x2" data-anim>
+        <span class="plus">+</span>
+        <span class="label">0.47" vs 0.65" DMD 芯片尺寸对比图</span>
+      </div>
+      <div style="display:flex;gap:2vw">
+        <div class="tag" data-anim>0.47" · J10S / X30</div>
+        <div class="tag" data-anim>0.65" · Q30</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>画质核心 · 芯片决定上限</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 5 · 亮度数据大字报
+     ============================================================ -->
+<section class="slide light">
+  <div class="chrome">
+    <div>亮度表现 · Brightness</div>
+    <div>Act I · 05 / 16</div>
+  </div>
+  <div class="frame" style="padding-top:6vh">
+    <div class="kicker" data-anim>Lumen · 参数狂魔</div>
+    <h2 class="h-xl" data-anim>谁最亮？</h2>
+    <p class="lead" style="margin-bottom:5vh" data-anim>亮度决定白天能不能看，但参数高不等于体验好。</p>
+
+    <div class="grid-3" style="margin-top:4vh">
+      <div class="stat-card" data-anim>
+        <div class="stat-label">坚果 J10S</div>
+        <div class="stat-nb">2400 <span class="stat-unit">ANSI</span></div>
+        <div class="stat-note">标准旗舰水平，晚上极佳，白天需拉帘</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">大眼橙 X30</div>
+        <div class="stat-nb">2800 <span class="stat-unit">ANSI</span></div>
+        <div class="stat-note">标称最高，白天抗光性理论最强</div>
+      </div>
+      <div class="stat-card" data-anim>
+        <div class="stat-label">优派 Q30</div>
+        <div class="stat-nb">2400 <span class="stat-unit">ANSI</span></div>
+        <div class="stat-note">实测较实，4LED 光源更稳定</div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:6vh; max-width:70vw" data-anim>
+      "大眼橙 X30 一直主打堆料和高亮度，如果你主要在白天不拉窗帘看，它的亮度优势会比较明显。"
+      <div class="callout-src">— 亮度实测结论</div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>亮度对比 · ANSI 流明</div>
+    <div>Brightness</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 6 · Act II 幕封
+     ============================================================ -->
+<section class="slide hero dark">
+  <div class="chrome">
+    <div>第二幕 · 画质与色彩</div>
+    <div>Act II · 06 / 16</div>
+  </div>
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>Act II</div>
+    <h1 class="h-hero" style="font-size:7.5vw" data-anim>画质色彩</h1>
+    <p class="lead" style="max-width:55vw" data-anim>
+      徕卡 vs 优派老厂 vs 高亮冷艳，三条色彩路线各有拥趸。
+    </p>
+  </div>
+  <div class="foot">
+    <div>色彩科学</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 7 · 色彩科学三方对比（Before/After 变体：三列对比）
+     ============================================================ -->
+<section class="slide light" data-animate="directional">
+  <div class="chrome">
+    <div>色彩科学 · Color Science</div>
+    <div>Act II · 07 / 16</div>
+  </div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker" data-anim>Color · 三条色彩路线</div>
+    <h2 class="h-xl" style="margin-bottom:4vh" data-anim>三种调色哲学</h2>
+
+    <div class="grid-3" style="gap:3vw">
+      <div data-anim="left" style="padding:3vh 2vw; border-left:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">J10S · 徕卡</div>
+        <h3 class="h-md" style="margin-top:2vh">徕卡联合调色</h3>
+        <ul style="margin-top:2.5vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+          <li>色准 <em class="en">ΔE&lt;1</em></li>
+          <li>肤色自然，讨好眼球</li>
+          <li>国产投影第一梯队</li>
+          <li>"徕卡标准模式"即开即用</li>
+        </ul>
+      </div>
+      <div data-anim style="padding:3vh 2vw; border-left:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">X30 · 高亮冷艳</div>
+        <h3 class="h-md" style="margin-top:2vh">O-RDR 2.0</h3>
+        <ul style="margin-top:2.5vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+          <li>偏冷艳风格</li>
+          <li>高亮度下饱和度保持好</li>
+          <li>对比前两者稍显逊色</li>
+          <li>色彩中规中矩</li>
+        </ul>
+      </div>
+      <div data-anim="right" style="padding:3vh 2vw; border-left:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">Q30 · 影院厚重</div>
+        <h3 class="h-md" style="margin-top:2vh">Cinema SuperColor+</h3>
+        <ul style="margin-top:2.5vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+          <li>125% <em class="en">Rec.709</em> 色域</li>
+          <li>传统影院厚重感</li>
+          <li>无"数码味"</li>
+          <li>开箱需微调至最佳</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>色彩科学三方对比</div>
+    <div>Color Science</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 8 · 徕卡色彩详解（图文混排）
+     ============================================================ -->
+<section class="slide dark">
+  <div class="chrome">
+    <div>徕卡色彩 · Leica Color</div>
+    <div>Act II · 08 / 16</div>
+  </div>
+  <div class="frame grid-2-8-4" style="padding-top:6vh">
+    <div>
+      <div class="kicker" data-anim>Highlight · 亮点</div>
+      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh" data-anim>徕卡色彩认证</h2>
+
+      <p class="lead" style="margin-bottom:3vh" data-anim>
+        坚果 J10S 是三款中唯一获得徕卡联合调色的机型。在"徕卡标准模式"下，色准达到 <em class="en">ΔE&lt;1</em>，这是专业显示器才有的指标。
+      </p>
+
+      <p data-anim style="font-family:var(--sans-zh); font-size:max(14px,1.15vw); line-height:1.75; opacity:.78; margin-bottom:2.4vh">
+        它的色彩调校偏向还原和讨好眼球，肤色处理比较自然。如果你不想折腾参数，开箱即用的徕卡模式是最省心的选择。
+      </p>
+
+      <div class="callout" style="margin-top:3vh" data-anim>
+        "徕卡标准模式，国产投影色准第一梯队。"
+        <div class="callout-src">— 色彩科学评价</div>
+      </div>
+    </div>
+    <div class="img-slot r-3x4" data-anim>
+      <span class="plus">+</span>
+      <span class="label">坚果 J10S 徕卡色彩模式实拍</span>
+    </div>
+  </div>
+  <div class="foot">
+    <div>徕卡联合调色</div>
+    <div>Leica Color</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 9 · 问题页：智能体验差异
+     ============================================================ -->
+<section class="slide hero light">
+  <div class="chrome">
+    <div>留给你的问题</div>
+    <div>09 / 16</div>
+  </div>
+  <div class="frame" style="display:grid; gap:8vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>The Question</div>
+    <h1 class="h-hero" style="font-size:7vw; line-height:1.15">
+      <span data-anim style="display:block">画质好，</span>
+      <span data-anim style="display:block">系统难用，</span>
+      <span data-anim style="display:block">你忍得了吗？</span>
+    </h1>
+    <p class="lead" style="max-width:50vw" data-anim>
+      优派 Q30 画质上限最高，但智能系统可能让你回到 2015 年。
+    </p>
+  </div>
+  <div class="foot">
+    <div>智能体验之问</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 10 · 系统易用性对比（左文右图）
+     ============================================================ -->
+<section class="slide dark">
+  <div class="chrome">
+    <div>智能系统 · Smart OS</div>
+    <div>Act II · 10 / 16</div>
+  </div>
+  <div class="frame grid-2-7-5" style="padding-top:6vh">
+    <div style="display:flex; flex-direction:column; justify-content:space-between; gap:3vh">
+      <div>
+        <div class="kicker" data-anim>UX · 易用性</div>
+        <h2 class="h-xl" style="white-space:nowrap; font-size:5.5vw" data-anim>
+          国产 vs 传统
+        </h2>
+        <p class="lead" style="margin-top:3vh" data-anim>
+          坚果 Bonfire OS 交互体验行业数一数二；大眼橙内置腾讯视频源，开箱即看；优派的系统……建议搭配 Apple TV。
+        </p>
+      </div>
+      <div class="callout" data-anim>
+        "买优派通常建议搭配一个 Apple TV<br>或高质量电视盒子使用。"
+        <div class="callout-src">— 传统大厂智能系统现状</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2vh">
+      <div class="rowline" data-anim>
+        <div class="k">坚果</div>
+        <div class="v">自动梯形校正 / 自动对屏 / 避障 / 语音</div>
+        <div class="m">BEST</div>
+      </div>
+      <div class="rowline" data-anim>
+        <div class="k">大眼橙</div>
+        <div class="v">自动校正 / 腾讯视频源 / 语音</div>
+        <div class="m">GOOD</div>
+      </div>
+      <div class="rowline" data-anim>
+        <div class="k">优派</div>
+        <div class="v">系统简陋 / 反应慢 / UI 陈旧</div>
+        <div class="m">NEED BOX</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>智能体验对比</div>
+    <div>Smart OS</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 11 · Act III 幕封
+     ============================================================ -->
+<section class="slide hero dark">
+  <div class="chrome">
+    <div>第三幕 · 游戏与选购</div>
+    <div>Act III · 11 / 16</div>
+  </div>
+  <div class="frame" style="display:grid; gap:6vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>Act III</div>
+    <h1 class="h-hero" style="font-size:8.5vw" data-anim>选购指南</h1>
+    <p class="lead" style="max-width:55vw" data-anim>
+      游戏性能、扩展机型、最终结论——你该买哪台？
+    </p>
+  </div>
+  <div class="foot">
+    <div>游戏与选购</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 12 · 游戏性能 Pipeline
+     ============================================================ -->
+<section class="slide light" data-animate="pipeline">
+  <div class="chrome">
+    <div>游戏性能 · Gaming</div>
+    <div>Act III · 12 / 16</div>
+  </div>
+  <div class="frame">
+    <div class="kicker">Gaming · 游戏性能</div>
+    <h2 class="h-xl">三款游戏能力</h2>
+
+    <div class="pipeline-section">
+      <div class="pipeline-label">坚果 J10S · 主机玩家首选</div>
+      <div class="pipeline" data-cols="3">
+        <div class="step" data-anim="step">
+          <div class="step-nb">01</div>
+          <div class="step-title">HDMI 2.1</div>
+          <div class="step-desc">4K@120Hz 输入</div>
+        </div>
+        <div class="step" data-anim="step">
+          <div class="step-nb">02</div>
+          <div class="step-title">Wi-Fi 6</div>
+          <div class="step-desc">低延迟无线串流</div>
+        </div>
+        <div class="step" data-anim="step">
+          <div class="step-nb">03</div>
+          <div class="step-title">PS5 / Xbox</div>
+          <div class="step-desc">次世代主机完美适配</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pipeline-section">
+      <div class="pipeline-label">优派 Q30 · PC 硬核玩家首选</div>
+      <div class="pipeline" data-cols="3">
+        <div class="step" data-anim="step">
+          <div class="step-nb">04</div>
+          <div class="step-title">240Hz</div>
+          <div class="step-desc">1080P 超高刷新率</div>
+        </div>
+        <div class="step" data-anim="step">
+          <div class="step-nb">05</div>
+          <div class="step-title">4.2ms</div>
+          <div class="step-desc">超低延迟响应</div>
+        </div>
+        <div class="step" data-anim="step">
+          <div class="step-nb">06</div>
+          <div class="step-title">PC Gaming</div>
+          <div class="step-desc">电竞级体验</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>游戏性能对比</div>
+    <div>Gaming</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 13 · 三款选购指南（并列对比）
+     ============================================================ -->
+<section class="slide light" data-animate="directional">
+  <div class="chrome">
+    <div>选购建议 · Purchase Guide</div>
+    <div>Act III · 13 / 16</div>
+  </div>
+  <div class="frame" style="padding-top:5vh">
+    <div class="kicker" data-anim>Who Should Buy · 谁该买什么</div>
+    <h2 class="h-xl" style="margin-bottom:4vh" data-anim>三款三种人</h2>
+
+    <div class="grid-3" style="gap:3vw">
+      <div data-anim="left" style="padding:3vh 2vw; border-top:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">坚果 J10S</div>
+        <h3 class="h-md" style="margin-top:2vh">好用 · 省心 · 色彩准</h3>
+        <ul style="margin-top:2.5vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+          <li>追求综合体验</li>
+          <li>颜值控</li>
+          <li><em class="en">PS5 / Xbox</em> 主机玩家</li>
+          <li>不想折腾的人</li>
+        </ul>
+      </div>
+      <div data-anim style="padding:3vh 2vw; border-top:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">大眼橙 X30</div>
+        <h3 class="h-md" style="margin-top:2vh">便宜 · 大碗 · 亮度高</h3>
+        <ul style="margin-top:2.5vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+          <li>预算相对敏感</li>
+          <li>特别看重亮度</li>
+          <li>环境光较复杂</li>
+          <li>对色彩细腻度要求不苛刻</li>
+        </ul>
+      </div>
+      <div data-anim="right" style="padding:3vh 2vw; border-top:3px solid currentColor">
+        <div class="kicker" style="opacity:.9">优派 Q30</div>
+        <h3 class="h-md" style="margin-top:2vh">原生画质 · 高对比 · 硬核</h3>
+        <ul style="margin-top:2.5vh; padding-left:1.2em; display:flex; flex-direction:column; gap:1.4vh; font-family:var(--sans-zh); font-size:max(14px,1.1vw); line-height:1.55">
+          <li>影音发烧友</li>
+          <li>追求极致对比度</li>
+          <li>能接受外接电视盒子</li>
+          <li><em class="en">PC</em> 高刷游戏玩家</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>三款三种人</div>
+    <div>Purchase Guide</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 14 · 同价位扩展机型（图文混排）
+     ============================================================ -->
+<section class="slide dark">
+  <div class="chrome">
+    <div>扩展机型 · Alternatives</div>
+    <div>Act III · 14 / 16</div>
+  </div>
+  <div class="frame grid-2-8-4" style="padding-top:5vh">
+    <div>
+      <div class="kicker" data-anim>Also Consider · 值得一看</div>
+      <h2 class="h-xl" style="margin-top:1vh; margin-bottom:3vh" data-anim>同价位扩展</h2>
+
+      <p class="lead" style="margin-bottom:3vh" data-anim>
+        同价位 3000–5000 元区间，还有几款不容忽视的 4LED 机型。
+      </p>
+
+      <div class="rowline" data-anim>
+        <div class="k">明基 TH690SX</div>
+        <div class="v">短焦王 · 0.69 投射比 · 1.5 米投 100 寸 · 小户型唯一解</div>
+      </div>
+      <div class="rowline" data-anim>
+        <div class="k">明基 W1130X</div>
+        <div class="v">CinematicColor · 出厂色准极高 · 镜头位移 · 画质守门员</div>
+      </div>
+      <div class="rowline" data-anim>
+        <div class="k">极米 H5</div>
+        <div class="v">Super 全色 LED · 无散斑 · 观看舒适度最高 · 退烧之选</div>
+      </div>
+      <div class="rowline" data-anim>
+        <div class="k">极米 H6 4K</div>
+        <div class="v">4K 分辨率 · 光学变焦 · 降维打击 1080P</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2vh">
+      <div style="padding:3vh 2vw; border-left:3px solid currentColor; opacity:.9" data-anim>
+        <div class="kicker" style="opacity:.9">4LED vs 三色激光</div>
+        <p style="font-family:var(--sans-zh); font-size:max(13px,1vw); line-height:1.6; opacity:.8; margin-top:1.5vh">
+          4LED 优势：画面纯净、<span class="hi">无散斑</span>、无彩边，看着不累眼。<br><br>
+          激光优势：亮度更高、色域更广，但部分人眼会看到散斑。
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div>同价位扩展机型</div>
+    <div>Alternatives</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 15 · 大引用：一句话总结
+     ============================================================ -->
+<section class="slide hero light" data-animate="quote">
+  <div class="chrome">
+    <div>核心结论 · Takeaway</div>
+    <div>15 / 16</div>
+  </div>
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>Bottom Line · 一句话总结</div>
+    <blockquote style="font-family:var(--serif-zh); font-weight:700; font-size:4.8vw; line-height:1.25; letter-spacing:-.01em; max-width:75vw">
+      <span data-anim="line" style="display:block">好用、省心、色彩准——选坚果。</span>
+      <span data-anim="line" style="display:block">便宜、大碗、亮度高——选大眼橙。</span>
+      <span data-anim="line" style="display:block">原生画质、高对比度、硬核——选优派。</span>
+    </blockquote>
+    <div class="meta-row" data-anim>
+      <span>Projector Comparison 2026</span><span>·</span><span>三强对决</span>
+    </div>
+  </div>
+  <div class="foot">
+    <div>核心结论</div>
+    <div>— · —</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 16 · 结尾封面
+     ============================================================ -->
+<section class="slide hero dark">
+  <div class="chrome">
+    <div>Deep Comparison · 2026</div>
+    <div>16 / 16</div>
+  </div>
+  <div class="frame" style="display:grid; gap:5vh; align-content:center; min-height:80vh">
+    <div class="kicker" data-anim>End · 购买前必看</div>
+    <h1 class="h-hero" style="font-size:7vw" data-anim>选你所爱</h1>
+    <h2 class="h-sub" data-anim>参数是参考，眼睛才是裁判</h2>
+    <p class="lead" style="max-width:55vw" data-anim>
+      建议到线下门店实机对比。亮度、色彩、系统流畅度，纸面参数无法替代亲眼所见。
+    </p>
+    <div class="meta-row" data-anim>
+      <span>坚果 J10S</span><span>·</span><span>大眼橙 X30</span><span>·</span><span>优派 Q30</span>
+    </div>
+  </div>
+  <div class="foot">
+    <div>家用投影仪深度对比</div>
+    <div>— 2026 —</div>
+  </div>
+</section>
 
 </div>
 
 <div id="nav"></div>
 
 <script>
-/* =============== WebGL 双背景 ===============
-   深色页：Holographic Dispersion（全息色散 · 钛金暗流）—— 彩虹微扰、鼠标径向涟漪
-   浅色页：Spiral Vortex（旋转涡流 · 银色珍珠）—— domain-warp 流动、无中心
-   修改风格请参考 references/webgl-backgrounds.md
-*/
+/* =============== WebGL 双背景 =============== */
 const VS = `attribute vec2 position;void main(){gl_Position=vec4(position,0.0,1.0);}`;
 
 const FS_DARK = `precision highp float;
@@ -560,13 +1115,12 @@ const t0=Date.now();
   requestAnimationFrame(loop);
 })();
 
-// =============== 导航（翻页 / 圆点 / 键盘 / 滚轮 / 触屏） ===============
+// =============== 导航 ===============
 const deck=document.getElementById('deck');
 const slides=deck.querySelectorAll('.slide');
 const nav=document.getElementById('nav');
 let idx=0,total=slides.length,lock=false;
 
-// 关键：矫正 deck 宽度为 total * 100vw，否则翻页会错位
 deck.style.width=(total*100)+'vw';
 
 slides.forEach((s,i)=>{
@@ -581,11 +1135,9 @@ function go(n){
   idx=Math.max(0,Math.min(total-1,n));
   deck.style.transform=`translateX(${-idx*100}vw)`;
   nav.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
-  /* 主题切换：优先读 data-theme，其次从 class（light/dark）推断 */
   const el=slides[idx];
   const th=el.dataset.theme || (el.classList.contains('light')?'light':(el.classList.contains('dark')?'dark':'dark'));
   document.body.classList.toggle('light-bg',th==='light');
-  /* 动效：翻页过渡中段触发当前页的入场动画（由 motion-boot 注册） */
   if(window.__playSlide) setTimeout(()=>window.__playSlide(idx), 450);
   lock=true;setTimeout(()=>lock=false,700);
 }
@@ -670,12 +1222,7 @@ go(0);
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>lucide.createIcons();</script>
 
-<!-- ============ Motion One 动效引擎（本地优先,CDN 兜底） ============
-     加载策略:先 ./assets/motion.min.js(本地,离线可用),失败 fallback 到 jsDelivr CDN
-     加载完成后挂 window.__playSlide / window.__pipeAdvance,
-     导航脚本会在翻页中段调用 __playSlide(idx),键盘/滚轮/触屏会在翻页前调用 __pipeAdvance()
-     双双失败时会兜底把所有 [data-anim] 设为可见,不让动效破坏阅读
--->
+<!-- ============ Motion One 动效引擎 ============ -->
 <script type="module">
 let motion;
 try {
@@ -769,7 +1316,6 @@ if(motion){
   window.__playSlide = playSlide;
   window.__pipeAdvance = pipeAdvance;
 
-  // 首屏:go(0) 已跑过(同步),没来得及触发动效 → 这里补一下
   playSlide(0);
 }
 </script>

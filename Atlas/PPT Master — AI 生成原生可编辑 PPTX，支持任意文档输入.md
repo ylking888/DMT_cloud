@@ -88,6 +88,7 @@ PPT Master 不一样：
 - **AI/技术分享** → `anthropic`、`google_style`、`pixel_retro`
 - **政府/国企** → `government_blue`、`government_red`、各种国企模板
 - **创意展示** → `pixel_retro`、`psychology_attachment`、`smart_red`
+![](assets/PPT%20Master%20—%20AI%20生成原生可编辑%20PPTX，支持任意文档输入/file-20260502110905643.jpg)
 
 | [![杂志风 — 打造小院指南](https://github.com/hugohe3/ppt-master/raw/main/docs/assets/screenshots/preview_magazine_garden.png)](https://github.com/hugohe3/ppt-master/blob/main/docs/assets/screenshots/preview_magazine_garden.png)   <sub><b>杂志风</b> — 暖色调，大图排版，生活方式感</sub> | [![学术风 — 医学图像分割研究](https://github.com/hugohe3/ppt-master/raw/main/docs/assets/screenshots/preview_academic_medical.png)](https://github.com/hugohe3/ppt-master/blob/main/docs/assets/screenshots/preview_academic_medical.png)   <sub><b>学术风</b> — 严谨结构，数据图表，论文答辩场景</sub> |
 | --- | --- |

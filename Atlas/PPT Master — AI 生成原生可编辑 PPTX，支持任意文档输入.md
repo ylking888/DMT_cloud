@@ -1,12 +1,13 @@
 ---
-title: "ppt-master/README_CN.md at main"
-source: "https://github.com/hugohe3/ppt-master/blob/main/README_CN.md"
+title: ppt-master/README_CN.md at main
+source: https://github.com/hugohe3/ppt-master/blob/main/README_CN.md
 author:
 published:
 created: 2026-05-02
-description: "AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images · by Hugo He - ppt-master/README_CN.md at main · hugohe3/ppt-master"
+description: AI generates natively editable PPTX from any document — real PowerPoint shapes with native animations, not images · by Hugo He - ppt-master/README_CN.md at main · hugohe3/ppt-master
 tags:
-  - "clippings"
+  - SKILL
+  - PPT
 ---
 
 | ![](assets/PPT%20Master%20—%20AI%20生成原生可编辑%20PPTX，支持任意文档输入/file-20260502092953011.png) | 感谢 PackyCode 赞助了本项目！PackyCode 是一家稳定、高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种中转服务。PackyCode 为本项目的用户提供了特别优惠，使用 [此链接](https://www.packyapi.com/register?aff=ppt-master) 注册并在充值时填写"ppt-master"优惠码，可以享受 9 折优惠。 |

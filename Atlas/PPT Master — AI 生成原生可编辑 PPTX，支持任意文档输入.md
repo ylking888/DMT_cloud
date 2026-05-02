@@ -53,12 +53,12 @@ PPT Master 不一样：
 | 3   | `重庆大学`               | Chongqing University Template（重庆大学模板）![](assets/PPT%20Master%20—%20AI%20生成原生可编辑%20PPTX，支持任意文档输入/file-20260502150902563.jpg) | 学术答辩、研究汇报      |
 |     |                      |                                                                                                                             |                |
 ### 💼 商务咨询类（4个）
-| 序号 | 模板 ID | 模板名称 | 适用场景 |
-|------|---------|----------|----------|
-| 4 | `mckinsey` | McKinsey Style Template（麦肯锡风格模板） | 战略咨询、投资分析 |
-| 5 | `exhibit` | Exhibit Style Template（Exhibit风格模板） | 数据驱动战略报告、高管汇报 |
-| 6 | `google_style` | Google Style Template（Google风格模板） | 年度汇报、技术分享 |
-| 7 | `anthropic` | Anthropic Style Template（Anthropic风格模板） | AI/LLM知识分享、产品发布 |
+| 序号  | 模板 ID          | 模板名称                                    | 适用场景            |
+| --- | -------------- | --------------------------------------- | --------------- |
+| 4   | `mckinsey`     | McKinsey Style Template（麦肯锡风格模板）        | 战略咨询、投资分析       |
+| 5   | `exhibit`      | Exhibit Style Template（Exhibit风格模板）     | 数据驱动战略报告、高管汇报   |
+| 6   | `google_style` | Google Style Template（Google风格模板）       | 年度汇报、技术分享       |
+| 7   | `anthropic`    | Anthropic Style Template（Anthropic风格模板） | AI/LLM知识分享、产品发布 |
 ### 🏛️ 政府政务类（2个）
 | 序号 | 模板 ID | 模板名称 | 适用场景 |
 |------|---------|----------|----------|

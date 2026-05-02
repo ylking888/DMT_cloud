@@ -11,12 +11,7 @@ tags:
 
 | ![](assets/PPT%20Master%20—%20AI%20生成原生可编辑%20PPTX，支持任意文档输入/file-20260502091353089.png) | 感谢 PackyCode 赞助了本项目！PackyCode 是一家稳定、高效的 API 中转服务商，提供 Claude Code、Codex、Gemini 等多种中转服务。PackyCode 为本项目的用户提供了特别优惠，使用 [此链接](https://www.packyapi.com/register?aff=ppt-master) 注册并在充值时填写"ppt-master"优惠码，可以享受 9 折优惠。 |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-
-[**在线预览**](https://hugohe3.github.io/ppt-master/) · [**关于何雨果**](https://www.hehugo.com/) · [**示例下载**](https://github.com/hugohe3/ppt-master/blob/main/examples) · [**常见问题**](https://github.com/hugohe3/ppt-master/blob/main/docs/zh/faq.md) · [**联系我**](mailto:heyug3@gmail.com)
-
-[![演示：用 Claude Opus 4.7 从一篇微信文章生成 12 页 PPT](https://github.com/hugohe3/ppt-master/raw/main/docs/assets/hero-liziqi-colors.gif)](https://github.com/hugohe3/ppt-master/blob/main/docs/assets/hero-liziqi-colors.gif)
-
-<sub>↑ <a href="https://hugohe3.github.io/ppt-master/viewer.html?project=ppt169_liziqi_plant_dye_colors">一份 12 页的原生可编辑 PPT</a> ，端到端由 <a href="https://mp.weixin.qq.com/s/6ZmBl0uE3sOtD8TJcHfNAw">一个微信公众号链接</a> 通过 Claude Opus 4.7 生成。无需人工设计，不走图片导出——每一个形状、文本框、图表都可以在 PowerPoint 里直接点击编辑。</sub>
+↑ <a href="https://hugohe3.github.io/ppt-master/viewer.html?project=ppt169_liziqi_plant_dye_colors">一份 12 页的原生可编辑 PPT</a> ，端到端由 <a href="https://mp.weixin.qq.com/s/6ZmBl0uE3sOtD8TJcHfNAw">一个微信公众号链接</a> 通过 Claude Opus 4.7 生成。无需人工设计，不走图片导出——每一个形状、文本框、图表都可以在 PowerPoint 里直接点击编辑。</sub>
 
 ---
 

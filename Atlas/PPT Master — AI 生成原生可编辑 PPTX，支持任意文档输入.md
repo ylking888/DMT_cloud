@@ -46,11 +46,11 @@ PPT Master 不一样：
 ## 📋 PPT-Master 全部模板列表（21个）
 这里是**所有 21 个模板的完整列表**：
 ### 🎓 学术教育类（3个）
-| 序号 | 模板 ID | 模板名称 | 适用场景 |
-|------|---------|----------|----------|
-| 1 | `academic_defense` | Academic Defense Template（学术答辩模板） | 学术答辩、研究汇报、项目提案 |
-| 2 | `medical_university` | Hospital/Medical University Template（医院/医科大学模板） | 医学报告、案例讨论、研究汇报 |
-| 3 | `重庆大学` | Chongqing University Template（重庆大学模板） | 学术答辩、研究汇报 |
+| 序号  | 模板 ID                | 模板名称                                            | 适用场景           |
+| --- | -------------------- | ----------------------------------------------- | -------------- |
+| 1   | `academic_defense`   | Academic Defense Template（学术答辩模板）               | 学术答辩、研究汇报、项目提案 |
+| 2   | `medical_university` | Hospital/Medical University Template（医院/医科大学模板） | 医学报告、案例讨论、研究汇报 |
+| 3   | `重庆大学`               | Chongqing University Template（重庆大学模板）           | 学术答辩、研究汇报      |
 ### 💼 商务咨询类（4个）
 | 序号 | 模板 ID | 模板名称 | 适用场景 |
 |------|---------|----------|----------|

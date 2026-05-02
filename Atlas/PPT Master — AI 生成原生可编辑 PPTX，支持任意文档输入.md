@@ -82,9 +82,7 @@ PPT Master 不一样：
 | 20 | `pixel_retro` | Pixel Retro Template（像素复古模板） | 技术分享、游戏主题 |
 | 21 | `psychology_attachment` | Psychology Healing Template（心理学治愈模板） | 心理治疗培训、咨询讲座 |
 ## 🔍 如何选择？
-
 **根据你的场景快速定位：**
-
 - **学术交流** → `academic_defense`（推荐）、`medical_university`、`重庆大学`
 - **商务汇报** → `mckinsey`（推荐）、`exhibit`、`google_style`
 - **AI/技术分享** → `anthropic`、`google_style`、`pixel_retro`

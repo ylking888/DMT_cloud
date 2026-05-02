@@ -1,12 +1,13 @@
 ---
 title: "op7418/guizang-ppt-skill: A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output."
-source: "https://github.com/op7418/guizang-ppt-skill"
+source: https://github.com/op7418/guizang-ppt-skill
 author:
 published:
 created: 2026-04-28
-description: "A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output. - op7418/guizang-ppt-skill"
+description: A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output. - op7418/guizang-ppt-skill
 tags:
-  - "clippings"
+  - SKILL
+  - PPT
 ---
 ## Magazine Web PPT · 电子杂志风网页 PPT Skill
 

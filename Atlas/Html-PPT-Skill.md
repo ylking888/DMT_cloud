@@ -1,12 +1,13 @@
 ---
-title: "html-ppt-skill/README.zh-CN.md at main"
-source: "https://github.com/lewislulu/html-ppt-skill/blob/main/README.zh-CN.md"
+title: html-ppt-skill/README.zh-CN.md at main
+source: https://github.com/lewislulu/html-ppt-skill/blob/main/README.zh-CN.md
 author:
 published:
 created: 2026-04-28
-description: "HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations - html-ppt-skill/README.zh-CN.md at main · lewislulu/html-ppt-skill"
+description: HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations - html-ppt-skill/README.zh-CN.md at main · lewislulu/html-ppt-skill
 tags:
-  - "clippings"
+  - SKILL
+  - PPT
 ---
 #开源地址[lewislulu/html-ppt-skill: HTML PPT Studio — AgentSkill with 24 themes, 31 layouts, 20+ animations for building professional HTML presentations](https://github.com/lewislulu/html-ppt-skill)
 中文说明：[html-ppt-skill/README.zh-CN.md at main · lewislulu/html-ppt-skill](https://github.com/lewislulu/html-ppt-skill/blob/main/README.zh-CN.md)

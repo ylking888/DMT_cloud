@@ -43,7 +43,53 @@ PPT Master 不一样：
 **[在线预览 →](https://hugohe3.github.io/ppt-master/)** · [`examples/`](https://github.com/hugohe3/ppt-master/blob/main/examples) — 22 个项目，309 页 
 
 · **[为什么选 PPT Master？](https://github.com/hugohe3/ppt-master/blob/main/docs/zh/why-ppt-master.md)**
-## 效果展示
+## 📋 PPT-Master 全部模板列表（21个）
+这里是**所有 21 个模板的完整列表**：
+### 🎓 学术教育类（3个）
+| 序号 | 模板 ID | 模板名称 | 适用场景 |
+|------|---------|----------|----------|
+| 1 | `academic_defense` | Academic Defense Template（学术答辩模板） | 学术答辩、研究汇报、项目提案 |
+| 2 | `medical_university` | Hospital/Medical University Template（医院/医科大学模板） | 医学报告、案例讨论、研究汇报 |
+| 3 | `重庆大学` | Chongqing University Template（重庆大学模板） | 学术答辩、研究汇报 |
+### 💼 商务咨询类（4个）
+| 序号 | 模板 ID | 模板名称 | 适用场景 |
+|------|---------|----------|----------|
+| 4 | `mckinsey` | McKinsey Style Template（麦肯锡风格模板） | 战略咨询、投资分析 |
+| 5 | `exhibit` | Exhibit Style Template（Exhibit风格模板） | 数据驱动战略报告、高管汇报 |
+| 6 | `google_style` | Google Style Template（Google风格模板） | 年度汇报、技术分享 |
+| 7 | `anthropic` | Anthropic Style Template（Anthropic风格模板） | AI/LLM知识分享、产品发布 |
+### 🏛️ 政府政务类（2个）
+| 序号 | 模板 ID | 模板名称 | 适用场景 |
+|------|---------|----------|----------|
+| 8 | `government_blue` | Government Blue Template（政务蓝模板） | 智慧城市、数字化报告 |
+| 9 | `government_red` | Government Red Template（政务红模板） | 政府报告、党建场景 |
+### 🏢 行业企业类（10个）
+| 序号 | 模板 ID | 模板名称 | 适用场景 |
+|------|---------|----------|----------|
+| 10 | `china_telecom_template` | 中国电信模板 | 电信解决方案、数字化转型 |
+| 11 | `中国电建_常规` | PowerChina Standard Template（中国电建常规模板） | 工程建设、国企报告 |
+| 12 | `中国电建_现代` | PowerChina Modern Template（中国电建现代模板） | 重大工程、国际业务展示 |
+| 13 | `中汽研_商务` | CATARC Business Template（中汽研商务模板） | 认证展示、高端商务 |
+| 14 | `中汽研_常规` | CATARC Standard Template（中汽研常规模板） | 认证、测试场景 |
+| 15 | `中汽研_现代` | CATARC Modern Template（中汽研现代模板） | 前沿技术展示、高端发布会 |
+| 16 | `招商银行` | China Merchants Bank Template（招商银行模板） | 交易银行、产品推介、培训 |
+| 17 | `科技蓝商务` | Tech Blue Business Template（科技蓝商务模板） | 企业报告、解决方案提案 |
+| 18 | `ai_ops` | Enterprise Digital Intelligence Template（企业数字化智能模板） | 电信AI运维、IT架构概览 |
+| 19 | `smart_red` | Smart Red-Orange Business Template（智能红橙商务模板） | 科技公司介绍、教育解决方案 |
+### 🎨 创意特殊类（2个）
+| 序号 | 模板 ID | 模板名称 | 适用场景 |
+|------|---------|----------|----------|
+| 20 | `pixel_retro` | Pixel Retro Template（像素复古模板） | 技术分享、游戏主题 |
+| 21 | `psychology_attachment` | Psychology Healing Template（心理学治愈模板） | 心理治疗培训、咨询讲座 |
+## 🔍 如何选择？
+
+**根据你的场景快速定位：**
+
+- **学术交流** → `academic_defense`（推荐）、`medical_university`、`重庆大学`
+- **商务汇报** → `mckinsey`（推荐）、`exhibit`、`google_style`
+- **AI/技术分享** → `anthropic`、`google_style`、`pixel_retro`
+- **政府/国企** → `government_blue`、`government_red`、各种国企模板
+- **创意展示** → `pixel_retro`、`psychology_attachment`、`smart_red`
 
 | [![杂志风 — 打造小院指南](https://github.com/hugohe3/ppt-master/raw/main/docs/assets/screenshots/preview_magazine_garden.png)](https://github.com/hugohe3/ppt-master/blob/main/docs/assets/screenshots/preview_magazine_garden.png)   <sub><b>杂志风</b> — 暖色调，大图排版，生活方式感</sub> | [![学术风 — 医学图像分割研究](https://github.com/hugohe3/ppt-master/raw/main/docs/assets/screenshots/preview_academic_medical.png)](https://github.com/hugohe3/ppt-master/blob/main/docs/assets/screenshots/preview_academic_medical.png)   <sub><b>学术风</b> — 严谨结构，数据图表，论文答辩场景</sub> |
 | --- | --- |
